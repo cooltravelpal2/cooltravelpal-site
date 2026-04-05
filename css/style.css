@@ -68,7 +68,7 @@ img { max-width: 100%; display: block; }
 }
 .nav-brand {
   text-decoration: none;
-  display: flex; align-items: center; gap: 10px;
+  display: flex; align-items: center; gap: 4px;
 }
 .nav-brand img { display: block; }
 .nav-brand span { font-size: 1.1rem; font-weight: 700; color: var(--gray-900); }
