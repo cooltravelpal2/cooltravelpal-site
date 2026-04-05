@@ -68,10 +68,9 @@ img { max-width: 100%; display: block; }
 }
 .nav-brand {
   text-decoration: none;
-  display: flex; align-items: center; gap: 4px;
+  display: flex; align-items: center;
 }
-.nav-brand img { display: block; }
-.nav-brand span { font-size: 1.1rem; font-weight: 700; color: var(--gray-900); }
+.nav-brand img { display: block; height: 40px; width: auto; }
 .nav-links { display: flex; gap: 24px; list-style: none; }
 .nav-links a { color: var(--gray-700); font-size: .95rem; font-weight: 500; }
 .nav-links a:hover { color: var(--blue); text-decoration: none; }
