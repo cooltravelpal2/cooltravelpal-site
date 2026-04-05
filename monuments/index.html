@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monuments Tour — Travel Guide at Your Fingertip</title>
+  <meta name="description" content="Unlock unforgettable adventures with Monuments Tour. Expert-curated itineraries, 24/7 AI tour guides, and verified city guides at your fingertip.">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="/" class="nav-brand"><img src="/images/travelpal-logo.png" alt="TravelPal LLC"></a>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/cardpecker/">CardPecker</a></li>
+        <li><a href="/monuments/">Monuments</a></li>
+        <li><a href="/blog/">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero hero-centered">
+    <div class="container">
+      <img src="/images/monuments-icon.png" alt="Monuments Tour" style="width:96px;height:96px;border-radius:22px;margin:0 auto 20px;">
+      <h1><span class="text-gradient">Monuments Tour</span></h1>
+      <p>Unlock unforgettable adventures. Expert-curated itineraries, a 24/7 personal tour guide, and verified city guides — all at your fingertip.</p>
+      <a href="https://apps.apple.com/us/app/monuments-tour/id6742383114" class="btn btn-gradient" target="_blank">Download on the App Store</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <h2>Why Monuments Tour?</h2>
+      <div class="feature-grid">
+
+        <div class="feature-card">
+          <div class="feature-icon blue">&#127758;</div>
+          <h3>Personalized Itineraries</h3>
+          <p>Our expert guides and AI create travel plans tailored to your interests, inspired by millions of verified traveler experiences.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon green">&#128100;</div>
+          <h3>24/7 Personal Tour Guide</h3>
+          <p>Explore confidently with a tour guide in your pocket. Get insights on art, history, and hidden gems whenever you need them.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon purple">&#127963;</div>
+          <h3>Verified City Guides</h3>
+          <p>All guides are sourced directly from verified official channels. No intermediaries, no affiliate bias — just authentic travel information.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon orange">&#129302;</div>
+          <h3>Responsible AI</h3>
+          <p>We combine responsible AI technology with human curation. Every guide is carefully reviewed by real travel specialists and art historians.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="cta">
+      <h2>Your next adventure awaits</h2>
+      <p>Make art and history accessible — wherever you travel.</p>
+      <a href="https://apps.apple.com/us/app/monuments-tour/id6742383114" class="btn btn-gradient" target="_blank">Download on the App Store</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <span>&copy; 2026 TravelPal LLC. All rights reserved.</span>
+      <ul class="footer-links">
+        <li><a href="/monuments/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="/monuments/support/">Support</a></li>
+        <li><a href="/blog/">Blog</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">&#8679;</button>
+  <script>
+    const btn = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', () => btn.classList.toggle('visible', window.scrollY > 300));
+  </script>
+
+</body>
+</html>
