@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CardPecker — Maximize Your Card Rewards</title>
+  <meta name="description" content="Stop guessing which credit card to swipe. CardPecker tells you instantly which card earns the most rewards for every purchase.">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="/" class="nav-brand"><img src="/images/travelpal-logo.png" alt="TravelPal" height="36"><span>TravelPal LLC</span></a>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/cardpecker/">CardPecker</a></li>
+        <li><a href="/blog/">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero hero-centered">
+    <div class="container">
+      <img src="/images/cardpecker-icon.png" alt="CardPecker" style="width:96px;height:96px;border-radius:22px;margin:0 auto 20px;">
+      <h1><span class="text-gradient">CardPecker</span></h1>
+      <p>Stop guessing which credit card to swipe. CardPecker tells you instantly which card earns the most rewards for every purchase.</p>
+      <!-- Replace # with your actual App Store link once published -->
+      <a href="#" class="btn btn-gradient">Download on the App Store</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <h2>Why CardPecker?</h2>
+      <div class="feature-grid">
+
+        <div class="feature-card">
+          <div class="feature-icon blue">&#127183;</div>
+          <h3>Best Card, Instantly</h3>
+          <p>Tap any spending category and see which card earns the highest effective return. No spreadsheets needed.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon green">&#127915;</div>
+          <h3>Track Every Credit</h3>
+          <p>Never let a travel credit, dining credit, or free night go to waste. The Coupon Book tracks it all and auto-refreshes each billing period.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon purple">&#128736;</div>
+          <h3>Built for Multi-Card Wallets</h3>
+          <p>Whether you carry 2 cards or 12, subcategories let you distinguish Delta from United, Hyatt from Marriott.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon orange">&#128274;</div>
+          <h3>100% Private &amp; Offline</h3>
+          <p>Your data never leaves your device. No account, no internet, no tracking. Just a fast, private tool.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="cta">
+      <h2>Ready to maximize your rewards?</h2>
+      <p>Download CardPecker and always use the right card.</p>
+      <a href="#" class="btn btn-gradient">Download on the App Store</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <span>&copy; 2026 TravelPal. All rights reserved.</span>
+      <ul class="footer-links">
+        <li><a href="/cardpecker/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="/cardpecker/support/">Support</a></li>
+        <li><a href="/blog/">Blog</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">&#8679;</button>
+  <script>
+    const btn = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', () => btn.classList.toggle('visible', window.scrollY > 300));
+  </script>
+
+</body>
+</html>

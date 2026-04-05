@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelPal — Apps That Work for You</title>
+  <meta name="description" content="TravelPal builds smart, privacy-first mobile apps. Explore CardPecker and more.">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="/" class="nav-brand"><img src="/images/travelpal-logo.png" alt="TravelPal" height="36"><span>TravelPal LLC</span></a>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/cardpecker/">CardPecker</a></li>
+        <li><a href="/blog/">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-text">
+        <h1>Smart <span class="text-gradient">Travel Apps</span>,<br>Built for You</h1>
+        <p>We build simple, powerful travel apps that respect your privacy and make every journey easier.</p>
+        <a href="/cardpecker/" class="btn btn-gradient">Explore CardPecker</a>
+      </div>
+      <div class="hero-image">
+        <img src="/images/hero.png" alt="TravelPal apps" width="512" height="435">
+      </div>
+    </div>
+  </section>
+
+<section class="container">
+    <div class="app-grid">
+
+      <a href="/cardpecker/" class="app-card">
+        <div class="app-card-icon" style="background:none; padding:0; overflow:hidden;">
+          <img src="/images/cardpecker-icon.png" alt="CardPecker" style="width:72px;height:72px;border-radius:16px;">
+        </div>
+        <h3>CardPecker</h3>
+        <p class="tagline">Maximize Your Card Rewards</p>
+        <p class="badge">iOS &rarr;</p>
+      </a>
+
+      <!-- Future apps go here -->
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <span>&copy; 2026 TravelPal. All rights reserved.</span>
+      <ul class="footer-links">
+        <li><a href="/cardpecker/privacy-policy/">Privacy</a></li>
+        <li><a href="/cardpecker/support/">Support</a></li>
+        <li><a href="/blog/">Blog</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">&#8679;</button>
+  <script>
+    const btn = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', () => btn.classList.toggle('visible', window.scrollY > 300));
+  </script>
+
+</body>
+</html>
