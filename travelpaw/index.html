@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelPaw — Your Trip, One Moment at a Time</title>
+  <meta name="description" content="TravelPaw organizes flights, hotels, rentals, packing, travelers, documents, calendar events, and travel-day moments in one calm trip timeline.">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="/" class="nav-brand"><img src="/images/travelpal-logo.png" alt="TravelPal LLC"></a>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/travelpaw/">TravelPaw</a></li>
+        <li><a href="/cardpecker/">CardPecker</a></li>
+        <li><a href="/monuments/">Monuments</a></li>
+        <li><a href="/blog/">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero hero-centered">
+    <div class="container">
+      <img src="/images/travelpaw-icon.png" alt="TravelPaw" style="width:96px;height:96px;border-radius:22px;margin:0 auto 20px;">
+      <h1><span class="text-gradient">TravelPaw</span></h1>
+      <p>Your trip, one moment at a time. TravelPaw keeps flights, hotels, rentals, packing, travelers, documents, calendar events, and travel-day moments in one calm timeline.</p>
+      <span class="btn btn-outline">Coming Soon on the App Store</span>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <h2>Why TravelPaw?</h2>
+      <div class="feature-grid">
+
+        <div class="feature-card">
+          <div class="feature-icon blue">&#128197;</div>
+          <h3>Moment Timeline</h3>
+          <p>See what matters next before and during travel: confirmations, packing, check-in, boarding, arrival, and more.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon green">&#128188;</div>
+          <h3>Everything in One Trip</h3>
+          <p>Organize flights, hotels, rental cars, traveler details, documents, room numbers, seats, and confirmation numbers together.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon purple">&#127777;</div>
+          <h3>Packing with Context</h3>
+          <p>Prepare with packing notes and destination weather cues, so the trip feels easier before you leave.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon orange">&#128257;</div>
+          <h3>Share, Import, and Export</h3>
+          <p>Add trip events to Calendar, share TravelPaw files, import plans, and back up your travel data with iCloud Drive.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="cta">
+      <h2>Built for calm travel days</h2>
+      <p>TravelPaw helps keep the next step visible, from planning through arrival.</p>
+      <span class="btn btn-gradient">App Store Link Coming Soon</span>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <span>&copy; 2026 TravelPal LLC. All rights reserved.</span>
+      <ul class="footer-links">
+        <li><a href="/travelpaw/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="/travelpaw/support/">Support</a></li>
+        <li><a href="/blog/">Blog</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">&#8679;</button>
+  <script>
+    const btn = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', () => btn.classList.toggle('visible', window.scrollY > 300));
+  </script>
+
+</body>
+</html>
