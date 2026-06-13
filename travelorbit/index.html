@@ -3,10 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TravelOrbit — Your Trip, One Moment at a Time</title>
-  <meta name="description" content="TravelOrbit organizes flights, hotels, rentals, packing, travelers, documents, calendar events, and travel-day moments in one calm trip timeline.">
+  <title>TravelOrbit — Your trip, one moment at a time</title>
+  <meta name="description" content="TravelOrbit is a real-time travel-day co-pilot. It surfaces the one thing to do next—leave-by times, check-in, gates, arrival—while keeping flights, hotels, travelers, and documents in one calm timeline.">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/travelorbit.css">
   <link rel="icon" type="image/png" href="/images/favicon.png">
+  <meta property="og:title" content="TravelOrbit — Your trip, one moment at a time">
+  <meta property="og:description" content="A real-time travel-day co-pilot. The next move, right when you need it.">
+  <meta property="og:image" content="/images/travelorbit-icon.png">
 </head>
 <body>
 
@@ -24,55 +28,150 @@
     </div>
   </nav>
 
-  <section class="hero hero-centered">
-    <div class="container">
-      <img src="/images/travelorbit-icon.png" alt="TravelOrbit" style="width:96px;height:96px;border-radius:22px;margin:0 auto 20px;">
-      <h1><span class="text-gradient">TravelOrbit</span></h1>
-      <p>Your trip, one moment at a time. TravelOrbit keeps flights, hotels, rentals, packing, travelers, documents, calendar events, and travel-day moments in one calm timeline.</p>
-      <a href="https://apps.apple.com/app/id6772864604" class="btn btn-outline">Download on the App Store</a>
-    </div>
-  </section>
+  <main class="to-page">
 
-  <section class="features">
-    <div class="container">
-      <h2>Why TravelOrbit?</h2>
-      <div class="feature-grid">
-
-        <div class="feature-card">
-          <div class="feature-icon blue">&#128197;</div>
-          <h3>Moment Timeline</h3>
-          <p>See what matters next before and during travel: confirmations, packing, check-in, boarding, arrival, and more.</p>
+    <!-- ============ HERO ============ -->
+    <header class="to-hero">
+      <div class="to-wrap">
+        <div class="to-hero-copy">
+          <span class="to-eyebrow to-reveal">Real-time travel-day co-pilot</span>
+          <h1 class="to-reveal d1">Your trip,<br>one <span class="ital">moment</span><br>at a time.</h1>
+          <p class="lede to-reveal d2">Most travel apps hand you a folder of bookings. TravelOrbit hands you the next move — when to leave, where to check in, which gate, what's next — surfaced exactly when it matters.</p>
+          <div class="to-cta-row to-reveal d2">
+            <a href="https://apps.apple.com/app/id6772864604" class="to-btn to-btn-primary"><span class="apple" aria-hidden="true"><svg viewBox="0 0 384 512" width="15" height="15" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg></span> Download on the App Store</a>
+            <a href="#how" class="to-btn to-btn-ghost">See how it works</a>
+          </div>
+          <p class="to-fineprint to-reveal d2">Free to plan &amp; sync your own devices. <b>Plus</b> unlocks live status, sharing &amp; automation.</p>
         </div>
 
-        <div class="feature-card">
-          <div class="feature-icon green">&#128188;</div>
-          <h3>Everything in One Trip</h3>
-          <p>Organize flights, hotels, rental cars, traveler details, documents, room numbers, seats, and confirmation numbers together.</p>
+        <div class="to-hero-stage to-reveal d1">
+          <div class="to-orbit alt" aria-hidden="true"></div>
+          <div class="to-orbit" aria-hidden="true"></div>
+          <div class="to-phone">
+            <img src="/images/travelorbit-screens/home-moment.png" alt="TravelOrbit home screen showing the current travel moment with a countdown" loading="eager" width="750" height="1624">
+          </div>
         </div>
+      </div>
+    </header>
 
-        <div class="feature-card">
-          <div class="feature-icon purple">&#127777;</div>
-          <h3>Packing with Context</h3>
-          <p>Prepare with packing notes and destination weather cues, so the trip feels easier before you leave.</p>
-        </div>
+    <!-- ============ POSITIONING STRIP ============ -->
+    <section class="to-strip">
+      <div class="to-wrap to-reveal">
+        <p class="kicker">Planners vs. co-pilots</p>
+        <h2>A planner <span class="hl">organizes</span> your trip.<br>TravelOrbit <span class="hl">runs</span> it.</h2>
+        <p class="sub">Like a navigator for your whole journey — calm before, certain during.</p>
+      </div>
+    </section>
 
-        <div class="feature-card">
-          <div class="feature-icon orange">&#128257;</div>
-          <h3>Share, Import, and Export</h3>
-          <p>Add trip events to Calendar, share TravelOrbit files, import plans, and back up your travel data with iCloud Drive.</p>
-        </div>
+    <!-- ============ FEATURES ============ -->
+    <div id="how" class="to-features">
+      <div class="to-wrap">
+
+        <!-- 1 -->
+        <section class="to-feature">
+          <div class="to-feature-copy to-reveal">
+            <div class="to-feature-num">01 — The moment engine</div>
+            <h2>The next step, before you ask</h2>
+            <p>One screen, one focus. TravelOrbit reads your itinerary and surfaces the single thing that matters right now — confirm bookings, pack, check in, leave home — then quietly advances as your day unfolds.</p>
+            <ul><li>Leave-by timing</li><li>Auto-advancing timeline</li><li>Gentle countdowns</li></ul>
+          </div>
+          <div class="to-feature-media to-reveal d1">
+            <div class="pad"><div class="to-phone"><img src="/images/travelorbit-screens/home-moment.png" alt="Current moment with a 14-day countdown" loading="lazy" width="750" height="1624"></div></div>
+          </div>
+        </section>
+
+        <!-- 2 -->
+        <section class="to-feature flip">
+          <div class="to-feature-copy to-reveal">
+            <div class="to-feature-num">02 — Travel day</div>
+            <h2>Your travel day, minute by minute</h2>
+            <p>On the day itself, TravelOrbit follows the route — flight number, gate, terminal, boarding estimate, and an offline map of the airport — so the right detail is on screen the moment you need it, even with no signal.</p>
+            <ul><li>Live flight status</li><li>Gate &amp; terminal</li><li>Offline route map</li></ul>
+          </div>
+          <div class="to-feature-media to-reveal d1">
+            <div class="pad"><div class="to-phone"><img src="/images/travelorbit-screens/travel-day.png" alt="Travel-day screen with flight SEA to TPE, gate and airport map" loading="lazy" width="750" height="1624"></div></div>
+          </div>
+        </section>
+
+        <!-- 3 -->
+        <section class="to-feature">
+          <div class="to-feature-copy to-reveal">
+            <div class="to-feature-num">03 — One trip, everything</div>
+            <h2>Every booking in one timeline</h2>
+            <p>Flights, hotels, rental cars, ground transit and activities live together in a single, scrollable trip — with seats, room numbers, confirmation codes and times exactly where you expect them.</p>
+            <ul><li>Flights &amp; hotels</li><li>Cars &amp; transit</li><li>Seats &amp; confirmations</li></ul>
+          </div>
+          <div class="to-feature-media to-reveal d1">
+            <div class="pad"><div class="to-phone"><img src="/images/travelorbit-screens/trip-preview.png" alt="Trip preview showing the full itinerary" loading="lazy" width="750" height="1624"></div></div>
+          </div>
+        </section>
+
+        <!-- 4 -->
+        <section class="to-feature flip">
+          <div class="to-feature-copy to-reveal">
+            <div class="to-feature-num">04 — Prepared</div>
+            <h2>Packing, with context</h2>
+            <p>A packing list that knows where you're going. Pair it with destination weather cues so the trip feels handled before you ever zip the bag.</p>
+            <ul><li>Smart packing list</li><li>Destination weather</li><li>Pre-trip checklist</li></ul>
+          </div>
+          <div class="to-feature-media to-reveal d1">
+            <div class="pad"><div class="to-phone"><img src="/images/travelorbit-screens/packing-list.png" alt="Packing list screen" loading="lazy" width="750" height="1624"></div></div>
+          </div>
+        </section>
+
+        <!-- 5 -->
+        <section class="to-feature">
+          <div class="to-feature-copy to-reveal">
+            <div class="to-feature-num">05 — Everyone aboard</div>
+            <h2>Every traveler, every document</h2>
+            <p>Keep the whole party in one place — names, seats, room assignments and travel documents — with passport and ID scans encrypted on device and never sent to a server.</p>
+            <ul><li>Multi-traveler</li><li>Passport &amp; ID</li><li>Encrypted on device</li></ul>
+          </div>
+          <div class="to-feature-media to-reveal d1">
+            <div class="pad"><div class="to-phone"><img src="/images/travelorbit-screens/traveler.png" alt="Traveler details screen" loading="lazy" width="750" height="1624"></div></div>
+          </div>
+        </section>
+
+        <!-- 6 -->
+        <section class="to-feature flip">
+          <div class="to-feature-copy to-reveal">
+            <div class="to-feature-num">06 — Yours to keep</div>
+            <h2>Share, import &amp; sync</h2>
+            <p>Add any moment to your calendar, share a trip as a file, import plans from a companion, and back everything up to iCloud — your travel data stays yours, on your devices.</p>
+            <ul><li>Add to Calendar</li><li>Share &amp; import trips</li><li>iCloud backup</li></ul>
+          </div>
+          <div class="to-feature-media to-reveal d1">
+            <div class="pad"><div class="to-phone"><img src="/images/travelorbit-screens/add-to-calendar.png" alt="Add trip events to Calendar screen" loading="lazy" width="750" height="1624"></div></div>
+          </div>
+        </section>
 
       </div>
     </div>
-  </section>
 
-  <section class="container">
-    <div class="cta">
-      <h2>Built for calm travel days</h2>
-      <p>TravelOrbit helps keep the next step visible, from planning through arrival.</p>
-      <a href="https://apps.apple.com/app/id6772864604" class="btn btn-gradient">Download on the App Store</a>
-    </div>
-  </section>
+    <!-- ============ PRIVACY ============ -->
+    <section class="to-privacy">
+      <div class="to-wrap to-reveal">
+        <div class="glyph" aria-hidden="true">&#128274;</div>
+        <div>
+          <h2>Private by design</h2>
+          <p>TravelOrbit is local-first. Your itinerary and documents live on your device and in your own iCloud — passport and ID scans are encrypted and never handed to us. No account required to start.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FINAL CTA ============ -->
+    <section class="to-final">
+      <div class="to-wrap to-reveal">
+        <h2>Travel like it's <span class="ital">handled</span>.</h2>
+        <p>The calm way to move through a trip — from the first countdown to the moment you're home.</p>
+        <div class="to-cta-row">
+          <a href="https://apps.apple.com/app/id6772864604" class="to-btn to-btn-primary"><span class="apple" aria-hidden="true"><svg viewBox="0 0 384 512" width="15" height="15" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg></span> Download on the App Store</a>
+        </div>
+        <p class="to-platform">iPhone &middot; iPad &middot; Apple Watch</p>
+      </div>
+    </section>
+
+  </main>
 
   <footer class="footer">
     <div class="container">
@@ -89,6 +188,12 @@
   <script>
     const btn = document.querySelector('.back-to-top');
     window.addEventListener('scroll', () => btn.classList.toggle('visible', window.scrollY > 300));
+
+    // Scroll reveal
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.16, rootMargin: '0px 0px -8% 0px' });
+    document.querySelectorAll('.to-reveal').forEach(el => io.observe(el));
   </script>
 
 </body>
