@@ -159,7 +159,7 @@
   box-shadow: var(--shadow-phone);
   z-index: 2;
 }
-.to-phone img { width: 100%; border-radius: 38px; display: block; }
+.to-phone img { width: 100%; height: auto; aspect-ratio: 747 / 1624; border-radius: 38px; display: block; }
 .to-hero-stage .to-phone { animation: to-float 7s ease-in-out infinite; }
 @keyframes to-float { 0%,100% { transform: translateY(-8px); } 50% { transform: translateY(10px); } }
 
