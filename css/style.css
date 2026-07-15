@@ -456,6 +456,7 @@ a.app-card:hover, .app-card:hover { transform: translateY(-3px); box-shadow: var
 .prose th { background: var(--paper-2); font-weight: 700; }
 .table-scroll { overflow-x: auto; }
 .prose blockquote { border-left: 3px solid var(--gold); padding: 4px 0 4px 18px; color: var(--ink-soft); font-style: italic; margin: 20px 0; }
+.prose .source-note { margin-top: 34px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: .9rem; }
 
 .toc {
   border: 1px solid var(--line); border-radius: var(--r);
