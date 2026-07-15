@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CardPecker — Always know which card to use</title>
-  <meta name="description" content="CardPecker compares rewards, tracks statement credits, and gets more value from every card in your wallet — fully private and offline, with no bank logins.">
+  <meta name="description" content="CardPecker compares rewards, tracks statement credits, offers, receipts, and points balances — get more value from every card in your wallet, with no account and no bank logins.">
   <link rel="canonical" href="https://cooltravelpal.com/cardpecker/">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" type="image/png" href="/images/favicon.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Cool TravelPal">
   <meta property="og:title" content="CardPecker — Always know which card to use">
-  <meta property="og:description" content="Compare rewards, track credits, and get more value from every card in your wallet. Private and offline.">
+  <meta property="og:description" content="Compare rewards, track credits, offers, receipts, and points balances. Private by design — no account, no bank logins.">
   <meta property="og:url" content="https://cooltravelpal.com/cardpecker/">
   <meta property="og:image" content="https://cooltravelpal.com/images/cardpecker-icon.png">
   <script type="application/ld+json">
@@ -25,7 +25,7 @@
         "applicationCategory": "FinanceApplication",
         "url": "https://cooltravelpal.com/cardpecker/",
         "installUrl": "https://apps.apple.com/us/app/cardpecker/id6761355656",
-        "description": "CardPecker tells you which credit card to use for every purchase, compares rewards across your wallet, and tracks statement credits before they expire. All data stays on your device.",
+        "description": "CardPecker tells you which credit card to use for every purchase, compares rewards across your wallet, tracks statement credits, card-linked offers, receipts, and loyalty-points balances. No account and no bank logins — your data stays on your device.",
         "publisher": { "@id": "https://cooltravelpal.com/#org" }
       },
       {
@@ -47,7 +47,12 @@
           {
             "@type": "Question",
             "name": "Where is my data stored?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Everything you enter — cards, categories, and credit usage — is stored locally on your device. There is no account, no server, and no tracking. Uninstalling the app deletes all of its data." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Everything you enter — cards, categories, credits, offers, receipts, and balances — is stored locally on your device. There is no account, no CardPecker server, and no tracking. You can optionally back up to your own iCloud Drive." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can CardPecker fill in my points balances automatically?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes, without your passwords. The optional CardPecker Sync Safari extension reads the balance and card-linked offers shown on a loyalty or issuer page you are already signed in to and sends them to the app on your device. It never sees or stores your passwords. You can also sync inside the app, or just type balances in manually." }
           },
           {
             "@type": "Question",
@@ -100,12 +105,12 @@
       <div class="wrap">
         <img class="app-icon-lg" src="/images/cardpecker-icon.png" alt="CardPecker app icon" width="96" height="96">
         <h1>Always know <span class="hl-cards">which card</span> to use.</h1>
-        <p class="lede">Compare rewards, track credits, and get more value from every card in your wallet — without spreadsheets, bank logins, or guesswork at the register.</p>
+        <p class="lede">Compare rewards, track credits and offers, log receipts, and watch your points balances grow — everything your wallet earns, without spreadsheets, bank logins, or guesswork at the register.</p>
         <div class="cta-row">
           <a href="https://apps.apple.com/us/app/cardpecker/id6761355656" class="btn btn-cards">Download on the App Store</a>
           <a href="/cards-points/" class="btn btn-outline">Read our Cards &amp; Points guides</a>
         </div>
-        <p class="fineprint">iPhone · No account · Works offline</p>
+        <p class="fineprint">iPhone · No account · No bank logins</p>
       </div>
     </section>
 
@@ -129,8 +134,12 @@
         <div class="check-grid">
           <div class="check-item"><span class="tick cards">✓</span><div><h3>Best card, instantly</h3><p>Tap any spending category and see which card earns the highest effective return across your whole wallet.</p></div></div>
           <div class="check-item"><span class="tick cards">✓</span><div><h3>Track every credit</h3><p>The Coupon Book tracks travel credits, dining credits, and free nights, auto-refreshing each billing period.</p></div></div>
+          <div class="check-item"><span class="tick cards">✓</span><div><h3>Card-linked offers</h3><p>Keep issuer offers in one place — and see the ones you can use at merchants near you, if you allow location while using the app.</p></div></div>
+          <div class="check-item"><span class="tick cards">✓</span><div><h3>Receipts, scanned</h3><p>Point the camera at a paper receipt and CardPecker reads the merchant and total — or attach a photo to any logged purchase.</p></div></div>
+          <div class="check-item"><span class="tick cards">✓</span><div><h3>Rewards balances</h3><p>Track your miles and points across loyalty programs and see what they're worth in cash, with up-to-date point valuations. One-time unlock.</p></div></div>
+          <div class="check-item"><span class="tick cards">✓</span><div><h3>Sync without passwords</h3><p>The optional Safari extension auto-fills balances and offers from pages you're already signed in to — it never sees or stores a password.</p></div></div>
           <div class="check-item"><span class="tick cards">✓</span><div><h3>Built for multi-card wallets</h3><p>Whether you carry 2 cards or 12, subcategories keep brand-specific rules straight.</p></div></div>
-          <div class="check-item"><span class="tick cards">✓</span><div><h3>Private &amp; offline</h3><p>Your data stays on your device. No account, no internet requirement, no tracking.</p></div></div>
+          <div class="check-item"><span class="tick cards">✓</span><div><h3>Backed up, your way</h3><p>One-tap backup and restore, plus optional automatic weekly backups to your own iCloud Drive — never to our servers.</p></div></div>
         </div>
       </div>
     </section>
@@ -140,10 +149,12 @@
         <div class="section-head"><h2>Privacy, plainly</h2></div>
         <div class="prose" style="max-width:700px;">
           <ul>
-            <li><strong>What's stored:</strong> the cards, reward categories, and credit usage you enter — locally on your device only.</li>
-            <li><strong>How data gets in:</strong> you enter it manually. Adding a card takes a couple of minutes, once.</li>
-            <li><strong>Bank credentials:</strong> never requested, never stored. CardPecker doesn't connect to your accounts — it doesn't even need your card numbers.</li>
-            <li><strong>What CardPecker doesn't do:</strong> no account, no analytics, no advertising identifiers, no data sold or shared. Uninstalling deletes everything.</li>
+            <li><strong>What's stored:</strong> the cards, reward categories, credits, offers, receipts, and balances you track — locally on your device only.</li>
+            <li><strong>How data gets in:</strong> you enter it, scan a receipt with the camera, or let the optional Safari extension read a balance off a page you're already signed in to. Nothing is fetched behind your back.</li>
+            <li><strong>Bank credentials:</strong> never requested, never stored. CardPecker doesn't log in to your accounts — it doesn't even need your card numbers. The sync extension only reads what's already shown on your screen, and never your passwords.</li>
+            <li><strong>Location:</strong> used only while you're in the app, to surface nearby card-linked offers — never stored, never shared. It's entirely optional.</li>
+            <li><strong>Backups:</strong> optional, and they go to your own iCloud Drive — there is no CardPecker server.</li>
+            <li><strong>What CardPecker doesn't do:</strong> no account, no analytics, no advertising identifiers, no data sold or shared.</li>
           </ul>
           <p>The full policy is short and readable: <a href="/cardpecker/privacy-policy/">CardPecker Privacy Policy</a>.</p>
         </div>
@@ -155,7 +166,7 @@
         <div class="section-head"><h2>Frequently asked questions</h2></div>
         <div class="faq-item">
           <div class="faq-q">Does CardPecker connect to my bank?</div>
-          <div class="faq-a"><p>No. CardPecker never asks for bank credentials and never connects to your accounts. You add your cards and their reward categories manually — no card numbers needed.</p></div>
+          <div class="faq-a"><p>No. CardPecker never asks for bank credentials and never logs in to your accounts. You add your cards and their reward categories manually — no card numbers needed. If you want balances filled in automatically, the optional Safari extension reads only what's already displayed on a page you signed in to yourself.</p></div>
         </div>
         <div class="faq-item">
           <div class="faq-q">How does it know which card earns the most?</div>
@@ -167,7 +178,11 @@
         </div>
         <div class="faq-item">
           <div class="faq-q">Does anything sync or leave my device?</div>
-          <div class="faq-a"><p>CardPecker is built local-first: your data is stored on your device, with no account and no tracking. See the <a href="/cardpecker/privacy-policy/">privacy policy</a> for the details.</p></div>
+          <div class="faq-a"><p>CardPecker is built local-first: your data is stored on your device, with no account and no tracking. Two things are optional and under your control — backups to your own iCloud Drive, and the Safari sync extension, which hands balances and offers from your screen to the app on the same device. See the <a href="/cardpecker/privacy-policy/">privacy policy</a> for the details.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What is CardPecker Rewards?</div>
+          <div class="faq-a"><p>An optional one-time purchase that unlocks the rewards-balance tracker: keep miles and points for programs like Chase, Amex, Hyatt, and Delta in one place, see their cash value with up-to-date point valuations, and view your whole portfolio at a glance. The core which-card recommendations stay free.</p></div>
         </div>
         <div class="faq-item">
           <div class="faq-q">Is CardPecker financial advice?</div>
