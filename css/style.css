@@ -113,6 +113,7 @@ h2 { font-family: var(--font-display); font-weight: 600; }
 .badge-cat.cards  { background: var(--cards-bg);  color: var(--cards); }
 .badge-cat.exp    { background: var(--exp-bg);    color: var(--exp); }
 .badge-cat.appg   { background: var(--paper-2);   color: var(--ink-soft); }
+.badge-cat.tech   { background: #ECEAF7;          color: #4F46A5; }
 
 /* ============ Header ============ */
 .site-header {
