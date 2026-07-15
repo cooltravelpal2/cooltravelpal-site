@@ -3,93 +3,201 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Monuments Tour — Travel Guide at Your Fingertip</title>
-  <meta name="description" content="Unlock unforgettable adventures with Monuments Tour. Expert-curated itineraries, 24/7 AI tour guides, and verified city guides at your fingertip.">
+  <title>Museum Knight — Discover places through stories and quests</title>
+  <meta name="description" content="Museum Knight is an interactive guide for discovering museums, landmarks, parks, and cities through story quests — clues, maps, and audio narration included.">
+  <link rel="canonical" href="https://cooltravelpal.com/monuments/">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" type="image/png" href="/images/favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cool TravelPal">
+  <meta property="og:title" content="Museum Knight — Discover places through stories and quests">
+  <meta property="og:description" content="An interactive guide for discovering museums, landmarks, parks, and cities through story quests.">
+  <meta property="og:url" content="https://cooltravelpal.com/monuments/">
+  <meta property="og:image" content="https://cooltravelpal.com/images/monuments-icon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "Museum Knight",
+        "operatingSystem": "iOS",
+        "applicationCategory": "TravelApplication",
+        "url": "https://cooltravelpal.com/monuments/",
+        "installUrl": "https://apps.apple.com/us/app/monuments-tour/id6742383114",
+        "description": "Museum Knight is an interactive guide for discovering museums, landmarks, parks, and cities through story quests with clues, maps, and audio narration.",
+        "publisher": { "@id": "https://cooltravelpal.com/#org" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cooltravelpal.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Apps", "item": "https://cooltravelpal.com/apps/" },
+          { "@type": "ListItem", "position": 3, "name": "Museum Knight", "item": "https://cooltravelpal.com/monuments/" }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
-  <nav class="nav">
-    <div class="container">
-      <a href="/" class="nav-brand"><img src="/images/travelpal-logo.png" alt="TravelPal LLC"></a>
-      <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
-      <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/travelorbit/">TravelOrbit</a></li>
-        <li><a href="/cardpecker/">CardPecker</a></li>
-        <li><a href="/monuments/">Monuments</a></li>
-        <li><a href="/blog/">Blog</a></li>
-      </ul>
+  <header class="site-header">
+    <div class="wrap site-header-row">
+      <a class="brand" href="/"><img src="/images/travelpal-logo.png" alt="Cool TravelPal — home" width="120" height="40"></a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="/travel/">Travel</a></li>
+          <li><a href="/cards-points/">Cards &amp; Points</a></li>
+          <li><a href="/experiences/">Experiences</a></li>
+          <li class="has-sub">
+            <a href="/apps/">Apps</a>
+            <ul class="sub-list">
+              <li><a href="/travelorbit/">TravelOrbit</a></li>
+              <li><a href="/cardpecker/">CardPecker</a></li>
+              <li><a href="/monuments/">Museum Knight</a></li>
+              <li class="sub-all"><a href="/apps/">All apps</a></li>
+            </ul>
+          </li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+        <form class="nav-search" role="search" action="/blog/">
+          <input type="search" name="q" placeholder="Search guides…" aria-label="Search guides">
+        </form>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <section class="hero hero-centered">
-    <div class="container">
-      <img src="/images/monuments-icon.png" alt="Monuments Tour" style="width:96px;height:96px;border-radius:22px;margin:0 auto 20px;">
-      <h1><span class="text-gradient">Monuments Tour</span></h1>
-      <p>Unlock unforgettable adventures. Expert-curated itineraries, a 24/7 personal tour guide, and verified city guides — all at your fingertip.</p>
-      <a href="https://apps.apple.com/us/app/monuments-tour/id6742383114" class="btn btn-gradient" target="_blank">Download on the App Store</a>
-    </div>
-  </section>
+  <main>
 
-  <section class="features">
-    <div class="container">
-      <h2>Why Monuments Tour?</h2>
-      <div class="feature-grid">
-
-        <div class="feature-card">
-          <div class="feature-icon blue">&#127758;</div>
-          <h3>Personalized Itineraries</h3>
-          <p>Our expert guides and AI create travel plans tailored to your interests, inspired by millions of verified traveler experiences.</p>
+    <section class="product-hero">
+      <div class="wrap">
+        <img class="app-icon-lg" src="/images/monuments-icon.png" alt="Museum Knight app icon" width="96" height="96">
+        <h1>Discover places through <span class="hl-exp">stories and quests</span>.</h1>
+        <p class="lede">Museum Knight is an interactive guide that turns museums, landmarks, parks, and city walks into story quests — follow the clues, unlock each stop, and hear the tale behind what you're looking at.</p>
+        <div class="cta-row">
+          <a href="https://apps.apple.com/us/app/monuments-tour/id6742383114" class="btn btn-exp">Download on the App Store</a>
+          <a href="/experiences/" class="btn btn-outline">Read our Experiences guides</a>
         </div>
-
-        <div class="feature-card">
-          <div class="feature-icon green">&#128100;</div>
-          <h3>24/7 Personal Tour Guide</h3>
-          <p>Explore confidently with a tour guide in your pocket. Get insights on art, history, and hidden gems whenever you need them.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon purple">&#127963;</div>
-          <h3>Verified City Guides</h3>
-          <p>All guides are sourced directly from verified official channels. No intermediaries, no affiliate bias — just authentic travel information.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon orange">&#129302;</div>
-          <h3>Responsible AI</h3>
-          <p>We combine responsible AI technology with human curation. Every guide is carefully reviewed by real travel specialists and art historians.</p>
-        </div>
-
+        <p class="fineprint">iPhone · Indoor museum quests and outdoor city, park &amp; trail quests</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="container">
-    <div class="cta">
-      <h2>Your next adventure awaits</h2>
-      <p>Make art and history accessible — wherever you travel.</p>
-      <a href="https://apps.apple.com/us/app/monuments-tour/id6742383114" class="btn btn-gradient" target="_blank">Download on the App Store</a>
-    </div>
-  </section>
+    <section class="section section-alt">
+      <div class="wrap">
+        <div class="section-head"><h2>How a quest works</h2></div>
+        <div class="scenario-grid">
+          <div class="scenario"><h3>1 · Choose a quest</h3><p>Pick a guided experience at a museum, landmark, park, or neighborhood — each one is a story told through a sequence of real stops.</p></div>
+          <div class="scenario"><h3>2 · Follow the clues</h3><p>Each stop is revealed through hints and clues that guide you to the next work, monument, or viewpoint — discovery, not a checklist.</p></div>
+          <div class="scenario"><h3>3 · Unlock the story</h3><p>Arrive at a stop and its tale unlocks — narrated audio stories about the art, history, and hidden details in front of you.</p></div>
+        </div>
+      </div>
+    </section>
 
-  <footer class="footer">
-    <div class="container">
-      <span>&copy; 2026 TravelPal LLC. All rights reserved.</span>
-      <ul class="footer-links">
-        <li><a href="/monuments/privacy-policy/">Privacy Policy</a></li>
-        <li><a href="/monuments/support/">Support</a></li>
-        <li><a href="/blog/">Blog</a></li>
-      </ul>
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head"><h2>An interactive travel guide, not just a game</h2></div>
+        <div class="check-grid">
+          <div class="check-item"><span class="tick exp">✦</span><div><h3>Quests</h3><p>Single guided experiences — a museum wing, a landmark cluster, a park trail, or a city walk — with stops, clues, and rewards.</p></div></div>
+          <div class="check-item"><span class="tick exp">✦</span><div><h3>Sagas</h3><p>Larger story arcs that link quests across a destination, so a whole city unfolds as one progression.</p></div></div>
+          <div class="check-item"><span class="tick exp">✦</span><div><h3>Indoor experiences</h3><p>Museum quests built for halls and collections — find the work, hear its story, move to the next room with purpose.</p></div></div>
+          <div class="check-item"><span class="tick exp">✦</span><div><h3>Outdoor experiences</h3><p>City, park, and trail quests that use the map to guide you between landmarks and reveal each stop on arrival.</p></div></div>
+          <div class="check-item"><span class="tick exp">✦</span><div><h3>Audio narration</h3><p>Character-voiced tales — researched, story-driven, and about three minutes each — so you can look while you listen.</p></div></div>
+          <div class="check-item"><span class="tick exp">✦</span><div><h3>Maps &amp; progression</h3><p>Quest maps track where you've been and what's still locked, turning a visit into an unfolding story.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Before you go</h2>
+          <a class="more" href="/experiences/">All Experiences guides →</a>
+        </div>
+        <div class="story-grid">
+          <a class="story-card" href="/blog/plan-a-museum-visit-without-exhaustion/">
+            <span class="badge-cat exp">Experiences</span>
+            <h3>How to Plan a Museum Visit Without Exhaustion</h3>
+            <p>See more by planning to see less — anchors, routes, breaks, and timing.</p>
+          </a>
+          <a class="story-card" href="/blog/how-early-should-you-arrive-at-the-airport/">
+            <span class="badge-cat travel">Travel</span>
+            <h3>How Early Should You Arrive at the Airport?</h3>
+            <p>Getting to the destination is step one — a practical timing framework.</p>
+          </a>
+          <a class="story-card" href="/blog/beginners-guide-to-credit-card-rewards/">
+            <span class="badge-cat cards">Cards &amp; Points</span>
+            <h3>The Beginner's Guide to Credit-Card Rewards</h3>
+            <p>Pay for the trip well, too — how points and miles actually work.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="cta">
+          <h2>Your next adventure awaits</h2>
+          <p>Make art and history come alive — wherever you travel.</p>
+          <a href="https://apps.apple.com/us/app/monuments-tour/id6742383114" class="btn btn-exp">Download on the App Store</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <img src="/images/travelpal-logo.png" alt="Cool TravelPal">
+          <p>Practical travel guides, credit-card rewards advice, and privacy-first travel apps for every stage of the journey.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="/travel/">Travel</a></li>
+            <li><a href="/cards-points/">Cards &amp; Points</a></li>
+            <li><a href="/experiences/">Experiences</a></li>
+            <li><a href="/blog/">All guides</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Apps</h3>
+          <ul>
+            <li><a href="/travelorbit/">TravelOrbit</a></li>
+            <li><a href="/cardpecker/">CardPecker</a></li>
+            <li><a href="/monuments/">Museum Knight</a></li>
+            <li><a href="/apps/">All apps</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="/about/">About</a></li>
+            <li><a href="mailto:admin@cooltravelpal.com">Contact</a></li>
+            <li><a href="/monuments/support/">Museum Knight Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="/monuments/privacy-policy/">Museum Knight Privacy</a></li>
+            <li><a href="/travelorbit/privacy-policy/">TravelOrbit Privacy</a></li>
+            <li><a href="/cardpecker/privacy-policy/">CardPecker Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 TravelPal LLC. All rights reserved.</span>
+        <span>Cool TravelPal is a TravelPal LLC brand.</span>
+      </div>
     </div>
   </footer>
 
-  <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">&#8679;</button>
-  <script>
-    const btn = document.querySelector('.back-to-top');
-    window.addEventListener('scroll', () => btn.classList.toggle('visible', window.scrollY > 300));
-  </script>
+  <button class="back-to-top" aria-label="Back to top">&#8679;</button>
+  <script src="/js/site.js" defer></script>
 
 </body>
 </html>

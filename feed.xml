@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cool TravelPal Guides</title>
+    <link>https://cooltravelpal.com/blog/</link>
+    <description>Practical travel guides, credit-card rewards advice, and destination-experience guides from Cool TravelPal.</description>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://cooltravelpal.com/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>The Beginner's Guide to Credit-Card Rewards</title>
+      <link>https://cooltravelpal.com/blog/beginners-guide-to-credit-card-rewards/</link>
+      <guid>https://cooltravelpal.com/blog/beginners-guide-to-credit-card-rewards/</guid>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Points, miles, cash back, statement credits, and transfer partners — how the rewards system actually works, and how to get real value from the cards you already carry.</description>
+    </item>
+    <item>
+      <title>How to Track Credit-Card Benefits Before They Expire</title>
+      <link>https://cooltravelpal.com/blog/track-credit-card-benefits-before-they-expire/</link>
+      <guid>https://cooltravelpal.com/blog/track-credit-card-benefits-before-they-expire/</guid>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Annual travel credits, dining credits, and free nights quietly expire unused every year. A simple system for capturing every benefit you're already paying for.</description>
+    </item>
+    <item>
+      <title>How Early Should You Arrive at the Airport?</title>
+      <link>https://cooltravelpal.com/blog/how-early-should-you-arrive-at-the-airport/</link>
+      <guid>https://cooltravelpal.com/blog/how-early-should-you-arrive-at-the-airport/</guid>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Two hours? Three? A practical framework for airport timing — domestic vs. international, checked bags, PreCheck, peak hours, and when the standard advice breaks down.</description>
+    </item>
+    <item>
+      <title>How to Plan a Museum Visit Without Exhaustion</title>
+      <link>https://cooltravelpal.com/blog/plan-a-museum-visit-without-exhaustion/</link>
+      <guid>https://cooltravelpal.com/blog/plan-a-museum-visit-without-exhaustion/</guid>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <description>Museum fatigue sets in after about 90 minutes. See more by planning to see less — a curator-style approach to visits you'll actually remember.</description>
+    </item>
+    <item>
+      <title>Introducing CardPecker</title>
+      <link>https://cooltravelpal.com/blog/introducing-cardpecker/</link>
+      <guid>https://cooltravelpal.com/blog/introducing-cardpecker/</guid>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
+      <description>A simple, private app that tells you which credit card to use for every purchase — no account required, and no data ever leaves your device.</description>
+    </item>
+  </channel>
+</rss>

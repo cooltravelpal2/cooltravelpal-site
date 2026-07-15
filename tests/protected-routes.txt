@@ -1,0 +1,21 @@
+# Protected routes — URLs that MUST keep returning their current content.
+# These are embedded in released iPhone apps (TravelOrbit Swift sources
+# hardcode the three /travelorbit/ URLs) and in App Store Connect metadata
+# (privacy-policy + support URLs for all three apps).
+# Never rename, delete, or redirect these paths.
+/
+/blog/
+/travelorbit/
+/travelorbit/privacy-policy/
+/travelorbit/support/
+/cardpecker/
+/cardpecker/privacy-policy/
+/cardpecker/support/
+/monuments/
+/monuments/privacy-policy/
+/monuments/support/
+# Protected assets (referenced by the pages above)
+/css/style.css
+/css/travelorbit.css
+/images/favicon.png
+/images/travelpal-logo.png
