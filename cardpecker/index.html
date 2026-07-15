@@ -3,93 +3,269 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CardPecker — Maximize Your Card Rewards</title>
-  <meta name="description" content="Stop guessing which credit card to swipe. CardPecker tells you instantly which card earns the most rewards for every purchase.">
+  <title>CardPecker — Always know which card to use</title>
+  <meta name="description" content="CardPecker compares rewards, tracks statement credits, and gets more value from every card in your wallet — fully private and offline, with no bank logins.">
+  <link rel="canonical" href="https://cooltravelpal.com/cardpecker/">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" type="image/png" href="/images/favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cool TravelPal">
+  <meta property="og:title" content="CardPecker — Always know which card to use">
+  <meta property="og:description" content="Compare rewards, track credits, and get more value from every card in your wallet. Private and offline.">
+  <meta property="og:url" content="https://cooltravelpal.com/cardpecker/">
+  <meta property="og:image" content="https://cooltravelpal.com/images/cardpecker-icon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "CardPecker",
+        "operatingSystem": "iOS",
+        "applicationCategory": "FinanceApplication",
+        "url": "https://cooltravelpal.com/cardpecker/",
+        "installUrl": "https://apps.apple.com/us/app/cardpecker/id6761355656",
+        "description": "CardPecker tells you which credit card to use for every purchase, compares rewards across your wallet, and tracks statement credits before they expire. All data stays on your device.",
+        "publisher": { "@id": "https://cooltravelpal.com/#org" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cooltravelpal.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Apps", "item": "https://cooltravelpal.com/apps/" },
+          { "@type": "ListItem", "position": 3, "name": "CardPecker", "item": "https://cooltravelpal.com/cardpecker/" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does CardPecker connect to my bank?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. CardPecker never asks for bank credentials and never connects to your accounts. You add your cards and their reward categories manually, which takes a few minutes once." }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is my data stored?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Everything you enter — cards, categories, and credit usage — is stored locally on your device. There is no account, no server, and no tracking. Uninstalling the app deletes all of its data." }
+          },
+          {
+            "@type": "Question",
+            "name": "How does CardPecker know which card earns the most?",
+            "acceptedAnswer": { "@type": "Answer", "text": "You record each card's earning rates by spending category. When you tap a category, CardPecker compares the effective return across your cards and shows the winner, including subcategory rules like specific airlines or hotel brands." }
+          },
+          {
+            "@type": "Question",
+            "name": "How do credits and offers work?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The Coupon Book tracks your statement credits and recurring benefits, auto-refreshing them each billing period so expiring credits are visible before the clock runs out." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
-  <nav class="nav">
-    <div class="container">
-      <a href="/" class="nav-brand"><img src="/images/travelpal-logo.png" alt="TravelPal LLC"></a>
-      <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
-      <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/travelorbit/">TravelOrbit</a></li>
-        <li><a href="/cardpecker/">CardPecker</a></li>
-        <li><a href="/monuments/">Monuments</a></li>
-        <li><a href="/blog/">Blog</a></li>
-      </ul>
+  <header class="site-header">
+    <div class="wrap site-header-row">
+      <a class="brand" href="/"><img src="/images/travelpal-logo.png" alt="Cool TravelPal — home" width="120" height="40"></a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="/travel/">Travel</a></li>
+          <li><a href="/cards-points/">Cards &amp; Points</a></li>
+          <li><a href="/experiences/">Experiences</a></li>
+          <li class="has-sub">
+            <a href="/apps/">Apps</a>
+            <ul class="sub-list">
+              <li><a href="/travelorbit/">TravelOrbit</a></li>
+              <li><a href="/cardpecker/">CardPecker</a></li>
+              <li><a href="/monuments/">Museum Knight</a></li>
+              <li class="sub-all"><a href="/apps/">All apps</a></li>
+            </ul>
+          </li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+        <form class="nav-search" role="search" action="/blog/">
+          <input type="search" name="q" placeholder="Search guides…" aria-label="Search guides">
+        </form>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <section class="hero hero-centered">
-    <div class="container">
-      <img src="/images/cardpecker-icon.png" alt="CardPecker" style="width:96px;height:96px;border-radius:22px;margin:0 auto 20px;">
-      <h1><span class="text-gradient">CardPecker</span></h1>
-      <p>Stop guessing which credit card to swipe. CardPecker tells you instantly which card earns the most rewards for every purchase.</p>
-      <a href="https://apps.apple.com/us/app/cardpecker/id6761355656" class="btn btn-gradient">Download on the App Store</a>
-    </div>
-  </section>
+  <main>
 
-  <section class="features">
-    <div class="container">
-      <h2>Why CardPecker?</h2>
-      <div class="feature-grid">
-
-        <div class="feature-card">
-          <div class="feature-icon blue">&#127183;</div>
-          <h3>Best Card, Instantly</h3>
-          <p>Tap any spending category and see which card earns the highest effective return. No spreadsheets needed.</p>
+    <section class="product-hero">
+      <div class="wrap">
+        <img class="app-icon-lg" src="/images/cardpecker-icon.png" alt="CardPecker app icon" width="96" height="96">
+        <h1>Always know <span class="hl-cards">which card</span> to use.</h1>
+        <p class="lede">Compare rewards, track credits, and get more value from every card in your wallet — without spreadsheets, bank logins, or guesswork at the register.</p>
+        <div class="cta-row">
+          <a href="https://apps.apple.com/us/app/cardpecker/id6761355656" class="btn btn-cards">Download on the App Store</a>
+          <a href="/cards-points/" class="btn btn-outline">Read our Cards &amp; Points guides</a>
         </div>
-
-        <div class="feature-card">
-          <div class="feature-icon green">&#127915;</div>
-          <h3>Track Every Credit</h3>
-          <p>Never let a travel credit, dining credit, or free night go to waste. The Coupon Book tracks it all and auto-refreshes each billing period.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon purple">&#128736;</div>
-          <h3>Built for Multi-Card Wallets</h3>
-          <p>Whether you carry 2 cards or 12, subcategories let you distinguish Delta from United, Hyatt from Marriott.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon orange">&#128274;</div>
-          <h3>100% Private &amp; Offline</h3>
-          <p>Your data never leaves your device. No account, no internet, no tracking. Just a fast, private tool.</p>
-        </div>
-
+        <p class="fineprint">iPhone · No account · Works offline</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="container">
-    <div class="cta">
-      <h2>Ready to maximize your rewards?</h2>
-      <p>Download CardPecker and always use the right card.</p>
-      <a href="https://apps.apple.com/us/app/cardpecker/id6761355656" class="btn btn-gradient">Download on the App Store</a>
-    </div>
-  </section>
+    <section class="section section-alt">
+      <div class="wrap">
+        <div class="section-head"><h2>The checkout-line question, answered</h2></div>
+        <div class="scenario-grid">
+          <div class="scenario"><h3>Dinner out</h3><p>Tap Dining and see which card's multiplier wins tonight — the answer changes more often than you'd think.</p></div>
+          <div class="scenario"><h3>Booking a flight</h3><p>Airline subcategories tell Delta from United, so the right card wins even when the rule is brand-specific.</p></div>
+          <div class="scenario"><h3>Hotel stay</h3><p>Hyatt or Marriott, points card or credit card — compare the effective return before you book.</p></div>
+          <div class="scenario"><h3>Groceries</h3><p>Quarterly and rotating categories are exactly the thing human memory drops. CardPecker doesn't.</p></div>
+          <div class="scenario"><h3>An expiring credit</h3><p>The Coupon Book shows the dining credit that resets next week — use it on a meal you were buying anyway.</p></div>
+          <div class="scenario"><h3>A new card arrives</h3><p>Add its categories once and every future comparison includes it automatically.</p></div>
+        </div>
+      </div>
+    </section>
 
-  <footer class="footer">
-    <div class="container">
-      <span>&copy; 2026 TravelPal. All rights reserved.</span>
-      <ul class="footer-links">
-        <li><a href="/cardpecker/privacy-policy/">Privacy Policy</a></li>
-        <li><a href="/cardpecker/support/">Support</a></li>
-        <li><a href="/blog/">Blog</a></li>
-      </ul>
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head"><h2>What CardPecker does</h2></div>
+        <div class="check-grid">
+          <div class="check-item"><span class="tick cards">✓</span><div><h3>Best card, instantly</h3><p>Tap any spending category and see which card earns the highest effective return across your whole wallet.</p></div></div>
+          <div class="check-item"><span class="tick cards">✓</span><div><h3>Track every credit</h3><p>The Coupon Book tracks travel credits, dining credits, and free nights, auto-refreshing each billing period.</p></div></div>
+          <div class="check-item"><span class="tick cards">✓</span><div><h3>Built for multi-card wallets</h3><p>Whether you carry 2 cards or 12, subcategories keep brand-specific rules straight.</p></div></div>
+          <div class="check-item"><span class="tick cards">✓</span><div><h3>Private &amp; offline</h3><p>Your data stays on your device. No account, no internet requirement, no tracking.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="wrap">
+        <div class="section-head"><h2>Privacy, plainly</h2></div>
+        <div class="prose" style="max-width:700px;">
+          <ul>
+            <li><strong>What's stored:</strong> the cards, reward categories, and credit usage you enter — locally on your device only.</li>
+            <li><strong>How data gets in:</strong> you enter it manually. Adding a card takes a couple of minutes, once.</li>
+            <li><strong>Bank credentials:</strong> never requested, never stored. CardPecker doesn't connect to your accounts — it doesn't even need your card numbers.</li>
+            <li><strong>What CardPecker doesn't do:</strong> no account, no analytics, no advertising identifiers, no data sold or shared. Uninstalling deletes everything.</li>
+          </ul>
+          <p>The full policy is short and readable: <a href="/cardpecker/privacy-policy/">CardPecker Privacy Policy</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head"><h2>Frequently asked questions</h2></div>
+        <div class="faq-item">
+          <div class="faq-q">Does CardPecker connect to my bank?</div>
+          <div class="faq-a"><p>No. CardPecker never asks for bank credentials and never connects to your accounts. You add your cards and their reward categories manually — no card numbers needed.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How does it know which card earns the most?</div>
+          <div class="faq-a"><p>You record each card's earning rates by category. When you tap a category, CardPecker compares the effective return across your cards and shows the winner — including subcategory rules like specific airlines or hotel brands.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How do credits and offers work?</div>
+          <div class="faq-a"><p>The Coupon Book tracks statement credits and recurring benefits and auto-refreshes them each billing period, so expiring credits surface before the clock runs out. Pair it with our <a href="/blog/track-credit-card-benefits-before-they-expire/">benefit-tracking guide</a>.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Does anything sync or leave my device?</div>
+          <div class="faq-a"><p>CardPecker is built local-first: your data is stored on your device, with no account and no tracking. See the <a href="/cardpecker/privacy-policy/">privacy policy</a> for the details.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Is CardPecker financial advice?</div>
+          <div class="faq-a"><p>No. CardPecker is an organizational tool — it compares the reward rules you enter. It doesn't recommend cards, and nothing on this page is financial, legal, or tax advice.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Go deeper on Cards &amp; Points</h2>
+          <a class="more" href="/cards-points/">All Cards &amp; Points guides →</a>
+        </div>
+        <div class="story-grid">
+          <a class="story-card" href="/blog/beginners-guide-to-credit-card-rewards/">
+            <span class="badge-cat cards">Cards &amp; Points</span>
+            <h3>The Beginner's Guide to Credit-Card Rewards</h3>
+            <p>Points, miles, cash back, and a sane starter strategy.</p>
+          </a>
+          <a class="story-card" href="/blog/track-credit-card-benefits-before-they-expire/">
+            <span class="badge-cat cards">Cards &amp; Points</span>
+            <h3>How to Track Credit-Card Benefits Before They Expire</h3>
+            <p>A simple inventory-and-sweep system for capturing every credit.</p>
+          </a>
+          <a class="story-card" href="/blog/introducing-cardpecker/">
+            <span class="badge-cat appg">App Guides</span>
+            <h3>Introducing CardPecker</h3>
+            <p>Why we built a private, offline answer to "which card?"</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="cta">
+          <h2>Ready to maximize your rewards?</h2>
+          <p>Download CardPecker and always use the right card.</p>
+          <a href="https://apps.apple.com/us/app/cardpecker/id6761355656" class="btn btn-cards">Download on the App Store</a>
+        </div>
+        <p class="disclaimer">CardPecker and the guides on this site are general education and organizational tools, not financial, legal, tax, or investment advice. Card terms change frequently — confirm details with your issuer.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <img src="/images/travelpal-logo.png" alt="Cool TravelPal">
+          <p>Practical travel guides, credit-card rewards advice, and privacy-first travel apps for every stage of the journey.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="/travel/">Travel</a></li>
+            <li><a href="/cards-points/">Cards &amp; Points</a></li>
+            <li><a href="/experiences/">Experiences</a></li>
+            <li><a href="/blog/">All guides</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Apps</h3>
+          <ul>
+            <li><a href="/travelorbit/">TravelOrbit</a></li>
+            <li><a href="/cardpecker/">CardPecker</a></li>
+            <li><a href="/monuments/">Museum Knight</a></li>
+            <li><a href="/apps/">All apps</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="/about/">About</a></li>
+            <li><a href="mailto:admin@cooltravelpal.com">Contact</a></li>
+            <li><a href="/cardpecker/support/">CardPecker Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="/cardpecker/privacy-policy/">CardPecker Privacy</a></li>
+            <li><a href="/travelorbit/privacy-policy/">TravelOrbit Privacy</a></li>
+            <li><a href="/monuments/privacy-policy/">Museum Knight Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 TravelPal LLC. All rights reserved.</span>
+        <span>Cool TravelPal is a TravelPal LLC brand.</span>
+      </div>
     </div>
   </footer>
 
-  <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">&#8679;</button>
-  <script>
-    const btn = document.querySelector('.back-to-top');
-    window.addEventListener('scroll', () => btn.classList.toggle('visible', window.scrollY > 300));
-  </script>
+  <button class="back-to-top" aria-label="Back to top">&#8679;</button>
+  <script src="/js/site.js" defer></script>
 
 </body>
 </html>

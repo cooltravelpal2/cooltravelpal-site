@@ -3,53 +3,202 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog — TravelPal</title>
-  <meta name="description" content="Updates, tips, and news from TravelPal.">
+  <title>Guides — Cool TravelPal</title>
+  <meta name="description" content="Travel planning, credit-card rewards, and destination-experience guides from Cool TravelPal — practical, evergreen, and written for real trips.">
+  <link rel="canonical" href="https://cooltravelpal.com/blog/">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" type="image/png" href="/images/favicon.png">
+  <link rel="alternate" type="application/rss+xml" title="Cool TravelPal Guides" href="/feed.xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cool TravelPal">
+  <meta property="og:title" content="Guides — Cool TravelPal">
+  <meta property="og:description" content="Travel planning, credit-card rewards, and destination-experience guides — practical, evergreen, and written for real trips.">
+  <meta property="og:url" content="https://cooltravelpal.com/blog/">
+  <meta property="og:image" content="https://cooltravelpal.com/images/banner.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Guides",
+    "url": "https://cooltravelpal.com/blog/",
+    "isPartOf": { "@id": "https://cooltravelpal.com/#website" },
+    "publisher": { "@id": "https://cooltravelpal.com/#org" },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cooltravelpal.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://cooltravelpal.com/blog/" }
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
 
-  <nav class="nav">
-    <div class="container">
-      <a href="/" class="nav-brand"><img src="/images/travelpal-logo.png" alt="TravelPal LLC"></a>
-      <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
-      <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/travelorbit/">TravelOrbit</a></li>
-        <li><a href="/cardpecker/">CardPecker</a></li>
-        <li><a href="/monuments/">Monuments</a></li>
-        <li><a href="/blog/">Blog</a></li>
-      </ul>
+  <header class="site-header">
+    <div class="wrap site-header-row">
+      <a class="brand" href="/"><img src="/images/travelpal-logo.png" alt="Cool TravelPal — home" width="120" height="40"></a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="/travel/">Travel</a></li>
+          <li><a href="/cards-points/">Cards &amp; Points</a></li>
+          <li><a href="/experiences/">Experiences</a></li>
+          <li class="has-sub">
+            <a href="/apps/">Apps</a>
+            <ul class="sub-list">
+              <li><a href="/travelorbit/">TravelOrbit</a></li>
+              <li><a href="/cardpecker/">CardPecker</a></li>
+              <li><a href="/monuments/">Museum Knight</a></li>
+              <li class="sub-all"><a href="/apps/">All apps</a></li>
+            </ul>
+          </li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+        <form class="nav-search" role="search" action="/blog/">
+          <input type="search" name="q" placeholder="Search guides…" aria-label="Search guides">
+        </form>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <section class="page">
-    <div class="container">
-      <h1>Blog</h1>
-      <p class="subtitle">Updates, tips, and news from TravelPal.</p>
+  <main>
 
-      <ul class="blog-list">
-        <li class="blog-item">
-          <h3><a href="/blog/">Introducing CardPecker</a></h3>
-          <span class="date">April 4, 2026</span>
-          <p>We're excited to announce CardPecker — a simple, private app that tells you which credit card to use for every purchase. Add your cards, tap a category, and instantly see which card earns the most. No account required, no data leaves your device.</p>
-        </li>
-      </ul>
+    <section class="hub-hero">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb" style="padding:0 0 14px;">
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li><span aria-current="page">Guides</span></li>
+          </ol>
+        </nav>
+        <h1>Guides</h1>
+        <p class="lede">Practical, evergreen advice for travelers — planning smarter trips, earning more from the cards you already carry, and getting more out of every destination.</p>
 
-    </div>
-  </section>
+        <form role="search" action="/blog/" style="margin-top:22px; max-width:460px;">
+          <input id="guide-search" type="search" name="q" placeholder="Search all guides…" aria-label="Search all guides"
+                 style="width:100%; font:500 1rem 'Hanken Grotesk',sans-serif; padding:12px 18px; border:1px solid var(--line); border-radius:100px; background:var(--white); color:var(--ink);">
+        </form>
+        <p id="search-status" role="status" style="margin-top:10px; font-size:.9rem; color:var(--ink-soft);"></p>
 
-  <footer class="footer">
-    <div class="container">
-      <span>&copy; 2026 TravelPal. All rights reserved.</span>
-      <ul class="footer-links">
-        <li><a href="/cardpecker/privacy-policy/">Privacy Policy</a></li>
-        <li><a href="/cardpecker/support/">Support</a></li>
-        <li><a href="/blog/">Blog</a></li>
-      </ul>
+        <nav class="cat-tabs" aria-label="Guide categories">
+          <a href="/blog/" aria-current="page">All</a>
+          <a href="/travel/">Travel</a>
+          <a href="/cards-points/">Cards &amp; Points</a>
+          <a href="/experiences/">Experiences</a>
+          <a href="#app-guides">App Guides</a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="story-grid">
+
+          <a class="story-card featured" href="/blog/beginners-guide-to-credit-card-rewards/" data-searchable>
+            <div class="fc-body">
+              <span class="badge-cat cards">Cards &amp; Points</span>
+              <h3>The Beginner's Guide to Credit-Card Rewards</h3>
+              <p>Points, miles, cash back, statement credits, transfer partners — how the rewards system actually works, and how to get real value from the cards already in your wallet without turning it into a second job.</p>
+              <p class="story-meta">By the Cool TravelPal Team · Updated July 14, 2026 · 9 min read</p>
+            </div>
+          </a>
+
+          <a class="story-card" href="/blog/how-early-should-you-arrive-at-the-airport/" data-searchable>
+            <span class="badge-cat travel">Travel</span>
+            <h3>How Early Should You Arrive at the Airport?</h3>
+            <p>Two hours? Three? A practical timing framework for domestic and international flights, checked bags, PreCheck, and the days when the old rules break.</p>
+            <p class="story-meta">July 14, 2026 · 7 min read</p>
+          </a>
+
+          <a class="story-card" href="/blog/track-credit-card-benefits-before-they-expire/" data-searchable>
+            <span class="badge-cat cards">Cards &amp; Points</span>
+            <h3>How to Track Credit-Card Benefits Before They Expire</h3>
+            <p>Annual travel credits, dining credits, and free nights quietly expire unused every year. A simple system for catching all of them.</p>
+            <p class="story-meta">July 14, 2026 · 6 min read</p>
+          </a>
+
+          <a class="story-card" href="/blog/plan-a-museum-visit-without-exhaustion/" data-searchable>
+            <span class="badge-cat exp">Experiences</span>
+            <h3>How to Plan a Museum Visit Without Exhaustion</h3>
+            <p>Museum fatigue sets in faster than you think. See more by planning to see less — a curator-style approach to a visit you'll actually remember.</p>
+            <p class="story-meta">July 14, 2026 · 7 min read</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="app-guides">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>App guides &amp; updates</h2>
+          <a class="more" href="/apps/">All apps →</a>
+        </div>
+        <div class="story-grid">
+          <a class="story-card" href="/blog/introducing-cardpecker/" data-searchable>
+            <span class="badge-cat appg">App Guides</span>
+            <h3>Introducing CardPecker</h3>
+            <p>A simple, private app that tells you which credit card to use for every purchase. Add your cards, tap a category, and instantly see which card earns the most — no account required, no data leaves your device.</p>
+            <p class="story-meta">April 4, 2026 · 3 min read</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <img src="/images/travelpal-logo.png" alt="Cool TravelPal">
+          <p>Practical travel guides, credit-card rewards advice, and privacy-first travel apps for every stage of the journey.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="/travel/">Travel</a></li>
+            <li><a href="/cards-points/">Cards &amp; Points</a></li>
+            <li><a href="/experiences/">Experiences</a></li>
+            <li><a href="/blog/">All guides</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Apps</h3>
+          <ul>
+            <li><a href="/travelorbit/">TravelOrbit</a></li>
+            <li><a href="/cardpecker/">CardPecker</a></li>
+            <li><a href="/monuments/">Museum Knight</a></li>
+            <li><a href="/apps/">All apps</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="/about/">About</a></li>
+            <li><a href="mailto:admin@cooltravelpal.com">Contact</a></li>
+            <li><a href="/about/#support">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="/travelorbit/privacy-policy/">TravelOrbit Privacy</a></li>
+            <li><a href="/cardpecker/privacy-policy/">CardPecker Privacy</a></li>
+            <li><a href="/monuments/privacy-policy/">Museum Knight Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 TravelPal LLC. All rights reserved.</span>
+        <span>Cool TravelPal is a TravelPal LLC brand.</span>
+      </div>
     </div>
   </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&#8679;</button>
+  <script src="/js/site.js" defer></script>
 
 </body>
 </html>
