@@ -5,6 +5,7 @@
 # Never rename, delete, or redirect these paths.
 /
 /blog/
+/privacy/
 /travelorbit/
 /travelorbit/privacy-policy/
 /travelorbit/support/

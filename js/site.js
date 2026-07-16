@@ -2,6 +2,35 @@
 (function () {
   'use strict';
 
+  /* One-place configuration for this static site's growth integrations. */
+  var integrations = {
+    googleAnalyticsId: 'G-7CNWGM9QZ9',
+    newsletterAction: ''
+  };
+
+  // Analytics remains completely off until a real GA4 measurement ID is added.
+  if (/^G-[A-Z0-9]+$/.test(integrations.googleAnalyticsId)) {
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', integrations.googleAnalyticsId, {
+      anonymize_ip: true,
+      allow_google_signals: false,
+      allow_ad_personalization_signals: false
+    });
+    var analyticsScript = document.createElement('script');
+    analyticsScript.async = true;
+    analyticsScript.src = 'https://www.googletagmanager.com/gtag/js?id=' +
+      encodeURIComponent(integrations.googleAnalyticsId);
+    document.head.appendChild(analyticsScript);
+  }
+
+  var track = function (eventName, parameters) {
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', eventName, parameters || {});
+    }
+  };
+
   // Mobile menu toggle
   var menuBtn = document.querySelector('.menu-btn');
   var nav = document.getElementById('site-nav');
@@ -63,4 +92,33 @@
     }
     if (q) filter(q);
   }
+
+  // Measure useful outcomes without sending email addresses or form contents.
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest('a[href]');
+    if (!link) return;
+    var href = link.getAttribute('href') || '';
+    if (href.indexOf('apps.apple.com') !== -1) {
+      track('app_store_click', { link_url: link.href, link_text: link.textContent.trim() });
+    } else if (href === '/feed.xml') {
+      track('rss_click');
+    } else if (/^mailto:/.test(href)) {
+      track('email_contact_click');
+    } else if (/^https?:/.test(href) && link.hostname !== window.location.hostname) {
+      track('outbound_click', { link_url: link.href });
+    }
+  });
+
+  document.querySelectorAll('[data-newsletter-form]').forEach(function (form) {
+    if (integrations.newsletterAction) {
+      form.action = integrations.newsletterAction;
+      form.addEventListener('submit', function () { track('newsletter_signup'); });
+    } else {
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        var status = form.querySelector('[data-newsletter-status]');
+        if (status) status.textContent = 'Signup is being connected. Please use RSS for now.';
+      });
+    }
+  });
 })();

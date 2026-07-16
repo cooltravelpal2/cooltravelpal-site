@@ -379,6 +379,29 @@ a.app-card:hover, .app-card:hover { transform: translateY(-3px); box-shadow: var
 .follow .btn-primary { background: var(--paper); color: var(--ink); }
 .follow .btn-primary:hover { background: #fff; }
 
+/* ============ Newsletter ============ */
+.newsletter-card {
+  max-width: 720px; margin: 0 auto; padding: clamp(28px, 5vw, 52px);
+  border: 1px solid var(--line); border-radius: 18px; background: var(--paper);
+  box-shadow: 0 12px 35px rgba(26, 39, 32, .08);
+}
+.newsletter-card h1 { margin-bottom: 12px; }
+.newsletter-card .lede { margin-bottom: 28px; }
+.newsletter-form { display: flex; gap: 10px; align-items: flex-start; flex-wrap: wrap; }
+.newsletter-form label { width: 100%; font-weight: 700; }
+.newsletter-form input[type="email"] {
+  flex: 1 1 280px; min-height: 48px; padding: 11px 14px;
+  border: 1px solid var(--line); border-radius: 8px; background: #fff;
+  color: var(--ink); font: inherit;
+}
+.newsletter-form input[type="email"]:focus {
+  outline: 3px solid rgba(36, 126, 94, .18); border-color: var(--travel);
+}
+.newsletter-note, .newsletter-status {
+  width: 100%; margin: 0; color: var(--ink-soft); font-size: .88rem;
+}
+.newsletter-status { color: var(--travel); font-weight: 700; }
+
 /* ============ Footer ============ */
 .site-footer, .footer {
   border-top: 1px solid var(--line);
