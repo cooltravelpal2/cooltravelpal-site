@@ -493,6 +493,9 @@ a.app-card:hover, .app-card:hover { transform: translateY(-3px); box-shadow: var
 .prose th { background: var(--paper-2); font-weight: 700; }
 .table-scroll { overflow-x: auto; }
 .prose blockquote { border-left: 3px solid var(--gold); padding: 4px 0 4px 18px; color: var(--ink-soft); font-style: italic; margin: 20px 0; }
+.prose .article-photo { margin: 28px 0; }
+.prose .article-photo img { display: block; width: 100%; height: auto; border-radius: var(--r); box-shadow: var(--shadow); }
+.prose .article-photo figcaption { margin-top: 8px; color: var(--ink-soft); font-size: .84rem; }
 
 .toc {
   border: 1px solid var(--line); border-radius: var(--r);
