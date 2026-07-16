@@ -34,7 +34,7 @@ jobs:
     timeout-minutes: 5
     steps:
       - name: Check out website
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Select and validate post
         env:
