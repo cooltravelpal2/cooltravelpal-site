@@ -8,7 +8,8 @@ Use the same identity wherever possible.
 
 - Display name: `Cool TravelPal`
 - X handle: `@cooltravelpal`
-- Preferred YouTube handle: `@CoolTravelPal`
+- YouTube handle: `@CoolTravelPal`
+- YouTube channel: `https://www.youtube.com/@CoolTravelPal`
 - Website: `https://cooltravelpal.com/`
 - Newsletter: `https://cooltravelpal.com/newsletter/`
 - Avatar: `images/travelpal-logo.png`
