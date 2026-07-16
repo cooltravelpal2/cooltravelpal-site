@@ -7,7 +7,8 @@ This is the working checklist for publishing, distribution, measurement, and mon
 Use the same identity wherever possible.
 
 - Display name: `Cool TravelPal`
-- Preferred available handle: `@CoolTravelPalHQ`
+- X handle: `@cooltravelpal`
+- Preferred YouTube handle: `@CoolTravelPal`
 - Website: `https://cooltravelpal.com/`
 - Newsletter: `https://cooltravelpal.com/newsletter/`
 - Avatar: `images/travelpal-logo.png`
