@@ -4,8 +4,7 @@
 
   /* One-place configuration for this static site's growth integrations. */
   var integrations = {
-    googleAnalyticsId: 'G-7CNWGM9QZ9',
-    newsletterAction: ''
+    googleAnalyticsId: 'G-7CNWGM9QZ9'
   };
 
   // Analytics remains completely off until a real GA4 measurement ID is added.
@@ -109,16 +108,7 @@
     }
   });
 
-  document.querySelectorAll('[data-newsletter-form]').forEach(function (form) {
-    if (integrations.newsletterAction) {
-      form.action = integrations.newsletterAction;
-      form.addEventListener('submit', function () { track('newsletter_signup'); });
-    } else {
-      form.addEventListener('submit', function (event) {
-        event.preventDefault();
-        var status = form.querySelector('[data-newsletter-status]');
-        if (status) status.textContent = 'Signup is being connected. Please use RSS for now.';
-      });
-    }
+  document.addEventListener('emailoctopus:form.success', function () {
+    track('newsletter_signup', { provider: 'emailoctopus' });
   });
 })();
