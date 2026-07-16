@@ -323,7 +323,9 @@ h2 { font-family: var(--font-display); font-weight: 600; }
 .guide-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lift); text-decoration: none; }
 .guide-card .guide-tag { font-size: .72rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); }
 .guide-card h3 { font-size: 1.02rem; font-family: var(--font-ui); font-weight: 700; }
+.guide-card h3 a { color: inherit; }
 .guide-card p { font-size: .85rem; color: var(--ink-soft); }
+.support-grid { grid-template-columns: repeat(3, 1fr); }
 
 /* ============ App ecosystem cards ============ */
 .app-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; padding: 0; }
@@ -624,6 +626,7 @@ a.app-card:hover, .app-card:hover { transform: translateY(-3px); box-shadow: var
 @media (max-width: 960px) {
   .pillar-grid, .story-grid, .app-grid, .scenario-grid { grid-template-columns: 1fr 1fr; }
   .guide-grid { grid-template-columns: 1fr 1fr; }
+  .support-grid { grid-template-columns: 1fr 1fr; }
   .story-card.featured { grid-column: span 2; flex-direction: column; }
   .footer-grid { grid-template-columns: 1fr 1fr 1fr; }
   .footer-brand { grid-column: span 3; }
@@ -654,6 +657,7 @@ a.app-card:hover, .app-card:hover { transform: translateY(-3px); box-shadow: var
   .nav-search input, .nav-search input:focus { width: 100%; }
 
   .pillar-grid, .story-grid, .app-grid, .guide-grid, .scenario-grid, .check-grid { grid-template-columns: 1fr; }
+  .support-grid { grid-template-columns: 1fr; }
   .story-card.featured { grid-column: span 1; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .footer-brand { grid-column: span 2; }
