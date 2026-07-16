@@ -1,0 +1,66 @@
+name: Post blog stories to X
+
+on:
+  schedule:
+    - cron: "17 9,13,18 * * *"
+      timezone: "America/Los_Angeles"
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: "Which daily queue slot should be used?"
+        required: true
+        default: morning
+        type: choice
+        options:
+          - morning
+          - midday
+          - evening
+      dry_run:
+        description: "Preview without publishing"
+        required: true
+        default: true
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cooltravelpal-x-post
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v4
+
+      - name: Select and validate post
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          MANUAL_SLOT: ${{ inputs.slot }}
+        run: |
+          slot="auto"
+          if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
+            slot="$MANUAL_SLOT"
+          fi
+          python3 scripts/post_to_x.py --slot "$slot" --dry-run
+
+      - name: Publish to @cooltravelpal
+        if: >-
+          (github.event_name == 'schedule' && vars.X_AUTOMATION_ENABLED == 'true') ||
+          (github.event_name == 'workflow_dispatch' && inputs.dry_run == false)
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          MANUAL_SLOT: ${{ inputs.slot }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+        run: |
+          slot="auto"
+          if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
+            slot="$MANUAL_SLOT"
+          fi
+          python3 scripts/post_to_x.py --slot "$slot"
