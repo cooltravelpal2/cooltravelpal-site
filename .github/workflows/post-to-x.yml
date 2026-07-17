@@ -2,7 +2,11 @@ name: Post blog stories to X
 
 on:
   schedule:
-    - cron: "17 8,12,17 * * *"
+    - cron: "17 8 * * *"
+      timezone: "America/Los_Angeles"
+    - cron: "17 12 * * *"
+      timezone: "America/Los_Angeles"
+    - cron: "17 17 * * *"
       timezone: "America/Los_Angeles"
   workflow_dispatch:
     inputs:
@@ -43,12 +47,19 @@ jobs:
       - name: Select and validate post
         env:
           EVENT_NAME: ${{ github.event_name }}
+          SCHEDULE: ${{ github.event.schedule }}
           MANUAL_SLOT: ${{ inputs.slot }}
           MANUAL_DATE: ${{ inputs.run_date }}
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
         run: |
-          slot="auto"
-          if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
+          if [[ "$EVENT_NAME" == "schedule" ]]; then
+            case "$SCHEDULE" in
+              "17 8 * * *") slot="morning" ;;
+              "17 12 * * *") slot="midday" ;;
+              "17 17 * * *") slot="evening" ;;
+              *) echo "Unknown scheduled trigger: $SCHEDULE" >&2; exit 1 ;;
+            esac
+          else
             slot="$MANUAL_SLOT"
           fi
           args=(--slot "$slot" --dry-run)
@@ -63,12 +74,19 @@ jobs:
           (github.event_name == 'workflow_dispatch' && inputs.dry_run == false)
         env:
           EVENT_NAME: ${{ github.event_name }}
+          SCHEDULE: ${{ github.event.schedule }}
           MANUAL_SLOT: ${{ inputs.slot }}
           MANUAL_DATE: ${{ inputs.run_date }}
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
         run: |
-          slot="auto"
-          if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
+          if [[ "$EVENT_NAME" == "schedule" ]]; then
+            case "$SCHEDULE" in
+              "17 8 * * *") slot="morning" ;;
+              "17 12 * * *") slot="midday" ;;
+              "17 17 * * *") slot="evening" ;;
+              *) echo "Unknown scheduled trigger: $SCHEDULE" >&2; exit 1 ;;
+            esac
+          else
             slot="$MANUAL_SLOT"
           fi
           args=(--slot "$slot")
