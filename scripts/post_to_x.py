@@ -25,7 +25,8 @@ ROOT = Path(__file__).resolve().parents[1]
 BLOG_INDEX = ROOT / "blog" / "index.html"
 SITE = "https://cooltravelpal.com"
 TIMEZONE = ZoneInfo("America/Los_Angeles")
-START_DATE = date(2026, 7, 16)
+START_DATE = date(2026, 7, 17)
+START_OFFSET = 1  # CardPecker was queued manually as the live integration test.
 SLOTS = {"morning": 0, "midday": 1, "evening": 2}
 SLOT_HOURS = {8: "morning", 12: "midday", 17: "evening"}
 BUFFER_API_URL = "https://api.buffer.com"
@@ -166,7 +167,7 @@ def choose_article(queue: list[Article], run_date: date, slot: str) -> tuple[int
     days = (run_date - START_DATE).days
     if days < 0:
         raise ValueError(f"Queue starts on {START_DATE.isoformat()}")
-    index = (days * len(SLOTS) + SLOTS[slot]) % len(queue)
+    index = (START_OFFSET + days * len(SLOTS) + SLOTS[slot]) % len(queue)
     return index, queue[index]
 
 

@@ -35,10 +35,10 @@ class PostToXTests(unittest.TestCase):
             ],
         )
 
-    def test_first_day_slots(self):
-        expected = [item.slug for item in self.queue[:3]]
+    def test_first_automatic_day_slots_follow_manual_test(self):
+        expected = [item.slug for item in self.queue[1:4]]
         actual = [
-            post_to_x.choose_article(self.queue, date(2026, 7, 16), slot)[1].slug
+            post_to_x.choose_article(self.queue, date(2026, 7, 17), slot)[1].slug
             for slot in ("morning", "midday", "evening")
         ]
         self.assertEqual(actual, expected)
