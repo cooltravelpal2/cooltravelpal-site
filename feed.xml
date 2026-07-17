@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="/feed.xsl"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cool TravelPal Guides</title>
+    <title>Cool TravelPal Blog</title>
     <link>https://cooltravelpal.com/blog/</link>
     <description>Practical travel guides, credit-card rewards advice, and destination-experience guides from Cool TravelPal.</description>
     <language>en-us</language>
