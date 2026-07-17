@@ -1,36 +1,40 @@
 # Cool TravelPal X automation
 
-The `Post blog stories to X` GitHub Actions workflow publishes at 9:17 a.m.,
-1:17 p.m., and 6:17 p.m. in `America/Los_Angeles`. GitHub hosts the job, so the
-owner's Mac and Codex app do not need to be running.
+The `Post blog stories to X` GitHub Actions workflow selects content at 9:17
+a.m., 1:17 p.m., and 6:17 p.m. in `America/Los_Angeles`. GitHub hosts the job,
+so the owner's Mac and Codex app do not need to be running.
 
-## Required X setup
+Publishing goes through Buffer's Free plan rather than X's paid developer API.
+Buffer allows up to 10 queued posts per connected channel on the Free plan. The
+workflow adds one post shortly before each Buffer publishing slot, so the queue
+normally remains well below that limit.
 
-Create an X Developer Project and App for `@cooltravelpal`, enable read and
-write access, and generate OAuth 1.0a user credentials for that account. Add
-these four repository secrets under **Settings → Secrets and variables →
-Actions**:
+## Required Buffer setup
 
-- `X_API_KEY`
-- `X_API_SECRET`
-- `X_ACCESS_TOKEN`
-- `X_ACCESS_TOKEN_SECRET`
+1. Create a free Buffer account and verify its email address.
+2. Connect the `@cooltravelpal` X profile as a Buffer channel.
+3. Set Buffer posting times for 9:20 a.m., 1:20 p.m., and 6:20 p.m. Pacific.
+4. In Buffer, open **Settings → API → Personal Keys → New Key**.
+5. Name it `CoolTravelPal GitHub Automation`, keep the account/channel read and
+   post-creation permissions, and choose the longest available expiration.
+6. Add the key to this GitHub repository as the secret `BUFFER_API_KEY` under
+   **Settings → Secrets and variables → Actions**.
 
-Never add credential values to this repository or to workflow logs.
+Never add the key value to this repository, workflow logs, or chat messages.
 
 ## Test before activating
 
 1. Open **Actions → Post blog stories to X → Run workflow**.
-2. Keep **Preview without publishing** enabled and run each of the three slots.
+2. Keep **Preview without publishing** enabled and run each slot.
 3. Review the generated copy in the workflow log.
-4. Run the morning slot once with preview disabled to publish a real test.
-5. Add the repository variable `X_AUTOMATION_ENABLED` with the value `true`.
-6. After that succeeds, disable the three local Codex X automations to prevent
-   duplicate posts.
+4. Run the morning slot once with preview disabled. This adds one post to
+   Buffer; confirm its text and scheduled time in Buffer.
+5. Set the repository variable `X_AUTOMATION_ENABLED` to `true`.
+6. Disable the three local Codex X automations to prevent duplicate posts.
 
-Until `X_AUTOMATION_ENABLED` is set to `true`, scheduled runs validate and show
-the selected post but do not publish it. A manual run with preview disabled can
-still publish the one requested test post.
+Until `X_AUTOMATION_ENABLED` is `true`, scheduled runs validate and show the
+selected post but do not add it to Buffer. A manual run with preview disabled
+can still create the requested test post.
 
 ## Content behavior
 
