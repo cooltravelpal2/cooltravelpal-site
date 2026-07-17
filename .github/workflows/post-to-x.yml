@@ -47,17 +47,14 @@ jobs:
           fi
           python3 scripts/post_to_x.py --slot "$slot" --dry-run
 
-      - name: Publish to @cooltravelpal
+      - name: Queue for @cooltravelpal through Buffer
         if: >-
           (github.event_name == 'schedule' && vars.X_AUTOMATION_ENABLED == 'true') ||
           (github.event_name == 'workflow_dispatch' && inputs.dry_run == false)
         env:
           EVENT_NAME: ${{ github.event_name }}
           MANUAL_SLOT: ${{ inputs.slot }}
-          X_API_KEY: ${{ secrets.X_API_KEY }}
-          X_API_SECRET: ${{ secrets.X_API_SECRET }}
-          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
-          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
         run: |
           slot="auto"
           if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then

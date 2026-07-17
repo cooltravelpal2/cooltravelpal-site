@@ -8,18 +8,12 @@ model runs in this workflow, so scheduled posts cannot invent facts.
 from __future__ import annotations
 
 import argparse
-import base64
-import hashlib
-import hmac
 import html
 import json
 import os
 import re
-import secrets
 import sys
-import time
 import urllib.error
-import urllib.parse
 import urllib.request
 from dataclasses import dataclass
 from datetime import date, datetime
@@ -34,7 +28,7 @@ TIMEZONE = ZoneInfo("America/Los_Angeles")
 START_DATE = date(2026, 7, 16)
 SLOTS = {"morning": 0, "midday": 1, "evening": 2}
 SLOT_HOURS = {9: "morning", 13: "midday", 18: "evening"}
-X_POST_URL = "https://api.x.com/2/tweets"
+BUFFER_API_URL = "https://api.buffer.com"
 URL_LENGTH = 23
 
 # Launch the queue with the stories we want to introduce first. The remaining
@@ -176,51 +170,16 @@ def choose_article(queue: list[Article], run_date: date, slot: str) -> tuple[int
     return index, queue[index]
 
 
-def percent(value: str) -> str:
-    return urllib.parse.quote(value, safe="~-._")
-
-
-def oauth_header(method: str, url: str, credentials: dict[str, str]) -> str:
-    oauth = {
-        "oauth_consumer_key": credentials["X_API_KEY"],
-        "oauth_nonce": secrets.token_hex(16),
-        "oauth_signature_method": "HMAC-SHA1",
-        "oauth_timestamp": str(int(time.time())),
-        "oauth_token": credentials["X_ACCESS_TOKEN"],
-        "oauth_version": "1.0",
-    }
-    parameter_string = "&".join(
-        f"{percent(key)}={percent(value)}" for key, value in sorted(oauth.items())
-    )
-    signature_base = "&".join(
-        [method.upper(), percent(url), percent(parameter_string)]
-    )
-    signing_key = "&".join(
-        [percent(credentials["X_API_SECRET"]), percent(credentials["X_ACCESS_TOKEN_SECRET"])]
-    )
-    digest = hmac.new(
-        signing_key.encode(), signature_base.encode(), hashlib.sha1
-    ).digest()
-    oauth["oauth_signature"] = base64.b64encode(digest).decode()
-    return "OAuth " + ", ".join(
-        f'{percent(key)}="{percent(value)}"' for key, value in sorted(oauth.items())
-    )
-
-
-def publish(text: str) -> dict[str, object]:
-    names = ["X_API_KEY", "X_API_SECRET", "X_ACCESS_TOKEN", "X_ACCESS_TOKEN_SECRET"]
-    credentials = {name: os.environ.get(name, "") for name in names}
-    missing = [name for name, value in credentials.items() if not value]
-    if missing:
-        raise ValueError("Missing GitHub Secrets: " + ", ".join(missing))
-
-    payload = json.dumps({"text": text}, ensure_ascii=False).encode("utf-8")
+def buffer_graphql(api_key: str, query: str, variables: dict[str, object] | None = None) -> dict[str, object]:
+    payload = json.dumps(
+        {"query": query, "variables": variables or {}}, ensure_ascii=False
+    ).encode("utf-8")
     request = urllib.request.Request(
-        X_POST_URL,
+        BUFFER_API_URL,
         data=payload,
         method="POST",
         headers={
-            "Authorization": oauth_header("POST", X_POST_URL, credentials),
+            "Authorization": f"Bearer {api_key}",
             "Content-Type": "application/json; charset=utf-8",
             "User-Agent": "CoolTravelPal-X-Automation/1.0",
         },
@@ -228,12 +187,82 @@ def publish(text: str) -> dict[str, object]:
     try:
         with urllib.request.urlopen(request, timeout=30) as response:
             body = json.loads(response.read().decode("utf-8"))
-            if response.status != 201:
-                raise RuntimeError(f"Unexpected X response status: {response.status}")
-            return body
+            if response.status != 200:
+                raise RuntimeError(f"Unexpected Buffer response status: {response.status}")
     except urllib.error.HTTPError as exc:
         detail = exc.read().decode("utf-8", errors="replace")
-        raise RuntimeError(f"X API returned HTTP {exc.code}: {detail[:500]}") from exc
+        raise RuntimeError(f"Buffer API returned HTTP {exc.code}: {detail[:500]}") from exc
+    if body.get("errors"):
+        raise RuntimeError(f"Buffer API error: {body['errors']}")
+    return body
+
+
+def find_x_channel(api_key: str) -> str:
+    account_query = """
+    query AccountOrganizations {
+      account { organizations { id name } }
+    }
+    """
+    account = buffer_graphql(api_key, account_query)
+    organizations = account.get("data", {}).get("account", {}).get("organizations", [])
+    matches: list[dict[str, object]] = []
+    channel_query = """
+    query OrganizationChannels($organizationId: OrganizationId!) {
+      channels(input: { organizationId: $organizationId }) {
+        id name displayName service
+      }
+    }
+    """
+    for organization in organizations:
+        result = buffer_graphql(
+            api_key, channel_query, {"organizationId": organization["id"]}
+        )
+        for channel in result.get("data", {}).get("channels", []):
+            service = str(channel.get("service", "")).lower()
+            identity = " ".join(
+                str(channel.get(field, "")) for field in ("name", "displayName")
+            ).lower()
+            if service in {"twitter", "x"} and "cooltravelpal" in identity:
+                matches.append(channel)
+    if len(matches) != 1:
+        raise RuntimeError(
+            f"Expected one Buffer X channel for @cooltravelpal; found {len(matches)}"
+        )
+    return str(matches[0]["id"])
+
+
+def publish(text: str) -> dict[str, object]:
+    api_key = os.environ.get("BUFFER_API_KEY", "")
+    if not api_key:
+        raise ValueError("Missing GitHub Secret: BUFFER_API_KEY")
+    channel_id = find_x_channel(api_key)
+    mutation = """
+    mutation CreatePost($input: CreatePostInput!) {
+      createPost(input: $input) {
+        ... on PostActionSuccess { post { id text dueAt } }
+        ... on MutationError { message }
+      }
+    }
+    """
+    result = buffer_graphql(
+        api_key,
+        mutation,
+        {
+            "input": {
+                "text": text,
+                "channelId": channel_id,
+                "schedulingType": "automatic",
+                "mode": "addToQueue",
+                "assets": [],
+            }
+        },
+    )
+    payload = result.get("data", {}).get("createPost", {})
+    if payload.get("message"):
+        raise RuntimeError(f"Buffer rejected the post: {payload['message']}")
+    if not payload.get("post", {}).get("id"):
+        raise RuntimeError("Buffer returned no scheduled post ID")
+    return payload["post"]
 
 
 def parse_args() -> argparse.Namespace:
@@ -265,10 +294,7 @@ def main() -> int:
         return 0
 
     result = publish(text)
-    post_id = result.get("data", {}).get("id") if isinstance(result.get("data"), dict) else None
-    if not post_id:
-        raise RuntimeError("X accepted the request but returned no post ID")
-    print(f"---\nPublished: https://x.com/cooltravelpal/status/{post_id}")
+    print(f"---\nQueued in Buffer: {result['id']} (due {result.get('dueAt', 'next slot')})")
     return 0
 
 
