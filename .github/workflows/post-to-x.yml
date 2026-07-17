@@ -20,6 +20,10 @@ on:
         required: true
         default: true
         type: boolean
+      run_date:
+        description: "Optional Pacific test date (YYYY-MM-DD)"
+        required: false
+        type: string
 
 permissions:
   contents: read
@@ -40,13 +44,18 @@ jobs:
         env:
           EVENT_NAME: ${{ github.event_name }}
           MANUAL_SLOT: ${{ inputs.slot }}
+          MANUAL_DATE: ${{ inputs.run_date }}
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
         run: |
           slot="auto"
           if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
             slot="$MANUAL_SLOT"
           fi
-          python3 scripts/post_to_x.py --slot "$slot" --dry-run
+          args=(--slot "$slot" --dry-run)
+          if [[ -n "$MANUAL_DATE" ]]; then
+            args+=(--date "$MANUAL_DATE")
+          fi
+          python3 scripts/post_to_x.py "${args[@]}"
 
       - name: Queue for @cooltravelpal through Buffer
         if: >-
@@ -55,10 +64,15 @@ jobs:
         env:
           EVENT_NAME: ${{ github.event_name }}
           MANUAL_SLOT: ${{ inputs.slot }}
+          MANUAL_DATE: ${{ inputs.run_date }}
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
         run: |
           slot="auto"
           if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
             slot="$MANUAL_SLOT"
           fi
-          python3 scripts/post_to_x.py --slot "$slot"
+          args=(--slot "$slot")
+          if [[ -n "$MANUAL_DATE" ]]; then
+            args+=(--date "$MANUAL_DATE")
+          fi
+          python3 scripts/post_to_x.py "${args[@]}"

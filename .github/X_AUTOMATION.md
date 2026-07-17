@@ -27,6 +27,8 @@ Never add the key value to this repository, workflow logs, or chat messages.
 
 1. Open **Actions → Post blog stories to X → Run workflow**.
 2. Keep **Preview without publishing** enabled and run each slot.
+   The optional test date can preview a future day without changing the live
+   schedule.
 3. Review the generated copy in the workflow log.
 4. Run the morning slot once with preview disabled. This adds one post to
    Buffer; confirm its text and scheduled time in Buffer.
