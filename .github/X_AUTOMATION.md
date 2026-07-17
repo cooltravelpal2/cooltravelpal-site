@@ -39,11 +39,21 @@ can still create the requested test post.
 
 ## Content behavior
 
-The workflow reads checked-in titles and teasers from `blog/index.html`. It
-does not ask an AI model to write posts at runtime. A small set of launch posts
-has custom copy in `scripts/post_to_x.py`; all other posts use the article's
-published title and teaser. The queue cycles through all articles and rotates
-AI/apps, travel, experiences, and cards/points.
+The workflow reads checked-in titles, publication dates, and teasers from
+`blog/index.html`. It does not ask an AI model to write posts at runtime.
+
+Before choosing a post, it reads the latest 60 scheduled and sent posts from
+Buffer. This gives the automation four behaviors:
+
+1. An article dated today or yesterday gets the next available X slot.
+2. Once that link is scheduled or sent, later slots do not select it again.
+3. Recently used article links are skipped, preventing closely spaced repeats.
+4. Slots without a new article continue the evergreen category rotation.
+
+New-article posts start with `New on Cool TravelPal`; evergreen posts use a
+small set of checked-in custom introductions or the article's published title
+and teaser. Product updates, AI/apps, travel, experiences, and cards/points are
+interleaved in the evergreen queue.
 
 GitHub scheduled workflows can run late during periods of high load. The
 schedule intentionally uses minute 17 rather than the top of the hour.
