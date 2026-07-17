@@ -31,6 +31,8 @@
   --gold:         #A8842C;   /* restrained gold detail */
   --exp:          #7A3B4E;   /* burgundy      */
   --exp-bg:       #F6ECEE;
+  --product:      #8A6420;   /* warm product gold */
+  --product-bg:   #F7EFD9;
 
   --r:  16px;
   --r-lg: 22px;
@@ -114,6 +116,7 @@ h2 { font-family: var(--font-display); font-weight: 600; }
 .badge-cat.exp    { background: var(--exp-bg);    color: var(--exp); }
 .badge-cat.appg   { background: var(--paper-2);   color: var(--ink-soft); }
 .badge-cat.tech   { background: #ECEAF7;          color: #4F46A5; }
+.badge-cat.product { background: var(--product-bg); color: var(--product); }
 
 /* ============ Header ============ */
 .site-header {
@@ -305,6 +308,8 @@ h2 { font-family: var(--font-display); font-weight: 600; }
 .story-card h3 { font-family: var(--font-display); font-size: 1.15rem; margin-bottom: 8px; }
 .story-card p { color: var(--ink-soft); font-size: .92rem; flex: 1; }
 .story-card .story-meta { margin-top: 14px; font-size: .8rem; color: var(--ink-soft); }
+.story-card .fc-body { flex: 1; display: flex; flex-direction: column; }
+.story-card:not(.featured) .fc-body .story-meta { margin-top: auto; padding-top: 14px; }
 .story-card.featured { grid-column: span 3; flex-direction: row; gap: 28px; align-items: flex-start; padding: 28px; }
 .story-card.featured h3 { font-size: clamp(1.4rem, 3vw, 1.9rem); max-width: 24ch; }
 .story-card.featured p { font-size: 1.02rem; max-width: 62ch; }
@@ -635,7 +640,7 @@ a.app-card:hover, .app-card:hover { transform: translateY(-3px); box-shadow: var
   .footer-brand { grid-column: span 3; }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 880px) {
   .menu-btn { display: inline-flex; align-items: center; gap: 8px; }
   .site-nav {
     display: none;
@@ -658,7 +663,9 @@ a.app-card:hover, .app-card:hover { transform: translateY(-3px); box-shadow: var
   .sub-list a { padding: 9px 10px; color: var(--ink-soft); }
   .nav-search { margin: 10px 0 0; }
   .nav-search input, .nav-search input:focus { width: 100%; }
+}
 
+@media (max-width: 720px) {
   .pillar-grid, .story-grid, .app-grid, .guide-grid, .scenario-grid, .check-grid { grid-template-columns: 1fr; }
   .support-grid { grid-template-columns: 1fr; }
   .story-card.featured { grid-column: span 1; }

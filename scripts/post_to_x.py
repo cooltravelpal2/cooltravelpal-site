@@ -114,7 +114,7 @@ def build_queue(articles: list[Article]) -> list[Article]:
     pinned = [by_slug[slug] for slug in PINNED_SLUGS if slug in by_slug]
     pinned_set = {article.slug for article in pinned}
 
-    category_order = ["appg", "travel", "exp", "cards"]
+    category_order = ["product", "appg", "travel", "exp", "cards"]
     buckets: dict[str, list[Article]] = {key: [] for key in category_order}
     for article in articles:
         if article.slug not in pinned_set:
