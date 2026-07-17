@@ -1,8 +1,9 @@
 # Cool TravelPal X automation
 
-The `Post blog stories to X` GitHub Actions workflow selects content at 9:17
-a.m., 1:17 p.m., and 6:17 p.m. in `America/Los_Angeles`. GitHub hosts the job,
-so the owner's Mac and Codex app do not need to be running.
+The `Post blog stories to X` GitHub Actions workflow selects content at 8:17
+a.m., 12:17 p.m., and 5:17 p.m. in `America/Los_Angeles`. Buffer then publishes
+at 9:00 a.m., 1:00 p.m., and 6:00 p.m. GitHub hosts the job, so the owner's Mac
+and Codex app do not need to be running.
 
 Publishing goes through Buffer's Free plan rather than X's paid developer API.
 Buffer allows up to 10 queued posts per connected channel on the Free plan. The
@@ -13,7 +14,7 @@ normally remains well below that limit.
 
 1. Create a free Buffer account and verify its email address.
 2. Connect the `@cooltravelpal` X profile as a Buffer channel.
-3. Set Buffer posting times for 9:20 a.m., 1:20 p.m., and 6:20 p.m. Pacific.
+3. Set Buffer posting times for 9:00 a.m., 1:00 p.m., and 6:00 p.m. Pacific.
 4. In Buffer, open **Settings → API → Personal Keys → New Key**.
 5. Name it `CoolTravelPal GitHub Automation`, keep the account/channel read and
    post-creation permissions, and choose the longest available expiration.

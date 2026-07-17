@@ -27,7 +27,7 @@ SITE = "https://cooltravelpal.com"
 TIMEZONE = ZoneInfo("America/Los_Angeles")
 START_DATE = date(2026, 7, 16)
 SLOTS = {"morning": 0, "midday": 1, "evening": 2}
-SLOT_HOURS = {9: "morning", 13: "midday", 18: "evening"}
+SLOT_HOURS = {8: "morning", 12: "midday", 17: "evening"}
 BUFFER_API_URL = "https://api.buffer.com"
 URL_LENGTH = 23
 
@@ -158,7 +158,7 @@ def resolve_slot(requested: str, now: datetime) -> str:
         return SLOT_HOURS[now.astimezone(TIMEZONE).hour]
     except KeyError as exc:
         raise ValueError(
-            "Automatic runs are allowed only at 9:00, 13:00, or 18:00 Pacific"
+            "Automatic runs are allowed only at 8:00, 12:00, or 17:00 Pacific"
         ) from exc
 
 
