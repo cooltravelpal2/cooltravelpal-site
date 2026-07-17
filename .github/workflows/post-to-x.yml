@@ -40,6 +40,7 @@ jobs:
         env:
           EVENT_NAME: ${{ github.event_name }}
           MANUAL_SLOT: ${{ inputs.slot }}
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
         run: |
           slot="auto"
           if [[ "$EVENT_NAME" == "workflow_dispatch" ]]; then
