@@ -5,11 +5,11 @@ import CoreText
 import ImageIO
 import UniformTypeIdentifiers
 
-// Apply the site's quiet, centered TravelPal mark to an already-exported image.
+// Apply the site's quiet TravelPal mark to an image.
 // This intentionally preserves the photograph; it only resizes, composites the
 // mark, and writes a web-sized JPEG.
 guard CommandLine.arguments.count == 4 else {
-    fputs("usage: watermark_media.swift input.jpg output.jpg mark.png\n", stderr)
+    fputs("usage: watermark_media.swift input-image output.jpg mark.png\n", stderr)
     exit(2)
 }
 
@@ -17,19 +17,21 @@ let inputURL = URL(fileURLWithPath: CommandLine.arguments[1]) as CFURL
 let outputURL = URL(fileURLWithPath: CommandLine.arguments[2]) as CFURL
 let markURL = URL(fileURLWithPath: CommandLine.arguments[3]) as CFURL
 
+let sourceOptions: [CFString: Any] = [
+    kCGImageSourceCreateThumbnailFromImageAlways: true,
+    kCGImageSourceCreateThumbnailWithTransform: true,
+    kCGImageSourceThumbnailMaxPixelSize: 1800
+]
 guard let source = CGImageSourceCreateWithURL(inputURL, nil),
-      let sourceImage = CGImageSourceCreateImageAtIndex(source, 0, nil),
+      let sourceImage = CGImageSourceCreateThumbnailAtIndex(source, 0, sourceOptions as CFDictionary),
       let markSource = CGImageSourceCreateWithURL(markURL, nil),
       let markImage = CGImageSourceCreateImageAtIndex(markSource, 0, nil) else {
     fputs("could not decode input or mark\n", stderr)
     exit(1)
 }
 
-let maxWidth: CGFloat = 1800
-let sourceWidth = CGFloat(sourceImage.width)
-let scale = min(1, maxWidth / sourceWidth)
-let width = max(1, Int((sourceWidth * scale).rounded()))
-let height = max(1, Int((CGFloat(sourceImage.height) * scale).rounded()))
+let width = sourceImage.width
+let height = sourceImage.height
 let colorSpace = CGColorSpaceCreateDeviceRGB()
 guard let context = CGContext(data: nil,
                               width: width,
@@ -43,18 +45,15 @@ guard let context = CGContext(data: nil,
 }
 
 context.interpolationQuality = .high
-context.saveGState()
-context.translateBy(x: 0, y: CGFloat(height))
-context.scaleBy(x: 1, y: -1)
 context.draw(sourceImage, in: CGRect(x: 0, y: 0, width: width, height: height))
-context.restoreGState()
 
-// A small translucent badge in the center is visible enough to identify the
-// owner while leaving the photograph and any signage readable.
+// Keep the photograph and any signage readable. The mark sits in the
+// top-left corner so it protects ownership without covering the story.
 let minDimension = CGFloat(min(width, height))
-let badgeSize = max(150, minDimension * 0.22)
-let badgeRect = CGRect(x: (CGFloat(width) - badgeSize) / 2,
-                       y: (CGFloat(height) - badgeSize) / 2,
+let badgeSize = max(110, minDimension * 0.12)
+let edgeInset = minDimension * 0.035
+let badgeRect = CGRect(x: edgeInset,
+                       y: CGFloat(height) - badgeSize - edgeInset,
                        width: badgeSize,
                        height: badgeSize)
 let badgePath = CGPath(roundedRect: badgeRect,
@@ -62,7 +61,7 @@ let badgePath = CGPath(roundedRect: badgeRect,
                        cornerHeight: badgeSize * 0.18,
                        transform: nil)
 context.saveGState()
-context.setFillColor(CGColor(red: 1, green: 1, blue: 1, alpha: 0.16))
+context.setFillColor(CGColor(red: 1, green: 1, blue: 1, alpha: 0.11))
 context.addPath(badgePath)
 context.fillPath()
 
@@ -74,14 +73,14 @@ let iconRect = CGRect(x: badgeRect.midX - iconWidth / 2,
                       y: badgeRect.midY - iconHeight / 2,
                       width: iconWidth,
                       height: iconHeight)
-context.setAlpha(0.50)
+context.setAlpha(0.36)
 context.draw(markImage, in: iconRect)
 context.restoreGState()
 
 // Keep a restrained wordmark at the lower-right edge as a second ownership cue.
 let label = NSAttributedString(string: "TravelPal", attributes: [
     .font: NSFont.systemFont(ofSize: max(15, minDimension * 0.014), weight: .medium),
-    .foregroundColor: NSColor.white.withAlphaComponent(0.48)
+    .foregroundColor: NSColor.white.withAlphaComponent(0.30)
 ])
 let line = CTLineCreateWithAttributedString(label)
 let bounds = CTLineGetBoundsWithOptions(line, [])
