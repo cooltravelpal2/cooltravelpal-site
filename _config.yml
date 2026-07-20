@@ -1,0 +1,7 @@
+# This repository is a static HTML site. Keep internal editorial and workflow
+# documentation out of the public Jekyll build so GitHub Pages does not apply
+# the theme or require GitHub metadata for those Markdown files.
+exclude:
+  - EDITORIAL_STYLE.md
+  - .github/
+  - drafts/
