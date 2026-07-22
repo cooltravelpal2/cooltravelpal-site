@@ -94,7 +94,14 @@ def load_articles(path: Path = BLOG_INDEX) -> list[Article]:
         flags=re.DOTALL,
     )
     articles: list[Article] = []
+    seen_slugs: set[str] = set()
     for slug, body in cards:
+        # An article may appear once in the latest-story list and again in a
+        # category section. Keep the first card; it is the same article, not a
+        # duplicate queue entry.
+        if slug in seen_slugs:
+            continue
+        seen_slugs.add(slug)
         title_match = re.search(r"<h3>(.*?)</h3>", body, flags=re.DOTALL)
         summary_match = re.search(r'<p(?!\s+class="story-meta")[^>]*>(.*?)</p>', body, flags=re.DOTALL)
         category_match = re.search(r'<span\s+class="badge-cat\s+([^"\s]+)[^"]*">', body)
