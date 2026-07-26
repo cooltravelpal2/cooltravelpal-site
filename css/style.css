@@ -292,6 +292,7 @@ h2 { font-family: var(--font-display); font-weight: 600; }
 .section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 28px; flex-wrap: wrap; }
 .section-head h2 { font-size: clamp(1.5rem, 3vw, 2rem); }
 .section-head .more { font-weight: 700; font-size: .95rem; white-space: nowrap; }
+.section-lede { color: var(--ink-soft); max-width: 58ch; margin: -10px 0 24px; }
 
 /* ============ Article cards ============ */
 .story-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
