@@ -98,7 +98,17 @@
     if (!link) return;
     var href = link.getAttribute('href') || '';
     if (href.indexOf('apps.apple.com') !== -1) {
-      track('app_store_click', { link_url: link.href, link_text: link.textContent.trim() });
+      var appName = link.getAttribute('data-app-name');
+      if (!appName) {
+        appName = href.indexOf('6761355656') !== -1 ? 'cardpecker' :
+          href.indexOf('6772864604') !== -1 ? 'travelorbit' : 'unknown';
+      }
+      track('app_store_click', {
+        app_name: appName,
+        placement: link.getAttribute('data-placement') || 'unknown',
+        link_url: link.href,
+        link_text: link.textContent.trim()
+      });
     } else if (href === '/feed.xml') {
       track('rss_click');
     } else if (/^mailto:/.test(href)) {
