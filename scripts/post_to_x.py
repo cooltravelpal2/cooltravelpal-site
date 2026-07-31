@@ -13,6 +13,7 @@ import json
 import os
 import re
 import sys
+import time
 import urllib.error
 import urllib.request
 from dataclasses import dataclass
@@ -30,6 +31,9 @@ START_OFFSET = 1  # CardPecker was queued manually as the live integration test.
 SLOTS = {"morning": 0, "midday": 1, "evening": 2}
 SLOT_HOURS = {8: "morning", 12: "midday", 17: "evening"}
 BUFFER_API_URL = "https://api.buffer.com"
+BUFFER_MAX_ATTEMPTS = 4
+BUFFER_RETRY_BASE_SECONDS = 2.0
+BUFFER_RETRYABLE_HTTP_CODES = {408, 425, 429, 500, 502, 503, 504, 520, 522, 524}
 URL_LENGTH = 23
 
 # Launch the queue with the stories we want to introduce first. The remaining
@@ -220,7 +224,31 @@ def choose_article(
     raise RuntimeError("No unrepeated article is available for this slot")
 
 
-def buffer_graphql(api_key: str, query: str, variables: dict[str, object] | None = None) -> dict[str, object]:
+def _buffer_retry_delay(attempt: int, error: urllib.error.HTTPError | urllib.error.URLError) -> float:
+    """Return a bounded delay, honoring Buffer's Retry-After when present."""
+    if isinstance(error, urllib.error.HTTPError):
+        retry_after = error.headers.get("Retry-After")
+        if retry_after:
+            try:
+                return min(20.0, max(0.0, float(retry_after)))
+            except ValueError:
+                pass
+    return min(20.0, BUFFER_RETRY_BASE_SECONDS * (2**attempt))
+
+
+def buffer_graphql(
+    api_key: str,
+    query: str,
+    variables: dict[str, object] | None = None,
+    *,
+    retryable: bool = True,
+) -> dict[str, object]:
+    """Call Buffer GraphQL, retrying transient read/network failures.
+
+    Queries are safe to retry. Mutations opt out because a connection reset can
+    happen after Buffer accepted a createPost request, and retrying it could
+    schedule a duplicate post.
+    """
     payload = json.dumps(
         {"query": query, "variables": variables or {}}, ensure_ascii=False
     ).encode("utf-8")
@@ -234,14 +262,38 @@ def buffer_graphql(api_key: str, query: str, variables: dict[str, object] | None
             "User-Agent": "CoolTravelPal-X-Automation/1.0",
         },
     )
-    try:
-        with urllib.request.urlopen(request, timeout=30) as response:
-            body = json.loads(response.read().decode("utf-8"))
-            if response.status != 200:
-                raise RuntimeError(f"Unexpected Buffer response status: {response.status}")
-    except urllib.error.HTTPError as exc:
-        detail = exc.read().decode("utf-8", errors="replace")
-        raise RuntimeError(f"Buffer API returned HTTP {exc.code}: {detail[:500]}") from exc
+    for attempt in range(BUFFER_MAX_ATTEMPTS):
+        try:
+            with urllib.request.urlopen(request, timeout=30) as response:
+                body = json.loads(response.read().decode("utf-8"))
+                if response.status != 200:
+                    raise RuntimeError(f"Unexpected Buffer response status: {response.status}")
+            break
+        except urllib.error.HTTPError as exc:
+            detail = exc.read().decode("utf-8", errors="replace")
+            if not (
+                retryable
+                and exc.code in BUFFER_RETRYABLE_HTTP_CODES
+                and attempt < BUFFER_MAX_ATTEMPTS - 1
+            ):
+                raise RuntimeError(f"Buffer API returned HTTP {exc.code}: {detail[:500]}") from exc
+            delay = _buffer_retry_delay(attempt, exc)
+            print(
+                f"Buffer API transient HTTP {exc.code} (attempt {attempt + 1}/{BUFFER_MAX_ATTEMPTS}); "
+                f"retrying in {delay:g}s",
+                file=sys.stderr,
+            )
+            time.sleep(delay)
+        except (urllib.error.URLError, TimeoutError) as exc:
+            if not (retryable and attempt < BUFFER_MAX_ATTEMPTS - 1):
+                raise RuntimeError(f"Buffer API network error: {exc}") from exc
+            delay = _buffer_retry_delay(attempt, exc)
+            print(
+                f"Buffer API transient network error (attempt {attempt + 1}/{BUFFER_MAX_ATTEMPTS}): {exc}; "
+                f"retrying in {delay:g}s",
+                file=sys.stderr,
+            )
+            time.sleep(delay)
     if body.get("errors"):
         raise RuntimeError(f"Buffer API error: {body['errors']}")
     return body
@@ -346,6 +398,7 @@ def publish(text: str, api_key: str, target: BufferTarget) -> dict[str, object]:
                 "assets": [],
             }
         },
+        retryable=False,
     )
     payload = result.get("data", {}).get("createPost", {})
     if payload.get("message"):
