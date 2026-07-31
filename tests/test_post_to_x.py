@@ -2,6 +2,7 @@
 
 import importlib.util
 import sys
+import urllib.error
 import unittest
 from datetime import date
 from pathlib import Path
@@ -105,6 +106,40 @@ class PostToXTests(unittest.TestCase):
         finally:
             post_to_x.buffer_graphql = original
         self.assertEqual(slugs, {"example-story"})
+
+    def test_buffer_graphql_retries_connection_reset_for_queries(self):
+        original_urlopen = post_to_x.urllib.request.urlopen
+        original_sleep = post_to_x.time.sleep
+        calls = []
+
+        class FakeResponse:
+            status = 200
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *_args):
+                return False
+
+            def read(self):
+                return b'{"data": {"ok": true}}'
+
+        def fake_urlopen(*_args, **_kwargs):
+            calls.append(True)
+            if len(calls) < 3:
+                raise urllib.error.URLError(ConnectionResetError(104, "Connection reset by peer"))
+            return FakeResponse()
+
+        post_to_x.urllib.request.urlopen = fake_urlopen
+        post_to_x.time.sleep = lambda _delay: None
+        try:
+            result = post_to_x.buffer_graphql("test-key", "query Health { ok }")
+        finally:
+            post_to_x.urllib.request.urlopen = original_urlopen
+            post_to_x.time.sleep = original_sleep
+
+        self.assertEqual(result, {"data": {"ok": True}})
+        self.assertEqual(len(calls), 3)
 
     def test_every_post_fits_x(self):
         for article in self.queue:
