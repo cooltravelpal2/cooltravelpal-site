@@ -97,6 +97,8 @@
     var link = event.target.closest('a[href]');
     if (!link) return;
     var href = link.getAttribute('href') || '';
+    var currentPath = window.location.pathname;
+    var isArticle = currentPath.indexOf('/blog/') === 0;
     if (href.indexOf('apps.apple.com') !== -1) {
       var appName = link.getAttribute('data-app-name');
       if (!appName) {
@@ -109,6 +111,29 @@
         link_url: link.href,
         link_text: link.textContent.trim()
       });
+    } else if (isArticle && /^\/travelorbit\//.test(href)) {
+      track('article_cta_click', {
+        app_name: 'travelorbit',
+        article_path: currentPath,
+        placement: link.getAttribute('data-placement') || 'article_app_callout',
+        link_url: link.href
+      });
+    } else if (isArticle && /^\/cardpecker\//.test(href)) {
+      track('article_cta_click', {
+        app_name: 'cardpecker',
+        article_path: currentPath,
+        placement: link.getAttribute('data-placement') || 'article_app_callout',
+        link_url: link.href
+      });
+    } else if (/^\/newsletter\//.test(href)) {
+      track('newsletter_click', {
+        placement: link.getAttribute('data-placement') || 'site_link',
+        page_path: currentPath
+      });
+    } else if (/^https:\/\/(?:www\.)?x\.com\//.test(href)) {
+      track('social_click', { platform: 'x', page_path: currentPath });
+    } else if (/^https:\/\/(?:www\.)?youtube\.com\//.test(href)) {
+      track('social_click', { platform: 'youtube', page_path: currentPath });
     } else if (href === '/feed.xml') {
       track('rss_click');
     } else if (/^mailto:/.test(href)) {
@@ -121,4 +146,11 @@
   document.addEventListener('emailoctopus:form.success', function () {
     track('newsletter_signup', { provider: 'emailoctopus' });
   });
+
+  if (document.body && document.body.getAttribute('data-page-type') === '404') {
+    track('page_not_found', {
+      requested_path: window.location.pathname,
+      referrer: document.referrer || 'direct'
+    });
+  }
 })();
