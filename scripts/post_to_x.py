@@ -324,7 +324,11 @@ def find_buffer_target(api_key: str) -> BufferTarget:
             identity = " ".join(
                 str(channel.get(field, "")) for field in ("name", "displayName")
             ).lower()
-            if service in {"twitter", "x"} and "cooltravelpal" in identity:
+            # The account was renamed from @cooltravelpal to @travelpalnow; Buffer
+            # may still show the old name until the channel is refreshed.
+            if service in {"twitter", "x"} and any(
+                handle in identity for handle in ("travelpalnow", "cooltravelpal")
+            ):
                 matches.append(
                     BufferTarget(
                         organization_id=str(organization["id"]),
@@ -333,7 +337,7 @@ def find_buffer_target(api_key: str) -> BufferTarget:
                 )
     if len(matches) != 1:
         raise RuntimeError(
-            f"Expected one Buffer X channel for @cooltravelpal; found {len(matches)}"
+            f"Expected one Buffer X channel for @travelpalnow; found {len(matches)}"
         )
     return matches[0]
 

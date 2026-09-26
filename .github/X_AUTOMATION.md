@@ -13,7 +13,7 @@ normally remains well below that limit.
 ## Required Buffer setup
 
 1. Create a free Buffer account and verify its email address.
-2. Connect the `@cooltravelpal` X profile as a Buffer channel.
+2. Connect the `@travelpalnow` X profile (formerly `@cooltravelpal`) as a Buffer channel.
 3. Set Buffer posting times for 9:00 a.m., 1:00 p.m., and 6:00 p.m. Pacific.
 4. In Buffer, open **Settings → API → Personal Keys → New Key**.
 5. Name it `CoolTravelPal GitHub Automation`, keep the account/channel read and
