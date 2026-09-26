@@ -1,4 +1,4 @@
-# Cool TravelPal X automation
+# TravelPal X automation
 
 The `Post blog stories to X` GitHub Actions workflow selects content at 8:17
 a.m., 12:17 p.m., and 5:17 p.m. in `America/Los_Angeles`. Buffer then publishes
@@ -52,7 +52,7 @@ Buffer. This gives the automation four behaviors:
 3. Recently used article links are skipped, preventing closely spaced repeats.
 4. Slots without a new article continue the evergreen category rotation.
 
-New-article posts start with `New on Cool TravelPal`; evergreen posts use a
+New-article posts start with `New on TravelPal`; evergreen posts use a
 small set of checked-in custom introductions or the article's published title
 and teaser. Product updates, AI/apps, travel, experiences, and cards/points are
 interleaved in the evergreen queue.

@@ -27,7 +27,7 @@
       </head>
       <body>
         <div class="wrap">
-          <div class="note">📡 This is the <b>Cool TravelPal RSS feed</b>. Copy this page's address into any RSS reader (Feedly, NetNewsWire, Reeder…) to get every new guide and announcement — including the Museum Knight reveal — the moment it's published.</div>
+          <div class="note">📡 This is the <b>TravelPal RSS feed</b>. Copy this page's address into any RSS reader (Feedly, NetNewsWire, Reeder…) to get every new guide and announcement — including the Museum Knight reveal — the moment it's published.</div>
           <h1><xsl:value-of select="title"/></h1>
           <p class="desc"><xsl:value-of select="description"/></p>
           <xsl:for-each select="item">

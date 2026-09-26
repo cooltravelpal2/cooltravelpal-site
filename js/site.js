@@ -1,4 +1,4 @@
-/* Cool TravelPal — shared site behavior (no dependencies) */
+/* TravelPal — shared site behavior (no dependencies) */
 (function () {
   'use strict';
 
