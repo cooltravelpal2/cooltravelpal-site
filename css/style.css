@@ -748,3 +748,5 @@ a.app-card:hover, .app-card:hover { transform: translateY(-3px); box-shadow: var
   .footer-connect-label { width: 100%; margin-bottom: 2px; }
   .footer-connect a { justify-content: center; flex: 1 1 auto; }
 }
+.footer-sister { color: var(--ink-soft); }
+.footer-sister a { color: inherit; text-decoration: underline; }
