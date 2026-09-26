@@ -2,9 +2,9 @@
 <?xml-stylesheet type="text/xsl" href="/feed.xsl"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cool TravelPal Blog</title>
+    <title>TravelPal Blog</title>
     <link>https://travelpal.now/blog/</link>
-    <description>Practical travel guides, credit-card rewards advice, and destination-experience guides from Cool TravelPal.</description>
+    <description>Practical travel guides, credit-card rewards advice, and destination-experience guides from TravelPal.</description>
     <language>en-us</language>
     <lastBuildDate>Thu, 13 Aug 2026 20:00:00 +0000</lastBuildDate>
     <atom:link href="https://travelpal.now/feed.xml" rel="self" type="application/rss+xml"/>

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Publish a prewritten Cool TravelPal article teaser to X.
+"""Publish a prewritten TravelPal article teaser to X.
 
 The article title and teaser come from the site's checked-in blog index. No AI
 model runs in this workflow, so scheduled posts cannot invent facts.
@@ -173,7 +173,7 @@ def trim_for_x(prefix: str, url: str, limit: int = 280) -> str:
 
 def compose(article: Article, *, is_new: bool = False) -> str:
     if is_new:
-        prefix = f"New on Cool TravelPal — {article.title}: {article.summary}"
+        prefix = f"New on TravelPal — {article.title}: {article.summary}"
     else:
         prefix = CUSTOM_COPY.get(article.slug, f"{article.title}: {article.summary}")
     return trim_for_x(prefix, article.url)

@@ -1,4 +1,4 @@
-# Cool TravelPal Newsletter — Issue 01
+# TravelPal Newsletter — Issue 01
 
 ## Campaign settings
 
@@ -6,7 +6,7 @@
 - **Alternate subject A:** What AI helped me build—and what I never trust it to do
 - **Alternate subject B:** From one travel problem to an App Store app
 - **Preheader:** CardPecker, one unforgettable Nikko lunch, a smarter Dubai itinerary, and ancient Egypt at the Louvre.
-- **From name:** Cool TravelPal
+- **From name:** TravelPal
 - **Primary button:** Read the CardPecker story
 - **Primary URL:** https://travelpal.now/blog/how-i-built-cardpecker-with-ai-vibe-coding/
 
@@ -16,7 +16,7 @@
 
 Hi,
 
-Welcome to the first Cool TravelPal newsletter.
+Welcome to the first TravelPal newsletter.
 
 This project began with a simple idea: publish travel advice, cultural stories, and practical tools that respect the reader’s time. Today I want to share the most personal tool-building story behind it.
 
@@ -64,7 +64,7 @@ No “complete app in five minutes” theater—just a practical way for someone
 
 Thanks for reading,
 
-**Cool TravelPal**  
+**TravelPal**  
 Travel smarter. Earn better. Experience more.
 
 https://travelpal.now/
@@ -73,4 +73,4 @@ https://travelpal.now/
 
 ## Plain-text footer
 
-You are receiving this because you subscribed to Cool TravelPal. You can unsubscribe using the link provided by EmailOctopus. TravelPal LLC, Washington, United States.
+You are receiving this because you subscribed to TravelPal. You can unsubscribe using the link provided by EmailOctopus. TravelPal LLC, Washington, United States.
