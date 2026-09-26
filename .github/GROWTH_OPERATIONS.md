@@ -7,7 +7,7 @@ This is the working checklist for publishing, distribution, measurement, and mon
 Use the same identity wherever possible.
 
 - Display name: `Cool TravelPal`
-- X handle: `@cooltravelpal`
+- X handle: `@travelpalnow` (renamed from `@cooltravelpal` on 2026-09-26; keep a placeholder account holding the old handle)
 - YouTube handle: `@CoolTravelPal`
 - YouTube channel: `https://www.youtube.com/@CoolTravelPal`
 - Website: `https://travelpal.now/`
