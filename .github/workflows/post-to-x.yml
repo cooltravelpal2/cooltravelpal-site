@@ -68,7 +68,7 @@ jobs:
           fi
           python3 scripts/post_to_x.py "${args[@]}"
 
-      - name: Queue for @cooltravelpal through Buffer
+      - name: Queue for @travelpalnow through Buffer
         if: >-
           (github.event_name == 'schedule' && vars.X_AUTOMATION_ENABLED == 'true') ||
           (github.event_name == 'workflow_dispatch' && inputs.dry_run == false)
