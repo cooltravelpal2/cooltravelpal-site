@@ -1,4 +1,4 @@
-# Cool TravelPal growth operations
+# TravelPal growth operations
 
 This is the working checklist for publishing, distribution, measurement, and monetization.
 
@@ -6,7 +6,7 @@ This is the working checklist for publishing, distribution, measurement, and mon
 
 Use the same identity wherever possible.
 
-- Display name: `Cool TravelPal`
+- Display name: `TravelPal`
 - X handle: `@travelpalnow` (renamed from `@cooltravelpal` on 2026-09-26; keep a placeholder account holding the old handle)
 - YouTube handle: `@CoolTravelPal`
 - YouTube channel: `https://www.youtube.com/@CoolTravelPal`
@@ -22,7 +22,7 @@ Bio:
 
 Pinned launch post:
 
-> Welcome to Cool TravelPal. We publish thoughtful city stories, practical travel strategies, points guidance, book and museum notes, and privacy-first travel tools. Start exploring: https://travelpal.now/
+> Welcome to TravelPal. We publish thoughtful city stories, practical travel strategies, points guidance, book and museum notes, and privacy-first travel tools. Start exploring: https://travelpal.now/
 
 Initial cadence: three useful posts per week. Most posts should contain a complete observation or recommendation, not only an article link.
 
@@ -30,7 +30,7 @@ Initial cadence: three useful posts per week. Most posts should contain a comple
 
 Description:
 
-> Cool TravelPal helps you travel smarter, earn better, and experience more. Expect practical destination guides, points-and-miles explanations, books connected to places, museums worth slowing down for, and honest looks at privacy-first travel apps from TravelPal LLC.
+> TravelPal helps you travel smarter, earn better, and experience more. Expect practical destination guides, points-and-miles explanations, books connected to places, museums worth slowing down for, and honest looks at privacy-first travel apps from TravelPal LLC.
 >
 > Read the guides at https://travelpal.now/ and join the occasional newsletter at https://travelpal.now/newsletter/.
 

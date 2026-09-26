@@ -1,5 +1,5 @@
 /* ============================================================
-   Cool TravelPal — site-wide design system
+   TravelPal — site-wide design system
    Travel publication + toolkit. Harmonized with the TravelOrbit
    landing page (Fraunces display, Hanken Grotesk text, warm
    paper, calm ink) and extended with three pillar accents:
@@ -172,6 +172,13 @@ h2 { font-family: var(--font-display); font-weight: 600; }
 }
 .sub-list a:hover { background: var(--paper-2); text-decoration: none; }
 .sub-list .sub-all a { color: var(--travel); font-weight: 700; }
+.sub-list .sub-label {
+  margin: 6px 4px 2px; padding: 8px 8px 2px;
+  border-top: 1px solid var(--line);
+  color: var(--ink-soft); font-size: .72rem; font-weight: 700;
+  letter-spacing: .08em; text-transform: uppercase;
+}
+.sub-list .sub-other a { color: var(--ink-soft); font-size: .88rem; }
 
 .nav-search { margin-left: auto; }
 .nav-search input {
@@ -748,3 +755,5 @@ a.app-card:hover, .app-card:hover { transform: translateY(-3px); box-shadow: var
   .footer-connect-label { width: 100%; margin-bottom: 2px; }
   .footer-connect a { justify-content: center; flex: 1 1 auto; }
 }
+.footer-sister { color: var(--ink-soft); }
+.footer-sister a { color: inherit; text-decoration: underline; }
