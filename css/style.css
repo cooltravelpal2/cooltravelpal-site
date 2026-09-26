@@ -172,6 +172,13 @@ h2 { font-family: var(--font-display); font-weight: 600; }
 }
 .sub-list a:hover { background: var(--paper-2); text-decoration: none; }
 .sub-list .sub-all a { color: var(--travel); font-weight: 700; }
+.sub-list .sub-label {
+  margin: 6px 4px 2px; padding: 8px 8px 2px;
+  border-top: 1px solid var(--line);
+  color: var(--ink-soft); font-size: .72rem; font-weight: 700;
+  letter-spacing: .08em; text-transform: uppercase;
+}
+.sub-list .sub-other a { color: var(--ink-soft); font-size: .88rem; }
 
 .nav-search { margin-left: auto; }
 .nav-search input {
