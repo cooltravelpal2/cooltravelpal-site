@@ -1,12 +1,12 @@
 #!/bin/bash
-# Route-protection check for cooltravelpal.com.
+# Route-protection check for travelpal.now.
 #
 # Local mode (default):   ./tests/check_routes.sh
 #   Verifies each protected route resolves to a file in the repo
 #   (GitHub Pages serves <route>/index.html for directory routes).
 #
 # Live mode:              ./tests/check_routes.sh --live
-#   Curls https://cooltravelpal.com<route> and requires HTTP 200
+#   Curls https://travelpal.now<route> and requires HTTP 200
 #   without a redirect to an unrelated page. Run after deploying.
 set -u
 cd "$(dirname "$0")/.."
@@ -19,7 +19,7 @@ while IFS= read -r route; do
   [[ -z "$route" || "$route" == \#* ]] && continue
 
   if [[ "$MODE" == "--live" ]]; then
-    code=$(curl -s -o /dev/null -w "%{http_code}" "https://cooltravelpal.com${route}")
+    code=$(curl -s -o /dev/null -w "%{http_code}" "https://travelpal.now${route}")
     if [[ "$code" == "200" ]]; then
       echo "OK   200  $route"
     else

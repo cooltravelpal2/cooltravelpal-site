@@ -24,7 +24,7 @@ from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
 BLOG_INDEX = ROOT / "blog" / "index.html"
-SITE = "https://cooltravelpal.com"
+SITE = "https://travelpal.now"
 TIMEZONE = ZoneInfo("America/Los_Angeles")
 START_DATE = date(2026, 7, 17)
 START_OFFSET = 1  # CardPecker was queued manually as the live integration test.
@@ -370,7 +370,7 @@ def get_recent_article_slugs(api_key: str, target: BufferTarget) -> set[str]:
         text = str(edge.get("node", {}).get("text", ""))
         slugs.update(
             re.findall(
-                r"https?://(?:www\.)?cooltravelpal\.com/blog/([^/\s?]+)/?",
+                r"https?://(?:www\.)?(?:cooltravelpal\.com|travelpal\.now)/blog/([^/\s?]+)/?",
                 text,
             )
         )
