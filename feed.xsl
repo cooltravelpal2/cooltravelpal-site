@@ -37,7 +37,7 @@
               <p><xsl:value-of select="description"/></p>
             </div>
           </xsl:for-each>
-          <a class="home" href="https://cooltravelpal.com/">← Back to cooltravelpal.com</a>
+          <a class="home" href="https://travelpal.now/">← Back to travelpal.now</a>
         </div>
       </body>
     </html>
