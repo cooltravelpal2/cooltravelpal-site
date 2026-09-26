@@ -8,7 +8,7 @@
 - **Preheader:** CardPecker, one unforgettable Nikko lunch, a smarter Dubai itinerary, and ancient Egypt at the Louvre.
 - **From name:** Cool TravelPal
 - **Primary button:** Read the CardPecker story
-- **Primary URL:** https://cooltravelpal.com/blog/how-i-built-cardpecker-with-ai-vibe-coding/
+- **Primary URL:** https://travelpal.now/blog/how-i-built-cardpecker-with-ai-vibe-coding/
 
 ---
 
@@ -36,25 +36,25 @@ AI helped translate requirements into code, inspect errors, explain unfamiliar S
 
 That is the kind of vibe coding I want to encourage: use AI to cross the coding barrier quickly, then accept that quality still takes judgment, structure, testing, and weeks of iteration.
 
-**[Read how I built CardPecker →](https://cooltravelpal.com/blog/how-i-built-cardpecker-with-ai-vibe-coding/)**
+**[Read how I built CardPecker →](https://travelpal.now/blog/how-i-built-cardpecker-with-ai-vibe-coding/)**
 
 ### A Nikko lunch I almost missed
 
 On a snowy day in Nikko, I nearly left Akinoya when the owner asked me to wait outside. I stayed—and found chewy fresh-noodle yakisoba, deeply flavored pork, and fried yuba that became the most memorable food of the trip.
 
-**[Read the Akinoya review →](https://cooltravelpal.com/blog/akinoya-yakisoba-nikko-review/)**
+**[Read the Akinoya review →](https://travelpal.now/blog/akinoya-yakisoba-nikko-review/)**
 
 ### Dubai works better as three different stories
 
 For a first visit, stop treating Dubai as one compact center. Give separate time to the creek and older trading city, Downtown’s engineered spectacle, and either the coast or desert. The result is calmer and more interesting than racing through a checklist of superlatives.
 
-**[Plan three days in Dubai →](https://cooltravelpal.com/blog/dubai-first-time-guide/)**
+**[Plan three days in Dubai →](https://travelpal.now/blog/dubai-first-time-guide/)**
 
 ### Slow down in the Louvre’s Egyptian galleries
 
 The Louvre displays more than 6,000 Egyptian objects across two levels. A focused route—from the Great Sphinx and daily life to the Seated Scribe and the historic Musée Charles X rooms—turns an overwhelming department into a coherent story.
 
-**[Follow the Egyptian Antiquities route →](https://cooltravelpal.com/blog/louvre-egyptian-antiquities-route/)**
+**[Follow the Egyptian Antiquities route →](https://travelpal.now/blog/louvre-egyptian-antiquities-route/)**
 
 ### What comes next
 
@@ -67,7 +67,7 @@ Thanks for reading,
 **Cool TravelPal**  
 Travel smarter. Earn better. Experience more.
 
-https://cooltravelpal.com/
+https://travelpal.now/
 
 ---
 

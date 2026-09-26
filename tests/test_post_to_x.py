@@ -91,7 +91,7 @@ class PostToXTests(unittest.TestCase):
                     "edges": [
                         {
                             "node": {
-                                "text": "Read https://cooltravelpal.com/blog/example-story/"
+                                "text": "Read https://travelpal.now/blog/example-story/"
                             }
                         },
                         {"node": {"text": "A post without a site link"}},

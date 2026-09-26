@@ -10,8 +10,8 @@ Use the same identity wherever possible.
 - X handle: `@cooltravelpal`
 - YouTube handle: `@CoolTravelPal`
 - YouTube channel: `https://www.youtube.com/@CoolTravelPal`
-- Website: `https://cooltravelpal.com/`
-- Newsletter: `https://cooltravelpal.com/newsletter/`
+- Website: `https://travelpal.now/`
+- Newsletter: `https://travelpal.now/newsletter/`
 - Avatar: `images/travelpal-logo.png`
 
 ### X profile
@@ -22,7 +22,7 @@ Bio:
 
 Pinned launch post:
 
-> Welcome to Cool TravelPal. We publish thoughtful city stories, practical travel strategies, points guidance, book and museum notes, and privacy-first travel tools. Start exploring: https://cooltravelpal.com/
+> Welcome to Cool TravelPal. We publish thoughtful city stories, practical travel strategies, points guidance, book and museum notes, and privacy-first travel tools. Start exploring: https://travelpal.now/
 
 Initial cadence: three useful posts per week. Most posts should contain a complete observation or recommendation, not only an article link.
 
@@ -32,7 +32,7 @@ Description:
 
 > Cool TravelPal helps you travel smarter, earn better, and experience more. Expect practical destination guides, points-and-miles explanations, books connected to places, museums worth slowing down for, and honest looks at privacy-first travel apps from TravelPal LLC.
 >
-> Read the guides at https://cooltravelpal.com/ and join the occasional newsletter at https://cooltravelpal.com/newsletter/.
+> Read the guides at https://travelpal.now/ and join the occasional newsletter at https://travelpal.now/newsletter/.
 
 Pilot formats:
 
