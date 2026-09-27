@@ -757,3 +757,16 @@ a.app-card:hover, .app-card:hover { transform: translateY(-3px); box-shadow: var
 }
 .footer-sister { color: var(--ink-soft); }
 .footer-sister a { color: inherit; text-decoration: underline; }
+
+/* CardPecker release screenshots */
+.app-shot-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; max-width: 960px; margin: 0 auto; }
+.app-shot-grid figure { margin: 0; }
+.app-shot-grid img { display: block; width: 100%; height: auto; border-radius: 20px; box-shadow: var(--shadow-lift); }
+.app-shot-grid figcaption { margin-top: 12px; color: var(--ink-soft); text-align: center; font-size: .9rem; }
+.app-screen-story .article-lead img { width: min(100%, 420px); height: auto; aspect-ratio: auto; object-fit: contain; margin: 0 auto; }
+.app-screen-story .article-lead figcaption { margin-top: 12px; color: var(--ink-soft); text-align: center; font-size: .9rem; }
+.app-screen-story .article-body .prose { margin: 0 auto; }
+.app-screen-story .article-photo img { max-width: 420px; margin: 0 auto; }
+.app-screen-story .article-photo figcaption { text-align: center; }
+@media (max-width: 720px) { .app-shot-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; } }
+@media (max-width: 460px) { .app-shot-grid { grid-template-columns: 1fr; max-width: 320px; } }
