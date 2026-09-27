@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CardPecker — Always know which card to use</title>
-  <meta name="description" content="CardPecker compares rewards, tracks statement credits, offers, receipts, and points balances — get more value from every card in your wallet, with no account and no bank logins.">
+  <meta name="description" content="CardPecker 1.6.0 helps you choose the best card, track benefits, browse News &amp; Deals, and check whether a points or miles redemption is worth it.">
   <link rel="canonical" href="https://travelpal.now/cardpecker/">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" type="image/png" href="/images/favicon.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="TravelPal">
   <meta property="og:title" content="CardPecker — Always know which card to use">
-  <meta property="og:description" content="Compare rewards, track credits, offers, receipts, and points balances. Private by design — no account, no bank logins.">
+  <meta property="og:description" content="Choose your best card, follow News &amp; Deals, and compare award bookings with the new Worth It tool.">
   <meta property="og:url" content="https://travelpal.now/cardpecker/">
   <meta property="og:image" content="https://travelpal.now/images/cardpecker-icon.png">
   <script type="application/ld+json">
@@ -25,7 +25,7 @@
         "applicationCategory": "FinanceApplication",
         "url": "https://travelpal.now/cardpecker/",
         "installUrl": "https://apps.apple.com/us/app/cardpecker/id6761355656",
-        "description": "CardPecker tells you which credit card to use for every purchase, compares rewards across your wallet, tracks benefits, card-linked offers, receipts, and loyalty-points balances. No account or bank credentials required.",
+        "description": "CardPecker compares the cards in your wallet, tracks benefits and receipts, shows card and travel news and general deals, and checks the value of points and miles redemptions. No account or bank credentials required.",
         "publisher": { "@id": "https://travelpal.now/#org" }
       },
       {
@@ -47,12 +47,12 @@
           {
             "@type": "Question",
             "name": "Where is my data stored?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Your primary database — cards, categories, benefits, offers, receipts, and balances — is stored locally on your device. There is no account, CardPecker server, or tracking. Automatic backups use your own iCloud Drive weekly by default and can be changed or turned off." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Cards, benefits, and receipts stay on your device. Optional backups use your own iCloud Drive or a Files location you choose. News and Deals use a generic feed that does not include your wallet or purchases." }
           },
           {
             "@type": "Question",
-            "name": "Can CardPecker fill in my points balances automatically?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes, without your passwords. The optional CardPecker Sync Safari extension reads the balance and card-linked offers shown on a loyalty or issuer page you are already signed in to and sends them to the app on your device. It never sees or stores your passwords. You can also sync inside the app, or just type balances in manually." }
+            "name": "Can I check a program that is not linked to one of my cards?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Worth It searches supported loyalty programs independently of your saved cards. Type a program name, tap a matching suggestion, and enter the points or miles needed, cash price, and any award taxes or fees." }
           },
           {
             "@type": "Question",
@@ -61,8 +61,8 @@
           },
           {
             "@type": "Question",
-            "name": "How do credits and offers work?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Benefits tracks statement credits and recurring perks, auto-refreshing them each billing period. Offers keeps card-linked merchant deals together, combines duplicate deals, and can show in-store offers near you when you grant location access." }
+            "name": "How does Worth It decide?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Worth It subtracts award taxes and fees from the comparable cash price, divides the cash saved by the points or miles required, and compares that cents-per-point value with a dated reference estimate. The result is a guide, not a guarantee of personal value." }
           }
         ]
       }
@@ -106,12 +106,12 @@
       <div class="wrap">
         <img class="app-icon-lg" src="/images/cardpecker-icon.png" alt="CardPecker app icon" width="96" height="96">
         <h1>Always know <span class="hl-cards">which card</span> to use.</h1>
-        <p class="lede">Compare rewards, track credits and offers, log receipts, and watch your points balances grow — everything your wallet earns, without spreadsheets, bank logins, or guesswork at the register.</p>
+        <p class="lede">Choose the right card, keep an eye on benefits and News &amp; Deals, and ask whether a points or miles booking is worth it. CardPecker keeps the everyday decisions in one place.</p>
         <div class="cta-row">
           <a href="https://apps.apple.com/us/app/cardpecker/id6761355656" class="btn btn-cards">Download on the App Store</a>
           <a href="/cards-points/" class="btn btn-outline">Read our Cards &amp; Points guides</a>
         </div>
-        <p class="fineprint">iPhone · No account · No bank logins</p>
+        <p class="fineprint">iPhone · No account · No bank logins · Worth It arrives with version 1.6.0</p>
       </div>
     </section>
 
@@ -124,7 +124,7 @@
           <div class="scenario"><h3>Hotel stay</h3><p>Hyatt or Marriott, points card or credit card — compare the effective return before you book.</p></div>
           <div class="scenario"><h3>Groceries</h3><p>Quarterly and rotating categories are exactly the thing human memory drops. CardPecker doesn't.</p></div>
           <div class="scenario"><h3>An expiring credit</h3><p>Benefits shows the dining credit that resets next week — use it on a meal you were buying anyway.</p></div>
-          <div class="scenario"><h3>A new card arrives</h3><p>Add its categories once and every future comparison includes it automatically.</p></div>
+          <div class="scenario"><h3>Booking with miles</h3><p>Enter the cash price, award fees, and miles required. Worth It shows the value you would get per mile.</p></div>
         </div>
       </div>
     </section>
@@ -135,12 +135,23 @@
         <div class="check-grid">
           <div class="check-item"><span class="tick cards">✓</span><div><h3>Best card, instantly</h3><p>Tap any spending category and see which card earns the highest effective return across your whole wallet.</p></div></div>
           <div class="check-item"><span class="tick cards">✓</span><div><h3>Track every benefit</h3><p>Benefits tracks travel credits, dining credits, free nights, and recurring perks, auto-refreshing each billing period.</p></div></div>
-          <div class="check-item"><span class="tick cards">✓</span><div><h3>Card-linked offers</h3><p>Keep issuer offers in one place, combine duplicate deals across cards, and see in-store offers near you when you allow location.</p></div></div>
+          <div class="check-item"><span class="tick cards">✓</span><div><h3>News &amp; Deals together</h3><p>Switch between card and travel updates and general savings in one tab. Open the original source to check the details.</p></div></div>
           <div class="check-item"><span class="tick cards">✓</span><div><h3>Receipts, scanned</h3><p>Point the camera at a paper receipt and CardPecker reads the merchant and total — or attach a photo to any logged purchase.</p></div></div>
-          <div class="check-item"><span class="tick cards">✓</span><div><h3>Rewards balances</h3><p>Track miles and points across loyalty programs and estimate what they're worth using dated reference valuations you can edit. Included with CardPecker.</p></div></div>
-          <div class="check-item"><span class="tick cards">✓</span><div><h3>Sync without passwords</h3><p>The optional Safari extension auto-fills balances and offers from pages you're already signed in to — it never sees or stores a password.</p></div></div>
+          <div class="check-item"><span class="tick cards">✓</span><div><h3>Worth It for award bookings</h3><p>Compare the cash saved by a redemption with a dated points or miles estimate. Award taxes and fees count in the math.</p></div></div>
+          <div class="check-item"><span class="tick cards">✓</span><div><h3>Search any supported program</h3><p>Type a loyalty program name, including one unrelated to your cards, and tap an autocomplete result to select it.</p></div></div>
           <div class="check-item"><span class="tick cards">✓</span><div><h3>Built for multi-card wallets</h3><p>Whether you carry 2 cards or 12, subcategories keep brand-specific rules straight.</p></div></div>
           <div class="check-item"><span class="tick cards">✓</span><div><h3>Backed up, your way</h3><p>One-tap backup and restore, plus automatic backups to your own iCloud Drive — weekly by default, with Off, Daily, and Monthly options.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="wrap">
+        <div class="section-head"><h2>A look at CardPecker 1.6.0</h2><a class="more" href="/blog/cardpecker-1-6-0-worth-it/">Read the release story →</a></div>
+        <div class="app-shot-grid">
+          <figure><img src="/images/cardpecker-160/which-card.png" alt="CardPecker Which Card screen ranking cards for a purchase" width="1320" height="2868" loading="lazy"><figcaption>Choose the card that earns more.</figcaption></figure>
+          <figure><img src="/images/cardpecker-160/news.png" alt="CardPecker News and Deals screen showing card and travel news" width="1320" height="2868" loading="lazy"><figcaption>News and deals share one tab.</figcaption></figure>
+          <figure><img src="/images/cardpecker-160/worth-it.png" alt="CardPecker Worth It screen comparing an EVA miles booking with the cash price" width="1320" height="2868" loading="lazy"><figcaption>Check the value of an award booking.</figcaption></figure>
         </div>
       </div>
     </section>
@@ -150,11 +161,10 @@
         <div class="section-head"><h2>Privacy, plainly</h2></div>
         <div class="prose" style="max-width:700px;">
           <ul>
-            <li><strong>What's stored:</strong> your primary database — cards, reward categories, benefits, offers, receipts, and balances — stays locally on your device.</li>
-            <li><strong>How data gets in:</strong> you enter it, scan a receipt with the camera, or let the optional Safari extension read a balance off a page you're already signed in to. Nothing is fetched behind your back.</li>
-            <li><strong>Bank credentials:</strong> never requested, never stored. CardPecker doesn't log in to your accounts — it doesn't even need your card numbers. The sync extension only reads what's already shown on your screen, and never your passwords.</li>
-            <li><strong>Location:</strong> used only while you're in the app to search Apple Maps for nearby offer merchants. CardPecker doesn't store your coordinates or send them to TravelPal. It's entirely optional.</li>
-            <li><strong>Backups:</strong> automatic backups go to your own iCloud Drive and can be turned off; manual backups go wherever you choose in Files. There is no CardPecker server.</li>
+            <li><strong>What's stored:</strong> your cards, reward categories, benefits, receipts, and images stay locally on your device.</li>
+            <li><strong>Bank credentials:</strong> never requested or stored. CardPecker doesn't log in to your accounts and doesn't need your card numbers.</li>
+            <li><strong>News &amp; Deals:</strong> every user receives the same generic feed. The request does not include your wallet, purchases, or other app data.</li>
+            <li><strong>Backups:</strong> automatic backups go to your own iCloud Drive and can be turned off; manual backups go wherever you choose in Files.</li>
             <li><strong>What CardPecker doesn't do:</strong> no account, no analytics, no advertising identifiers, no data sold or shared.</li>
           </ul>
           <p>The full policy is short and readable: <a href="/cardpecker/privacy-policy/">CardPecker Privacy Policy</a>.</p>
@@ -167,23 +177,23 @@
         <div class="section-head"><h2>Frequently asked questions</h2></div>
         <div class="faq-item">
           <div class="faq-q">Does CardPecker connect to my bank?</div>
-          <div class="faq-a"><p>No. CardPecker never asks for bank credentials and never logs in to your accounts. You add your cards and their reward categories manually — no card numbers needed. If you want balances filled in automatically, the optional Safari extension reads only what's already displayed on a page you signed in to yourself.</p></div>
+          <div class="faq-a"><p>No. CardPecker never asks for bank credentials and never logs in to your accounts. You add your cards and their reward categories manually — no card numbers needed.</p></div>
         </div>
         <div class="faq-item">
           <div class="faq-q">How does it know which card earns the most?</div>
           <div class="faq-a"><p>You record each card's earning rates by category. When you tap a category, CardPecker compares the effective return across your cards and shows the winner — including subcategory rules like specific airlines or hotel brands.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q">How do credits and offers work?</div>
-          <div class="faq-a"><p>Benefits tracks statement credits and recurring perks and auto-refreshes them each billing period, so expiring value surfaces before the clock runs out. Offers keeps card-linked deals together, combines duplicate deals, and can show nearby merchants when you grant location access. Pair Benefits with our <a href="/blog/track-credit-card-benefits-before-they-expire/">benefit-tracking guide</a>.</p></div>
+          <div class="faq-q">How do benefits and deals work?</div>
+          <div class="faq-a"><p>Benefits tracks statement credits and recurring perks. News &amp; Deals is a separate feed of card and travel updates and general savings. Deals are not personalized to your cards. Pair Benefits with our <a href="/blog/track-credit-card-benefits-before-they-expire/">benefit-tracking guide</a>.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q">Does anything sync or leave my device?</div>
-          <div class="faq-a"><p>CardPecker is built local-first: your primary database is stored on your device, with no account and no tracking. Automatic backups use your own iCloud Drive weekly by default and can be changed or turned off. The optional Safari Sync extension hands balances and offers from your screen to the app on the same device. See the <a href="/cardpecker/privacy-policy/">privacy policy</a> for the details.</p></div>
+          <div class="faq-q">Does anything leave my device?</div>
+          <div class="faq-a"><p>Your card and receipt data stays on your device. News &amp; Deals downloads a generic feed without sending your wallet or purchases. Optional backups use your own iCloud Drive or the Files location you choose. See the <a href="/cardpecker/privacy-policy/">privacy policy</a> for details.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q">What does Rewards track?</div>
-          <div class="faq-a"><p>Rewards keeps miles and points for programs like Chase, Amex, Hyatt, and Delta in one place, estimates their cash value using editable reference valuations, and totals your portfolio at a glance. Rewards tracking is included with CardPecker.</p></div>
+          <div class="faq-q">How does Worth It work?</div>
+          <div class="faq-a"><p>Search for a supported program and tap a suggestion. Enter the points or miles needed, the comparable cash price, and any award taxes or fees. Worth It calculates the cash saved per point and compares it with a dated reference valuation. It can search programs that are not linked to your saved cards. <a href="/blog/cardpecker-1-6-0-worth-it/">See an example</a>.</p></div>
         </div>
         <div class="faq-item">
           <div class="faq-q">Is CardPecker financial advice?</div>
@@ -213,6 +223,11 @@
             <span class="badge-cat appg">App Guides</span>
             <h3>Introducing CardPecker</h3>
             <p>Why we built a private, local-first answer to "which card?"</p>
+          </a>
+          <a class="story-card" href="/blog/cardpecker-1-6-0-worth-it/">
+            <span class="badge-cat product">Product Update</span>
+            <h3>CardPecker 1.6.0: Is This Redemption Worth It?</h3>
+            <p>The thinking behind the new Worth It tab and the simpler News &amp; Deals navigation.</p>
           </a>
           <a class="story-card" href="/blog/how-i-built-cardpecker-with-ai-vibe-coding/">
             <span class="badge-cat appg">AI Coding</span>
