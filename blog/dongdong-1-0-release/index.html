@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DongDong 1.0: A Workout App That Never Phones Home — TravelPal</title>
-  <meta name="description" content="How DongDong 1.0 was built: a spoken home workout app with 121 exercises and 4,945 recorded coach lines that makes no network requests at all.">
+  <meta name="description" content="How DongDong 1.0 was built: a spoken home workout app with 121 exercises and 4,945 bundled coach voice clips that makes no network requests at all.">
   <link rel="canonical" href="https://travelpal.now/blog/dongdong-1-0-release/">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" type="image/png" href="/images/favicon.png">
@@ -35,9 +35,9 @@
       <p>A promise like that is easy to break by accident, usually months later, when someone adds a convenient library. So it is a test, not a policy. One of the unit tests reads every source file in the app and fails the build if any of them makes a network call. The App Store privacy label says "Data Not Collected", and the test suite is what keeps that sentence true.</p>
 
       <h2>What "everything is in the app" costs</h2>
-      <p>If nothing is fetched, everything has to ship. DongDong 1.0 carries 121 exercises, each with a demonstration, and 4,945 recorded coach lines across five voices. Every count, cue and rest reminder is a real recording rather than text-to-speech generated on the phone, which is why the coach sounds the same on a plane as it does at home.</p>
+      <p>If nothing is fetched, everything has to ship. DongDong 1.0 carries 121 exercises, each with a demonstration, and 4,945 coach voice clips across five voices. The voices were generated with a voice model ahead of time and each line was saved as an audio file, so nothing is synthesized on the phone while you exercise. That is why the coach sounds the same on a plane as it does at home.</p>
       <p>The cost is size: the download is roughly 375&nbsp;MB. I think that is the honest side of the trade. You pay once in storage, and after that the app works in a basement, on a flight, or with the phone in airplane mode.</p>
-      <p>It also changed how the project is stored. Thousands of audio files and more than a hundred films do not belong in git, where every revision of every file is kept forever. The repository holds small manifests instead: a list naming every recording and film, with a hash for each film. The media lives in cloud storage, a script fetches exactly what the manifests name before a build, and a check fails if a file is missing, altered, or present without being listed. Retiring an exercise means removing lines from a manifest, and the build drops its recordings.</p>
+      <p>It also changed how the project is stored. Thousands of audio files and more than a hundred films do not belong in git, where every revision of every file is kept forever. The repository holds small manifests instead: a list naming every voice clip and film, with a hash for each film. The media lives in cloud storage, a script fetches exactly what the manifests name before a build, and a check fails if a file is missing, altered, or present without being listed. Retiring an exercise means removing lines from a manifest, and the build drops its clips.</p>
       <figure class="article-photo"><img src="/images/dongdong-100/demonstration.jpg" alt="Full-screen exercise demonstration in DongDong with the exercise name, a spoken cue and a countdown" width="660" height="1434" loading="lazy"><figcaption>Every exercise can be watched full screen while the coach keeps counting.</figcaption></figure>
 
       <h2>The same workout after you close the app</h2>
