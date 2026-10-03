@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Deploy static TravelPal content plus a separate, synchronized DongDong teaser."""
 import argparse
+import hashlib
 import html
 import json
 import re
@@ -54,6 +55,13 @@ def build(output, data):
     source = re.sub(r'(<loc>https://travelpal.now/dongdong/</loc><lastmod>)[^<]+', lambda match: match[1] + data['date'], source)
     sitemap.write_text(source)
     render_briefs(output, load_editions(ROOT / 'data/travel-briefs'))
+    # A changed stylesheet must also change its URL for returning readers.
+    css_version = hashlib.sha256((output / 'css/style.css').read_bytes()).hexdigest()[:12]
+    for html_page in output.rglob('*.html'):
+        content = html_page.read_text()
+        content = re.sub(r'/css/style\.css(?:\?v=[a-f0-9]+)?',
+                         f'/css/style.css?v={css_version}', content)
+        html_page.write_text(content)
     print('Built separate DongDong teaser:', data['releaseId'])
 
 
