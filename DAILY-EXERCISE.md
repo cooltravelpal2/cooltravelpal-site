@@ -8,7 +8,8 @@ updated in place; the full demonstration and bilingual steps stay on DongDong.
 ## Publishing
 
 GitHub Pages uses the **GitHub Actions** build source. `publish-site.yml` builds
-on pushes to main and daily at 07:17 America/Los_Angeles. It fetches
+on pushes to main and daily at 00:47 America/Los_Angeles, with recovery runs
+at 06:47 and 07:17 before the morning X slot. It fetches
 `https://dongdong.now/daily-exercise.json`, requires today's Pacific date,
 checks the live lesson marker, and verifies the actual exercise video hash.
 It generates the teaser, release JSON and sitemap lastmod in `dist/` and
