@@ -229,6 +229,8 @@ h2 { font-family: var(--font-display); font-weight: 600; }
 .btn-outline:hover { background: var(--paper-2); }
 .btn-quiet { background: transparent; color: var(--ink-soft); font-weight: 600; }
 .btn-quiet:hover { color: var(--ink); }
+.btn-guides { background: #236854; color: #fff; }
+.btn-guides:hover { background: #194C3D; box-shadow: var(--shadow-lift); }
 .btn-travel { background: var(--travel); color: #fff; }
 .btn-travel:hover { background: var(--blue-dark); }
 .btn-cards { background: var(--cards); color: #fff; }
