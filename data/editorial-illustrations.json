@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "airports",
+    "url": "/images/editorial-airports-v1.webp",
+    "kind": "ai-generated-editorial-illustration",
+    "generatedDate": "2026-10-03",
+    "tool": "built-in imagegen",
+    "style": "Painterly gouache editorial art; ivory, fern green, dusty blue, terracotta and plum",
+    "depiction": "Conceptual scene; not a photograph or representation of a specific venue",
+    "originalSha256": "46b84477b8cea90cb99d3e0698e436ac6e9119f6059957eb6ba4f02a0ea0dc88",
+    "width": 1279,
+    "height": 800
+  },
+  {
+    "topic": "hotels",
+    "url": "/images/editorial-hotels-v1.webp",
+    "kind": "ai-generated-editorial-illustration",
+    "generatedDate": "2026-10-03",
+    "tool": "built-in imagegen",
+    "style": "Painterly gouache editorial art; ivory, fern green, dusty blue, terracotta and plum",
+    "depiction": "Conceptual scene; not a photograph or representation of a specific venue",
+    "originalSha256": "bd29808a003d58a215077cf623ddcfaf1c3fe859fcc0d1721435a7ba1aa73b1e",
+    "width": 1279,
+    "height": 800
+  },
+  {
+    "topic": "rewards",
+    "url": "/images/editorial-rewards-v1.webp",
+    "kind": "ai-generated-editorial-illustration",
+    "generatedDate": "2026-10-03",
+    "tool": "built-in imagegen",
+    "style": "Painterly gouache editorial art; ivory, fern green, dusty blue, terracotta and plum",
+    "depiction": "Conceptual scene; not a photograph or representation of a specific venue",
+    "originalSha256": "b2455843151c6be66b96d8465b51d3e4fc5fd18f432bc2ec78d13c4068341778",
+    "width": 1279,
+    "height": 800
+  },
+  {
+    "topic": "museums",
+    "url": "/images/editorial-museums-v1.webp",
+    "kind": "ai-generated-editorial-illustration",
+    "generatedDate": "2026-10-03",
+    "tool": "built-in imagegen",
+    "style": "Painterly gouache editorial art; ivory, fern green, dusty blue, terracotta and plum",
+    "depiction": "Conceptual scene; not a photograph or representation of a specific venue",
+    "originalSha256": "770b49aff098e018d2510febcc703e0663cb606cfbb0537254cd2904bab02518",
+    "width": 1279,
+    "height": 800
+  },
+  {
+    "topic": "books",
+    "url": "/images/editorial-books-v1.webp",
+    "kind": "ai-generated-editorial-illustration",
+    "generatedDate": "2026-10-03",
+    "tool": "built-in imagegen",
+    "style": "Painterly gouache editorial art; ivory, fern green, dusty blue, terracotta and plum",
+    "depiction": "Conceptual scene; not a photograph or representation of a specific venue",
+    "originalSha256": "eb84d4c689d58c98b9c09b62b5149ec8dc232d7f3f8adefc4918217c49eb9322",
+    "width": 1279,
+    "height": 800
+  },
+  {
+    "topic": "technology",
+    "url": "/images/editorial-technology-v1.webp",
+    "kind": "ai-generated-editorial-illustration",
+    "generatedDate": "2026-10-03",
+    "tool": "built-in imagegen",
+    "style": "Painterly gouache editorial art; ivory, fern green, dusty blue, terracotta and plum",
+    "depiction": "Conceptual scene; not a photograph or representation of a specific venue",
+    "originalSha256": "3d529bd8a24ffe641014357bf6b92a697cfa95e0de4f42b5ab5dc81372c17761",
+    "width": 1279,
+    "height": 800
+  }
+]

@@ -68,7 +68,13 @@
     image.alt = '';
     image.src = fallback;
     var credit = image.parentElement.querySelector('.listing-credit');
-    if (credit) credit.hidden = true;
+    if (!credit) {
+      credit = document.createElement('span');
+      credit.className = 'listing-credit';
+      image.parentElement.appendChild(credit);
+    }
+    credit.textContent = 'AI-generated editorial illustration';
+    credit.hidden = false;
   }, true);
 
   var topBtn = document.querySelector('.back-to-top');
