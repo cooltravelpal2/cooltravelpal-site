@@ -204,8 +204,10 @@ def article_html(edition, template=None):
                 continue
             if story.get('image'):
                 blocks.append(image_html(story['image']))
-            trust = 'Officially confirmed' if story['verification'] == 'officially_confirmed' else 'Reported; not independently confirmed'
-            blocks.append(f'<p class="story-meta">{trust} · Source published {esc(story["sourcePublishedAt"][:10])}</p><p>{esc(story["summary"])}</p>')
+            source = story['sources'][0]
+            prefix = 'Reported by ' if story['verification'] == 'reported' else ''
+            blocks.append(f'<p class="story-meta">{prefix}<a href="{esc(source["url"], quote=True)}">{esc(source["publisher"])}</a>'
+                          f' · {esc(story["sourcePublishedAt"][:10])}</p><p>{esc(story["summary"])}</p>')
             if story.get('effectiveAt'):
                 blocks.append(f'<p>Effective: {esc(story["effectiveAt"])}</p>')
             terms = story.get('terms') or {}
@@ -224,8 +226,8 @@ def article_html(edition, template=None):
                 blocks.append('<p>' + esc(' · '.join(entries)) + '</p>')
             if story.get('expiresAt'):
                 blocks.append(f'<p>Offer ends: {esc(story["expiresAt"])[:10]}. Check the source for current availability and full terms.</p>')
-            links = [f'<a href="{esc(s["url"], quote=True)}" rel="noopener">{esc(s["publisher"])}</a>' for s in story['sources']]
-            blocks.append('<p class="brief-sources">Sources: ' + ' · '.join(links) + '</p></article>')
+            links = [f'<a href="{esc(s["url"], quote=True)}" rel="noopener">See {esc(s["publisher"])} announcement</a>' for s in story['sources']]
+            blocks.append('<p class="brief-sources">' + ' · '.join(links) + '</p></article>')
         blocks.append('</section>')
     template = template or (ROOT / 'templates/travel-brief.html').read_text()
     replacements = {'TITLE': esc(title), 'DATE': day, 'URL': esc(article_url(edition), quote=True),
