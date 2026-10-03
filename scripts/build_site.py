@@ -57,10 +57,17 @@ def build(output, data):
     render_briefs(output, load_editions(ROOT / 'data/travel-briefs'))
     # A changed stylesheet must also change its URL for returning readers.
     css_version = hashlib.sha256((output / 'css/style.css').read_bytes()).hexdigest()[:12]
+    js_version = hashlib.sha256((output / 'js/site.js').read_bytes()).hexdigest()[:12]
+    header = (ROOT / 'templates/site-header.html').read_text()
     for html_page in output.rglob('*.html'):
         content = html_page.read_text()
+        content = re.sub(r'<header class="site-header">.*?</header>', lambda match: header, content, flags=re.S)
+        content = content.replace('<li><a href="/monuments/">Museum Knight</a></li>', '<li><a href="/dongdong/">DongDong</a></li>')
+        if 'class="site-header"' in content and '/js/site.js' not in content:
+            content = content.replace('</body>', '<script src="/js/site.js" defer></script></body>')
         content = re.sub(r'/css/style\.css(?:\?v=[a-f0-9]+)?',
                          f'/css/style.css?v={css_version}', content)
+        content = re.sub(r'/js/site\.js(?:\?v=[a-f0-9]+)?', f'/js/site.js?v={js_version}', content)
         html_page.write_text(content)
     print('Built separate DongDong teaser:', data['releaseId'])
 
