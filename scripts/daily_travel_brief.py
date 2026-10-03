@@ -333,7 +333,7 @@ def render(output, editions):
         feature = (f'<section class="brief-highlight section" data-travel-brief-highlight="{esc(latest["editionId"])}">'
                    f'<div class="wrap brief-highlight-grid"><div><p class="eyebrow">Latest travel brief · {esc(latest["editionId"])}</p>'
                    f'<h2>{esc(headline)}</h2><p>{esc(description)}</p>'
-                   f'<a class="btn btn-primary" href="/blog/travel-brief-{esc(latest["editionId"])}/">Read the travel brief →</a>'
+                   f'<a class="btn btn-guides" href="/blog/travel-brief-{esc(latest["editionId"])}/">Read the travel brief →</a>'
                    f'<p><a href="/travel-briefs/">Browse all editions</a></p></div>{visual}</div></section>')
         source = homepage.read_text()
         source = re.sub(r'<!-- TRAVEL_BRIEF_HIGHLIGHT_START -->.*?<!-- TRAVEL_BRIEF_HIGHLIGHT_END -->',
