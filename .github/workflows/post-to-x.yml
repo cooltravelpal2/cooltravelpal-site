@@ -44,6 +44,9 @@ jobs:
       - name: Check out website
         uses: actions/checkout@v6
 
+      - name: Test post selection and duplicate protection
+        run: python3 -m unittest discover -s tests -v
+
       - name: Select and validate post
         env:
           EVENT_NAME: ${{ github.event_name }}

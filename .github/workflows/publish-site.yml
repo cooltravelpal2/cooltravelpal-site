@@ -1,0 +1,62 @@
+name: Publish TravelPal and daily exercise preview
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '47 0 * * *'
+      timezone: America/Los_Angeles
+    - cron: '47 6 * * *'
+      timezone: America/Los_Angeles
+    - cron: '17 7 * * *'
+      timezone: America/Los_Angeles
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Build and test without deploying
+        type: boolean
+        default: true
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: travelpal-pages
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Verify routes and automation
+        run: |
+          bash tests/check_routes.sh
+          python3 -m unittest discover -s tests -v
+      - name: Build synchronized preview from verified live DongDong lesson
+        run: python3 scripts/build_site.py
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - name: Deploy website
+        id: deploy
+        if: github.event_name != 'workflow_dispatch' || inputs.dry_run == false
+        uses: actions/deploy-pages@v4
+      - name: Verify live teaser matches DongDong
+        if: github.event_name != 'workflow_dispatch' || inputs.dry_run == false
+        run: |
+          python3 - <<'PY'
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          import sys
+          sys.path.insert(0, 'scripts')
+          from daily_exercise import load_current
+          data = load_current(datetime.now(ZoneInfo('America/Los_Angeles')).date(), verify_travelpal=True)
+          print('Verified live synchronization:', data['releaseId'])
+          PY
