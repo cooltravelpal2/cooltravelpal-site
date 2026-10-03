@@ -36,7 +36,7 @@ and both release identifiers. Midday/evening retain the travel article queue.
 If the daily lesson is stale, unavailable, or already queued/sent, the morning
 slot falls back to the existing article selection.
 
-The daily post links directly to the complete DongDong lesson. A `?day=YYYY-MM-DD`
+The daily post includes both the complete DongDong lesson and a direct App Store link. A `?day=YYYY-MM-DD`
 query identifies the promotional date for duplicate checking in Buffer's most
 recent 60 scheduled/sent posts; it does not create an archived lesson. The page
 canonical stays the permanent URL. Workflow concurrency serializes posting,

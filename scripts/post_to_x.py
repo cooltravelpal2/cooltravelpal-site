@@ -395,8 +395,10 @@ def choose_daily_text(run_date: date, slot: str, recent_texts: list[str]) -> str
         print(f"Daily exercise skipped; live lesson/teaser verification failed: {exc}", file=sys.stderr)
         return None
     # Keep both selection and reruns below X's limit.
-    return trim_for_x(compose_daily(data).split("\n\n")[0],
-                      data["url"] + "?day=" + data["date"])
+    text = compose_daily(data)
+    if weighted_length(text) > 280:
+        raise ValueError("Daily exercise post exceeds X limit")
+    return text
 
 
 def publish(text: str, api_key: str, target: BufferTarget) -> dict[str, object]:

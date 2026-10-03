@@ -19,11 +19,11 @@ def read_url(url):
             raise ValueError('Daily lesson is not live')
         if urlparse(response.url).netloc != urlparse(url).netloc:
             raise ValueError('Unexpected redirect for daily lesson')
-        return response.read(12 * 1024 * 1024 + 1)
+        return response.read(40 * 1024 * 1024 + 1)
 
 
 def validate(data, day):
-    if data.get('schemaVersion') != 1 or data.get('date') != day.isoformat():
+    if data.get('schemaVersion') not in {1, 2} or data.get('date') != day.isoformat():
         raise ValueError('Daily exercise is not current for the requested Pacific date')
     if data.get('timezone') != 'America/Los_Angeles' or data.get('url') != LESSON_URL:
         raise ValueError('Unexpected daily lesson URL or timezone')
@@ -32,14 +32,14 @@ def validate(data, day):
     if not re.fullmatch(r'[0-9a-f]{64}', data.get('videoSha256', '')):
         raise ValueError('Invalid media hash')
     release = data.get('releaseId', '')
-    if not re.fullmatch(re.escape(day.isoformat() + '-' + data['exerciseId']) + r'-r[0-9]+-' + data['videoSha256'][:12], release):
+    if not re.fullmatch(re.escape(day.isoformat() + '-' + data['exerciseId']) + r'-r[0-9]+-[0-9a-f]{12}', release):
         raise ValueError('Invalid daily release identifier')
     for key in ['name', 'equipment']:
         for locale in ['en', 'zh-Hans']:
             value = data.get(key, {}).get(locale)
             if not isinstance(value, str) or not 0 < len(value) < 180 or '\n' in value or '\r' in value:
                 raise ValueError('Missing or invalid localized daily exercise text')
-    if not isinstance(data.get('videoBytes'), int) or not 0 < data['videoBytes'] <= 12 * 1024 * 1024:
+    if not isinstance(data.get('videoBytes'), int) or not 0 < data['videoBytes'] <= 40 * 1024 * 1024:
         raise ValueError('Invalid media size')
     for field, suffix in [('videoUrl', '.mp4'), ('posterUrl', '.jpg')]:
         value = data.get(field, '')
@@ -63,10 +63,16 @@ def load_current(day, verify_travelpal=False):
     return data
 
 
+APP_URL = 'https://apps.apple.com/app/id6815518430'
+
+
 def compose_daily(data):
-    return (f"Today's home exercise: {data['name']['en']}. "
-            "Watch DongDong's demonstration and follow the steps in English or Chinese. "
-            "A different movement each day.\n\n" + LESSON_URL + '?day=' + data['date'])
+    prefix = f"Today's home exercise: {data['name']['en']}. Watch the demo with spoken coaching and English/Chinese steps. A different movement each day."
+    # X shortens each URL to 23 characters; reserve room for both links/labels.
+    available = 280 - 2 * 23 - len("\n\nLesson: \nApp: ")
+    if len(prefix) > available:
+        prefix = prefix[:available-1].rsplit(' ', 1)[0].rstrip(' ,;:') + '…'
+    return prefix + '\n\nLesson: ' + LESSON_URL + '?day=' + data['date'] + '\nApp: ' + APP_URL
 
 
 def recent_daily_dates(texts):

@@ -36,6 +36,7 @@ class DailyExerciseTests(unittest.TestCase):
         with patch.object(posting,'load_current',return_value=data) as load:
             text=posting.choose_daily_text(day,'morning',[])
             self.assertIn('March in Place',text)
+            self.assertIn(daily.APP_URL,text)
             self.assertLessEqual(posting.weighted_length(text),280)
             self.assertIsNone(posting.choose_daily_text(day,'morning',[text]))
             self.assertIsNone(posting.choose_daily_text(day,'midday',[]))
