@@ -12,7 +12,7 @@ class WeeklyDigestTest(unittest.TestCase):
         data = collect([edition('2026-10-03','too old'),edition('2026-10-04','old copy'),edition('2026-10-09','latest copy'),edition('2026-10-11','future')],date(2026,10,10))
         self.assertEqual([s['title'] for s in data['stories']],['latest copy'])
         self.assertEqual(len(data['editions']),2)
-        self.assertEqual(collect([edition('2026-10-10','inactive',False)],date(2026,10,10))['stories'],[])
+        self.assertEqual(collect([edition('2026-10-10','inactive',False),edition('2026-10-09','withdrawn older copy')],date(2026,10,10))['stories'],[])
 
     def test_empty_draft_is_not_send_eligible(self):
         data = collect([],date(2026,10,10))

@@ -21,9 +21,11 @@ def collect(editions, end):
             continue
         included.append({'editionId': edition['editionId'], 'revision': edition['revision'], 'url': article_url(edition)})
         for story in edition['stories']:
-            if not story.get('active', True) or story['storyId'] in seen:
+            if story['storyId'] in seen:
                 continue
             seen.add(story['storyId'])
+            if not story.get('active', True):
+                continue
             stories.append({**story, 'briefUrl': article_url(edition)})
     return {'weekEnding': end.isoformat(), 'windowStart': start.isoformat(), 'editions': included, 'stories': stories}
 
