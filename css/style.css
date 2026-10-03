@@ -796,3 +796,5 @@ a.app-card:hover, .app-card:hover { transform: translateY(-3px); box-shadow: var
 .story-card.featured .listing-thumb{aspect-ratio:4/3}
 .guide-card .listing-visual{margin-bottom:8px}
 @media(max-width:960px){.story-card.featured .listing-visual{width:100%;max-width:none}.story-card.featured .listing-thumb{aspect-ratio:8/5}}
+
+.listing-credit[hidden]{display:none}
