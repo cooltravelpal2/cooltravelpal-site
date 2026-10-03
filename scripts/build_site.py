@@ -11,6 +11,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 from daily_exercise import load_current
 from daily_travel_brief import load_editions, render as render_briefs
+from listing_thumbnails import add_thumbnails
 
 ROOT = Path(__file__).resolve().parents[1]
 EXCLUDED = {'.git', '.github', 'scripts', 'tests', 'dist', 'templates', 'data', '__pycache__', '.preview'}
@@ -55,6 +56,7 @@ def build(output, data):
     source = re.sub(r'(<loc>https://travelpal.now/dongdong/</loc><lastmod>)[^<]+', lambda match: match[1] + data['date'], source)
     sitemap.write_text(source)
     render_briefs(output, load_editions(ROOT / 'data/travel-briefs'))
+    add_thumbnails(output)
     # A changed stylesheet must also change its URL for returning readers.
     css_version = hashlib.sha256((output / 'css/style.css').read_bytes()).hexdigest()[:12]
     js_version = hashlib.sha256((output / 'js/site.js').read_bytes()).hexdigest()[:12]

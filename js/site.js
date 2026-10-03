@@ -41,6 +41,19 @@
   }
 
   // Back to top
+  // A source image outage should leave a useful visual on article listings.
+  document.addEventListener('error', function (event) {
+    var image = event.target;
+    if (!image || !image.classList || !image.classList.contains('listing-thumb')) return;
+    var fallback = image.getAttribute('data-fallback');
+    if (!fallback) return;
+    image.removeAttribute('data-fallback');
+    image.alt = '';
+    image.src = fallback;
+    var credit = image.parentElement.querySelector('.listing-credit');
+    if (credit) credit.hidden = true;
+  }, true);
+
   var topBtn = document.querySelector('.back-to-top');
   if (topBtn) {
     topBtn.addEventListener('click', function () {
