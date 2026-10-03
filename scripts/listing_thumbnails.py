@@ -43,6 +43,21 @@ class AnchorAttrs(HTMLParser):
         self.attrs = dict(attrs)
 
 
+def illustration_for(path, body):
+    topic = path.lower() + ' ' + html.unescape(re.sub(r'<[^>]+>', ' ', body)).lower()
+    if re.search(r'cardpecker-\d|dongdong|travelorbit|\bai\b|artificial|chatgpt|technology|search-tools', topic):
+        return 'technology'
+    if re.search(r'credit|reward|points|miles|bonus|benefit|redemption', topic):
+        return 'rewards'
+    if re.search(r'hotel|hilton|hyatt|westin|ryokan|resort|marriott|ihg', topic):
+        return 'hotels'
+    if re.search(r'book|novel|reading|hail-mary|hu-anyan|lei-diansheng|roundtable', topic):
+        return 'books'
+    if re.search(r'museum|louvre|gallery|\bart\b|heritage|temple|pagoda|abbey|archaeology|experiences', topic):
+        return 'museums'
+    return 'airports'
+
+
 def add_thumbnails(output: Path):
     cache = {}
     counts = {'article_images': 0, 'illustrations': 0}
@@ -65,10 +80,8 @@ def add_thumbnails(output: Path):
                 media.feed(article.read_text())
             cache[path] = media
         media = cache[path]
-        category = ('cards' if re.search(r'badge-cat cards|Cards &amp; Points', body) else
-                    'experiences' if re.search(r'badge-cat exp|Experiences', body) else
-                    'apps' if re.search(r'badge-cat (product|tech)|Product update', body, re.I) else 'travel')
-        fallback = f'/images/listing-{category}.svg'
+        category = illustration_for(path, body)
+        fallback = f'/images/editorial-{category}-v1.webp'
         credit = ''
         contain = ''
         if media.image:
@@ -80,6 +93,7 @@ def add_thumbnails(output: Path):
                 contain = ' listing-thumb-contain'
         else:
             src, alt = fallback, ''
+            credit = '<span class="listing-credit">AI-generated editorial illustration</span>'
             counts['illustrations'] += 1
         visual = (f'<span class="listing-visual{contain}"><img class="listing-thumb" src="{html.escape(src, quote=True)}" '
                   f'alt="{html.escape(alt, quote=True)}" data-fallback="{fallback}" width="640" height="400" loading="lazy" decoding="async">{credit}</span>')
