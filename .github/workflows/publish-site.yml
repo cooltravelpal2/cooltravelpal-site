@@ -1,4 +1,4 @@
-name: Publish TravelPal and daily exercise preview
+name: Publish TravelPal.now and daily previews
 on:
   push:
     branches: [main]
@@ -7,7 +7,7 @@ on:
       timezone: America/Los_Angeles
     - cron: '47 6 * * *'
       timezone: America/Los_Angeles
-    - cron: '17 7 * * *'
+    - cron: '30 7 * * *'
       timezone: America/Los_Angeles
   workflow_dispatch:
     inputs:
@@ -24,6 +24,10 @@ concurrency:
   cancel-in-progress: false
 jobs:
   publish:
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
     runs-on: ubuntu-latest
     timeout-minutes: 10
     environment:
@@ -31,6 +35,8 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
@@ -38,7 +44,19 @@ jobs:
         run: |
           bash tests/check_routes.sh
           python3 -m unittest discover -s tests -v
-      - name: Build synchronized preview from verified live DongDong lesson
+      - name: Synchronize finalized travel editions
+        id: briefs
+        if: vars.TRAVEL_BRIEFS_ENABLED == 'true'
+        continue-on-error: true
+        run: python3 scripts/daily_travel_brief.py --sync
+      - name: Persist edition archive before publication
+        if: >-
+          vars.TRAVEL_BRIEFS_ENABLED == 'true' && steps.briefs.outcome == 'success' &&
+          (github.event_name != 'workflow_dispatch' || inputs.dry_run == false)
+        env:
+          TRAVEL_BRIEF_PERSIST_ENABLED: 'true'
+        run: python3 scripts/persist_travel_briefs.py
+      - name: Build synchronized daily previews and archived news briefs
         run: python3 scripts/build_site.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
@@ -59,4 +77,23 @@ jobs:
           from daily_exercise import load_current
           data = load_current(datetime.now(ZoneInfo('America/Los_Angeles')).date(), verify_travelpal=True)
           print('Verified live synchronization:', data['releaseId'])
+          PY
+      - name: Verify newly deployed brief
+        if: >-
+          vars.TRAVEL_BRIEFS_ENABLED == 'true' && steps.briefs.outcome == 'success' &&
+          (github.event_name != 'workflow_dispatch' || inputs.dry_run == false)
+        run: |
+          python3 - <<'PY'
+          import sys
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          sys.path.insert(0, 'scripts')
+          from daily_travel_brief import load_editions, load_live
+          from pathlib import Path
+          day = datetime.now(ZoneInfo('America/Los_Angeles')).date()
+          editions = load_editions(Path('data/travel-briefs'))
+          if any(e['editionId'] == day.isoformat() and e['status'].startswith('ready') and any(s.get('active', True) for s in e['stories']) for e in editions):
+              print('Verified live brief:', load_live(day)['editionId'])
+          else:
+              print('No new article to verify; archived editions retained')
           PY

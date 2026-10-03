@@ -25,6 +25,7 @@ from zoneinfo import ZoneInfo
 # Keep this import compatible with tests that load this file by path.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from daily_exercise import load_current, compose_daily, recent_daily_dates
+from daily_travel_brief import load_live as load_live_brief
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -105,6 +106,8 @@ def load_articles(path: Path = BLOG_INDEX) -> list[Article]:
     articles: list[Article] = []
     seen_slugs: set[str] = set()
     for slug, body in cards:
+        if slug.startswith('travel-brief-'):
+            continue
         # An article may appear once in the latest-story list and again in a
         # category section. Keep the first card; it is the same article, not a
         # duplicate queue entry.
@@ -139,6 +142,7 @@ def load_articles(path: Path = BLOG_INDEX) -> list[Article]:
 
 
 def build_queue(articles: list[Article]) -> list[Article]:
+    articles = [article for article in articles if not article.slug.startswith('travel-brief-')]
     by_slug = {article.slug: article for article in articles}
     pinned = [by_slug[slug] for slug in PINNED_SLUGS if slug in by_slug]
     pinned_set = {article.slug for article in pinned}
@@ -264,7 +268,7 @@ def buffer_graphql(
         headers={
             "Authorization": f"Bearer {api_key}",
             "Content-Type": "application/json; charset=utf-8",
-            "User-Agent": "CoolTravelPal-X-Automation/1.0",
+            "User-Agent": "TravelPal.now-X-Automation/1.0",
         },
     )
     for attempt in range(BUFFER_MAX_ATTEMPTS):
@@ -401,6 +405,23 @@ def choose_daily_text(run_date: date, slot: str, recent_texts: list[str]) -> str
     return text
 
 
+def choose_brief_text(run_date: date, slot: str, recent_texts: list[str]) -> str | None:
+    if os.environ.get('TRAVEL_BRIEF_X_ENABLED') != 'true' or slot not in {'midday', 'evening'}:
+        return None
+    slug = 'travel-brief-' + run_date.isoformat()
+    if slug in article_slugs_from_texts(recent_texts):
+        return None
+    try:
+        brief = load_live_brief(run_date)
+        headlines = brief.get('headlines', [])
+        if not headlines or any(not isinstance(h, str) for h in headlines):
+            raise ValueError('Missing brief headlines')
+        return trim_for_x('Today’s TravelPal.now brief: ' + ' · '.join(headlines[:2]), brief['url'])
+    except (ValueError, OSError, KeyError) as exc:
+        print(f'Travel brief skipped: {exc}', file=sys.stderr)
+        return None
+
+
 def publish(text: str, api_key: str, target: BufferTarget) -> dict[str, object]:
     mutation = """
     mutation CreatePost($input: CreatePostInput!) {
@@ -459,11 +480,16 @@ def main() -> int:
     elif not args.dry_run:
         raise ValueError("Missing GitHub Secret: BUFFER_API_KEY")
 
-    text = choose_daily_text(run_date, slot, recent_texts)
-    if text is not None:
+    text = choose_brief_text(run_date, slot, recent_texts)
+    is_brief = text is not None
+    if is_brief:
+        print(f'Selection: verified daily travel brief for {run_date}')
+    else:
+        text = choose_daily_text(run_date, slot, recent_texts)
+    if text is not None and not is_brief:
         print(f"Selection: verified daily exercise for {run_date}")
         print("This replaces the morning article slot; midday/evening remain unchanged.")
-    else:
+    elif text is None:
         index, article, is_new = choose_article(queue, run_date, slot, recent_slugs)
         text = compose(article, is_new=is_new)
         print(f"Queue item: {index + 1}/{len(queue)}")
