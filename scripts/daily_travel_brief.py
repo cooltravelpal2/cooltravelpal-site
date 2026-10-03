@@ -9,7 +9,7 @@ import sys
 import urllib.request
 import urllib.parse
 from datetime import date, datetime
-from email.utils import format_datetime
+from email.utils import format_datetime, parsedate_to_datetime
 from pathlib import Path
 import xml.etree.ElementTree as ET
 
@@ -174,7 +174,8 @@ def article_html(edition, template=None):
         for story in stories:
             blocks.append(f'<article class="brief-story" data-story-id="{esc(story["storyId"], quote=True)}"><h3>{esc(story["title"])}</h3>')
             if not story.get('active', True):
-                blocks.append('<p>This item has been withdrawn. Please consult the linked source for current information.</p></article>')
+                links = [f'<a href="{esc(source["url"], quote=True)}">{esc(source["publisher"])}</a>' for source in story['sources']]
+                blocks.append('<p>This item has been withdrawn. Consult the original source for current information: ' + ' · '.join(links) + '</p></article>')
                 continue
             trust = 'Officially confirmed' if story['verification'] == 'officially_confirmed' else 'Reported; not independently confirmed'
             blocks.append(f'<p class="story-meta">{trust} · Source published {esc(story["sourcePublishedAt"][:10])}</p><p>{esc(story["summary"])}</p>')
@@ -230,6 +231,10 @@ def render(output, editions):
     if feed_path.exists():
         tree = ET.parse(feed_path)
         channel = tree.getroot().find('channel')
+        updated_urls = {article_url(edition) for edition in visible}
+        for existing in list(channel.findall('item')):
+            if existing.findtext('guid') in updated_urls:
+                channel.remove(existing)
         for edition, summary in reversed(rss):
             node = ET.Element('item')
             for key, value in {'title': f'TravelPal.now Travel Brief — {edition["editionId"]}',
@@ -238,6 +243,17 @@ def render(output, editions):
                                'description': summary}.items():
                 ET.SubElement(node, key).text = value
             channel.append(node)
+        items = channel.findall('item')
+        for item in items:
+            channel.remove(item)
+        items.sort(key=lambda item: parsedate_to_datetime(item.findtext('pubDate')).timestamp(), reverse=True)
+        channel.extend(items)
+        built = channel.find('lastBuildDate')
+        if built is not None:
+            latest_update = max(edition.get('updatedAt', edition['generatedAt']) for edition in visible)
+            updated = datetime.fromisoformat(latest_update.replace('Z', '+00:00'))
+            if updated.timestamp() > parsedate_to_datetime(built.text).timestamp():
+                built.text = format_datetime(updated)
         tree.write(feed_path, encoding='utf-8', xml_declaration=True)
     sitemap_path = output / 'sitemap.xml'
     if sitemap_path.exists():

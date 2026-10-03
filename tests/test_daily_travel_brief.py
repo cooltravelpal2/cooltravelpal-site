@@ -98,6 +98,19 @@ class TravelBriefTests(unittest.TestCase):
                 self.assertTrue((output / 'blog/travel-brief-2026-10-02/index.html').exists())
                 self.assertEqual(json.loads((output / 'daily-travel-brief.json').read_text())['editionId'], '2026-10-03')
 
+    def test_daily_rss_is_current_ordered_and_revision_safe(self):
+        import xml.etree.ElementTree as ET
+        with tempfile.TemporaryDirectory() as temp:
+            output = Path(temp)
+            (output / 'feed.xml').write_text('<rss><channel><lastBuildDate>Fri, 02 Oct 2026 10:00:00 +0000</lastBuildDate><item><title>Earlier story</title><guid>earlier</guid><pubDate>Fri, 02 Oct 2026 10:00:00 +0000</pubDate></item></channel></rss>')
+            brief.render(output, [fixture(), fixture('2026-10-02')])
+            brief.render(output, [fixture(revision=2), fixture('2026-10-02')])
+            channel = ET.parse(output / 'feed.xml').getroot().find('channel')
+            items = channel.findall('item')
+            self.assertEqual(len(items), 3)
+            self.assertEqual(items[0].findtext('guid'), brief.article_url(fixture()))
+            self.assertIn('03 Oct 2026', channel.findtext('lastBuildDate'))
+
     def test_live_marker_and_midday_duplicate_protection(self):
         data = fixture()
         manifest = {'schemaVersion': 1, 'editionId': data['editionId'], 'revision': 1, 'status': data['status'],
