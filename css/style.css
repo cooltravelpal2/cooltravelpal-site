@@ -775,3 +775,14 @@ a.app-card:hover, .app-card:hover { transform: translateY(-3px); box-shadow: var
 
 /* The newest reviewed travel edition stays near the top of the portal. */
 .brief-highlight-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}.brief-highlight{background:#f2f5ed}.brief-highlight h2{font-size:clamp(1.8rem,3vw,2.7rem);line-height:1.15}.brief-highlight .brief-photo{margin:0}.brief-highlight .brief-photo img{width:100%;max-height:320px;object-fit:contain;display:block;border-radius:12px}.brief-highlight figcaption{font-size:.7rem;line-height:1.5;margin-top:8px;color:#526260}@media(max-width:700px){.brief-highlight-grid{grid-template-columns:1fr;gap:24px}}
+
+/* Compact homepage and shared navigation */
+.btn-brief{background:#B84E16;color:#fff}.btn-brief:hover{background:#963E10;box-shadow:var(--shadow-lift)}
+.btn-workout{background:#743f79;color:#fff}.btn-workout:hover{background:#5e3263}.app-card.workout .app-tag{color:#743f79}
+.home-hero{padding:48px 0 36px}.home-hero .lede{max-width:620px;margin-bottom:24px}
+.newsletter-highlight{background:#fbf1e5;border-block:1px solid #eadac6;padding:28px 0}
+.newsletter-row{display:flex;align-items:center;justify-content:space-between;gap:24px}.newsletter-row .eyebrow{margin-bottom:6px}.newsletter-row h2{font-size:1.5rem;margin-bottom:6px}.newsletter-row p:last-child{color:var(--ink-soft);margin:0}.newsletter-row .btn{flex-shrink:0}
+.home-app-grid .app-card{padding:24px}.home-app-grid .app-card>p{margin-bottom:12px}.app-learn{font-size:.9rem;font-weight:600}.home-guides{grid-template-columns:repeat(3,minmax(0,1fr))}.guide-topics{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 24px}.guide-topics a{border:1px solid var(--line);border-radius:24px;padding:6px 14px;font-size:.9rem}
+.header-search{margin-left:auto;position:relative}.header-search summary{cursor:pointer;display:flex;gap:6px;align-items:center;padding:10px;list-style:none;font-size:.9rem}.header-search summary::-webkit-details-marker{display:none}.header-search .nav-search{position:absolute;right:0;top:100%;display:flex;gap:8px;padding:12px;background:var(--paper);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow-lift)}.header-search .nav-search button{background:var(--travel);color:white;border:0;border-radius:20px;padding:8px 14px;cursor:pointer}
+@media(max-width:880px){.header-search{margin:8px 0 0}.header-search .nav-search{position:static;box-shadow:none}.header-search .nav-search input{min-width:0}.header-search .nav-search{margin:0}.site-nav .nav-list .has-sub>a{padding-bottom:4px}.site-nav .sub-list{padding-left:8px}.site-nav .sub-list a{color:var(--ink)}}
+@media(max-width:720px){.newsletter-row{align-items:flex-start;flex-direction:column;gap:16px}.home-guides{grid-template-columns:1fr}.home-hero{padding-top:36px}.section{padding-top:48px;padding-bottom:48px}}
