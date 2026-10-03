@@ -9,9 +9,10 @@ from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 from daily_exercise import load_current
+from daily_travel_brief import load_editions, render as render_briefs
 
 ROOT = Path(__file__).resolve().parents[1]
-EXCLUDED = {'.git', '.github', 'scripts', 'tests', 'dist', 'templates', '__pycache__', '.preview'}
+EXCLUDED = {'.git', '.github', 'scripts', 'tests', 'dist', 'templates', 'data', '__pycache__', '.preview'}
 
 
 def teaser_html(data):
@@ -52,6 +53,7 @@ def build(output, data):
     source = sitemap.read_text()
     source = re.sub(r'(<loc>https://travelpal.now/dongdong/</loc><lastmod>)[^<]+', lambda match: match[1] + data['date'], source)
     sitemap.write_text(source)
+    render_briefs(output, load_editions(ROOT / 'data/travel-briefs'))
     print('Built separate DongDong teaser:', data['releaseId'])
 
 

@@ -54,6 +54,7 @@ jobs:
           MANUAL_SLOT: ${{ inputs.slot }}
           MANUAL_DATE: ${{ inputs.run_date }}
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          TRAVEL_BRIEF_X_ENABLED: ${{ vars.TRAVEL_BRIEF_X_ENABLED }}
         run: |
           if [[ "$EVENT_NAME" == "schedule" ]]; then
             case "$SCHEDULE" in
@@ -81,6 +82,7 @@ jobs:
           MANUAL_SLOT: ${{ inputs.slot }}
           MANUAL_DATE: ${{ inputs.run_date }}
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          TRAVEL_BRIEF_X_ENABLED: ${{ vars.TRAVEL_BRIEF_X_ENABLED }}
         run: |
           if [[ "$EVENT_NAME" == "schedule" ]]; then
             case "$SCHEDULE" in
