@@ -21,6 +21,11 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+# The same verified daily lesson powers the separate TravelPal preview and X.
+# Keep this import compatible with tests that load this file by path.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from daily_exercise import load_current, compose_daily, recent_daily_dates
+
 
 ROOT = Path(__file__).resolve().parents[1]
 BLOG_INDEX = ROOT / "blog" / "index.html"
@@ -342,7 +347,7 @@ def find_buffer_target(api_key: str) -> BufferTarget:
     return matches[0]
 
 
-def get_recent_article_slugs(api_key: str, target: BufferTarget) -> set[str]:
+def get_recent_post_texts(api_key: str, target: BufferTarget) -> list[str]:
     """Return article links from the latest scheduled and sent Buffer posts."""
     query = """
     query RecentPosts($input: PostsInput!) {
@@ -369,16 +374,29 @@ def get_recent_article_slugs(api_key: str, target: BufferTarget) -> set[str]:
         },
     )
     edges = result.get("data", {}).get("posts", {}).get("edges", [])
-    slugs: set[str] = set()
-    for edge in edges:
-        text = str(edge.get("node", {}).get("text", ""))
-        slugs.update(
-            re.findall(
-                r"https?://(?:www\.)?(?:cooltravelpal\.com|travelpal\.now)/blog/([^/\s?]+)/?",
-                text,
-            )
-        )
-    return slugs
+    return [str(edge.get("node", {}).get("text", "")) for edge in edges]
+
+
+def article_slugs_from_texts(texts: list[str]) -> set[str]:
+    return {slug for text in texts for slug in re.findall(
+        r"https?://(?:www\.)?(?:cooltravelpal\.com|travelpal\.now)/blog/([^/\s?]+)/?", text)}
+
+
+def get_recent_article_slugs(api_key: str, target: BufferTarget) -> set[str]:
+    return article_slugs_from_texts(get_recent_post_texts(api_key, target))
+
+
+def choose_daily_text(run_date: date, slot: str, recent_texts: list[str]) -> str | None:
+    if slot != "morning" or run_date.isoformat() in recent_daily_dates(recent_texts):
+        return None
+    try:
+        data = load_current(run_date, verify_travelpal=True)
+    except (ValueError, OSError) as exc:
+        print(f"Daily exercise skipped; live lesson/teaser verification failed: {exc}", file=sys.stderr)
+        return None
+    # Keep both selection and reruns below X's limit.
+    return trim_for_x(compose_daily(data).split("\n\n")[0],
+                      data["url"] + "?day=" + data["date"])
 
 
 def publish(text: str, api_key: str, target: BufferTarget) -> dict[str, object]:
@@ -424,25 +442,33 @@ def main() -> int:
     args = parse_args()
     now = datetime.now(TIMEZONE)
     run_date = date.fromisoformat(args.date) if args.date else now.date()
+    if not args.dry_run and run_date != now.date():
+        raise ValueError("Historical test dates are allowed only with --dry-run")
     slot = resolve_slot(args.slot, now)
     queue = build_queue(load_articles())
     api_key = os.environ.get("BUFFER_API_KEY", "")
     target: BufferTarget | None = None
     recent_slugs: set[str] = set()
+    recent_texts: list[str] = []
     if api_key:
         target = find_buffer_target(api_key)
-        recent_slugs = get_recent_article_slugs(api_key, target)
+        recent_texts = get_recent_post_texts(api_key, target)
+        recent_slugs = article_slugs_from_texts(recent_texts)
     elif not args.dry_run:
         raise ValueError("Missing GitHub Secret: BUFFER_API_KEY")
 
-    index, article, is_new = choose_article(queue, run_date, slot, recent_slugs)
-    text = compose(article, is_new=is_new)
-
-    print(f"Queue item: {index + 1}/{len(queue)}")
+    text = choose_daily_text(run_date, slot, recent_texts)
+    if text is not None:
+        print(f"Selection: verified daily exercise for {run_date}")
+        print("This replaces the morning article slot; midday/evening remain unchanged.")
+    else:
+        index, article, is_new = choose_article(queue, run_date, slot, recent_slugs)
+        text = compose(article, is_new=is_new)
+        print(f"Queue item: {index + 1}/{len(queue)}")
+        print(f"Selection: {'new article priority' if is_new else 'evergreen rotation'}")
+        print(f"Article: {article.slug}")
     print(f"Slot: {slot}")
-    print(f"Selection: {'new article priority' if is_new else 'evergreen rotation'}")
     print(f"Recent article links skipped: {len(recent_slugs)}")
-    print(f"Article: {article.slug}")
     print(f"Weighted length: {weighted_length(text)}/280")
     print("---")
     print(text)
