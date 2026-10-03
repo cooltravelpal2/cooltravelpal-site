@@ -14,7 +14,7 @@ from daily_travel_brief import load_editions, render as render_briefs
 from listing_thumbnails import add_thumbnails
 
 ROOT = Path(__file__).resolve().parents[1]
-EXCLUDED = {'.git', '.github', 'scripts', 'tests', 'dist', 'templates', 'data', '__pycache__', '.preview'}
+EXCLUDED = {'.git', '.github', 'scripts', 'tests', 'dist', 'templates', 'data', '__pycache__', '.preview', 'weekly-drafts'}
 
 
 def teaser_html(data):
