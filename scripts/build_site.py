@@ -16,10 +16,12 @@ EXCLUDED = {'.git', '.github', 'scripts', 'tests', 'dist', 'templates', '__pycac
 
 def teaser_html(data):
     esc = html.escape
+    voice = data.get('variants', {}).get(data.get('defaultLocale'), {})
+    coach = (f'<p class="teaser-coach"><img src="{esc(voice["avatarUrl"], quote=True)}" alt="{esc(voice["coachName"], quote=True)} avatar" width="48" height="48"> Today’s coach: <strong>{esc(voice["coachName"])}</strong></p>' if voice else '')
     return f'''<section class="dongdong-teaser" data-daily-release="{esc(data['releaseId'], quote=True)}">
 <div><p class="eyebrow">Featured {esc(data['date'])} · Pacific time</p><h2>{esc(data['name']['en'])}</h2>
-<p><strong>What you need:</strong> {esc(data['equipment']['en'])}</p>
-<p>Watch the demonstration and read the full steps on DongDong. The featured movement changes each day.</p>
+{coach}<p><strong>What you need:</strong> {esc(data['equipment']['en'])}</p>
+<p>Watch the demonstration with spoken coaching, captions and the full steps on DongDong. The featured movement and coach change each day.</p>
 <p lang="zh-Hans">今日动作：{esc(data['name']['zh-Hans'])}。所需器材：{esc(data['equipment']['zh-Hans'])}。前往咚咚网站观看示范并阅读完整步骤。</p>
 <a class="btn btn-primary" href="{esc(data['url'], quote=True)}">See today's exercise on DongDong ↗</a></div>
 <a href="{esc(data['url'], quote=True)}" aria-label="Watch {esc(data['name']['en'], quote=True)} on DongDong"><img src="{esc(data['posterUrl'], quote=True)}" alt="Animated demonstration preview of {esc(data['name']['en'], quote=True)}" width="240" height="427"></a></section>'''
