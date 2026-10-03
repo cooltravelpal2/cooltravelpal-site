@@ -9,6 +9,8 @@ on:
       timezone: America/Los_Angeles
     - cron: '30 7 * * *'
       timezone: America/Los_Angeles
+    - cron: '0 9 * * 6'
+      timezone: America/Los_Angeles
   workflow_dispatch:
     inputs:
       dry_run:
