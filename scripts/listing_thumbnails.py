@@ -1,5 +1,7 @@
 """Reuse article media on listing cards; supply original editorial artwork when absent."""
 import html
+import hashlib
+from collections import Counter
 import re
 from html.parser import HTMLParser
 from pathlib import Path
@@ -58,6 +60,22 @@ def illustration_for(path, body):
     return 'airports'
 
 
+class IllustrationPicker:
+    """Balance each topic's variants and avoid the two nearest fallback images."""
+    def __init__(self):
+        self.used = Counter()
+        self.recent = []
+
+    def choose(self, category, path):
+        candidates = [f'/images/editorial-{category}-v{n}.webp' for n in (1, 2, 3)]
+        available = [asset for asset in candidates if asset not in self.recent[-2:]]
+        chosen = min(available, key=lambda asset: (
+            self.used[asset], hashlib.sha256((path + asset).encode()).hexdigest()))
+        self.used[chosen] += 1
+        self.recent.append(chosen)
+        return chosen
+
+
 def add_thumbnails(output: Path):
     cache = {}
     counts = {'article_images': 0, 'illustrations': 0}
@@ -81,7 +99,7 @@ def add_thumbnails(output: Path):
             cache[path] = media
         media = cache[path]
         category = illustration_for(path, body)
-        fallback = f'/images/editorial-{category}-v1.webp'
+        fallback = picker.choose(category, path)
         credit = ''
         contain = ''
         if media.image:
@@ -101,6 +119,7 @@ def add_thumbnails(output: Path):
 
     for page in output.rglob('*.html'):
         source = page.read_text()
+        picker = IllustrationPicker()
         result = re.sub(r'(<a\b[^>]*>)(.*?)</a>', decorate, source, flags=re.S)
         if result != source:
             page.write_text(result)

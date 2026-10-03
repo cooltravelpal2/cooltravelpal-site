@@ -788,13 +788,13 @@ a.app-card:hover, .app-card:hover { transform: translateY(-3px); box-shadow: var
 @media(max-width:720px){.newsletter-row{align-items:flex-start;flex-direction:column;gap:16px}.home-guides{grid-template-columns:1fr}.home-hero{padding-top:36px}.section{padding-top:48px;padding-bottom:48px}}
 
 /* Article listing media, using the article's existing image. */
-.listing-visual{display:block;flex-shrink:0;width:100%;margin-bottom:16px;overflow:hidden;border-radius:10px;background:#edf1eb}
+.listing-visual{display:block;flex-shrink:0;width:100%;max-width:260px;margin-bottom:12px;overflow:hidden;border-radius:10px;background:#edf1eb}
 .listing-thumb{display:block;width:100%;height:auto;aspect-ratio:8/5;object-fit:cover}
 .listing-thumb-contain .listing-thumb{object-fit:contain}
 .listing-credit{display:block;padding:8px 10px;font-size:.68rem;line-height:1.45;color:var(--ink-soft);background:var(--paper-2)}
-.story-card.featured .listing-visual{width:36%;max-width:380px;margin-bottom:0}
+.story-card.featured .listing-visual{width:27%;max-width:280px;margin-bottom:0}
 .story-card.featured .listing-thumb{aspect-ratio:4/3}
 .guide-card .listing-visual{margin-bottom:8px}
-@media(max-width:960px){.story-card.featured .listing-visual{width:100%;max-width:none}.story-card.featured .listing-thumb{aspect-ratio:8/5}}
+@media(max-width:960px){.story-card.featured .listing-visual{width:100%;max-width:260px}.story-card.featured .listing-thumb{aspect-ratio:8/5}}
 
 .listing-credit[hidden]{display:none}
