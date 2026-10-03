@@ -28,6 +28,30 @@ def fixture(day='2026-10-03', revision=1):
 
 
 class TravelBriefTests(unittest.TestCase):
+    def test_reviewed_image_and_homepage_highlight(self):
+        data = fixture()
+        data['stories'][0]['image'] = {'url': 'https://upload.wikimedia.org/photo.jpg',
+            'alt': 'Destination <photo>', 'caption': 'Destination, not the hotel.',
+            'credit': 'Photographer', 'sourceUrl': 'https://commons.wikimedia.org/photo',
+            'licenseUrl': 'https://creativecommons.org/licenses/by/2.0/',
+            'license': 'CC BY 2.0', 'rightsReviewed': True}
+        data['contentDigest'] = brief.canonical_digest(data)
+        brief.validate(data)
+        rendered = brief.article_html(data)
+        self.assertIn('Destination &lt;photo&gt;', rendered)
+        self.assertIn('Photo source', rendered)
+        with tempfile.TemporaryDirectory() as temp:
+            output = Path(temp)
+            (output / 'index.html').write_text('<main><!-- TRAVEL_BRIEF_HIGHLIGHT_START --><!-- TRAVEL_BRIEF_HIGHLIGHT_END --></main>')
+            brief.render(output, [data])
+            self.assertIn('data-travel-brief-highlight', (output / 'index.html').read_text())
+            self.assertIn('/blog/travel-brief-2026-10-03/', (output / 'index.html').read_text())
+        for key, value in [('url', 'javascript:alert(1)'), ('rightsReviewed', False)]:
+            bad = json.loads(json.dumps(data)); bad['stories'][0]['image'][key] = value
+            bad['contentDigest'] = brief.canonical_digest(bad)
+            with self.assertRaises(ValueError):
+                brief.validate(bad)
+
     def test_validation_rejects_changed_digest_date_and_unsafe_urls(self):
         data = fixture()
         brief.validate(data)

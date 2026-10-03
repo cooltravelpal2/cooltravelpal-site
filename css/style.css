@@ -770,3 +770,6 @@ a.app-card:hover, .app-card:hover { transform: translateY(-3px); box-shadow: var
 .app-screen-story .article-photo figcaption { text-align: center; }
 @media (max-width: 720px) { .app-shot-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; } }
 @media (max-width: 460px) { .app-shot-grid { grid-template-columns: 1fr; max-width: 320px; } }
+
+/* The newest reviewed travel edition stays near the top of the portal. */
+.brief-highlight-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}.brief-highlight{background:#f2f5ed}.brief-highlight h2{font-size:clamp(1.8rem,3vw,2.7rem);line-height:1.15}.brief-highlight .brief-photo{margin:0}.brief-highlight .brief-photo img{width:100%;max-height:320px;object-fit:contain;display:block;border-radius:12px}.brief-highlight figcaption{font-size:.7rem;line-height:1.5;margin-top:8px;color:#526260}@media(max-width:700px){.brief-highlight-grid{grid-template-columns:1fr;gap:24px}}

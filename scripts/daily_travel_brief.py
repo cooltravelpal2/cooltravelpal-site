@@ -74,7 +74,32 @@ def validate(data):
         if not isinstance(story.get('summary'), str) or len(story['summary']) > 1000:
             raise ValueError('Invalid summary')
         datetime.fromisoformat(story['sourcePublishedAt'].replace('Z', '+00:00'))
+        if story.get('image') is not None:
+            validate_image(story['image'])
     return data
+
+
+def validate_image(image):
+    if not isinstance(image, dict) or image.get('rightsReviewed') is not True:
+        raise ValueError('Image reuse must be reviewed')
+    for field in ['url', 'sourceUrl', 'licenseUrl']:
+        if not public_https(image.get(field)):
+            raise ValueError('Invalid image URL')
+    for field in ['alt', 'caption', 'credit', 'license']:
+        if not isinstance(image.get(field), str) or not 1 <= len(image[field]) <= 600:
+            raise ValueError('Missing image attribution or description')
+    return image
+
+
+def image_html(image):
+    validate_image(image)
+    esc = html.escape
+    return (f'<figure class="brief-photo"><img src="{esc(image["url"], quote=True)}" '
+            f'alt="{esc(image["alt"], quote=True)}" loading="lazy" decoding="async">'
+            f'<figcaption>{esc(image["caption"])} {esc(image["credit"])} '
+            f'<a href="{esc(image["sourceUrl"], quote=True)}">Photo source</a> · '
+            f'<a href="{esc(image["licenseUrl"], quote=True)}">{esc(image["license"])}</a>'
+            '</figcaption></figure>')
 
 
 class RestrictedRedirect(urllib.request.HTTPRedirectHandler):
@@ -177,11 +202,21 @@ def article_html(edition, template=None):
                 links = [f'<a href="{esc(source["url"], quote=True)}">{esc(source["publisher"])}</a>' for source in story['sources']]
                 blocks.append('<p>This item has been withdrawn. Consult the original source for current information: ' + ' · '.join(links) + '</p></article>')
                 continue
+            if story.get('image'):
+                blocks.append(image_html(story['image']))
             trust = 'Officially confirmed' if story['verification'] == 'officially_confirmed' else 'Reported; not independently confirmed'
             blocks.append(f'<p class="story-meta">{trust} · Source published {esc(story["sourcePublishedAt"][:10])}</p><p>{esc(story["summary"])}</p>')
             if story.get('effectiveAt'):
                 blocks.append(f'<p>Effective: {esc(story["effectiveAt"])}</p>')
             terms = story.get('terms') or {}
+            if terms.get('rewardPoints') and terms.get('minSpend') is not None and terms.get('spendWindow'):
+                points = html.escape(f'{terms["rewardPoints"]:,.0f}')
+                spend = html.escape(f'${terms["minSpend"]:,.0f}')
+                blocks.append(f'<aside class="brief-offer-visual"><strong>{points}</strong><span>bonus points</span>'
+                              f'<p>After {spend} in purchases within the {esc(terms["spendWindow"])}.</p>'
+                              f'<p>Annual fee: {esc(str(terms.get("annualFee", "See issuer")))} USD. '
+                              f'Launch offer through {esc(terms.get("offerDeadline", "See issuer"))}. '
+                              f'{esc(terms.get("eligibilityNote", "Issuer terms apply."))}</p></aside>')
             labels = {'issuer': 'Issuer', 'program': 'Program', 'minSpend': 'Required spend',
                       'creditAmount': 'Credit', 'rewardPoints': 'Points / miles', 'activateBy': 'Enroll by'}
             entries = [f'{label}: {terms[key]}' for key, label in labels.items() if terms.get(key) is not None]
@@ -195,7 +230,9 @@ def article_html(edition, template=None):
     template = template or (ROOT / 'templates/travel-brief.html').read_text()
     replacements = {'TITLE': esc(title), 'DATE': day, 'URL': esc(article_url(edition), quote=True),
                     'DIGEST': edition['contentDigest'], 'REVISION': str(edition['revision']),
-                    'BODY': '\n'.join(blocks), 'MODIFIED': edition.get('updatedAt', edition['generatedAt'])}
+                    'BODY': '\n'.join(blocks), 'MODIFIED': edition.get('updatedAt', edition['generatedAt']),
+                    'HEADLINE': esc(edition.get('title', 'What’s changing in travel')),
+                    'DEK': esc(edition.get('dek', 'Selected hotel, airline, credit-card and destination developments, with source links.'))}
     for key, value in replacements.items():
         template = template.replace('{{' + key + '}}', value)
     return template
@@ -267,6 +304,22 @@ def render(output, editions):
         tree.write(sitemap_path, encoding='utf-8', xml_declaration=True)
     latest = visible[0]
     active = [s for s in latest['stories'] if s.get('active', True)]
+    homepage = output / 'index.html'
+    if homepage.exists() and active:
+        esc = html.escape
+        headline = latest.get('title', 'What’s changing in travel')
+        description = latest.get('dek', ' · '.join(s['title'] for s in active[:3]))
+        photo = next((s.get('image') for s in active if s.get('image')), None)
+        visual = image_html(photo) if photo else ''
+        feature = (f'<section class="brief-highlight section" data-travel-brief-highlight="{esc(latest["editionId"])}">'
+                   f'<div class="wrap brief-highlight-grid"><div><p class="eyebrow">Latest travel brief · {esc(latest["editionId"])}</p>'
+                   f'<h2>{esc(headline)}</h2><p>{esc(description)}</p>'
+                   f'<a class="btn btn-primary" href="/blog/travel-brief-{esc(latest["editionId"])}/">Read the travel brief →</a>'
+                   f'<p><a href="/travel-briefs/">Browse all editions</a></p></div>{visual}</div></section>')
+        source = homepage.read_text()
+        source = re.sub(r'<!-- TRAVEL_BRIEF_HIGHLIGHT_START -->.*?<!-- TRAVEL_BRIEF_HIGHLIGHT_END -->',
+                        lambda _: '<!-- TRAVEL_BRIEF_HIGHLIGHT_START -->' + feature + '<!-- TRAVEL_BRIEF_HIGHLIGHT_END -->', source, flags=re.S)
+        homepage.write_text(source)
     manifest = {'schemaVersion': 1, 'editionId': latest['editionId'], 'revision': latest['revision'],
                 'url': article_url(latest), 'contentDigest': latest['contentDigest'],
                 'status': latest['status'] if active else 'withdrawn',
