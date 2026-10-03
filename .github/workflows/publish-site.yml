@@ -58,6 +58,13 @@ jobs:
         run: python3 scripts/persist_travel_briefs.py
       - name: Build synchronized daily previews and archived news briefs
         run: python3 scripts/build_site.py
+      - name: Compile seven-day newsletter draft without sending
+        run: python3 scripts/weekly_digest.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: weekly-newsletter-draft
+          path: weekly-drafts/
+          retention-days: 14
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

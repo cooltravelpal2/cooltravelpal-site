@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
-from listing_thumbnails import add_thumbnails, illustration_for
+from listing_thumbnails import add_thumbnails, illustration_for, IllustrationPicker
 
 class ListingMediaTest(unittest.TestCase):
     def test_photo_credit_fallback_and_repeat_build(self):
@@ -19,7 +19,7 @@ class ListingMediaTest(unittest.TestCase):
             self.assertIn('alt="Mountain view"', result)
             self.assertIn('Photo: Example. CC BY-SA 4.0', result)
             self.assertIn('listing-thumb-contain', result)
-            self.assertIn('src="/images/editorial-museums-v1.webp"', result)
+            self.assertRegex(result, r'src="/images/editorial-museums-v[123]\.webp"')
             self.assertIn('AI-generated editorial illustration', result)
             self.assertEqual(result.count('class="listing-thumb"'), 2)
             self.assertNotIn('src="/images/cardpecker-icon.png"', result)
@@ -32,3 +32,14 @@ class ListingMediaTest(unittest.TestCase):
         self.assertEqual(illustration_for('/blog/airport-arrival/', ''), 'airports')
         self.assertEqual(illustration_for('/blog/a-book-review/', ''), 'books')
         self.assertEqual(illustration_for('/blog/cardpecker-1-6-1/', ''), 'technology')
+
+    def test_neighbor_variation_is_balanced_and_reproducible(self):
+        def sequence():
+            picker = IllustrationPicker()
+            return [picker.choose('hotels', f'/blog/hotel-{n}/') for n in range(12)]
+        images = sequence()
+        self.assertEqual(images, sequence())
+        self.assertEqual(len(set(images)), 3)
+        for n, image in enumerate(images):
+            self.assertNotIn(image, images[max(0, n-2):n])
+        self.assertEqual(sorted(images.count(image) for image in set(images)), [4, 4, 4])
