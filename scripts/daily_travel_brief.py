@@ -76,6 +76,12 @@ def validate(data):
         datetime.fromisoformat(story['sourcePublishedAt'].replace('Z', '+00:00'))
         if story.get('image') is not None:
             validate_image(story['image'])
+        for field, limit in [('paragraphs', 4), ('keyPoints', 5)]:
+            if field in story and (not isinstance(story[field], list) or len(story[field]) > limit
+                or any(not isinstance(v, str) or not 1 <= len(v) <= 1000 for v in story[field])):
+                raise ValueError('Invalid structured story copy')
+        if 'takeaway' in story and (not isinstance(story['takeaway'], str) or len(story['takeaway']) > 600):
+            raise ValueError('Invalid story takeaway')
     return data
 
 
@@ -187,6 +193,10 @@ def article_html(edition, template=None):
     day = edition['editionId']
     title = f'TravelPal.now Travel Brief — {day}'
     blocks = []
+    sections = [(key, label) for key, label in SECTIONS.items() if any(s['section'] == key for s in edition['stories'])]
+    if sections:
+        blocks.append('<nav class="brief-section-nav" aria-label="Travel brief sections">' +
+                      ''.join(f'<a href="#brief-{key}">{esc(label)}</a>' for key, label in sections) + '</nav>')
     if edition.get('coverageStatus') == 'limited':
         blocks.append('<p class="brief-notice">This edition covers the verified developments available from the sources checked. Coverage is limited.</p>')
     if edition.get('correctionNotice'):
@@ -195,19 +205,26 @@ def article_html(edition, template=None):
         stories = [s for s in edition['stories'] if s['section'] == section]
         if not stories:
             continue
-        blocks.append(f'<section><h2>{esc(label)}</h2>')
+        blocks.append(f'<section class="brief-section brief-section-{section}" id="brief-{section}">'
+                      f'<header class="brief-section-head"><h2>{esc(label)}</h2></header>')
         for story in stories:
             blocks.append(f'<article class="brief-story" data-story-id="{esc(story["storyId"], quote=True)}"><h3>{esc(story["title"])}</h3>')
             if not story.get('active', True):
                 links = [f'<a href="{esc(source["url"], quote=True)}">{esc(source["publisher"])}</a>' for source in story['sources']]
                 blocks.append('<p>This item has been withdrawn. Consult the original source for current information: ' + ' · '.join(links) + '</p></article>')
                 continue
-            if story.get('image'):
-                blocks.append(image_html(story['image']))
             source = story['sources'][0]
             prefix = 'Reported by ' if story['verification'] == 'reported' else ''
             blocks.append(f'<p class="story-meta">{prefix}<a href="{esc(source["url"], quote=True)}">{esc(source["publisher"])}</a>'
-                          f' · {esc(story["sourcePublishedAt"][:10])}</p><p>{esc(story["summary"])}</p>')
+                          f' · {esc(story["sourcePublishedAt"][:10])}</p>')
+            if story.get('image'):
+                blocks.append(image_html(story['image']))
+            blocks.extend(f'<p>{esc(paragraph)}</p>' for paragraph in story.get('paragraphs', [story['summary']]))
+            if story.get('keyPoints'):
+                blocks.append('<div class="brief-key-points"><h4>Key points</h4><ul>' +
+                              ''.join(f'<li>{esc(point)}</li>' for point in story['keyPoints']) + '</ul></div>')
+            if story.get('takeaway'):
+                blocks.append(f'<p class="brief-takeaway"><strong>Tip:</strong> {esc(story["takeaway"])}</p>')
             if story.get('effectiveAt'):
                 blocks.append(f'<p>Effective: {esc(story["effectiveAt"])}</p>')
             terms = story.get('terms') or {}
@@ -222,7 +239,7 @@ def article_html(edition, template=None):
             labels = {'issuer': 'Issuer', 'program': 'Program', 'minSpend': 'Required spend',
                       'creditAmount': 'Credit', 'rewardPoints': 'Points / miles', 'activateBy': 'Enroll by'}
             entries = [f'{label}: {terms[key]}' for key, label in labels.items() if terms.get(key) is not None]
-            if entries:
+            if entries and not story.get('paragraphs'):
                 blocks.append('<p>' + esc(' · '.join(entries)) + '</p>')
             if story.get('expiresAt'):
                 blocks.append(f'<p>Offer ends: {esc(story["expiresAt"])[:10]}. Check the source for current availability and full terms.</p>')

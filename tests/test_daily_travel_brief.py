@@ -28,6 +28,23 @@ def fixture(day='2026-10-03', revision=1):
 
 
 class TravelBriefTests(unittest.TestCase):
+    def test_structured_copy_sections_and_escaping(self):
+        data = fixture(); story = data['stories'][0]
+        story['paragraphs'] = ['Opening context.', '<script>bad</script>']
+        story['keyPoints'] = ['A useful fact.']
+        story['takeaway'] = 'Check availability for your dates.'
+        data['contentDigest'] = brief.canonical_digest(data)
+        brief.validate(data)
+        rendered = brief.article_html(data)
+        self.assertIn('brief-section-hotels', rendered)
+        self.assertIn('Key points', rendered)
+        self.assertIn('Tip:', rendered)
+        self.assertIn('&lt;script&gt;bad&lt;/script&gt;', rendered)
+        self.assertNotIn('<script>bad', rendered)
+        story['keyPoints'] = ['too many'] * 6
+        data['contentDigest'] = brief.canonical_digest(data)
+        with self.assertRaises(ValueError): brief.validate(data)
+
     def test_reviewed_image_and_homepage_highlight(self):
         data = fixture()
         data['stories'][0]['image'] = {'url': 'https://upload.wikimedia.org/photo.jpg',
