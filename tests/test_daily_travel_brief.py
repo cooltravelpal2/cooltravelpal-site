@@ -40,6 +40,8 @@ class TravelBriefTests(unittest.TestCase):
         rendered = brief.article_html(data)
         self.assertIn('Destination &lt;photo&gt;', rendered)
         self.assertIn('Photo source', rendered)
+        self.assertIn('See Hyatt announcement', rendered)
+        self.assertNotIn('Source published', rendered)
         with tempfile.TemporaryDirectory() as temp:
             output = Path(temp)
             (output / 'index.html').write_text('<main><!-- TRAVEL_BRIEF_HIGHLIGHT_START --><!-- TRAVEL_BRIEF_HIGHLIGHT_END --></main>')
