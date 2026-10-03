@@ -30,6 +30,23 @@
     }
   };
 
+  // Own the signup heading even when the embedded provider renders later.
+  var newsletterEmbed = document.querySelector('.newsletter-embed');
+  if (newsletterEmbed) {
+    var brandedHeadings = new WeakSet();
+    var applyNewsletterBrand = function () {
+      newsletterEmbed.querySelectorAll('h1, h2, h3').forEach(function (heading) {
+        if (brandedHeadings.has(heading) || !heading.textContent.trim()) return;
+        brandedHeadings.add(heading);
+        heading.textContent = 'Join the TravelPal.now newsletter';
+      });
+    };
+    applyNewsletterBrand();
+    new MutationObserver(applyNewsletterBrand).observe(newsletterEmbed, {
+      childList: true, subtree: true
+    });
+  }
+
   // Mobile menu toggle
   var menuBtn = document.querySelector('.menu-btn');
   var nav = document.getElementById('site-nav');
