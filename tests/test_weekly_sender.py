@@ -56,7 +56,7 @@ class SenderTest(unittest.TestCase):
         self.assertEqual(len(fields),6)
         self.assertTrue(all(len(v)<=600 for v in fields.values()))
         for term in ['200,000','$5,000','3 months','$350','November 18, 2026']:
-            self.assertIn(term,fields['WeeklyHighlight3'])
+            self.assertIn(term,fields['WeeklyHighlight1'])
     def test_pagination_uses_cursor_not_next_url(self):
         p=Provider('test');calls=[]
         def call(method,path):
@@ -74,6 +74,14 @@ class SenderTest(unittest.TestCase):
         p=FakeProvider();p.quota_state['reserved']=7500
         with self.assertRaises(ValueError):deliver(p,self.digest(),True)
         self.assertEqual(p.queues,[])
+    def test_each_article_has_its_own_paragraph_field(self):
+        d=self.digest()
+        d['stories'].append({**d['stories'][0], 'storyId':'y', 'title':'Another supported opening'})
+        fields=payload(d)
+        self.assertIn('A supported opening',fields['WeeklyHighlight1'])
+        self.assertIn('Another supported opening',fields['WeeklyHighlight2'])
+        self.assertNotIn('Another supported opening',fields['WeeklyHighlight1'])
+        self.assertNotIn('\\n',fields['WeeklyHighlight1'])
     def test_schedule(self):
         self.assertTrue(due(datetime(2026,10,10,9)))
         self.assertFalse(due(datetime(2026,10,10,8)))

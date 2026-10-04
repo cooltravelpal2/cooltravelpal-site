@@ -208,7 +208,7 @@ def article_html(edition, template=None):
         blocks.append(f'<section class="brief-section brief-section-{section}" id="brief-{section}">'
                       f'<header class="brief-section-head"><h2>{esc(label)}</h2></header>')
         for story in stories:
-            blocks.append(f'<article class="brief-story" data-story-id="{esc(story["storyId"], quote=True)}"><h3>{esc(story["title"])}</h3>')
+            blocks.append(f'<article class="brief-story" id="story-{hashlib.sha256(story["storyId"].encode()).hexdigest()[:16]}" data-story-id="{esc(story["storyId"], quote=True)}"><h3>{esc(story["title"])}</h3>')
             if not story.get('active', True):
                 links = [f'<a href="{esc(source["url"], quote=True)}">{esc(source["publisher"])}</a>' for source in story['sources']]
                 blocks.append('<p>This item has been withdrawn. Consult the original source for current information: ' + ' · '.join(links) + '</p></article>')

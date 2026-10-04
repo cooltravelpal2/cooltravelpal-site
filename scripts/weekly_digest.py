@@ -3,6 +3,8 @@ import argparse
 import hashlib
 import html
 import json
+import shutil
+import re
 from datetime import date, datetime, timedelta
 from zoneinfo import ZoneInfo
 from pathlib import Path
@@ -26,7 +28,7 @@ def collect(editions, end):
             seen.add(story['storyId'])
             if not story.get('active', True):
                 continue
-            stories.append({**story, 'briefUrl': article_url(edition)})
+            stories.append({**story, 'briefUrl': article_url(edition) + '#story-' + hashlib.sha256(story['storyId'].encode()).hexdigest()[:16]})
     return {'weekEnding': end.isoformat(), 'windowStart': start.isoformat(), 'editions': included, 'stories': stories}
 
 
@@ -76,12 +78,12 @@ def short_copy(story):
     sentences = re.split(r'(?<=[.!?])\s+', text)
     kept = []
     for sentence in sentences:
-        if kept and len((' '.join(kept + [sentence])).split()) > 60:
+        if kept and len((' '.join(kept + [sentence])).split()) > 45:
             break
         kept.append(sentence)
     excerpt = ' '.join(kept)
-    if len(excerpt.split()) > 70:
-        excerpt = ' '.join(excerpt.split()[:60]).rstrip(',.') + '…'
+    if len(excerpt.split()) > 45:
+        excerpt = ' '.join(excerpt.split()[:45]).rstrip(',.') + '…'
     return excerpt
 
 
@@ -114,6 +116,55 @@ def render(digest, test=False):
     return '<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TravelPal.now weekly edit</title></head><body style="margin:0;padding:24px 12px;background:#f4f0e8;font-family:Arial,sans-serif;color:#25312d;line-height:1.6"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width:640px;margin:auto;background:#ffffff;border-radius:16px;overflow:hidden">' + body + '</table></body></html>'
 
 
+
+ISSUES = Path('data/weekly-newsletter-issues')
+
+
+def load_issue(path):
+    issue = json.loads(path.read_text())
+    date.fromisoformat(issue['weekEnding'])
+    if not 0 < len(issue['stories']) <= 5:
+        raise ValueError('Invalid newsletter issue size')
+    seen = set()
+    for story in issue['stories']:
+        if story['storyId'] in seen or story['section'] not in SECTIONS:
+            raise ValueError('Invalid newsletter story')
+        seen.add(story['storyId'])
+        if not re.fullmatch(r'https://travelpal\.now/blog/travel-brief-\d{4}-\d{2}-\d{2}/#story-[a-f0-9]{16}', story['briefUrl']):
+            raise ValueError('Invalid newsletter blog link')
+    return issue
+
+
+def freeze_issue(digest, directory=ISSUES):
+    directory.mkdir(parents=True, exist_ok=True)
+    path = directory / (digest['weekEnding'] + '.json')
+    if path.exists():
+        return load_issue(path)
+    issue = {**digest, 'stories': select_highlights(digest)}
+    if not issue['stories']:
+        return None
+    path.write_text(json.dumps(issue, ensure_ascii=False, indent=2) + '\n')
+    return load_issue(path)
+
+
+def publish_story_links(issue, output):
+    # Freeze each issue's numbered links so later revisions never repoint a sent
+    # email to a different article. Blog pages themselves retain current corrections.
+    for n, story in enumerate(issue['stories'], 1):
+        path = output / issue['weekEnding'] / ('story-' + str(n)) / 'index.html'
+        path.parent.mkdir(parents=True, exist_ok=True)
+        target = html.escape(story['briefUrl'], quote=True)
+        path.write_text('<!doctype html><html><head><meta charset="utf-8">'
+                        + '<meta http-equiv="refresh" content="0;url=' + target + '">'
+                        + '<link rel="canonical" href="' + target + '">'
+                        + '<meta name="robots" content="noindex"><title>' + html.escape(story['title'])
+                        + '</title></head><body><a href="' + target + '">Read full article</a></body></html>')
+        topic = PALETTES[story['section']][2]
+        variant = 1 + (int(hashlib.sha256(issue['weekEnding'].encode()).hexdigest()[:8], 16) + n) % 3
+        image = Path('images') / f'editorial-{topic}-v{variant}.jpg'
+        shutil.copy2(image, output / issue['weekEnding'] / f'story-{n}.jpg')
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--end', default=datetime.now(ZoneInfo("America/Los_Angeles")).date().isoformat())
@@ -121,14 +172,17 @@ def main():
     parser.add_argument('--output', type=Path, default=Path('weekly-drafts'))
     parser.add_argument('--test', action='store_true')
     parser.add_argument('--web-output', type=Path)
+    parser.add_argument('--freeze-issue', action='store_true')
     args = parser.parse_args()
     digest = collect(load_editions(args.archive), date.fromisoformat(args.end))
     document = render(digest, args.test)
+    if args.freeze_issue:
+        freeze_issue(digest)
     args.output.mkdir(parents=True, exist_ok=True)
     stem = f"travelpal-weekly-{digest['weekEnding']}" + ('-test' if args.test else '')
     (args.output / f'{stem}.html').write_text(document)
     (args.output / f'{stem}.json').write_text(json.dumps(digest, indent=2, ensure_ascii=False) + '\n')
-    if args.web_output and digest['sendEligible']:
+    if args.web_output and load_editions(args.archive):
         editions = load_editions(args.archive)
         first = min(date.fromisoformat(e['editionId']) for e in editions)
         end = date.fromisoformat(args.end)
@@ -138,6 +192,9 @@ def main():
                 continue
             archived = collect(editions, day)
             page_document = render(archived)
+            issue_path = ISSUES / (day.isoformat() + '.json')
+            if issue_path.exists():
+                publish_story_links(load_issue(issue_path), args.web_output)
             if not archived['sendEligible']:
                 continue
             page = args.web_output / day.isoformat() / 'index.html'

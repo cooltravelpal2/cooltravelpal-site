@@ -20,15 +20,21 @@ def persist():
     if not directory.exists() or not any(directory.glob('*.json')):
         print('No archive snapshots to persist')
         return
-    git('add', '--', 'data/travel-briefs')
+    paths = ['data/travel-briefs']
+    if (ROOT / 'data/weekly-newsletter-issues').exists():
+        paths.append('data/weekly-newsletter-issues')
+    git('add', '--', *paths)
     changed = git('diff', '--cached', '--name-only').splitlines()
     if not changed:
         print('No archive changes')
         return
-    if any(not name.startswith('data/travel-briefs/') or not name.endswith('.json') for name in changed):
+    if any(not name.startswith(('data/travel-briefs/', 'data/weekly-newsletter-issues/')) or not name.endswith('.json') for name in changed):
         raise RuntimeError('Unrelated staged files; refusing snapshot commit')
     from daily_travel_brief import load_editions
     load_editions(ROOT / 'data/travel-briefs')
+    from weekly_digest import load_issue
+    for path in (ROOT / 'data/weekly-newsletter-issues').glob('*.json'):
+        load_issue(path)
     git('config', 'user.name', 'github-actions[bot]')
     git('config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com')
     git('commit', '-m', 'Archive TravelPal.now daily travel editions')

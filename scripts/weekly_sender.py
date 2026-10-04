@@ -9,7 +9,7 @@ from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.parse import urlencode
 from zoneinfo import ZoneInfo
-from weekly_digest import collect, render, select_highlights, short_copy
+from weekly_digest import collect, render, select_highlights, short_copy, load_issue, ISSUES
 from daily_travel_brief import load_editions, SECTIONS
 
 LIST_ID = 'de2bac34-80c4-11f1-ad85-1b83433e3fd4'
@@ -18,31 +18,20 @@ FIELD_LIMIT = 600
 
 
 def payload(digest):
-    selected = select_highlights(digest, limit=5)
-    fields = {'WeeklyPeriod': digest['weekEnding'], 'WeeklyHighlight5': str(1 + int(hashlib.sha256(digest['weekEnding'].encode()).hexdigest()[:8], 16) % 3)}
-    for n, section in enumerate(SECTIONS, 1):
-        stories = [s for s in selected if s['section'] == section]
-        blocks = []
-        for story in stories:
-            copy = short_copy(story)
-            # Never truncate structured offer terms. News summaries use whole sentences
-            # where possible; the full weekly page retains the longer approved excerpt.
-            budget = (FIELD_LIMIT - sum(len(s['title']) + 4 for s in stories)) // max(len(stories), 1)
-            if len(copy) > budget and not story.get('terms'):
-                import re
-                sentences = re.split(r'(?<=[.!?])\s+', copy)
-                copy = sentences[0]
-                for sentence in sentences[1:]:
-                    if len(copy) + len(sentence) + 1 > budget:
-                        break
-                    copy += ' ' + sentence
-                if len(copy) > budget:
-                    copy = copy[:budget - 1].rsplit(' ', 1)[0].rstrip(',.') + '…'
-            blocks.append(story['title'] + '\n' + copy)
-        text = '\n\n'.join(blocks)
+    selected = digest['stories'] if digest.get('frozenIssue') else select_highlights(digest, limit=5)
+    fields = {'WeeklyPeriod': digest['weekEnding']}
+    for n in range(1, 6):
+        if n > len(selected):
+            fields[f'WeeklyHighlight{n}'] = ''
+            continue
+        story = selected[n - 1]
+        copy = short_copy(story)
+        title = story['title']
+        text = SECTIONS[story['section']] + ' · ' + title.rstrip('.') + '. ' + copy
         if len(text) > FIELD_LIMIT:
             raise ValueError('Highlight exceeds free-tier field limit; editorial review required')
         fields[f'WeeklyHighlight{n}'] = text
+
     return fields
 
 
@@ -101,7 +90,7 @@ class Provider:
 
 def deliver(provider, digest, send=False, test=False):
     fields = payload(digest)
-    if not any(fields[f'WeeklyHighlight{i}'] for i in range(1, 5)):
+    if not any(fields[f'WeeklyHighlight{i}'] for i in range(1, 6)):
         return {'queued': 0, 'skipped': 0, 'eligible': 0, 'empty': True}
     contacts = provider.contacts()
     if test:
@@ -174,6 +163,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--send', action='store_true')
     parser.add_argument('--test', action='store_true')
+    parser.add_argument('--prepare-test', action='store_true')
     args = parser.parse_args()
     now = datetime.now(ZoneInfo('America/Los_Angeles'))
     if args.send and not args.test and (not due(now) or now.date() < date(2026, 10, 10)):
@@ -181,7 +171,29 @@ def main():
         return
     digest = collect(load_editions(Path('data/travel-briefs')), now.date())
     render(digest)
+    issue_path = ISSUES / (digest['weekEnding'] + '.json')
+    if issue_path.exists():
+        issue = load_issue(issue_path)
+        current = {s['storyId']: s for s in digest['stories']}
+        for story in issue['stories']:
+            latest = current.get(story['storyId'])
+            if not latest or any(latest.get(k) != story.get(k) for k in ('title', 'summary', 'terms')):
+                raise ValueError('Frozen newsletter content changed; review before sending')
+        digest = {**issue, 'frozenIssue': True}
+    elif args.send or args.prepare_test:
+        raise ValueError('Newsletter issue must be frozen and published before delivery')
     provider = Provider(os.environ['EMAILOCTOPUS_API_KEY'])
+    if args.prepare_test:
+        allowed = set(filter(None, os.environ.get('EMAILOCTOPUS_TEST_CONTACT_IDS', '').split(',')))
+        if not allowed or len(allowed) > 2:
+            raise ValueError('Owner preview recipients are not configured')
+        count = 0
+        for contact in provider.contacts():
+            if contact['id'] in allowed and provider.get(contact['id']).get('status') == 'subscribed':
+                provider.update(contact['id'], payload(digest))
+                count += 1
+        print('Prepared owner preview fields; no mail sent:', count)
+        return
     # Counts only; subscriber identifiers and addresses never enter public artifacts/logs.
     print(json.dumps(deliver(provider, digest, send=args.send, test=args.test)))
 
