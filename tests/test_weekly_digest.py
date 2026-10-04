@@ -35,3 +35,23 @@ class WeeklyDigestTest(unittest.TestCase):
         copy = short_copy(offer)
         for required in ['200,000','$5,000','3 months','$350','November 18, 2026','eligibility']:
             self.assertIn(required,copy)
+
+
+class StableNewsletterLinksTest(unittest.TestCase):
+    def test_frozen_article_order_survives_later_ranking_changes(self):
+        import tempfile
+        from weekly_digest import freeze_issue, publish_story_links
+        import hashlib
+        story={'storyId':'original','section':'hotels','rank':80,'title':'Original opening','summary':'A verified fact.',
+               'briefUrl':'https://travelpal.now/blog/travel-brief-2026-10-03/#story-'+hashlib.sha256(b'original').hexdigest()[:16]}
+        digest={'weekEnding':'2026-10-03','windowStart':'2026-09-27','stories':[story]}
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            first=freeze_issue(digest,root/'issues')
+            later=freeze_issue({**digest,'stories':[{**story,'storyId':'replacement','title':'Changed ranking'}]},root/'issues')
+            self.assertEqual(first,later)
+            publish_story_links(later,root/'weekly')
+            route=(root/'weekly/2026-10-03/story-1/index.html').read_text()
+            self.assertIn(story['briefUrl'],route)
+            self.assertIn('http-equiv="refresh"',route)
+            self.assertTrue((root/'weekly/2026-10-03/story-1.jpg').exists())
