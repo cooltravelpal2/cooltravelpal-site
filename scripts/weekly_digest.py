@@ -38,7 +38,7 @@ PALETTES = {
 }
 
 
-def select_highlights(digest, limit=6):
+def select_highlights(digest, limit=5):
     """Lead with one important story per topic; never let one topic fill the email."""
     ranked = sorted(digest['stories'], key=lambda s: (-s.get('rank', 0), s['storyId']))
     chosen, counts = [], {}
@@ -120,6 +120,7 @@ def main():
     parser.add_argument('--archive', type=Path, default=Path('data/travel-briefs'))
     parser.add_argument('--output', type=Path, default=Path('weekly-drafts'))
     parser.add_argument('--test', action='store_true')
+    parser.add_argument('--web-output', type=Path)
     args = parser.parse_args()
     digest = collect(load_editions(args.archive), date.fromisoformat(args.end))
     document = render(digest, args.test)
@@ -127,6 +128,21 @@ def main():
     stem = f"travelpal-weekly-{digest['weekEnding']}" + ('-test' if args.test else '')
     (args.output / f'{stem}.html').write_text(document)
     (args.output / f'{stem}.json').write_text(json.dumps(digest, indent=2, ensure_ascii=False) + '\n')
+    if args.web_output and digest['sendEligible']:
+        editions = load_editions(args.archive)
+        first = min(date.fromisoformat(e['editionId']) for e in editions)
+        end = date.fromisoformat(args.end)
+        for n in range((end - first).days + 1):
+            day = first + timedelta(days=n)
+            if day.weekday() != 5 and day != end:
+                continue
+            archived = collect(editions, day)
+            page_document = render(archived)
+            if not archived['sendEligible']:
+                continue
+            page = args.web_output / day.isoformat() / 'index.html'
+            page.parent.mkdir(parents=True, exist_ok=True)
+            page.write_text(page_document)
     print(f"Weekly draft {stem}: {len(digest['editions'])} editions, {len(digest['stories'])} unique stories. No mail sent.")
 
 if __name__ == '__main__':

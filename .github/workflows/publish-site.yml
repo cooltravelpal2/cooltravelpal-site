@@ -17,6 +17,10 @@ on:
         description: Build and test without deploying
         type: boolean
         default: true
+      newsletter_test:
+        description: Send the weekly cloud preview to the two configured owner addresses
+        type: boolean
+        default: false
 permissions:
   contents: read
   pages: write
@@ -61,7 +65,7 @@ jobs:
       - name: Build synchronized daily previews and archived news briefs
         run: python3 scripts/build_site.py
       - name: Compile seven-day newsletter draft without sending
-        run: python3 scripts/weekly_digest.py
+        run: python3 scripts/weekly_digest.py --web-output dist/weekly
       - uses: actions/upload-artifact@v4
         with:
           name: weekly-newsletter-draft
@@ -106,3 +110,18 @@ jobs:
           else:
               print('No new article to verify; archived editions retained')
           PY
+      - name: Send Saturday weekly edit through EmailOctopus
+        if: >-
+          github.event_name == 'schedule' && github.event.schedule == '0 9 * * 6' &&
+          vars.WEEKLY_NEWSLETTER_ENABLED == 'true'
+        env:
+          EMAILOCTOPUS_API_KEY: ${{ secrets.EMAILOCTOPUS_API_KEY }}
+        run: python3 scripts/weekly_sender.py --send
+      - name: Send explicitly requested owner preview
+        if: >-
+          github.event_name == 'workflow_dispatch' && inputs.newsletter_test == true &&
+          inputs.dry_run == false
+        env:
+          EMAILOCTOPUS_API_KEY: ${{ secrets.EMAILOCTOPUS_API_KEY }}
+          EMAILOCTOPUS_TEST_CONTACT_IDS: ${{ secrets.EMAILOCTOPUS_TEST_CONTACT_IDS }}
+        run: python3 scripts/weekly_sender.py --send --test

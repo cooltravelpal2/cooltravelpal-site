@@ -25,7 +25,7 @@ class WeeklyDigestTest(unittest.TestCase):
                     'title':'A supported development', 'summary':'A supported fact. '*80}
                    for section in ['hotels','airlines','cards','destinations'] for n in range(10)]
         chosen = select_highlights({'stories':stories})
-        self.assertEqual(len(chosen),6)
+        self.assertEqual(len(chosen),5)
         self.assertEqual({s['section'] for s in chosen}, {'hotels','airlines','cards','destinations'})
         self.assertLessEqual(max(sum(s['section']==t for s in chosen) for t in ['hotels','airlines','cards','destinations']),2)
         self.assertLessEqual(len(short_copy(stories[0]).split()),70)
