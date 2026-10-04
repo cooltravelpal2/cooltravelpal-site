@@ -1,0 +1,110 @@
+[
+  {
+    "url": "/images/editorial-hotels-v1.jpg",
+    "sourceUrl": "/images/editorial-hotels-v1.webp",
+    "kind": "ai-generated-editorial-illustration",
+    "encoding": "JPEG for email compatibility",
+    "width": 639,
+    "height": 400,
+    "sha256": "e597703a504f55fec2dd8297c48bc78cddb72a6f53dc4e5b44c2f4221c291918"
+  },
+  {
+    "url": "/images/editorial-hotels-v2.jpg",
+    "sourceUrl": "/images/editorial-hotels-v2.webp",
+    "kind": "ai-generated-editorial-illustration",
+    "encoding": "JPEG for email compatibility",
+    "width": 640,
+    "height": 400,
+    "sha256": "6c75965abfc34a20d8fefdd865fe1dc465cb1778eb4f2c37da767caf86b7cb1c"
+  },
+  {
+    "url": "/images/editorial-hotels-v3.jpg",
+    "sourceUrl": "/images/editorial-hotels-v3.webp",
+    "kind": "ai-generated-editorial-illustration",
+    "encoding": "JPEG for email compatibility",
+    "width": 639,
+    "height": 400,
+    "sha256": "598671e1d2e3bd092b97e23cd46de98009a8877ece9e458762f636ca7b971a67"
+  },
+  {
+    "url": "/images/editorial-airports-v1.jpg",
+    "sourceUrl": "/images/editorial-airports-v1.webp",
+    "kind": "ai-generated-editorial-illustration",
+    "encoding": "JPEG for email compatibility",
+    "width": 639,
+    "height": 400,
+    "sha256": "011f185724a397ce6650be080dbdd85199c14aa59c986ae1c90d3ca6e71fa1d6"
+  },
+  {
+    "url": "/images/editorial-airports-v2.jpg",
+    "sourceUrl": "/images/editorial-airports-v2.webp",
+    "kind": "ai-generated-editorial-illustration",
+    "encoding": "JPEG for email compatibility",
+    "width": 639,
+    "height": 400,
+    "sha256": "4e905782077a322e83bdc8625fd9aa7097b114a9dc2f271f3484127511bbf8a2"
+  },
+  {
+    "url": "/images/editorial-airports-v3.jpg",
+    "sourceUrl": "/images/editorial-airports-v3.webp",
+    "kind": "ai-generated-editorial-illustration",
+    "encoding": "JPEG for email compatibility",
+    "width": 639,
+    "height": 400,
+    "sha256": "18536c1481449e273d48d26b67f76af3b21f92a327d27f33f1d7f5633e723b52"
+  },
+  {
+    "url": "/images/editorial-rewards-v1.jpg",
+    "sourceUrl": "/images/editorial-rewards-v1.webp",
+    "kind": "ai-generated-editorial-illustration",
+    "encoding": "JPEG for email compatibility",
+    "width": 639,
+    "height": 400,
+    "sha256": "17856827583314f6bd91ab622acd42d84c3f50e70f4c426bc7227ffba36a5025"
+  },
+  {
+    "url": "/images/editorial-rewards-v2.jpg",
+    "sourceUrl": "/images/editorial-rewards-v2.webp",
+    "kind": "ai-generated-editorial-illustration",
+    "encoding": "JPEG for email compatibility",
+    "width": 639,
+    "height": 400,
+    "sha256": "5711b3fec8b6d6f7b5e2315aa4904d94c26f2205ecff84ea16c3a0e2c03a6a58"
+  },
+  {
+    "url": "/images/editorial-rewards-v3.jpg",
+    "sourceUrl": "/images/editorial-rewards-v3.webp",
+    "kind": "ai-generated-editorial-illustration",
+    "encoding": "JPEG for email compatibility",
+    "width": 639,
+    "height": 400,
+    "sha256": "d362e63a73b54ccd9151c72c54ca263b0db6782d748c49eb7abc26572cea1ffc"
+  },
+  {
+    "url": "/images/editorial-museums-v1.jpg",
+    "sourceUrl": "/images/editorial-museums-v1.webp",
+    "kind": "ai-generated-editorial-illustration",
+    "encoding": "JPEG for email compatibility",
+    "width": 639,
+    "height": 400,
+    "sha256": "8b86596e2bc0af04ba8a12ab0b0334b5e5b4dafdb84811e7a4d11c4f1dac22d4"
+  },
+  {
+    "url": "/images/editorial-museums-v2.jpg",
+    "sourceUrl": "/images/editorial-museums-v2.webp",
+    "kind": "ai-generated-editorial-illustration",
+    "encoding": "JPEG for email compatibility",
+    "width": 639,
+    "height": 400,
+    "sha256": "f77b770d43f2618d842038aa5a7c45481ae10ec4b088106538f68514c93c9c98"
+  },
+  {
+    "url": "/images/editorial-museums-v3.jpg",
+    "sourceUrl": "/images/editorial-museums-v3.webp",
+    "kind": "ai-generated-editorial-illustration",
+    "encoding": "JPEG for email compatibility",
+    "width": 639,
+    "height": 400,
+    "sha256": "bfd373ad5e379dc50402a9508bb322287bcda5f8c26d15891e5a715479556f21"
+  }
+]

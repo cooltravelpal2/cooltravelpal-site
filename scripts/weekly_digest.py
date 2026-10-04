@@ -99,7 +99,7 @@ def render(digest, test=False):
             continue
         color, background, topic = PALETTES[section]
         variant = 1 + int(hashlib.sha256((digest['weekEnding'] + section).encode()).hexdigest()[:8], 16) % 3
-        image = f'https://travelpal.now/images/editorial-{topic}-v{variant}.webp'
+        image = f'https://travelpal.now/images/editorial-{topic}-v{variant}.jpg'
         blocks.append(f'<tr><td style="padding:0 28px 12px"><h2 style="border-left:5px solid {color};padding:8px 14px;background:{background};color:{color};font-size:20px;margin:0">{esc(label)}</h2></td></tr>')
         blocks.append(f'<tr><td style="padding:0 28px 18px"><img src="{image}" alt="Conceptual {esc(label.lower())} illustration" width="260" style="display:block;width:100%;max-width:260px;height:auto;border-radius:12px"><p style="font-size:11px;color:#69726e;margin:6px 0 0">AI-generated editorial illustration; not a photograph of the featured venue.</p></td></tr>')
         for story in stories:
