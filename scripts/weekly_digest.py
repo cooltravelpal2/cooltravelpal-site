@@ -147,10 +147,23 @@ def freeze_issue(digest, directory=ISSUES):
     return load_issue(path)
 
 
+def story_slots(stories):
+    slots = {}
+    section_slots = {section: n for n, section in enumerate(SECTIONS, 1)}
+    for story in stories:
+        slot = section_slots[story['section']]
+        if slot in slots:
+            slot = 5
+        if slot in slots:
+            raise ValueError('Too many extra newsletter articles')
+        slots[slot] = story
+    return slots
+
+
 def publish_story_links(issue, output):
     # Freeze each issue's numbered links so later revisions never repoint a sent
     # email to a different article. Blog pages themselves retain current corrections.
-    for n, story in enumerate(issue['stories'], 1):
+    for n, story in story_slots(issue['stories']).items():
         path = output / issue['weekEnding'] / ('story-' + str(n)) / 'index.html'
         path.parent.mkdir(parents=True, exist_ok=True)
         target = html.escape(story['briefUrl'], quote=True)

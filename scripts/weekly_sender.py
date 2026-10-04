@@ -9,7 +9,7 @@ from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.parse import urlencode
 from zoneinfo import ZoneInfo
-from weekly_digest import collect, render, select_highlights, short_copy, load_issue, ISSUES
+from weekly_digest import collect, render, select_highlights, short_copy, load_issue, ISSUES, story_slots
 from daily_travel_brief import load_editions, SECTIONS
 
 LIST_ID = 'de2bac34-80c4-11f1-ad85-1b83433e3fd4'
@@ -19,15 +19,16 @@ FIELD_LIMIT = 600
 
 def payload(digest):
     selected = digest['stories'] if digest.get('frozenIssue') else select_highlights(digest, limit=5)
+    slots = story_slots(selected)
     fields = {'WeeklyPeriod': digest['weekEnding']}
     for n in range(1, 6):
-        if n > len(selected):
+        if n not in slots:
             fields[f'WeeklyHighlight{n}'] = ''
             continue
-        story = selected[n - 1]
+        story = slots[n]
         copy = short_copy(story)
         title = story['title']
-        text = SECTIONS[story['section']] + ' · ' + title.rstrip('.') + '. ' + copy
+        text = (SECTIONS[story['section']] + ' · ' if n == 5 else '') + title.rstrip('.') + '. ' + copy
         if len(text) > FIELD_LIMIT:
             raise ValueError('Highlight exceeds free-tier field limit; editorial review required')
         fields[f'WeeklyHighlight{n}'] = text

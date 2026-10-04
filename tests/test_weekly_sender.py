@@ -56,7 +56,7 @@ class SenderTest(unittest.TestCase):
         self.assertEqual(len(fields),6)
         self.assertTrue(all(len(v)<=600 for v in fields.values()))
         for term in ['200,000','$5,000','3 months','$350','November 18, 2026']:
-            self.assertIn(term,fields['WeeklyHighlight1'])
+            self.assertIn(term,fields['WeeklyHighlight3'])
     def test_pagination_uses_cursor_not_next_url(self):
         p=Provider('test');calls=[]
         def call(method,path):
@@ -79,7 +79,7 @@ class SenderTest(unittest.TestCase):
         d['stories'].append({**d['stories'][0], 'storyId':'y', 'title':'Another supported opening'})
         fields=payload(d)
         self.assertIn('A supported opening',fields['WeeklyHighlight1'])
-        self.assertIn('Another supported opening',fields['WeeklyHighlight2'])
+        self.assertIn('Another supported opening',fields['WeeklyHighlight5'])
         self.assertNotIn('Another supported opening',fields['WeeklyHighlight1'])
         self.assertNotIn('\\n',fields['WeeklyHighlight1'])
     def test_schedule(self):
