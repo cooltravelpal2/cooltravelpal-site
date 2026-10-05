@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "editionId": "2026-10-05",
+  "revision": 1,
+  "status": "no_qualifying_news",
+  "policyVersion": "travel-impact-v1",
+  "sourceRunIds": [
+    "b851e397-1079-41d5-9343-5549a3ab5e4c"
+  ],
+  "cutoffAt": "2026-10-05T14:01:13.040Z",
+  "generatedAt": "2026-10-05T14:01:13.040Z",
+  "coverageStatus": "limited",
+  "coverage": [
+    {
+      "sourceId": "marriott",
+      "category": "hotels",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "hyatt",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hilton",
+      "category": "hotels",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "ihg",
+      "category": "hotels",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "aman",
+      "category": "hotels",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-and-only",
+      "category": "hotels",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "amex",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "chase",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "citi",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "capital-one",
+      "category": "cards",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "delta",
+      "category": "airlines",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "united",
+      "category": "airlines",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "american",
+      "category": "airlines",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "alaska",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "southwest",
+      "category": "airlines",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "air-canada",
+      "category": "airlines",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "british-airways",
+      "category": "airlines",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nps",
+      "category": "destinations",
+      "status": "attempted"
+    }
+  ],
+  "stories": [],
+  "contentDigest": "dbae5f7749e58051af77d6527fd5ffb826ae5c73eb3e0c1f24e45cb54498e6a3"
+}
