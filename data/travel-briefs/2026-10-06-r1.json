@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 1,
+  "editionId": "2026-10-06",
+  "revision": 1,
+  "status": "ready_with_limited_coverage",
+  "policyVersion": "travel-impact-v1",
+  "sourceRunIds": [
+    "d1694bcb-b557-4d4f-9c80-74296955b5b0"
+  ],
+  "cutoffAt": "2026-10-06T14:00:49.496Z",
+  "generatedAt": "2026-10-06T14:00:49.496Z",
+  "coverageStatus": "limited",
+  "coverage": [
+    {
+      "sourceId": "marriott",
+      "category": "hotels",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "hyatt",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hilton",
+      "category": "hotels",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "ihg",
+      "category": "hotels",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "aman",
+      "category": "hotels",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-and-only",
+      "category": "hotels",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "amex",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "chase",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "citi",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "capital-one",
+      "category": "cards",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "delta",
+      "category": "airlines",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "united",
+      "category": "airlines",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "american",
+      "category": "airlines",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "alaska",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "southwest",
+      "category": "airlines",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "air-canada",
+      "category": "airlines",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "british-airways",
+      "category": "airlines",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "hotels",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "airlines",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "cards",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "destinations",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "airbnb",
+      "category": "hotels",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "nps",
+      "category": "destinations",
+      "status": "attempted"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "news_f065e2e319d43750de50446d",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 100,
+      "title": "Capital One launches Discover it Secured Cash Back card with a $49 minimum deposit",
+      "summary": "Capital One has launched the Discover it Secured Cash Back Credit Card, per reporting from Doctor of Credit. Applications for the card were halted on June 2, 2026 during the transition to Capital One. According to the report, the card's structure matches the earlier Discover it Secured product, with one notable change: the refundable security deposit can now be as low as $49 instead of $500.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-05T23:12:57.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Doctor of Credit",
+          "url": "https://www.doctorofcredit.com/capital-one-launches-discover-it-secured-cash-back-credit-card/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-05T23:12:57.000Z",
+          "retrievedAt": "2026-10-06T14:00:06.029Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-06T14:00:49.487Z",
+      "changedAt": "2026-10-06T14:00:49.487Z",
+      "sourceRunId": "d1694bcb-b557-4d4f-9c80-74296955b5b0",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Doctor of Credit reports that Capital One has reintroduced the Discover it Secured Cash Back Credit Card, a product whose applications had been paused since June 2, 2026 while the portfolio moved under Capital One. No official Capital One terms page or press release was reviewed for this brief.",
+        "The reported difference from the prior version is the minimum security deposit: $49 rather than $500. The outlet describes the rest of the card's structure as unchanged from the earlier Discover it Secured card, and lists further card basics in its post."
+      ],
+      "keyPoints": [
+        "Applications had been stopped since June 2, 2026, according to the report.",
+        "Minimum refundable deposit is reported at $49, down from $500.",
+        "Reported structure otherwise matches the previous Discover it Secured card."
+      ],
+      "takeaway": "If the $49 deposit is what drew you in, open Capital One's own product page for this card and confirm the current deposit tiers, APR, and rewards terms before applying, since the report does not reproduce the issuer's full terms."
+    },
+    {
+      "storyId": "news_660c51375055a95c5f8c7236",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 100,
+      "title": "Park Hyatt enters all-inclusive space with Riviera Maya resort",
+      "summary": "Reported by The Points Guy: Park Hyatt is moving into the all-inclusive segment, and the general manager of Park Hyatt Riviera Maya describes how the property aims to deliver a luxury all-inclusive stay. The report does not confirm rates, opening dates, or booking details.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-05T17:30:10.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "The Points Guy",
+          "url": "https://thepointsguy.com/news/park-hyatt-riviera-maya-all-inclusive-details/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-05T17:30:10.000Z",
+          "retrievedAt": "2026-10-06T14:00:06.028Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-06T14:00:49.494Z",
+      "changedAt": "2026-10-06T14:00:49.494Z",
+      "sourceRunId": "d1694bcb-b557-4d4f-9c80-74296955b5b0",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "According to The Points Guy, Park Hyatt is entering the all-inclusive market for the first time, with Park Hyatt Riviera Maya serving as the brand's debut in that category. The article frames the property around an attempt to position all-inclusive stays as a luxury product rather than a mass-market one.",
+        "The reported detail comes from the resort's general manager, who outlines the approach the property intends to take. Because the source does not publish confirmed pricing, inclusions, or a firm opening timeline, readers should treat specifics beyond the brand's all-inclusive entry as unconfirmed."
+      ],
+      "keyPoints": [
+        "The Points Guy reports Park Hyatt's first all-inclusive property is Park Hyatt Riviera Maya.",
+        "The resort's general manager is cited on plans to deliver a luxury all-inclusive experience.",
+        "No rates, inclusions, or confirmed dates are established in the report."
+      ],
+      "takeaway": "If you are weighing a luxury all-inclusive stay, wait for Hyatt's official property page to publish rates, inclusions and opening dates before comparing it against your existing plans."
+    },
+    {
+      "storyId": "offer_16b0dd654a99ff293341681c",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 100,
+      "title": "Reported: 15% bonus on Marriott Bonvoy transfers to Air Canada Aeroplan through end of October",
+      "summary": "Frequent Miler reports a 15% transfer bonus when converting Marriott Bonvoy points to Air Canada Aeroplan, running through the end of October. No official confirmation from Marriott or Air Canada was available in the fetched evidence, so treat the details as reported by the publisher until the programs confirm the promotion and its exact end date.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-04T15:45:01.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Frequent Miler",
+          "url": "https://frequentmiler.com/15-transfer-bonus-from-marriott-bonvoy-to-air-canada-aeroplan/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-04T15:45:01.000Z",
+          "retrievedAt": "2026-10-06T14:00:06.029Z"
+        }
+      ],
+      "terms": {
+        "issuer": null,
+        "program": null,
+        "merchant": null,
+        "rewardType": "points",
+        "minSpend": null,
+        "creditAmount": null,
+        "rewardPoints": null,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-06T14:00:49.495Z",
+      "changedAt": "2026-10-06T14:00:49.495Z",
+      "sourceRunId": "d1694bcb-b557-4d4f-9c80-74296955b5b0",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Frequent Miler reports that Marriott Bonvoy members converting points to Air Canada Aeroplan will receive a 15% bonus on the transfer through the end of October. The report does not state an exact closing date, and CardPecker found no official Marriott or Air Canada page confirming the bonus, so the terms should be verified with the programs before any transfer is initiated.",
+        "Because transfer bonuses are typically applied after the transfer is processed, the practical value depends on whether you already have a specific Aeroplan redemption in mind. Marriott transfers generally move in fixed blocks and are not instant, so a redemption planned for late October may not be reachable within the reported window."
+      ],
+      "keyPoints": [
+        "Reported bonus: 15% on Marriott Bonvoy point transfers to Air Canada Aeroplan.",
+        "Reported window: through the end of October, per Frequent Miler; exact expiry date not specified.",
+        "No official Marriott or Air Canada confirmation was available in the fetched evidence."
+      ],
+      "takeaway": "Before transferring, log in to your Marriott Bonvoy account and the Aeroplan transfer page to confirm the 15% bonus is live and check the posted end date. Only transfer if you have a concrete Aeroplan award in mind, and keep a screenshot of the bonus language in case the extra points do not post automatically."
+    }
+  ],
+  "contentDigest": "3d76f23be97ac4176a4c23f5a12fb261b3f0a1b8b88f207b3bd1fa19dc829c5d"
+}
