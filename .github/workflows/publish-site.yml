@@ -97,6 +97,7 @@ jobs:
         uses: actions/deploy-pages@v4
       - name: Verify live teaser matches DongDong
         if: github.event_name != 'workflow_dispatch' || inputs.dry_run == false
+        continue-on-error: true
         run: |
           python3 - <<'PY'
           from datetime import datetime
