@@ -1,0 +1,407 @@
+{
+  "schemaVersion": 1,
+  "editionId": "2026-10-08",
+  "revision": 1,
+  "status": "ready_with_limited_coverage",
+  "policyVersion": "travel-impact-v1",
+  "sourceRunIds": [
+    "d00056cb-4806-4a98-872a-b48745ebea01"
+  ],
+  "cutoffAt": "2026-10-08T14:01:25.950Z",
+  "generatedAt": "2026-10-08T14:01:25.950Z",
+  "coverageStatus": "limited",
+  "coverage": [
+    {
+      "sourceId": "marriott",
+      "category": "hotels",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "hyatt",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hilton",
+      "category": "hotels",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "ihg",
+      "category": "hotels",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "aman",
+      "category": "hotels",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-and-only",
+      "category": "hotels",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "amex",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "chase",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "citi",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "capital-one",
+      "category": "cards",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "delta",
+      "category": "airlines",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "united",
+      "category": "airlines",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "american",
+      "category": "airlines",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "alaska",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "southwest",
+      "category": "airlines",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "air-canada",
+      "category": "airlines",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "british-airways",
+      "category": "airlines",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "hotels",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "airlines",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "cards",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "destinations",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "airbnb",
+      "category": "hotels",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "nps",
+      "category": "destinations",
+      "status": "attempted"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "news_dab32e43e6d31f2c2856ee82",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 100,
+      "title": "Amex reportedly to add two Centurion Lounges, renovate two more",
+      "summary": "AwardWallet reports that American Express announced a major expansion of its Centurion Lounge network, adding two new locations and fully renovating two existing ones. The report does not specify airports, opening dates, or changes to who can enter. Treat the details as reported until American Express publishes official information.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-08T13:00:59.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "AwardWallet",
+          "url": "https://awardwallet.com/news/amex-membership-rewards/centurion-lounge-expansion-2026/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-08T13:00:59.000Z",
+          "retrievedAt": "2026-10-08T14:00:06.002Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-08T14:01:25.931Z",
+      "changedAt": "2026-10-08T14:01:25.931Z",
+      "sourceRunId": "d00056cb-4806-4a98-872a-b48745ebea01",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "AwardWallet describes the move as a major expansion of the Centurion Lounge network: two new lounges are said to be planned, alongside full renovations of two lounges already in operation. The summary provided does not identify airports, construction timelines, or whether entry rules for cardholders would change."
+      ],
+      "keyPoints": [
+        "Reported: two new Centurion Lounges planned.",
+        "Reported: two existing Centurion Lounges to be fully renovated.",
+        "No locations, dates, or access-rule changes given in the report."
+      ],
+      "takeaway": "Before booking travel around lounge access, check American Express's official Centurion Lounge page for the current location list and entry requirements, since the reported additions and renovations have no confirmed dates."
+    },
+    {
+      "storyId": "news_dbfe4a30a1716bf0be08ee05",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 100,
+      "title": "Reported: AmEx pushes Newark Centurion Lounge opening to 2027, eyes expansions at three airports",
+      "summary": "NerdWallet reports that American Express has delayed the opening of its Centurion Lounge at Newark Liberty International (EWR) until 2027. The outlet describes it as the largest Centurion Lounge planned to date. NerdWallet also reports AmEx intends to expand lounge operations at three major airports, without specifying which ones in the summary provided. Details are attributed to NerdWallet and have not been confirmed by official AmEx documentation in the evidence reviewed.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-08T13:00:17.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "NerdWallet",
+          "url": "https://www.nerdwallet.com/travel/news/american-express-centurion-lounge-newark-delay",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-08T13:00:17.000Z",
+          "retrievedAt": "2026-10-08T14:00:06.005Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-08T14:01:25.933Z",
+      "changedAt": "2026-10-08T14:01:25.933Z",
+      "sourceRunId": "d00056cb-4806-4a98-872a-b48745ebea01",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "According to NerdWallet, travelers passing through Newark Liberty International will not see the planned Centurion Lounge open before 2027. The report characterizes the Newark location as the biggest Centurion Lounge AmEx has planned.",
+        "The same report says American Express intends to broaden its lounge footprint at three major airports. NerdWallet does not identify those airports in the material available here, so specific locations, timelines and eligibility remain unconfirmed."
+      ],
+      "keyPoints": [
+        "NerdWallet reports the Newark (EWR) Centurion Lounge opening has slipped to 2027.",
+        "The Newark location is described as the largest Centurion Lounge planned to date.",
+        "AmEx reportedly plans lounge expansions at three major airports, unnamed in the report summary."
+      ],
+      "takeaway": "If Newark is on your itinerary before 2027, plan lounge time around currently operating options rather than a Centurion Lounge at EWR, and check AmEx's lounge locator before you book."
+    },
+    {
+      "storyId": "news_3db5c8e6183c4dd434044561",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 100,
+      "title": "Amex announces four Centurion Lounge updates, including Newark, Houston and Philadelphia",
+      "summary": "The Points Guy reports that American Express announced four major Centurion Lounge updates, including a new Newark location it describes as the largest lounge yet, along with significant expansions in Houston and Philadelphia. The report does not include opening dates or access details, so travelers should treat the plans as announced but unscheduled.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-08T13:00:04.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "The Points Guy",
+          "url": "https://thepointsguy.com/news/amex-centurion-lounge-expansion/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-08T13:00:04.000Z",
+          "retrievedAt": "2026-10-08T14:00:06.001Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-08T14:01:25.941Z",
+      "changedAt": "2026-10-08T14:01:25.941Z",
+      "sourceRunId": "d00056cb-4806-4a98-872a-b48745ebea01",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "American Express has outlined four updates to its Centurion Lounge network, per The Points Guy, centered on a new Newark location that the publication calls the largest Centurion Lounge to date, plus major expansions at Houston and Philadelphia.",
+        "Because the reported announcement does not specify opening dates, square footage figures, or any change to entry requirements, the practical effect for cardholders is a future capacity increase at those airports rather than an immediate change to current lounge access."
+      ],
+      "keyPoints": [
+        "Four Centurion Lounge updates announced, per The Points Guy.",
+        "Newark location described as the largest Centurion Lounge yet.",
+        "Expansions reported for Houston and Philadelphia."
+      ],
+      "takeaway": "If you route through Newark, Houston or Philadelphia, check American Express's official Centurion Lounge page for confirmed opening dates before building a trip around the new or expanded spaces; the reported announcement did not include a timeline."
+    },
+    {
+      "storyId": "benefit_change_fec2c825c55869aa1d162aaa",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 100,
+      "title": "Frequent Miler: FedEx out, UPS in for Amex Business Gold Flexible Business Credit",
+      "summary": "Frequent Miler reports that American Express is removing FedEx and adding UPS as usage options for the Flexible Business Credit on the Business Gold Card, with the change dated 10/1/26. No official Amex documentation was available in the evidence reviewed, so the details remain as reported by the publisher. Cardholders should verify the current eligible options and their selected category directly in their American Express account.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-07T21:45:37.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Frequent Miler",
+          "url": "https://frequentmiler.com/fedex-being-removed-from-flexible-business-credit-on-american-express-business-gold-card-from-10-1-26/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-07T21:45:37.000Z",
+          "retrievedAt": "2026-10-08T14:00:06.005Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-08T14:01:25.942Z",
+      "changedAt": "2026-10-08T14:01:25.942Z",
+      "sourceRunId": "d00056cb-4806-4a98-872a-b48745ebea01",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The Business Gold Card's Flexible Business Credit lets cardholders choose among eligible categories and earn credits on qualifying purchases. According to Frequent Miler, FedEx is being dropped from that list of options and UPS is being added, with the change dated 10/1/26. The publisher frames this as an American Express announcement; CardPecker found no official Amex page in the evidence available at the time of writing.",
+        "For cardholders who had designated FedEx as their selected category, the practical effect is that FedEx spending may no longer generate the credit. Because the specific eligible categories, credit amounts, enrollment mechanics and any selection deadlines are not confirmed in the evidence reviewed, treat the reported change as a prompt to check your own account terms rather than as a complete description of the benefit."
+      ],
+      "keyPoints": [
+        "Reported change: FedEx removed as a Flexible Business Credit usage option on the Amex Business Gold Card",
+        "UPS reportedly added as an eligible option in FedEx's place",
+        "Frequent Miler dates the change 10/1/26; Amex has not been independently confirmed in the evidence reviewed"
+      ],
+      "takeaway": "If you hold the Amex Business Gold Card and rely on the Flexible Business Credit, sign in to your American Express account, confirm which category is currently selected, and switch away from FedEx if it is still your choice. Check Amex's own benefit terms for the current eligible list and credit amounts."
+    },
+    {
+      "storyId": "news_9958436e5eddef8eff448785",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 100,
+      "title": "Citi AAdvantage card lineup: reported welcome bonuses of up to 125,000 miles",
+      "summary": "The Points Guy published “Citi AAdvantage card lineup: reported welcome bonuses of up to 125,000 miles.” Open the source for the current list, eligibility, and terms.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-07T13:50:35.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "The Points Guy",
+          "url": "https://thepointsguy.com/credit-cards/citi-aadvantage-current-offers/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-07T13:50:35.000Z",
+          "retrievedAt": "2026-10-08T14:00:06.001Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-08T14:01:25.950Z",
+      "changedAt": "2026-10-08T14:01:25.950Z",
+      "sourceRunId": "d00056cb-4806-4a98-872a-b48745ebea01",
+      "changeType": "new",
+      "active": true
+    }
+  ],
+  "contentDigest": "2f4a87f23f92e035ca7354ef762c151da0cfe46025f41a3b03b8ab3a8ef2da44"
+}
