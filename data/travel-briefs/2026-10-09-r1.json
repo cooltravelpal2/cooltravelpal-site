@@ -1,0 +1,459 @@
+{
+  "schemaVersion": 1,
+  "editionId": "2026-10-09",
+  "revision": 1,
+  "status": "ready_with_limited_coverage",
+  "policyVersion": "travel-impact-v1",
+  "sourceRunIds": [
+    "0d90f842-ccf3-4a75-90a5-da9b45203184",
+    "45edba33-f38d-4c16-9207-72089b45513e"
+  ],
+  "cutoffAt": "2026-10-09T14:03:23.658Z",
+  "generatedAt": "2026-10-09T14:03:23.658Z",
+  "coverageStatus": "limited",
+  "coverage": [
+    {
+      "sourceId": "marriott",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hyatt",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hilton",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "ihg",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "aman",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "wyndham",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-and-only",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amex",
+      "category": "cards",
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "chase",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "citi",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "discover",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "capital-one",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "delta",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "united",
+      "category": "airlines",
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "american",
+      "category": "airlines",
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "alaska",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "southwest",
+      "category": "airlines",
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "air-canada",
+      "category": "airlines",
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "british-airways",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "slickdeals",
+      "category": "deals",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "redflagdeals",
+      "category": "deals",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "hotels",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "airlines",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "cards",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "destinations",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "airbnb",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nps",
+      "category": "destinations",
+      "status": "attempted"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "offer_ef7ed046082c551e4e8b588c",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 100,
+      "title": "Frequent Miler: Wyndham Rewards currently offering 100% transfer bonus to United MileagePlus",
+      "summary": "Frequent Miler reports that Wyndham Rewards is running a 100% transfer bonus to United MileagePlus, meaning transferred Wyndham points would yield double United miles. No official terms, end date, or minimum transfer amount are stated in the candidate material, and no fetched official evidence confirms the promotion. Details are attributed to the editorial publisher and should be verified with the programs.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-08T23:45:27.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Frequent Miler",
+          "url": "https://frequentmiler.com/100-transfer-bonus-from-wyndham-rewards-to-united-mileageplus/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-08T23:45:27.000Z",
+          "retrievedAt": "2026-10-09T03:10:37.551Z"
+        }
+      ],
+      "terms": {
+        "issuer": null,
+        "program": null,
+        "merchant": null,
+        "rewardType": "miles",
+        "minSpend": null,
+        "creditAmount": null,
+        "rewardPoints": null,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-09T03:12:31.566Z",
+      "changedAt": "2026-10-09T03:12:31.566Z",
+      "sourceRunId": "45edba33-f38d-4c16-9207-72089b45513e",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [],
+      "keyPoints": [
+        "Frequent Miler reports Wyndham Rewards is offering double United miles on point transfers to United MileagePlus.",
+        "No end date, transfer minimum, or eligibility terms appear in the available candidate information.",
+        "The promotion is reported by an editorial publisher and is not confirmed by fetched official evidence."
+      ],
+      "takeaway": "Before transferring, check the current terms and end date on Wyndham Rewards' or United MileagePlus' own site, since the publisher's report does not specify a deadline."
+    },
+    {
+      "storyId": "news_58c22babe17f8dd44595255c",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 100,
+      "title": "Amex pushes Newark Liberty (EWR) Centurion Lounge opening to 2027",
+      "summary": "American Express has moved the opening of its Centurion Lounge at Newark Liberty International Airport (EWR) to 2027, according to Doctor of Credit. The outlet reports the lounge will total 30,000 square feet, larger than earlier reporting suggested, and describes it as the largest Centurion yet. An update dated October 8 says the space will not open in 2026 as previously expected.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-08T20:10:50.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Doctor of Credit",
+          "url": "https://www.doctorofcredit.com/american-express-to-open-newark-liberty-international-airport-ewr-centurion-lounge-2026/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-08T20:10:50.000Z",
+          "retrievedAt": "2026-10-09T03:10:37.552Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-09T03:12:31.577Z",
+      "changedAt": "2026-10-09T03:12:31.577Z",
+      "sourceRunId": "45edba33-f38d-4c16-9207-72089b45513e",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Doctor of Credit reports that American Express has confirmed a schedule change for its planned Centurion Lounge at Newark Liberty International Airport. Instead of opening in 2026, the lounge is now targeted for 2027, per the outlet's October 8 update.",
+        "The same report states the planned footprint is 30,000 square feet, exceeding earlier figures and making it the largest Centurion lounge in the network by the publisher's description. No specific opening date within 2027 was reported."
+      ],
+      "keyPoints": [
+        "Opening timeline for the EWR Centurion Lounge moved from 2026 to 2027, per Doctor of Credit.",
+        "Reported size: 30,000 square feet, larger than first reported.",
+        "Publisher characterizes it as the largest Centurion lounge to date."
+      ],
+      "takeaway": "If you are routing through Newark in 2026, do not plan around this lounge being open. Check the current list of lounges available in your terminal before you travel, since access rules and locations can change."
+    },
+    {
+      "storyId": "news_5aaca484b668d7a7cf5ea292",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 100,
+      "title": "The Points Guy: Why Alaska loyalists might weigh the AAdvantage Executive card",
+      "summary": "The Points Guy published an analysis arguing that Alaska Airlines loyalists, who may have overlooked cobranded cards from other airlines, could have reason to open the AAdvantage Executive card. The piece is editorial commentary from the publisher rather than a confirmed card offer; it does not state a welcome bonus, annual fee, spending requirement or deadline.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-08T20:00:48.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "The Points Guy",
+          "url": "https://thepointsguy.com/credit-cards/alaska-airlines-loyalist-need-citi-aadvantage-executive/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-08T20:00:48.000Z",
+          "retrievedAt": "2026-10-09T03:10:37.542Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-09T03:12:31.582Z",
+      "changedAt": "2026-10-09T03:12:31.582Z",
+      "sourceRunId": "45edba33-f38d-4c16-9207-72089b45513e",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [],
+      "keyPoints": [],
+      "takeaway": "Before applying, check the AAdvantage Executive card's current welcome offer, annual fee and minimum spending requirement directly with the issuer, since the source article does not list them."
+    },
+    {
+      "storyId": "offer_a3050d2018e39475ad5c5bc7",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 76,
+      "title": "Qatar Airways Privilege Deals: up to 25% off award flights to select cities",
+      "summary": "AwardWallet reports that Qatar Airways Privilege Club members can get up to 25% off award flights to select cities through the airline's Privilege Deals promotion. The set of discounted destinations rotates, with AwardWallet highlighting this month's on-sale cities. The discount applies to award bookings on the listed routes; the eligible city list and any booking conditions come from Qatar Airways.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-07T22:10:02.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "AwardWallet",
+          "url": "https://awardwallet.com/news/airlines/qatar-monthly-special-offers/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-07T22:10:02.000Z",
+          "retrievedAt": "2026-10-09T03:10:37.551Z"
+        }
+      ],
+      "terms": {
+        "issuer": null,
+        "program": null,
+        "merchant": "Qatar Airways",
+        "rewardType": "discount",
+        "minSpend": null,
+        "creditAmount": null,
+        "rewardPoints": null,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-09T03:12:31.583Z",
+      "changedAt": "2026-10-09T03:12:31.583Z",
+      "sourceRunId": "45edba33-f38d-4c16-9207-72089b45513e",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Qatar Airways runs a recurring Privilege Deals promotion for members of its Privilege Club loyalty program, per AwardWallet. The offer takes the form of a discount of up to 25% on award flights, but it is not a blanket reduction: savings apply only to the specific destinations the airline puts on sale during the month.",
+        "Because the destination list changes, a member's practical result depends on whether a city they want to fly to appears in the current promotion. AwardWallet notes that it publishes the month's on-sale destinations, so travelers can check before redeeming miles. Exact award pricing, available cabins, travel dates and any blackout periods are determined by Qatar Airways."
+      ],
+      "keyPoints": [
+        "Reported by AwardWallet: up to 25% off Qatar Airways award flights to select cities.",
+        "Restricted to Privilege Club members and to the destinations named in the current promotion.",
+        "The list of discounted destinations rotates month to month."
+      ],
+      "takeaway": "Before booking a Qatar Airways award, check the current Privilege Deals destination list for the month, then compare the discounted award price and taxes against cash fares and other redemption options for the same route."
+    },
+    {
+      "storyId": "offer_f4a9c53e2f8346bb506932fe",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 76,
+      "title": "The Points Guy: Hilton Honors runs limited-time 120% bonus on purchased points",
+      "summary": "The Points Guy reports that Hilton Honors has launched a limited-time promotion giving a 120% bonus on points purchased through the program. The publisher frames it as a notable sale and asks whether the promotion is worth buying into. No official Hilton terms, purchase caps, or end date are included in the available evidence, so buyers should check the live offer page for pricing tiers, limits and deadlines before purchasing.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-07T20:15:28.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "The Points Guy",
+          "url": "https://thepointsguy.com/deals/hilton-best-ever-buy-points-promotion/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-07T20:15:28.000Z",
+          "retrievedAt": "2026-10-09T03:10:37.542Z"
+        }
+      ],
+      "terms": {
+        "issuer": null,
+        "program": "Hilton Honors",
+        "merchant": "Hilton",
+        "rewardType": "points",
+        "minSpend": null,
+        "creditAmount": null,
+        "rewardPoints": null,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-09T03:12:31.584Z",
+      "changedAt": "2026-10-09T03:12:31.584Z",
+      "sourceRunId": "45edba33-f38d-4c16-9207-72089b45513e",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The Points Guy reports a limited-time Hilton Honors promotion that awards a 120% bonus when members buy points. The publisher describes the sale as notable and questions whether it is worth participating in.",
+        "Because the fetched evidence contains no official Hilton terms, details such as purchase price per point, annual purchase limits, bonus caps and the promotion's end date are not verified here. Confirm all of those directly with Hilton Honors before buying."
+      ],
+      "keyPoints": [
+        "The Points Guy reports a limited-time Hilton Honors offer of 120% bonus points on point purchases.",
+        "The publisher characterizes the promotion as a standout sale and examines whether it is worth it.",
+        "No official Hilton terms, caps or deadline are available in the evidence reviewed."
+      ],
+      "takeaway": "Before buying, open the Hilton Honors buy-points page and compare the promotional cost per point against what you would actually redeem those points for, then check purchase limits and the promotion's end date so you don't buy more than you can use."
+    }
+  ],
+  "contentDigest": "1c66318a248bbcef0f4d4b2656321f808a9d291519b381017de8484558f38a2a"
+}
