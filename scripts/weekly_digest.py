@@ -157,6 +157,14 @@ def story_slots(stories):
     return slots
 
 
+def thin_issue_warning(stories):
+    """Describe a sendable issue that is missing topics, for review before Saturday."""
+    missing = [label for section, label in SECTIONS.items() if not any(s['section'] == section for s in stories)]
+    if not stories or not missing:
+        return None
+    return f"Weekly issue has {len(stories)} of 5 highlights; no stories for: {', '.join(missing)}"
+
+
 def publish_story_links(issue, output):
     # Freeze each issue's numbered links so later revisions never repoint a sent
     # email to a different article. Blog pages themselves retain current corrections.
@@ -210,6 +218,9 @@ def main():
             page = args.web_output / day.isoformat() / 'index.html'
             page.parent.mkdir(parents=True, exist_ok=True)
             page.write_text(page_document)
+    warning = thin_issue_warning(select_highlights(digest))
+    if warning:
+        print('::warning title=Thin weekly issue::' + warning)
     print(f"Weekly draft {stem}: {len(digest['editions'])} editions, {len(digest['stories'])} unique stories. No mail sent.")
 
 if __name__ == '__main__':
