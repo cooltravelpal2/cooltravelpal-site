@@ -15,10 +15,24 @@
 /monuments/
 /monuments/privacy-policy/
 /monuments/support/
+# Athena: its terms, privacy notice and support page are named in its
+# App Store listing. The pages are written by Athena's pipeline
+# (pipeline/release/pages.py --site) from the app's own text.
+/athena/
+/athena/terms/
+/athena/privacy-policy/
+/athena/support/
+/athena/copyright/
+/athena/zh/terms/
+/athena/zh/privacy-policy/
+/athena/zh/support/
+/athena/zh/copyright/
 # Protected assets (referenced by the pages above)
 /css/style.css
 /css/travelorbit.css
 /images/favicon.png
 /images/travelpal-logo.png
+/css/athena.css
+/images/athena-icon.png
 
 /dongdong/
