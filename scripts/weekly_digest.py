@@ -43,19 +43,16 @@ PALETTES = {
 def select_highlights(digest, limit=5):
     """Lead with one important story per topic; never let one topic fill the email."""
     ranked = sorted(digest['stories'], key=lambda s: (-s.get('rank', 0), s['storyId']))
-    chosen, counts = [], {}
+    chosen = []
     for section in SECTIONS:
         first = next((s for s in ranked if s['section'] == section), None)
         if first:
             chosen.append(first)
-            counts[section] = 1
-    for story in ranked:
-        if len(chosen) >= limit:
-            break
-        if story in chosen or counts.get(story['section'], 0) >= 2:
-            continue
-        chosen.append(story)
-        counts[story['section']] = counts.get(story['section'], 0) + 1
+    # The email has one slot per topic plus a single extra slot, so a week
+    # missing a topic gets fewer highlights rather than a second extra.
+    extra = next((s for s in ranked if s not in chosen), None)
+    if extra and len(chosen) < limit:
+        chosen.append(extra)
     return chosen[:limit]
 
 
@@ -160,6 +157,14 @@ def story_slots(stories):
     return slots
 
 
+def thin_issue_warning(stories):
+    """Describe a sendable issue that is missing topics, for review before Saturday."""
+    missing = [label for section, label in SECTIONS.items() if not any(s['section'] == section for s in stories)]
+    if not stories or not missing:
+        return None
+    return f"Weekly issue has {len(stories)} of 5 highlights; no stories for: {', '.join(missing)}"
+
+
 def publish_story_links(issue, output):
     # Freeze each issue's numbered links so later revisions never repoint a sent
     # email to a different article. Blog pages themselves retain current corrections.
@@ -213,6 +218,9 @@ def main():
             page = args.web_output / day.isoformat() / 'index.html'
             page.parent.mkdir(parents=True, exist_ok=True)
             page.write_text(page_document)
+    warning = thin_issue_warning(select_highlights(digest))
+    if warning:
+        print('::warning title=Thin weekly issue::' + warning)
     print(f"Weekly draft {stem}: {len(digest['editions'])} editions, {len(digest['stories'])} unique stories. No mail sent.")
 
 if __name__ == '__main__':

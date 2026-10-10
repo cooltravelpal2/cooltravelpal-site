@@ -28,6 +28,10 @@ class WeeklyDigestTest(unittest.TestCase):
         self.assertEqual(len(chosen),5)
         self.assertEqual({s['section'] for s in chosen}, {'hotels','airlines','cards','destinations'})
         self.assertLessEqual(max(sum(s['section']==t for s in chosen) for t in ['hotels','airlines','cards','destinations']),2)
+        missing_topic = select_highlights({'stories':[s for s in stories if s['section']!='destinations']})
+        self.assertEqual(len(missing_topic),4)
+        from weekly_digest import story_slots
+        self.assertEqual(sorted(story_slots(missing_topic)),[1,2,3,5])
         self.assertLessEqual(len(short_copy(stories[0]).split()),70)
         offer = {'summary':'Do not use this vague bonus teaser.', 'terms':{
             'rewardPoints':200000,'minSpend':5000,'spendWindow':'first 3 months',
@@ -35,6 +39,24 @@ class WeeklyDigestTest(unittest.TestCase):
         copy = short_copy(offer)
         for required in ['200,000','$5,000','3 months','$350','November 18, 2026','eligibility']:
             self.assertIn(required,copy)
+
+
+class TemplateSlotsTest(unittest.TestCase):
+    def test_every_topic_mix_fits_the_email_template(self):
+        import html, itertools, re
+        from weekly_digest import select_highlights, story_slots, thin_issue_warning
+        from daily_travel_brief import SECTIONS
+        template = (Path(__file__).resolve().parents[1] / 'templates/emailoctopus-weekly.html').read_text()
+        blocks = dict(re.findall(r'\{% if WeeklyHighlight(\d) is not empty %\}(.*?)\{% endif %\}', template, re.S))
+        self.assertEqual(sorted(blocks), [str(n) for n in range(1, len(SECTIONS) + 2)])
+        for n, label in enumerate(SECTIONS.values(), 1):
+            self.assertIn(html.escape(label), blocks[str(n)])
+        for size in range(1, len(SECTIONS) + 1):
+            for topics in itertools.combinations(SECTIONS, size):
+                stories = [{'storyId': f'{t}-{n}', 'section': t, 'rank': 100 - n} for t in topics for n in range(5)]
+                slots = story_slots(select_highlights({'stories': stories}))
+                self.assertTrue(set(slots) <= {int(n) for n in blocks})
+                self.assertEqual(thin_issue_warning(list(slots.values())) is None, size == len(SECTIONS))
 
 
 class StableNewsletterLinksTest(unittest.TestCase):
