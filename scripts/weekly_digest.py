@@ -43,19 +43,16 @@ PALETTES = {
 def select_highlights(digest, limit=5):
     """Lead with one important story per topic; never let one topic fill the email."""
     ranked = sorted(digest['stories'], key=lambda s: (-s.get('rank', 0), s['storyId']))
-    chosen, counts = [], {}
+    chosen = []
     for section in SECTIONS:
         first = next((s for s in ranked if s['section'] == section), None)
         if first:
             chosen.append(first)
-            counts[section] = 1
-    for story in ranked:
-        if len(chosen) >= limit:
-            break
-        if story in chosen or counts.get(story['section'], 0) >= 2:
-            continue
-        chosen.append(story)
-        counts[story['section']] = counts.get(story['section'], 0) + 1
+    # The email has one slot per topic plus a single extra slot, so a week
+    # missing a topic gets fewer highlights rather than a second extra.
+    extra = next((s for s in ranked if s not in chosen), None)
+    if extra and len(chosen) < limit:
+        chosen.append(extra)
     return chosen[:limit]
 
 

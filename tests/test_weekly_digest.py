@@ -28,6 +28,10 @@ class WeeklyDigestTest(unittest.TestCase):
         self.assertEqual(len(chosen),5)
         self.assertEqual({s['section'] for s in chosen}, {'hotels','airlines','cards','destinations'})
         self.assertLessEqual(max(sum(s['section']==t for s in chosen) for t in ['hotels','airlines','cards','destinations']),2)
+        missing_topic = select_highlights({'stories':[s for s in stories if s['section']!='destinations']})
+        self.assertEqual(len(missing_topic),4)
+        from weekly_digest import story_slots
+        self.assertEqual(sorted(story_slots(missing_topic)),[1,2,3,5])
         self.assertLessEqual(len(short_copy(stories[0]).split()),70)
         offer = {'summary':'Do not use this vague bonus teaser.', 'terms':{
             'rewardPoints':200000,'minSpend':5000,'spendWindow':'first 3 months',
