@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "editionId": "2026-10-10",
+  "revision": 1,
+  "status": "ready_with_limited_coverage",
+  "policyVersion": "travel-impact-v1",
+  "sourceRunIds": [
+    "9973d3fe-8266-4de3-b63e-201aaf87ebea"
+  ],
+  "cutoffAt": "2026-10-10T14:03:39.435Z",
+  "generatedAt": "2026-10-10T14:03:39.435Z",
+  "coverageStatus": "limited",
+  "coverage": [
+    {
+      "sourceId": "marriott",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hyatt",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hilton",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "ihg",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "aman",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "wyndham",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-and-only",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amex",
+      "category": "cards",
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "chase",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "citi",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "discover",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "capital-one",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "delta",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "united",
+      "category": "airlines",
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "american",
+      "category": "airlines",
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "alaska",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "southwest",
+      "category": "airlines",
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "air-canada",
+      "category": "airlines",
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "british-airways",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "slickdeals",
+      "category": "deals",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "redflagdeals",
+      "category": "deals",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "hotels",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "airlines",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "cards",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "destinations",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "airbnb",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nps",
+      "category": "destinations",
+      "status": "attempted"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "news_9a27483f7dea5cd6af28d6cb",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 80,
+      "title": "Delta plans to extend free Delta Sync Wi-Fi across its trans-Pacific routes this month",
+      "summary": "Delta says fast, free Delta Sync Wi-Fi, presented by T-Mobile, will roll out across its trans-Pacific routes starting this month. Once activated, the airline says the expansion would bring the last major region of its global network online for the complimentary connectivity. No specific routes, aircraft or activation dates were given.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-10-09T19:54:22.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Delta",
+          "url": "https://news.delta.com/coming-month-fast-free-wi-fi-expand-across-deltas-trans-pacific-network-full-global-connectivity#main-content",
+          "sourceType": "official",
+          "publishedAt": "2026-10-09T19:54:22.000Z",
+          "retrievedAt": "2026-10-10T14:03:01.060Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-10T14:03:39.423Z",
+      "changedAt": "2026-10-10T14:03:39.423Z",
+      "sourceRunId": "9973d3fe-8266-4de3-b63e-201aaf87ebea",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Delta announced that its free Delta Sync Wi-Fi, presented by T-Mobile, is set to roll out across trans-Pacific routes beginning this month. According to the airline, activating the service on those routes would complete free Wi-Fi coverage across the final major region of its global network.",
+        "The announcement did not name the specific trans-Pacific routes, aircraft or exact activation dates involved, and no start date beyond \"this month\" was provided."
+      ],
+      "keyPoints": [
+        "Delta Sync Wi-Fi is described by Delta as fast and free, presented by T-Mobile.",
+        "The rollout covers Delta's trans-Pacific routes and is set to begin this month.",
+        "Delta says the expansion would make fast, free Wi-Fi available across the last major region of its global network."
+      ],
+      "takeaway": "If you have an upcoming trans-Pacific Delta flight, check the airline's Wi-Fi information for your specific route and aircraft before assuming complimentary connectivity will be active on your travel date."
+    },
+    {
+      "storyId": "news_ebadf2341d6ef12b355d7837",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 70,
+      "title": "Timing matters when applying for Delta American Express cards",
+      "summary": "The Points Guy reports that because American Express generally limits cardmembers to one welcome bonus per card per lifetime, the timing of a Delta American Express application carries weight. The article frames the decision around when a prospective applicant should apply rather than which card is best. No specific welcome offers, spending requirements or deadlines are supported by the candidate text, so those details are not stated here.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-09T18:00:45.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "The Points Guy",
+          "url": "https://thepointsguy.com/credit-cards/delta-american-express-best-welcome-offers/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-09T18:00:45.000Z",
+          "retrievedAt": "2026-10-10T14:01:54.570Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-10T14:03:39.434Z",
+      "changedAt": "2026-10-10T14:03:39.434Z",
+      "sourceRunId": "9973d3fe-8266-4de3-b63e-201aaf87ebea",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The Points Guy published guidance arguing that applicants should think carefully about when, not just whether, to apply for a Delta American Express card. The stated reason is that American Express generally restricts cardmembers to one welcome bonus per card per lifetime, which the publisher treats as the key constraint on timing.",
+        "Because no fetched evidence accompanies this candidate, the specific offers, minimum spending requirements, annual fees, eligibility limits and deadlines are not verified and are not reproduced. Readers who want current terms should confirm them directly with American Express before applying."
+      ],
+      "keyPoints": [
+        "The Points Guy frames the article around when to apply for a Delta American Express card.",
+        "The publisher cites American Express's one-welcome-bonus-per-lifetime limit as the reason timing matters."
+      ],
+      "takeaway": "Before applying for a Delta American Express card, check the current welcome offer terms on the issuer's own page and confirm you can meet any minimum spending requirement during the offer window, since American Express generally allows only one welcome bonus per card per lifetime."
+    }
+  ],
+  "contentDigest": "67eb0c691a0f2b4d3514df1c8de184e026d9bff527c232c3f08a5f7dfe7f7f7b"
+}
