@@ -1,0 +1,193 @@
+{
+  "weekEnding": "2026-10-10",
+  "windowStart": "2026-10-04",
+  "editions": [
+    {
+      "editionId": "2026-10-10",
+      "revision": 1,
+      "url": "https://travelpal.now/blog/travel-brief-2026-10-10/"
+    },
+    {
+      "editionId": "2026-10-09",
+      "revision": 1,
+      "url": "https://travelpal.now/blog/travel-brief-2026-10-09/"
+    },
+    {
+      "editionId": "2026-10-08",
+      "revision": 1,
+      "url": "https://travelpal.now/blog/travel-brief-2026-10-08/"
+    },
+    {
+      "editionId": "2026-10-07",
+      "revision": 1,
+      "url": "https://travelpal.now/blog/travel-brief-2026-10-07/"
+    },
+    {
+      "editionId": "2026-10-06",
+      "revision": 1,
+      "url": "https://travelpal.now/blog/travel-brief-2026-10-06/"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "news_660c51375055a95c5f8c7236",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 100,
+      "title": "Park Hyatt enters all-inclusive space with Riviera Maya resort",
+      "summary": "Reported by The Points Guy: Park Hyatt is moving into the all-inclusive segment, and the general manager of Park Hyatt Riviera Maya describes how the property aims to deliver a luxury all-inclusive stay. The report does not confirm rates, opening dates, or booking details.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-05T17:30:10.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "The Points Guy",
+          "url": "https://thepointsguy.com/news/park-hyatt-riviera-maya-all-inclusive-details/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-05T17:30:10.000Z",
+          "retrievedAt": "2026-10-06T14:00:06.028Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-06T14:00:49.494Z",
+      "changedAt": "2026-10-06T14:00:49.494Z",
+      "sourceRunId": "d1694bcb-b557-4d4f-9c80-74296955b5b0",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "According to The Points Guy, Park Hyatt is entering the all-inclusive market for the first time, with Park Hyatt Riviera Maya serving as the brand's debut in that category. The article frames the property around an attempt to position all-inclusive stays as a luxury product rather than a mass-market one.",
+        "The reported detail comes from the resort's general manager, who outlines the approach the property intends to take. Because the source does not publish confirmed pricing, inclusions, or a firm opening timeline, readers should treat specifics beyond the brand's all-inclusive entry as unconfirmed."
+      ],
+      "keyPoints": [
+        "The Points Guy reports Park Hyatt's first all-inclusive property is Park Hyatt Riviera Maya.",
+        "The resort's general manager is cited on plans to deliver a luxury all-inclusive experience.",
+        "No rates, inclusions, or confirmed dates are established in the report."
+      ],
+      "takeaway": "If you are weighing a luxury all-inclusive stay, wait for Hyatt's official property page to publish rates, inclusions and opening dates before comparing it against your existing plans.",
+      "briefUrl": "https://travelpal.now/blog/travel-brief-2026-10-06/#story-036180e78ba5c49c"
+    },
+    {
+      "storyId": "news_34321e0fa4be94a1df5accd5",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 100,
+      "title": "British Airways details A380 retrofit with new seats in every cabin, plus a Heathrow lounge",
+      "summary": "Reported by The Points Guy: British Airways has revealed details of an Airbus A380 retrofit, with new seats planned across first class, business class, premium economy and economy, along with a new lounge. The reported summary did not include timelines, routes, aircraft counts or pricing.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-06T14:04:08.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "The Points Guy",
+          "url": "https://thepointsguy.com/news/british-airways-a380-retrofit-heathrow-lounge/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-06T14:04:08.000Z",
+          "retrievedAt": "2026-10-07T14:00:08.065Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-07T14:00:46.480Z",
+      "changedAt": "2026-10-07T14:00:46.480Z",
+      "sourceRunId": "f781009a-83c7-4807-ad32-83aecad44a88",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The Points Guy reports that British Airways has disclosed details of a retrofit programme for its Airbus A380 fleet, with new seating planned across all four cabins: first class, business class, premium economy and economy. The same report states that a new lounge is also planned."
+      ],
+      "keyPoints": [
+        "British Airways has revealed details of an Airbus A380 retrofit, per The Points Guy",
+        "New seats are planned in first class, business class, premium economy and economy",
+        "A new lounge is also planned"
+      ],
+      "takeaway": "If you are booking British Airways premium cabins, verify the aircraft and seat type on your specific flight: during a retrofit programme, the onboard experience can differ between updated and not-yet-updated A380s.",
+      "briefUrl": "https://travelpal.now/blog/travel-brief-2026-10-07/#story-da65ec96c05c8469"
+    },
+    {
+      "storyId": "benefit_change_fec2c825c55869aa1d162aaa",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 100,
+      "title": "Frequent Miler: FedEx out, UPS in for Amex Business Gold Flexible Business Credit",
+      "summary": "Frequent Miler reports that American Express is removing FedEx and adding UPS as usage options for the Flexible Business Credit on the Business Gold Card, with the change dated 10/1/26. No official Amex documentation was available in the evidence reviewed, so the details remain as reported by the publisher. Cardholders should verify the current eligible options and their selected category directly in their American Express account.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-07T21:45:37.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Frequent Miler",
+          "url": "https://frequentmiler.com/fedex-being-removed-from-flexible-business-credit-on-american-express-business-gold-card-from-10-1-26/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-07T21:45:37.000Z",
+          "retrievedAt": "2026-10-08T14:00:06.005Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-08T14:01:25.942Z",
+      "changedAt": "2026-10-08T14:01:25.942Z",
+      "sourceRunId": "d00056cb-4806-4a98-872a-b48745ebea01",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The Business Gold Card's Flexible Business Credit lets cardholders choose among eligible categories and earn credits on qualifying purchases. According to Frequent Miler, FedEx is being dropped from that list of options and UPS is being added, with the change dated 10/1/26. The publisher frames this as an American Express announcement; CardPecker found no official Amex page in the evidence available at the time of writing.",
+        "For cardholders who had designated FedEx as their selected category, the practical effect is that FedEx spending may no longer generate the credit. Because the specific eligible categories, credit amounts, enrollment mechanics and any selection deadlines are not confirmed in the evidence reviewed, treat the reported change as a prompt to check your own account terms rather than as a complete description of the benefit."
+      ],
+      "keyPoints": [
+        "Reported change: FedEx removed as a Flexible Business Credit usage option on the Amex Business Gold Card",
+        "UPS reportedly added as an eligible option in FedEx's place",
+        "Frequent Miler dates the change 10/1/26; Amex has not been independently confirmed in the evidence reviewed"
+      ],
+      "takeaway": "If you hold the Amex Business Gold Card and rely on the Flexible Business Credit, sign in to your American Express account, confirm which category is currently selected, and switch away from FedEx if it is still your choice. Check Amex's own benefit terms for the current eligible list and credit amounts.",
+      "briefUrl": "https://travelpal.now/blog/travel-brief-2026-10-08/#story-5266ff6223dcaa9b"
+    },
+    {
+      "storyId": "news_37a43edbd9474d5ec4b519ac",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 100,
+      "title": "United MileagePlus status match and challenge reported to go as high as Premier 1K",
+      "summary": "AwardWallet reports that United Airlines' MileagePlus status match and challenge program can match elite status as high as Premier 1K, and that Delta SkyMiles and American AAdvantage members can now match under reduced requirements. Details are attributed to AwardWallet; no official United documentation was reviewed for this brief.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-06T18:25:40.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "AwardWallet",
+          "url": "https://awardwallet.com/news/united-mileageplus/united-status-match/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-06T18:25:40.000Z",
+          "retrievedAt": "2026-10-07T14:00:08.065Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-07T14:00:46.478Z",
+      "changedAt": "2026-10-07T14:00:46.478Z",
+      "sourceRunId": "f781009a-83c7-4807-ad32-83aecad44a88",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "AwardWallet reports that United MileagePlus operates a status match and challenge that can extend as high as Premier 1K, the top published tier in the program. The report also states that members of Delta SkyMiles and American AAdvantage can now match with reduced requirements compared with what was previously asked.",
+        "Because this summary rests on the AwardWallet report rather than United's own published terms, treat the reduced-requirement details as reported rather than confirmed. Exact eligibility, the tiers available to each competing program's members, any challenge spending or flying thresholds, and application windows are not specified in the available material."
+      ],
+      "keyPoints": [
+        "AwardWallet reports United MileagePlus status matches reaching as high as Premier 1K.",
+        "Delta SkyMiles and American AAdvantage members are described as matching under reduced requirements.",
+        "No official United source, deadline, or challenge threshold was available to confirm the details."
+      ],
+      "takeaway": "Before submitting anything, pull United's own MileagePlus status match page and compare its current published tiers, qualifying activity requirements, and proof-of-status rules against the AwardWallet report so you know exactly what you would be committing to.",
+      "briefUrl": "https://travelpal.now/blog/travel-brief-2026-10-07/#story-a1437b972203570d"
+    }
+  ],
+  "highlightStoryIds": [
+    "news_660c51375055a95c5f8c7236",
+    "news_34321e0fa4be94a1df5accd5",
+    "benefit_change_fec2c825c55869aa1d162aaa",
+    "news_37a43edbd9474d5ec4b519ac"
+  ],
+  "contentSha256": "d09fd7d6b02c8cd0c0c0d6be587767bea0983936ebece30aa44c146407e557a9",
+  "sendEligible": true,
+  "newsletterFormat": "illustrated-highlights-v1"
+}
