@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "editionId": "2026-10-11",
+  "revision": 1,
+  "status": "ready_with_limited_coverage",
+  "policyVersion": "travel-impact-v1",
+  "sourceRunIds": [
+    "09f99fa4-f8c6-4ba4-9f30-9d809717ed0b"
+  ],
+  "cutoffAt": "2026-10-11T14:03:22.381Z",
+  "generatedAt": "2026-10-11T14:03:22.381Z",
+  "coverageStatus": "limited",
+  "coverage": [
+    {
+      "sourceId": "marriott",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hyatt",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hilton",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "ihg",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "aman",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "wyndham",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-and-only",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amex",
+      "category": "cards",
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "chase",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "citi",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "discover",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "capital-one",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "delta",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "united",
+      "category": "airlines",
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "american",
+      "category": "airlines",
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "alaska",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "southwest",
+      "category": "airlines",
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "air-canada",
+      "category": "airlines",
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "british-airways",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "slickdeals",
+      "category": "deals",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "redflagdeals",
+      "category": "deals",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "hotels",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "airlines",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "cards",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "destinations",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "airbnb",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nps",
+      "category": "destinations",
+      "status": "attempted"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "news_e1b755c79810ce731f27dd53",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 70,
+      "title": "The Points Guy: 6 reasons to consider the Citi AAdvantage Executive Mastercard",
+      "summary": "The Points Guy published a list of six reasons a traveler might add the Citi AAdvantage Executive Mastercard to their wallet, highlighting a sign-up bonus and Admirals Club membership. Reported summary attributed to The Points Guy. The item provides no bonus amount, spending requirement, annual fee, or offer deadline, so no card terms can be confirmed.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-09T20:00:35.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "The Points Guy",
+          "url": "https://thepointsguy.com/credit-cards/6-reasons-to-get-citi-aadvantage-executive-card/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-09T20:00:35.000Z",
+          "retrievedAt": "2026-10-11T14:01:44.785Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-11T14:03:22.371Z",
+      "changedAt": "2026-10-11T14:03:22.371Z",
+      "sourceRunId": "09f99fa4-f8c6-4ba4-9f30-9d809717ed0b",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The Points Guy framed the Citi AAdvantage Executive Mastercard as a card worth adding, pointing to a sign-up bonus and Admirals Club membership among its reasons. This is an editorial recommendation, and the available text does not state bonus values, qualifying spend, annual fee, or any expiration date.",
+        "Because only the headline-level claim is available and no official terms were supplied, treat this as reported guidance rather than a confirmed limited-time offer."
+      ],
+      "keyPoints": [
+        "Editorial format: list-style argument for holding the Citi AAdvantage Executive Mastercard.",
+        "Named benefits in the claim: a sign-up bonus and Admirals Club membership.",
+        "No amounts, fees, spending thresholds, or deadlines are given in the available text."
+      ],
+      "takeaway": "Check the current published terms directly with Citi and American Airlines AAdvantage before applying, since the article does not state the bonus amount, required spend, annual fee, or any deadline."
+    }
+  ],
+  "contentDigest": "744ad889cc5e3fbeb44c355c0d5720f7434b6a9be3827bb90ca93ab64af7f5c9"
+}
