@@ -115,6 +115,7 @@ jobs:
         run: |
           python3 - <<'PY'
           import sys
+          import time
           from datetime import datetime
           from zoneinfo import ZoneInfo
           sys.path.insert(0, 'scripts')
@@ -123,7 +124,16 @@ jobs:
           day = datetime.now(ZoneInfo('America/Los_Angeles')).date()
           editions = load_editions(Path('data/travel-briefs'))
           if any(e['editionId'] == day.isoformat() and e['status'].startswith('ready') and any(s.get('active', True) for s in e['stories']) for e in editions):
-              print('Verified live brief:', load_live(day)['editionId'])
+              # Pages can keep serving the previous deployment for a few minutes after deploy-pages reports success.
+              for attempt in range(1, 11):
+                  try:
+                      print('Verified live brief:', load_live(day)['editionId'])
+                      break
+                  except (OSError, ValueError) as error:
+                      if attempt == 10:
+                          raise
+                      print(f'Attempt {attempt}: {error}; retrying in 30s')
+                      time.sleep(30)
           else:
               print('No new article to verify; archived editions retained')
           PY
