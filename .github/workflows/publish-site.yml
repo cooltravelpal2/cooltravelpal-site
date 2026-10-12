@@ -39,7 +39,7 @@ jobs:
       pages: write
       id-token: write
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
@@ -103,10 +103,20 @@ jobs:
           from datetime import datetime
           from zoneinfo import ZoneInfo
           import sys
+          import time
           sys.path.insert(0, 'scripts')
           from daily_exercise import load_current
-          data = load_current(datetime.now(ZoneInfo('America/Los_Angeles')).date(), verify_travelpal=True)
-          print('Verified live synchronization:', data['releaseId'])
+          # Pages can keep serving the previous deployment for a few minutes after deploy-pages reports success.
+          for attempt in range(1, 11):
+              try:
+                  data = load_current(datetime.now(ZoneInfo('America/Los_Angeles')).date(), verify_travelpal=True)
+                  print('Verified live synchronization:', data['releaseId'])
+                  break
+              except (OSError, ValueError) as error:
+                  if attempt == 10:
+                      raise
+                  print(f'Attempt {attempt}: {error}; retrying in 30s')
+                  time.sleep(30)
           PY
       - name: Verify newly deployed brief
         if: >-
