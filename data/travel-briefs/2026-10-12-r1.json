@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "editionId": "2026-10-12",
+  "revision": 1,
+  "status": "ready_with_limited_coverage",
+  "policyVersion": "travel-impact-v1",
+  "sourceRunIds": [
+    "185823cf-ca35-486f-ad38-c6dabe831b55"
+  ],
+  "cutoffAt": "2026-10-12T14:03:55.558Z",
+  "generatedAt": "2026-10-12T14:03:55.558Z",
+  "coverageStatus": "limited",
+  "coverage": [
+    {
+      "sourceId": "marriott",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hyatt",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hilton",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "ihg",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "aman",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "wyndham",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-and-only",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amex",
+      "category": "cards",
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "chase",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "citi",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "discover",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "capital-one",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "delta",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "united",
+      "category": "airlines",
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "american",
+      "category": "airlines",
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "alaska",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "southwest",
+      "category": "airlines",
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "air-canada",
+      "category": "airlines",
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "british-airways",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "airlines",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "cards",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "destinations",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "slickdeals",
+      "category": "deals",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "redflagdeals",
+      "category": "deals",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "hotels",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "airlines",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "cards",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "destinations",
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "airbnb",
+      "category": "hotels",
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nps",
+      "category": "destinations",
+      "status": "attempted"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "news_739a204b3ac3e04bb2dc3f5f",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 100,
+      "title": "The Points Guy compares Capital One Spark Cash Plus and Chase Ink Business Cash",
+      "summary": "The Points Guy published a side-by-side comparison of two business rewards cards. According to the publisher's summary, Capital One Spark Cash Plus is positioned for businesses with high spending, while Chase Ink Business Cash is described as offering up to 5% back with no annual fee. No welcome offers, spending requirements, fee figures or deadlines are stated in the available text, and no official documentation was retrieved, so details should be verified with each issuer.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-12T13:00:57.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "The Points Guy",
+          "url": "https://thepointsguy.com/credit-cards/capital-one-spark-cash-plus-vs-chase-ink-business-cash/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-12T13:00:57.000Z",
+          "retrievedAt": "2026-10-12T14:01:59.206Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-12T14:03:55.538Z",
+      "changedAt": "2026-10-12T14:03:55.538Z",
+      "sourceRunId": "185823cf-ca35-486f-ad38-c6dabe831b55",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The Points Guy's comparison weighs Capital One Spark Cash Plus against Chase Ink Business Cash, framing the choice around how much a business spends. Per the publisher, Spark Cash Plus suits higher business spending, whereas Ink Business Cash is characterized by up to 5% back and the absence of an annual fee.",
+        "The available text does not include current welcome bonuses, minimum spending requirements, annual fee amounts, or expiration dates for either card, and no issuer documentation was retrieved to confirm the terms. Anything beyond the two framing points above is reported by the publisher and should be checked against the issuers' own pages before acting."
+      ],
+      "keyPoints": [
+        "Publisher positions Capital One Spark Cash Plus for businesses with higher spending.",
+        "Publisher describes Chase Ink Business Cash as offering up to 5% back with no annual fee.",
+        "No welcome offer amounts, spending thresholds or deadlines appear in the source text."
+      ],
+      "takeaway": "Estimate your typical monthly business card spend, then open each issuer's official card page to confirm the current annual fee, welcome offer and spending requirement before applying, since the comparison text does not list them."
+    }
+  ],
+  "contentDigest": "8cd63cbb08c4f5e047cfe80d8bd7ca6f5b97247bd2ca7f4c505ed8081d59e983"
+}
