@@ -1,0 +1,592 @@
+{
+  "schemaVersion": 1,
+  "editionId": "2026-10-14",
+  "revision": 1,
+  "status": "ready_with_limited_coverage",
+  "policyVersion": "travel-impact-v1",
+  "sourceRunIds": [
+    "e6cc0139-1e9c-4adb-af8a-b7aaeba3df36",
+    "5467babf-e3bf-49af-befa-f27bfca62900"
+  ],
+  "cutoffAt": "2026-10-14T14:02:17.366Z",
+  "generatedAt": "2026-10-14T14:02:17.366Z",
+  "coverageStatus": "limited",
+  "coverage": [
+    {
+      "sourceId": "dell",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "marriott",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hyatt",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hilton",
+      "category": "hotels",
+      "candidateCount": 13,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "ihg",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "aman",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "wyndham",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-and-only",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amex",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "chase",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "citi",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "discover",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "capital-one",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "delta",
+      "category": "airlines",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "united",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "american",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "alaska",
+      "category": "airlines",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "southwest",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "air-canada",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "british-airways",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "hotels",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "airlines",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "cards",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "destinations",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "hotels",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "airlines",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "cards",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "destinations",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "hotels",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "airlines",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "cards",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "destinations",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "slickdeals",
+      "category": "deals",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "redflagdeals",
+      "category": "deals",
+      "candidateCount": 15,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "airbnb",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nps",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "attempted"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "news_6a7bdc317b965d37688e39e4",
+      "storyRevision": 3,
+      "section": "hotels",
+      "rank": 100,
+      "title": "M Social Hotel Sunnyvale to open in December with 263 rooms, AI assistants and a rooftop beehive",
+      "summary": "The Points Guy reports that a new M Social hotel is coming to Sunnyvale, California, opening in December with 263 rooms. Reported amenities include robotic assistants, in-room artificial intelligence, social spaces and a rooftop beehive. Details remain as reported by the publisher and have not been officially confirmed here; rates, booking dates and loyalty participation were not specified.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-13T18:00:41.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "The Points Guy",
+          "url": "https://thepointsguy.com/news/m-social-hotel-sunnyvale/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-13T18:00:41.000Z",
+          "retrievedAt": "2026-10-14T14:00:07.960Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-14T04:32:59.616Z",
+      "changedAt": "2026-10-14T14:02:17.295Z",
+      "sourceRunId": "e6cc0139-1e9c-4adb-af8a-b7aaeba3df36",
+      "changeType": "updated",
+      "active": true,
+      "paragraphs": [
+        "The Points Guy reports that the M Social Hotel Sunnyvale will bring a high-tech hospitality concept to Silicon Valley when it opens in December, with 263 rooms planned. The reported feature set leans on automation and shared spaces rather than traditional full-service amenities.",
+        "According to the same report, robotic assistants and in-room artificial intelligence are part of the design, alongside social spaces and a rooftop beehive. No rates, opening-day booking availability or loyalty program participation were included in the report, so travelers should treat the amenity list as reported rather than confirmed."
+      ],
+      "keyPoints": [
+        "Reported opening: December in Sunnyvale, California",
+        "263 rooms planned, per The Points Guy",
+        "Reported features include robotic assistants, in-room AI, social spaces and a rooftop beehive"
+      ],
+      "takeaway": "If a December Silicon Valley stay is on your calendar, check the hotel's own site directly for opening-date availability and rates before building a trip around it, since booking details were not part of the report."
+    },
+    {
+      "storyId": "news_3fb97f22b5339518fbda0ba8",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 100,
+      "title": "Hollywood Burbank Airport's new 355,000-square-foot terminal opens Oct. 13",
+      "summary": "Alaska Airlines says Hollywood Burbank Airport's new terminal opens to guests on Oct. 13. The 355,000-square-foot building is described by the airline as brighter, more spacious and more modern for travelers passing through Burbank. No route, schedule, fare or card benefit changes were announced in the post.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-10-13T17:54:17.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Alaska Airlines",
+          "url": "https://news.alaskaair.com/destinations/step-inside-hollywood-burbank-airports-stunning-new-terminal/",
+          "sourceType": "official",
+          "publishedAt": "2026-10-13T17:54:17.000Z",
+          "retrievedAt": "2026-10-14T04:29:04.720Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-14T04:32:59.596Z",
+      "changedAt": "2026-10-14T04:32:59.596Z",
+      "sourceRunId": "5467babf-e3bf-49af-befa-f27bfca62900",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Alaska Airlines announced that Hollywood Burbank Airport's new terminal opens to guests on Oct. 13. The carrier puts the building at 355,000 square feet and describes it as a brighter, more spacious and more modern airport experience for its travelers.",
+        "The post is a first look at the facility rather than a change to fares, routes or loyalty terms. No details were given about gate assignments, lounge space, signage or how Alaska's Burbank operations will be laid out in the new building."
+      ],
+      "keyPoints": [
+        "New Hollywood Burbank Airport terminal opens to guests Oct. 13, per Alaska Airlines.",
+        "Alaska Airlines states the terminal is 355,000 square feet.",
+        "The airline frames the space as brighter, more spacious and more modern for its travelers."
+      ],
+      "takeaway": "If you are flying Alaska Airlines out of Burbank around the opening date, check the airline's app or website for your terminal and gate details before you travel rather than relying on prior trips through the old building."
+    },
+    {
+      "storyId": "benefit_change_a567ec8bb91ac1852e36d6bc",
+      "storyRevision": 3,
+      "section": "airlines",
+      "rank": 100,
+      "title": "United reportedly changing MileagePlus Premier status qualification for 2027",
+      "summary": "AwardWallet reports that United Airlines is changing the metrics members will use to earn MileagePlus Premier elite status, with the new qualification approach applying to the 2027 status year. The report does not specify the new thresholds or earning categories. United has not officially confirmed the change, so the confirmed terms should come from MileagePlus' own announcements.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-13T16:04:04.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "AwardWallet",
+          "url": "https://awardwallet.com/news/united-mileageplus/2027-premier-status-qualification-updates/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-13T16:04:04.000Z",
+          "retrievedAt": "2026-10-14T14:00:07.961Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-14T04:32:59.625Z",
+      "changedAt": "2026-10-14T14:02:17.304Z",
+      "sourceRunId": "e6cc0139-1e9c-4adb-af8a-b7aaeba3df36",
+      "changeType": "updated",
+      "active": true,
+      "paragraphs": [],
+      "keyPoints": [
+        "Reported change affects how Premier status is earned for the 2027 status year.",
+        "No specific qualification thresholds or earning metrics were detailed in the report."
+      ]
+    },
+    {
+      "storyId": "offer_dc729b2c15953786a40910d4",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 78,
+      "title": "Reported: Norwegian Cruise Line Amex Offer gives $150 back on $750 spend",
+      "summary": "Frequent Miler reports a targeted American Express offer tied to Norwegian Cruise Line: a $150 statement credit after spending $750 or more. Because the offer is targeted, it may appear only on some Amex accounts. No expiration date, activation steps, or excluded bookings were confirmed in the available evidence.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-13T19:45:28.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Frequent Miler",
+          "url": "https://frequentmiler.com/norwegian-cruise-line-amex-offer-spend-750-get-150-back/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-13T19:45:28.000Z",
+          "retrievedAt": "2026-10-14T04:29:04.721Z"
+        }
+      ],
+      "terms": {
+        "issuer": "American Express",
+        "program": "Amex Offers",
+        "merchant": "Norwegian Cruise Line",
+        "rewardType": "statement_credit",
+        "minSpend": 750,
+        "creditAmount": 150,
+        "rewardPoints": null,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-14T04:32:59.606Z",
+      "changedAt": "2026-10-14T04:32:59.606Z",
+      "sourceRunId": "5467babf-e3bf-49af-befa-f27bfca62900",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Frequent Miler reports that a targeted Amex offer for Norwegian Cruise Line provides a $150 statement credit when a cardholder spends at least $750. The item describes the deal as targeted, meaning Amex typically surfaces such offers only on selected accounts rather than to all cardholders.",
+        "The available evidence does not confirm an expiration date, whether the offer must be added to a card before use, or which bookings qualify. Cardholders should verify the specific terms shown in their own Amex account before relying on the credit."
+      ],
+      "keyPoints": [
+        "Reported offer: $150 statement credit on $750 or more in spend with Norwegian Cruise Line.",
+        "Reported as targeted, so availability depends on the individual Amex account.",
+        "Deadline, activation steps, and qualifying booking details were not confirmed."
+      ],
+      "takeaway": "Check your American Express account's offers for a Norwegian Cruise Line deal before booking. Since it is reported as targeted, confirm the spend requirement, qualifying charges, and any deadline shown on your own offer before counting on the $150 credit."
+    },
+    {
+      "storyId": "offer_d1f6e2e1fa8ca35b4e152c69",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 76,
+      "title": "Frequent Miler: targeted Citi offer gives $50 back on JetBlue spending of $300 or $400",
+      "summary": "Frequent Miler reports a targeted Citi card-linked offer that returns $50 as a statement credit after $300 or $400 of JetBlue spending, depending on which version a cardholder receives. Reported details come from the publisher; no official terms were supplied.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-13T23:45:00.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Frequent Miler",
+          "url": "https://frequentmiler.com/save-50-with-jetblue-citi-offer-when-spending-400/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-13T23:45:00.000Z",
+          "retrievedAt": "2026-10-14T04:29:04.721Z"
+        }
+      ],
+      "terms": {
+        "issuer": "Citi",
+        "program": null,
+        "merchant": "JetBlue",
+        "rewardType": "statement_credit",
+        "minSpend": null,
+        "creditAmount": 50,
+        "rewardPoints": null,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-14T04:32:59.608Z",
+      "changedAt": "2026-10-14T04:32:59.608Z",
+      "sourceRunId": "5467babf-e3bf-49af-befa-f27bfca62900",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Frequent Miler reports a targeted Citi card-linked offer tied to JetBlue. Cardholders who receive it get $50 back as a statement credit once they meet a spending requirement, with the publisher describing two possible thresholds: $300 or $400.",
+        "Because the offer is targeted, availability and the applicable spend level can differ from one account to another. The publisher does not state an expiration date or activation requirement, so those terms would need to come from the offer as it appears on a given card."
+      ],
+      "keyPoints": [
+        "$50 statement credit reported by Frequent Miler for JetBlue spending on a targeted Citi offer.",
+        "Spending requirement cited as either $300+ or $400+, depending on the version received.",
+        "Offer is targeted, so it may not appear on every Citi account."
+      ],
+      "takeaway": "Open your Citi account or app, check the offers section on each eligible card, and confirm both the spend threshold your version requires and its own expiration date before you book JetBlue spending against it."
+    },
+    {
+      "storyId": "offer_8fa732f2edb40b07b3360120",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 76,
+      "title": "Targeted: $50 off a $300+ IHG booking through Citi Travel on some Citi cards",
+      "summary": "Frequent Miler reports that some Citi cardholders are seeing a targeted offer to save $50 on an IHG hotel booking of $300 or more made through Citi Travel. The publisher says the offer appeared on a Citi Strata Elite card and later on a Citi Strata Premier card. Availability is targeted and varies by cardholder, so the deal may not appear for everyone.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-12T19:45:04.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Frequent Miler",
+          "url": "https://frequentmiler.com/50-off-300-ihg-booking-via-citi-travel-targeted/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-12T19:45:04.000Z",
+          "retrievedAt": "2026-10-14T04:29:04.721Z"
+        }
+      ],
+      "terms": {
+        "issuer": "Citi",
+        "program": "Citi Travel",
+        "merchant": "IHG",
+        "rewardType": "discount",
+        "minSpend": 300,
+        "creditAmount": 50,
+        "rewardPoints": null,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-14T04:32:59.617Z",
+      "changedAt": "2026-10-14T04:32:59.617Z",
+      "sourceRunId": "5467babf-e3bf-49af-befa-f27bfca62900",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Frequent Miler reports a targeted Citi Travel promotion that takes $50 off an IHG hotel booking of at least $300. According to the publisher, the offer showed up on a Citi Strata Elite card before that card was downgraded and was also available on a Citi Strata Premier card, which suggests the offer can be attached to more than one Citi product.",
+        "Because this is a targeted promotion, the publisher cautions that it will not necessarily appear for every cardholder and may differ by account. Readers who hold a Citi card and are planning an IHG stay should look for the offer in their Citi account or Citi Travel before booking, and confirm the terms shown on their own account, since the publisher's experience is one data point rather than a guarantee."
+      ],
+      "keyPoints": [
+        "Reported value: $50 off an IHG hotel booking of $300 or more when booked through Citi Travel, per Frequent Miler.",
+        "The publisher saw the offer on a Citi Strata Elite card and later on a Citi Strata Premier card.",
+        "The promotion is described as targeted, so it may not be available on every Citi account."
+      ],
+      "takeaway": "If you hold a Citi card and have an IHG stay coming up, check your Citi account and Citi Travel for the $50-off-$300 offer before you book, since targeted offers often appear in only some accounts and may require booking through the Citi Travel portal."
+    },
+    {
+      "storyId": "offer_60bc7188ddc2557f2caa8a58",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 75,
+      "title": "Marriott Bonvoy Offers 2,500 Bonus Points to KrisFlyer Members",
+      "summary": "AwardWallet reports that Marriott Bonvoy has a promotion for Singapore Airlines KrisFlyer members: complete a three-night stay by December 31 and receive 2,500 bonus points. The offer is not officially confirmed. Check Marriott Bonvoy for registration, eligible rates, and full terms before booking.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-13T22:10:03.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "AwardWallet",
+          "url": "https://awardwallet.com/news/marriott-singapore-bonus-promotion/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-13T22:10:03.000Z",
+          "retrievedAt": "2026-10-14T14:00:07.961Z"
+        }
+      ],
+      "terms": {
+        "issuer": null,
+        "program": null,
+        "merchant": "Marriott",
+        "rewardType": "points",
+        "minSpend": null,
+        "creditAmount": null,
+        "rewardPoints": 2500,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-14T14:02:17.225Z",
+      "changedAt": "2026-10-14T14:02:17.225Z",
+      "sourceRunId": "e6cc0139-1e9c-4adb-af8a-b7aaeba3df36",
+      "changeType": "new",
+      "active": true,
+      "takeaway": "If you are a KrisFlyer member planning a Marriott stay before December 31, confirm the promotion applies to your rate and property with Marriott Bonvoy before booking."
+    }
+  ],
+  "contentDigest": "c99cc96dd36a290e4c4f32d7cc6b5916c3c83011d40c6ab79507a2945497114a"
+}
