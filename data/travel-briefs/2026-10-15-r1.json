@@ -1,0 +1,622 @@
+{
+  "schemaVersion": 1,
+  "editionId": "2026-10-15",
+  "revision": 1,
+  "status": "ready_with_limited_coverage",
+  "policyVersion": "travel-impact-v1",
+  "sourceRunIds": [
+    "1b3ebb29-ea87-4864-a156-5e13baeacaf3",
+    "b71ee5bb-1f02-46e9-9865-d9410902b8ad"
+  ],
+  "cutoffAt": "2026-10-15T14:04:31.503Z",
+  "generatedAt": "2026-10-15T14:04:31.503Z",
+  "coverageStatus": "limited",
+  "coverage": [
+    {
+      "sourceId": "breville",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "apple",
+      "category": "deals",
+      "candidateCount": 94,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amazon-devices",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "fellow",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "moccamaster",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "delonghi",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "dell",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "marriott",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hyatt",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hilton",
+      "category": "hotels",
+      "candidateCount": 25,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "ihg",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "aman",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "wyndham",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-and-only",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amex",
+      "category": "cards",
+      "candidateCount": 1,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "chase",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "citi",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "discover",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "capital-one",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "delta",
+      "category": "airlines",
+      "candidateCount": 13,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "united",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "american",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "alaska",
+      "category": "airlines",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "southwest",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "air-canada",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "british-airways",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "hotels",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "airlines",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "cards",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "destinations",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "hotels",
+      "candidateCount": 8,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "airlines",
+      "candidateCount": 8,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "cards",
+      "candidateCount": 8,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "destinations",
+      "candidateCount": 8,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "hotels",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "airlines",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "cards",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "destinations",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "hotels",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "airlines",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "cards",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "destinations",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "hotels",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "airlines",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "cards",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "destinations",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "slickdeals",
+      "category": "deals",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "redflagdeals",
+      "category": "deals",
+      "candidateCount": 13,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "airbnb",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nps",
+      "category": "destinations",
+      "candidateCount": 6,
+      "status": "attempted"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "offer_43b23dcbfbe96e34f9cdc4d8",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 100,
+      "title": "Rove Miles adds JetBlue as 1:1 transfer partner, with 20% launch bonus through Nov. 14",
+      "summary": "Doctor of Credit reports that Rove Miles has added JetBlue as a 1:1 transfer partner and is running a 20% transfer bonus on the new partner through Nov. 14, 2026 at 11:59 p.m. ET. The addition reportedly brings Rove Miles to 18 transfer partners. Terms are as reported by the publisher and have not been officially confirmed.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-15T10:00:51.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Doctor of Credit",
+          "url": "https://www.doctorofcredit.com/rove-miles-adds-jetblue-as-11-transfer-partners-20-launch-bonus/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-15T10:00:51.000Z",
+          "retrievedAt": "2026-10-15T14:01:40.205Z"
+        }
+      ],
+      "terms": {
+        "issuer": null,
+        "program": "Rove Miles",
+        "merchant": "JetBlue",
+        "rewardType": "points",
+        "minSpend": null,
+        "creditAmount": null,
+        "rewardPoints": null,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": "2026-11-15T04:59:00.000Z",
+      "firstSeenAt": "2026-10-15T14:04:31.463Z",
+      "changedAt": "2026-10-15T14:04:31.463Z",
+      "sourceRunId": "1b3ebb29-ea87-4864-a156-5e13baeacaf3",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Doctor of Credit reports that the flexible points currency Rove Miles has added JetBlue as a transfer partner at a 1:1 ratio, and that a 20% transfer bonus is available on that partner until Nov. 14, 2026 at 11:59 p.m. ET. The publisher states the addition lifts Rove Miles to 18 transfer partners, following recent additions that include Virgin Atlantic, Virgin Red, Japan Airlines and SAS.",
+        "Rove Miles' reported airline partner list also includes Air France-KLM Flying Blue, Hainan Airlines Fortune Wings Club, Air India Maharaja Club, Qatar Airways Privilege Club, Thai Airways Royal Orchid Plus, Turkish Airlines Miles&Smiles and Vietnam Airlines Lotusmiles. Readers considering the bonus should confirm the transfer ratio and bonus terms inside their Rove account before moving points, since the deadline is fixed and the details come from an editorial report."
+      ],
+      "keyPoints": [
+        "JetBlue is reported as a new Rove Miles transfer partner at a 1:1 ratio.",
+        "A 20% transfer bonus on the new partner is reported to end Nov. 14, 2026 at 11:59 p.m. ET.",
+        "Rove Miles is reported to have 18 transfer partners after recent additions including Virgin Atlantic, Virgin Red, Japan Airlines and SAS."
+      ],
+      "takeaway": "If you plan to use the reported 20% bonus, initiate the transfer from Rove Miles to JetBlue well before 11:59 p.m. ET on Nov. 14, 2026, and verify the ratio and bonus posting terms in your Rove account first."
+    },
+    {
+      "storyId": "benefit_change_251b572894343adaa19104bc",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 100,
+      "title": "United MileagePlus: PQF path ends for 2027 elite status, 1K PQP requirement rises to 32,000",
+      "summary": "Frequent Miler reports United has announced MileagePlus elite qualification changes effective January 1, 2027. The Premier Qualifying Flights (PQF) plus PQP option ends, leaving PQP as the only earning path. Silver, Gold and Platinum thresholds are unchanged at 6,000, 12,000 and 18,000 PQP; Premier 1K rises from 28,000 PQP in 2026 to 32,000 PQP. A minimum of four United or United Express flights per qualifying year still applies.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-14T19:45:31.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Frequent Miler",
+          "url": "https://frequentmiler.com/united-is-making-it-harder-to-earn-elite-status-from-2027/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-14T19:45:31.000Z",
+          "retrievedAt": "2026-10-15T14:01:40.205Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-15T14:04:31.464Z",
+      "changedAt": "2026-10-15T14:04:31.464Z",
+      "sourceRunId": "1b3ebb29-ea87-4864-a156-5e13baeacaf3",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "According to Frequent Miler, United has announced that from January 1, 2027, MileagePlus members can qualify for elite status only through Premier Qualifying Points. The current alternative of combining Premier Qualifying Flights with PQP goes away, so members who historically qualified that way must now reach the full PQP thresholds. Premier Silver stays at 6,000 PQP, Premier Gold at 12,000 PQP and Premier Platinum at 18,000 PQP. Premier 1K increases from 28,000 PQP to 32,000 PQP, a 4,000 PQP rise. Members must still take at least four flights operated by United or United Express in a qualifying year for any status level.",
+        "PQP earning is unchanged in the reported changes: 1 PQP per $1 of base fare and carrier-imposed surcharges on United and United Express flights, and set ratios and caps on partner airlines. Award flights on United metal using MileagePlus miles earn 1 PQP per 100 miles redeemed, credited to the traveler. Members who earn status during 2026 receive a PQP boost at the start of 2027, with Premier 1K getting 1,600 PQP, up from 1,400 PQP."
+      ],
+      "keyPoints": [
+        "From January 1, 2027, the PQF+PQP option is eliminated; status is earned through PQP only.",
+        "Premier 1K rises to 32,000 PQP from 28,000 PQP; Silver, Gold and Platinum requirements are unchanged.",
+        "Four United or United Express flights per qualifying year remain mandatory for any elite tier."
+      ],
+      "takeaway": "Members who previously relied on Premier Qualifying Flights should estimate whether they can hit the full PQP thresholds, especially the higher 1K target. Frequent Miler notes United credit cards currently award between 500 and 2,000 PQP via welcome offers, and most United cards offer PQP through spending."
+    },
+    {
+      "storyId": "benefit_change_b28f8a8e93daf52d029cae49",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 100,
+      "title": "United MileagePlus drops Premier qualifying flights and raises Premier 1K threshold for 2027 status",
+      "summary": "United MileagePlus will retire Premier qualifying flights (PQF) for the 2027 earning year, leaving Premier qualifying points (PQP) as the only qualification path, according to Doctor of Credit. A four-flight minimum remains. Reported thresholds: Silver 6,000 PQP, Gold 12,000, Platinum 18,000, Premier 1K 32,000. United Club card PQP caps rise to 32,000, and the 5% PQP boost becomes cardholder-only.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-14T16:00:11.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Doctor of Credit",
+          "url": "https://www.doctorofcredit.com/united-announces-elite-changes-for-2027/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-14T16:00:11.000Z",
+          "retrievedAt": "2026-10-15T04:21:52.501Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-15T04:24:41.035Z",
+      "changedAt": "2026-10-15T04:24:41.035Z",
+      "sourceRunId": "b71ee5bb-1f02-46e9-9865-d9410902b8ad",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Doctor of Credit reports that United is changing how MileagePlus elite status is earned for the 2027 earning year; the post says nothing changes for 2026 and that status earned for 2027 also covers 2028. The reported structural change is that Premier qualifying flights disappear as a qualification route, so members would qualify on Premier qualifying points alone while still needing at least four flights. The same report says PlusPoints upgrades would move to dynamic pricing.",
+        "Under the reported thresholds, Premier Silver stays at 6,000 PQP, Gold at 12,000 and Platinum at 18,000, while Premier 1K rises to 32,000 PQP. Doctor of Credit also reports that PQP earned from credit cards continues, with the cap on United Club cards increasing to 32,000 PQP, and that the 5% PQP boost available to members who qualify for 2027 status becomes limited to those holding an eligible United card by December 31, 2026."
+      ],
+      "keyPoints": [
+        "PQF would no longer count toward elite qualification for the 2027 earning year; only PQP would, with a four-flight minimum, per Doctor of Credit.",
+        "Reported PQP thresholds: Silver 6,000, Gold 12,000, Platinum 18,000, Premier 1K 32,000 (up from 28,000).",
+        "United Club card PQP caps reportedly rise to 32,000, and the 5% PQP boost would be limited to cardholders."
+      ],
+      "takeaway": "If you plan to chase 2027 MileagePlus status, note two dates and levers: hold an eligible United card by December 31, 2026 to be eligible for the reported 5% PQP boost, and focus earn on PQP rather than flight segments, since PQF would no longer count toward qualification. Confirm current terms on United's own status page before adjusting spend."
+    },
+    {
+      "storyId": "news_d84417e1c85a3e9f61c2c6d6",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 100,
+      "title": "Air Canada to launch Montréal–Seville non-stop service Sept. 8, 2027",
+      "summary": "Air Canada will begin seasonal non-stop service between Montréal and Seville, Spain, on Sept. 8, 2027, operating three times weekly and increasing to four weekly flights from Oct. 1, 2027. The carrier says it will be the only non-stop link between North America and Seville and its fifth destination in Spain. Flights are on sale now. The route will use Airbus A321XLR aircraft with 14 lie-flat Signature Class seats and 168 Economy Class seats.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-10-14T11:00:00.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Air Canada",
+          "url": "https://www.aircanada.com/media/more-flamenco-and-tapas-air-canada-adds-seville-to-growing-european-network/",
+          "sourceType": "official",
+          "publishedAt": "2026-10-14T11:00:00.000Z",
+          "retrievedAt": "2026-10-15T14:01:40.204Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-15T14:04:31.430Z",
+      "changedAt": "2026-10-15T14:04:31.430Z",
+      "sourceRunId": "1b3ebb29-ea87-4864-a156-5e13baeacaf3",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Air Canada announced a new seasonal transatlantic route linking Montréal to Seville, Spain, with the first flight set for Sept. 8, 2027. Frequency starts at three weekly flights and increases to four weekly from Oct. 1, 2027. The airline describes it as the only non-stop service between Seville and North America and its fifth destination in Spain, following recent additions including Palma de Mallorca and Tenerife.",
+        "The service will be flown with Air Canada's Airbus A321XLR, configured with 14 Signature Class lie-flat seats and 168 Economy Class seats. Departures are timed to connect through the Montréal hub to destinations across North America, the Caribbean and Latin America, and travellers continuing to the United States can use U.S. customs preclearance in Montréal. Flights are available for sale at aircanada.com and through travel agents."
+      ],
+      "keyPoints": [
+        "First flight: Sept. 8, 2027, three times weekly, rising to four weekly from Oct. 1, 2027",
+        "Aircraft: Airbus A321XLR with 14 Signature Class lie-flat and 168 Economy seats",
+        "Air Canada describes it as the only non-stop link between North America and Seville, and its fifth Spanish destination"
+      ],
+      "takeaway": "Seats for the Sept. 8, 2027 launch are already on sale at aircanada.com and through travel agents. Because frequency steps up from three to four weekly flights on Oct. 1, 2027, check both dates when comparing schedules for a fall trip."
+    },
+    {
+      "storyId": "news_7e527e6b7f987cb7854a79af",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 80,
+      "title": "Delta previews revamped Delta One Suite, new menus and drinks",
+      "summary": "AwardWallet reports Delta has previewed a redesigned Delta One Suite that will debut on new Airbus A350-1000s and be retrofitted onto A330-200 and A330-300 jets, the first A330s to receive the cabin. The changes are expected to appear starting early 2027, with Delta expecting the new cabins on more than 800 aircraft within five years. Meal pre-selection also expands to 18 hours before departure.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-14T11:14:55.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "AwardWallet",
+          "url": "https://awardwallet.com/news/delta-skymiles/delta-one-suites-revamp/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-14T11:14:55.000Z",
+          "retrievedAt": "2026-10-15T14:01:40.205Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-15T14:04:31.372Z",
+      "changedAt": "2026-10-15T14:04:31.372Z",
+      "sourceRunId": "1b3ebb29-ea87-4864-a156-5e13baeacaf3",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The new A350-1000 suite uses a reverse herringbone layout, with window seats facing the windows. Seats remain lie-flat at more than six and a half feet, with memory foam and pillow-top cushions, a 24-inch screen Delta calls its largest installed, Bluetooth pairing for headphones and wireless charging. Delta expects 90% of its Delta One seats to be door-equipped suites by 2030, per AwardWallet.",
+        "Service changes include a self-serve snack station near the main entry and a meal pre-selection window opening 18 hours before departure, six hours earlier than the current timing. Lighter choices such as salads with protein, or a coffee-and-croissant service before landing, join the menu. Dishes developed with chefs Simon Hulstone, Norio Ueno and Jereme Leung include a Wagyu beef burger and a chicken salad croissant. Blanton's Kentucky single-barrel bourbon starts December 1; Dassai sake is poured on Tokyo-Haneda routes."
+      ],
+      "keyPoints": [
+        "New suites debut on Airbus A350-1000s and are retrofitted onto A330-200 and A330-300 aircraft, the first Delta One cabin on A330s, according to AwardWallet.",
+        "Meal pre-selection expands to 18 hours before departure, six hours earlier than the current window.",
+        "Blanton's Kentucky single-barrel bourbon is introduced December 1; Dassai sake is offered on Tokyo-Haneda routes."
+      ],
+      "takeaway": "If you fly Delta One on an affected aircraft, watch for the pre-selection window opening 18 hours before departure, where lighter meals and a simplified pre-landing option can be chosen instead of the full service."
+    },
+    {
+      "storyId": "offer_bdffa320812eb1abed10e548",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 76,
+      "title": "Citi Offers JetBlue deal returns: $50 back on qualifying spend through Nov. 30, 2026",
+      "summary": "Doctor of Credit reports that a Citi Offers JetBlue statement credit is back, with $50 back when a cardholder spends $300 or $400 on JetBlue, depending on which version of the offer appears on their card, and a reported deadline of Nov. 30, 2026. Citi and JetBlue have not confirmed these terms. An earlier round of the same offer was reported to run through Sept. 30, 2026 with a $400 spend requirement.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-14T19:30:54.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Doctor of Credit",
+          "url": "https://www.doctorofcredit.com/citi-offers-jetblue-spend-250-get-50-back/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-14T19:30:54.000Z",
+          "retrievedAt": "2026-10-15T04:21:52.501Z"
+        }
+      ],
+      "terms": {
+        "issuer": "Citi",
+        "program": "Citi Offers",
+        "merchant": "JetBlue",
+        "rewardType": "statement_credit",
+        "minSpend": null,
+        "creditAmount": 50,
+        "rewardPoints": null,
+        "activationRequired": true,
+        "activateBy": null
+      },
+      "expiresAt": "2026-11-30T23:59:59.000Z",
+      "firstSeenAt": "2026-10-15T04:24:41.027Z",
+      "changedAt": "2026-10-15T04:24:41.027Z",
+      "sourceRunId": "b71ee5bb-1f02-46e9-9865-d9410902b8ad",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The reported offer is a card-linked Citi Offers deal at JetBlue: spend either $300 or $400 on the airline and receive $50 back, with the current window running through Nov. 30, 2026 according to Doctor of Credit. The same offer previously appeared with a $400 threshold and a Sept. 30, 2026 end date, and an even earlier version in 2023 asked for $250 in JetBlue spending. Because eligibility is attached to individual Citi cards, the spend level and the presence of the offer can differ from cardholder to cardholder.",
+        "Doctor of Credit advises checking the offer link and adding it to the relevant Citi card before booking, since the credit is triggered by a qualifying JetBlue purchase. The publisher also cautions that splitting a payment across multiple tickets produces separate charges and did not trigger the credit in prior reports, so a single qualifying transaction appears to be the reliable path. Terms, the exact spend tier and availability are not officially confirmed by Citi or JetBlue."
+      ],
+      "keyPoints": [
+        "Reported deadline is Nov. 30, 2026; required JetBlue spend is reported as either $300 or $400, varying by the offer shown on a card.",
+        "Reward is $50 back on JetBlue spending, delivered through the Citi Offers card-linked program.",
+        "Doctor of Credit warns the credit did not trigger in earlier reports when a JetBlue purchase was split across multiple tickets."
+      ],
+      "takeaway": "Add the JetBlue offer to your Citi card before you book, then put the entire qualifying charge on one JetBlue ticket — splitting a purchase across separate tickets has been reported not to trigger the credit."
+    },
+    {
+      "storyId": "benefit_change_e3b63d3253dbeb512072a14c",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 71,
+      "title": "Chase reportedly raising legacy IHG Select card annual fee from $49 to $99",
+      "summary": "AwardWallet reports Chase is raising the annual fee on the legacy IHG Rewards Select card from $49 to $99. Notices reportedly began in October 2026, and the Cardmember Agreement change is effective December 2, 2026, with the higher fee applying at 2027 renewals. The card has been closed to new applicants since 2018. The change is not officially confirmed.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-14T23:50:03.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "AwardWallet",
+          "url": "https://awardwallet.com/news/credit-cards/ihg-select-card-annual-fee-increase/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-14T23:50:03.000Z",
+          "retrievedAt": "2026-10-15T04:21:52.493Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-15T04:24:41.036Z",
+      "changedAt": "2026-10-15T04:24:41.036Z",
+      "sourceRunId": "b71ee5bb-1f02-46e9-9865-d9410902b8ad",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "AwardWallet reports that legacy IHG Rewards Select cardholders began receiving change-in-terms notices in October 2026. The notice amends the Cardmember Agreement effective December 2, 2026, raising the annual fee from $49 to $99. The new fee won't hit until the cardholder's renewal date in 2027. The card has been closed to new applicants since 2018, and once closed or converted, cardholders cannot return to it. The change is reported and not officially confirmed.",
+        "The annual free night certificate has long been capped at 40,000 points, according to AwardWallet. Doctor of Credit indicates the cap may rise by 10,000 points to 50,000, but that change is unconfirmed. Other benefits, such as automatic Platinum status and a 10% rebate on redemptions, should remain, per the report. Cardholders who don't want to pay $99 can request a product change to an eligible Chase card or close the account; closing within 30 days of the fee charge triggers a refund."
+      ],
+      "keyPoints": [
+        "Annual fee: $49 to $99. Notice amends the Cardmember Agreement effective Dec. 2, 2026; the new fee applies at 2027 renewals.",
+        "Card closed to new applicants since 2018. Product change to an eligible Chase card or account closure are options; fee refund if closed within 30 days.",
+        "Free night certificate cap reportedly may increase from 40,000 to 50,000 points; unconfirmed. Platinum status and 10% rebate expected to remain."
+      ],
+      "takeaway": "Watch for the Chase change-in-terms notice. If you don't want the $99 fee at your 2027 renewal, request a product change to an eligible Chase card before the fee posts. If you close instead, do it within 30 days of the charge to get the annual fee refunded."
+    }
+  ],
+  "contentDigest": "de81ef065217668a2f119593e79186eca68729d4165fee90a09650b55d341a23"
+}
