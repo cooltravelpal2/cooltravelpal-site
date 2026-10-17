@@ -1,0 +1,199 @@
+{
+  "weekEnding": "2026-10-17",
+  "windowStart": "2026-10-11",
+  "editions": [
+    {
+      "editionId": "2026-10-17",
+      "revision": 1,
+      "url": "https://travelpal.now/blog/travel-brief-2026-10-17/"
+    },
+    {
+      "editionId": "2026-10-16",
+      "revision": 1,
+      "url": "https://travelpal.now/blog/travel-brief-2026-10-16/"
+    },
+    {
+      "editionId": "2026-10-15",
+      "revision": 1,
+      "url": "https://travelpal.now/blog/travel-brief-2026-10-15/"
+    },
+    {
+      "editionId": "2026-10-14",
+      "revision": 1,
+      "url": "https://travelpal.now/blog/travel-brief-2026-10-14/"
+    },
+    {
+      "editionId": "2026-10-13",
+      "revision": 3,
+      "url": "https://travelpal.now/blog/travel-brief-2026-10-13/"
+    },
+    {
+      "editionId": "2026-10-12",
+      "revision": 2,
+      "url": "https://travelpal.now/blog/travel-brief-2026-10-12/"
+    },
+    {
+      "editionId": "2026-10-11",
+      "revision": 2,
+      "url": "https://travelpal.now/blog/travel-brief-2026-10-11/"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "news_6a7bdc317b965d37688e39e4",
+      "storyRevision": 3,
+      "section": "hotels",
+      "rank": 100,
+      "title": "M Social Hotel Sunnyvale to open in December with 263 rooms, AI assistants and a rooftop beehive",
+      "summary": "The Points Guy reports that a new M Social hotel is coming to Sunnyvale, California, opening in December with 263 rooms. Reported amenities include robotic assistants, in-room artificial intelligence, social spaces and a rooftop beehive. Details remain as reported by the publisher and have not been officially confirmed here; rates, booking dates and loyalty participation were not specified.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-13T18:00:41.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "The Points Guy",
+          "url": "https://thepointsguy.com/news/m-social-hotel-sunnyvale/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-13T18:00:41.000Z",
+          "retrievedAt": "2026-10-14T14:00:07.960Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-14T04:32:59.616Z",
+      "changedAt": "2026-10-14T14:02:17.295Z",
+      "sourceRunId": "e6cc0139-1e9c-4adb-af8a-b7aaeba3df36",
+      "changeType": "updated",
+      "active": true,
+      "paragraphs": [
+        "The Points Guy reports that the M Social Hotel Sunnyvale will bring a high-tech hospitality concept to Silicon Valley when it opens in December, with 263 rooms planned. The reported feature set leans on automation and shared spaces rather than traditional full-service amenities.",
+        "According to the same report, robotic assistants and in-room artificial intelligence are part of the design, alongside social spaces and a rooftop beehive. No rates, opening-day booking availability or loyalty program participation were included in the report, so travelers should treat the amenity list as reported rather than confirmed."
+      ],
+      "keyPoints": [
+        "Reported opening: December in Sunnyvale, California",
+        "263 rooms planned, per The Points Guy",
+        "Reported features include robotic assistants, in-room AI, social spaces and a rooftop beehive"
+      ],
+      "takeaway": "If a December Silicon Valley stay is on your calendar, check the hotel's own site directly for opening-date availability and rates before building a trip around it, since booking details were not part of the report.",
+      "briefUrl": "https://travelpal.now/blog/travel-brief-2026-10-14/#story-8791b211f27b7ab2"
+    },
+    {
+      "storyId": "benefit_change_a567ec8bb91ac1852e36d6bc",
+      "storyRevision": 3,
+      "section": "airlines",
+      "rank": 100,
+      "title": "United reportedly changing MileagePlus Premier status qualification for 2027",
+      "summary": "AwardWallet reports that United Airlines is changing the metrics members will use to earn MileagePlus Premier elite status, with the new qualification approach applying to the 2027 status year. The report does not specify the new thresholds or earning categories. United has not officially confirmed the change, so the confirmed terms should come from MileagePlus' own announcements.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-13T16:04:04.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "AwardWallet",
+          "url": "https://awardwallet.com/news/united-mileageplus/2027-premier-status-qualification-updates/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-13T16:04:04.000Z",
+          "retrievedAt": "2026-10-14T14:00:07.961Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-14T04:32:59.625Z",
+      "changedAt": "2026-10-14T14:02:17.304Z",
+      "sourceRunId": "e6cc0139-1e9c-4adb-af8a-b7aaeba3df36",
+      "changeType": "updated",
+      "active": true,
+      "paragraphs": [],
+      "keyPoints": [
+        "Reported change affects how Premier status is earned for the 2027 status year.",
+        "No specific qualification thresholds or earning metrics were detailed in the report."
+      ],
+      "briefUrl": "https://travelpal.now/blog/travel-brief-2026-10-14/#story-1baead2542ce1c39"
+    },
+    {
+      "storyId": "benefit_change_10dea138466f902feb04f50a",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 100,
+      "title": "Report: New Amex Membership Rewards Cards Get Separate Accounts",
+      "summary": "AwardWallet, citing Doctor of Credit, reports that newly opened American Express Membership Rewards cards now receive separate rewards accounts instead of automatically linking to an existing Membership Rewards account. Cardholders earning points across multiple eligible cards would need to link accounts before combining their balances.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-17T12:00:45.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "AwardWallet",
+          "url": "https://awardwallet.com/news/travel-news-roundup-october-17-2026/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-17T12:00:45.000Z",
+          "retrievedAt": "2026-10-17T14:01:45.398Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-17T14:04:10.251Z",
+      "changedAt": "2026-10-17T14:04:10.251Z",
+      "sourceRunId": "478fc27a-54e8-4fc1-93c1-7e07aa627bcc",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "AwardWallet, citing Doctor of Credit, reports that American Express updated its Membership Rewards terms so a newly opened card gets its own Membership Rewards account and is not automatically linked to an existing one. The reported change affects cardholders who earn Membership Rewards through multiple card products.",
+        "Under the reported change, those cardholders must link the separate accounts before they can consolidate points into one balance. AwardWallet describes the change as minor but worth knowing."
+      ],
+      "keyPoints": [
+        "New American Express Membership Rewards cards receive a separate rewards account, according to AwardWallet.",
+        "Cardholders with multiple eligible cards must link accounts before combining Membership Rewards balances.",
+        "The reported change applies to cardholders earning Membership Rewards across multiple card products."
+      ],
+      "takeaway": "If you open another Amex Membership Rewards card, check your rewards accounts and link the new account to your existing one before trying to combine points.",
+      "briefUrl": "https://travelpal.now/blog/travel-brief-2026-10-17/#story-452c2a6a5b48fc33"
+    },
+    {
+      "storyId": "benefit_change_251b572894343adaa19104bc",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 100,
+      "title": "United MileagePlus: PQF path ends for 2027 elite status, 1K PQP requirement rises to 32,000",
+      "summary": "Frequent Miler reports United has announced MileagePlus elite qualification changes effective January 1, 2027. The Premier Qualifying Flights (PQF) plus PQP option ends, leaving PQP as the only earning path. Silver, Gold and Platinum thresholds are unchanged at 6,000, 12,000 and 18,000 PQP; Premier 1K rises from 28,000 PQP in 2026 to 32,000 PQP. A minimum of four United or United Express flights per qualifying year still applies.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-14T19:45:31.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Frequent Miler",
+          "url": "https://frequentmiler.com/united-is-making-it-harder-to-earn-elite-status-from-2027/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-14T19:45:31.000Z",
+          "retrievedAt": "2026-10-15T14:01:40.205Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-15T14:04:31.464Z",
+      "changedAt": "2026-10-15T14:04:31.464Z",
+      "sourceRunId": "1b3ebb29-ea87-4864-a156-5e13baeacaf3",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "According to Frequent Miler, United has announced that from January 1, 2027, MileagePlus members can qualify for elite status only through Premier Qualifying Points. The current alternative of combining Premier Qualifying Flights with PQP goes away, so members who historically qualified that way must now reach the full PQP thresholds. Premier Silver stays at 6,000 PQP, Premier Gold at 12,000 PQP and Premier Platinum at 18,000 PQP. Premier 1K increases from 28,000 PQP to 32,000 PQP, a 4,000 PQP rise. Members must still take at least four flights operated by United or United Express in a qualifying year for any status level.",
+        "PQP earning is unchanged in the reported changes: 1 PQP per $1 of base fare and carrier-imposed surcharges on United and United Express flights, and set ratios and caps on partner airlines. Award flights on United metal using MileagePlus miles earn 1 PQP per 100 miles redeemed, credited to the traveler. Members who earn status during 2026 receive a PQP boost at the start of 2027, with Premier 1K getting 1,600 PQP, up from 1,400 PQP."
+      ],
+      "keyPoints": [
+        "From January 1, 2027, the PQF+PQP option is eliminated; status is earned through PQP only.",
+        "Premier 1K rises to 32,000 PQP from 28,000 PQP; Silver, Gold and Platinum requirements are unchanged.",
+        "Four United or United Express flights per qualifying year remain mandatory for any elite tier."
+      ],
+      "takeaway": "Members who previously relied on Premier Qualifying Flights should estimate whether they can hit the full PQP thresholds, especially the higher 1K target. Frequent Miler notes United credit cards currently award between 500 and 2,000 PQP via welcome offers, and most United cards offer PQP through spending.",
+      "briefUrl": "https://travelpal.now/blog/travel-brief-2026-10-15/#story-35d2b3ae59dc8be7"
+    }
+  ],
+  "highlightStoryIds": [
+    "news_6a7bdc317b965d37688e39e4",
+    "benefit_change_a567ec8bb91ac1852e36d6bc",
+    "benefit_change_10dea138466f902feb04f50a",
+    "benefit_change_251b572894343adaa19104bc"
+  ],
+  "contentSha256": "19556c737da60d3e886510d56f74912c35591755e7f4f9a1d55df517ccb5b356",
+  "sendEligible": true,
+  "newsletterFormat": "illustrated-highlights-v1"
+}
