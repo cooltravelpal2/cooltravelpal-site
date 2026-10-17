@@ -1,0 +1,564 @@
+{
+  "schemaVersion": 1,
+  "editionId": "2026-10-17",
+  "revision": 1,
+  "status": "ready_with_limited_coverage",
+  "policyVersion": "travel-impact-v1",
+  "sourceRunIds": [
+    "478fc27a-54e8-4fc1-93c1-7e07aa627bcc"
+  ],
+  "cutoffAt": "2026-10-17T14:04:10.273Z",
+  "generatedAt": "2026-10-17T14:04:10.273Z",
+  "coverageStatus": "limited",
+  "coverage": [
+    {
+      "sourceId": "breville",
+      "category": "deals",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "apple",
+      "category": "deals",
+      "candidateCount": 77,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amazon-devices",
+      "category": "deals",
+      "candidateCount": 12,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "fellow",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "moccamaster",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "delonghi",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "dell",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "marriott",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hyatt",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hilton",
+      "category": "hotels",
+      "candidateCount": 25,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "ihg",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "aman",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "wyndham",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-and-only",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amex",
+      "category": "cards",
+      "candidateCount": 1,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "chase",
+      "category": "cards",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "citi",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "discover",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "capital-one",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "delta",
+      "category": "airlines",
+      "candidateCount": 14,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "united",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "american",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "alaska",
+      "category": "airlines",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "southwest",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "air-canada",
+      "category": "airlines",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "british-airways",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "hotels",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "airlines",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "cards",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "destinations",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "cards",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "destinations",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "hotels",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "airlines",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "cards",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "destinations",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "hotels",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "airlines",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "cards",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "destinations",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "hotels",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "airlines",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "cards",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "destinations",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "slickdeals",
+      "category": "deals",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "redflagdeals",
+      "category": "deals",
+      "candidateCount": 12,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "airbnb",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nps",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "attempted"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "benefit_change_10dea138466f902feb04f50a",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 100,
+      "title": "Report: New Amex Membership Rewards Cards Get Separate Accounts",
+      "summary": "AwardWallet, citing Doctor of Credit, reports that newly opened American Express Membership Rewards cards now receive separate rewards accounts instead of automatically linking to an existing Membership Rewards account. Cardholders earning points across multiple eligible cards would need to link accounts before combining their balances.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-17T12:00:45.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "AwardWallet",
+          "url": "https://awardwallet.com/news/travel-news-roundup-october-17-2026/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-17T12:00:45.000Z",
+          "retrievedAt": "2026-10-17T14:01:45.398Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-17T14:04:10.251Z",
+      "changedAt": "2026-10-17T14:04:10.251Z",
+      "sourceRunId": "478fc27a-54e8-4fc1-93c1-7e07aa627bcc",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "AwardWallet, citing Doctor of Credit, reports that American Express updated its Membership Rewards terms so a newly opened card gets its own Membership Rewards account and is not automatically linked to an existing one. The reported change affects cardholders who earn Membership Rewards through multiple card products.",
+        "Under the reported change, those cardholders must link the separate accounts before they can consolidate points into one balance. AwardWallet describes the change as minor but worth knowing."
+      ],
+      "keyPoints": [
+        "New American Express Membership Rewards cards receive a separate rewards account, according to AwardWallet.",
+        "Cardholders with multiple eligible cards must link accounts before combining Membership Rewards balances.",
+        "The reported change applies to cardholders earning Membership Rewards across multiple card products."
+      ],
+      "takeaway": "If you open another Amex Membership Rewards card, check your rewards accounts and link the new account to your existing one before trying to combine points."
+    },
+    {
+      "storyId": "news_a71327bb6583a6d80400bf07",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 100,
+      "title": "Marriott reportedly testing in-app complimentary upgrade waitlist",
+      "summary": "AwardWallet reports that Marriott may be testing an in-app Complimentary Upgrade List that shows a member’s position for a complimentary upgrade, similar to airline upgrade waitlists. The report says the feature is initially at a small group of properties and is expected to expand to more than 250 hotels in the U.S. and Canada by the end of November. The feature has not been officially confirmed.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-17T12:00:45.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "AwardWallet",
+          "url": "https://awardwallet.com/news/travel-news-roundup-october-17-2026/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-17T12:00:45.000Z",
+          "retrievedAt": "2026-10-17T14:01:45.398Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-17T14:04:10.261Z",
+      "changedAt": "2026-10-17T14:04:10.261Z",
+      "sourceRunId": "478fc27a-54e8-4fc1-93c1-7e07aa627bcc",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "AwardWallet reports that Marriott appears to be beta testing a Complimentary Upgrade List inside its app. The display would show a member’s position for a complimentary upgrade, similar to airline apps that show upgrade waitlist status. The report attributes the early details to Loyalty Lobby and The Points Guy.",
+        "According to the report, the feature is first available at a small group of properties before expanding to more than 250 hotels in the U.S. and Canada by the end of November. The report says Marriott announced it at Member Day earlier this week and that the feature has not been independently confirmed."
+      ],
+      "keyPoints": [
+        "Reported feature: an in-app list showing a Marriott member’s complimentary upgrade position.",
+        "Initial rollout: a small group of properties, according to AwardWallet.",
+        "Reported expansion: more than 250 hotels in the U.S. and Canada by the end of November."
+      ],
+      "takeaway": "If you have an upcoming Marriott stay in the U.S. or Canada, check the app to see whether the Complimentary Upgrade List appears. The report does not provide a full list of participating properties or an opt-in step."
+    },
+    {
+      "storyId": "news_d9145e1150dcdf7816db6d3e",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 100,
+      "title": "Citi ThankYou adds Xsolla for video game point redemptions",
+      "summary": "AwardWallet reports that Citi ThankYou has added Xsolla as a Shop with Points partner. Eligible Citi Mastercard cardmembers can redeem ThankYou Points for eligible video game and in-game digital purchases at Xsolla checkout, then charge any remaining balance to their Citi card. The report says Citi described Xsolla as the first of several planned Shop with Points merchants.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-17T12:00:45.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "AwardWallet",
+          "url": "https://awardwallet.com/news/travel-news-roundup-october-17-2026/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-17T12:00:45.000Z",
+          "retrievedAt": "2026-10-17T14:01:45.398Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-17T14:04:10.253Z",
+      "changedAt": "2026-10-17T14:04:10.253Z",
+      "sourceRunId": "478fc27a-54e8-4fc1-93c1-7e07aa627bcc",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "At Xsolla checkout, the reported process is to enter Citi card details and choose to redeem ThankYou Points. AwardWallet reports that the option is limited to eligible Citi Mastercard cardmembers, with any leftover amount charged to the Citi card.",
+        "AwardWallet reports that Citi described Xsolla as the first of several new Shop with Points merchants planned for rollout. The report did not include a point value or end date for the Xsolla option."
+      ],
+      "keyPoints": [
+        "Eligible Citi Mastercard cardmembers only, per AwardWallet.",
+        "Redeem ThankYou Points on eligible video game and in-game digital purchases at Xsolla checkout.",
+        "Any remaining balance is charged to the Citi card."
+      ],
+      "takeaway": "If you have a Citi Mastercard and ThankYou Points, look for the Shop with Points option at Xsolla checkout before paying. Compare the redemption value with other ThankYou uses, since the report did not state a point value."
+    },
+    {
+      "storyId": "news_59297b1bd03251c2416a478a",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 100,
+      "title": "Delta to add Boston-Reykjavik daily seasonal flights for summer 2027",
+      "summary": "The Points Guy reports Delta will operate daily seasonal service between Boston Logan (BOS) and Keflavík (KEF) from April 12 to Oct. 30, 2027, using a Boeing 757-200 with Premium Select recliner seats but no Delta One lie-flat cabin. The route would be Delta's 14th long-haul destination from Boston.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-17T12:00:33.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "The Points Guy",
+          "url": "https://thepointsguy.com/news/delta-air-lines-boston-reykjavik-nonstop-flights/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-17T12:00:33.000Z",
+          "retrievedAt": "2026-10-17T14:01:45.398Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-17T14:04:10.270Z",
+      "changedAt": "2026-10-17T14:04:10.270Z",
+      "sourceRunId": "478fc27a-54e8-4fc1-93c1-7e07aa627bcc",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The reported schedule would extend outside peak summer, covering shoulder-season dates in spring and fall. It would join other new Delta 2027 routes: Boston-Venice starting May 7, Detroit-Athens starting June 8, and Austin-Paris Charles de Gaulle starting March 27.",
+        "Delta previously flew Boston-Keflavík in May 2021 and discontinued it that September, according to the report. The airline first served Iceland from New York JFK in June 2011. The new Boston service would add to Delta's competition with JetBlue in Boston."
+      ],
+      "keyPoints": [
+        "Daily seasonal BOS-KEF service is reported for April 12-Oct. 30, 2027.",
+        "Aircraft: Boeing 757-200 with Premium Select recliner seats; no Delta One lie-flat cabin.",
+        "KEF would be Delta's 14th long-haul destination from Boston."
+      ],
+      "takeaway": "If planning a 2027 Iceland trip, check the reported April 12-Oct. 30 window and compare late-April/early-May or September-October dates outside peak summer."
+    },
+    {
+      "storyId": "news_8e74a8ee60e682d4ae000c89",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 100,
+      "title": "Air Canada and United add six Canada-U.S. routes for summer 2027, and seek to expand their joint venture",
+      "summary": "Air Canada will add Toronto–Louisville, Montréal–Indianapolis and Edmonton–Newark service for summer 2027, with Toronto–Louisville starting in late April and going daily in May. United adds seasonal Newark–St. John's plus Denver–Ottawa and Denver–Québec City, more Washington–Québec City flights and 65% more daily Denver–Winnipeg seats. The airlines have also agreed to renew and expand their transborder joint business agreement, pending Transport Canada approval.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-10-16T15:04:00.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Air Canada",
+          "url": "https://www.aircanada.com/media/air-canada-expands-canada-us-connectivity-with-new-summer-2027-routes-increasing-options-for-travellers-under-its-transborder-joint-business-agreement-with-united-airlines/",
+          "sourceType": "official",
+          "publishedAt": "2026-10-16T15:04:00.000Z",
+          "retrievedAt": "2026-10-17T14:01:45.398Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-17T14:04:10.218Z",
+      "changedAt": "2026-10-17T14:04:10.218Z",
+      "sourceRunId": "478fc27a-54e8-4fc1-93c1-7e07aa627bcc",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Air Canada's summer 2027 transborder additions centre on three new non-stop links: Toronto–Louisville, Montréal–Indianapolis and Edmonton–Newark. The Toronto–Louisville route opens in late April before moving to daily frequency in May, and Edmonton–San Francisco will switch to the larger Airbus A220. On the United side, the schedule adds seasonal Newark–St. John's service, new Denver–Ottawa and Denver–Québec City flights, extra Washington–Québec City frequencies and 65 per cent more daily seats between Denver and Winnipeg.",
+        "The two carriers have agreed to renew and expand the Transborder Joint Business Agreement that has underpinned their Canada-U.S. scheduling since 2022, and have applied to Transport Canada for approval of the amended and restated version. The partners say the arrangement supports more than 1,200 connecting itineraries and direct transborder service from gateways including Calgary, Edmonton, Halifax, Ottawa, Québec City, Regina, St. John's and Winnipeg."
+      ],
+      "keyPoints": [
+        "Toronto–Louisville begins in late April, moving to daily service in May; Montréal–Indianapolis and Edmonton–Newark also launch next summer.",
+        "United adds seasonal Newark–St. John's, Denver–Ottawa and Denver–Québec City, and lifts Denver–Winnipeg daily seats by 65 per cent.",
+        "Renewal and expansion of the transborder joint business agreement is subject to regulatory approval, with an application filed with Transport Canada."
+      ],
+      "takeaway": "If you are planning a U.S. trip from Toronto, Montréal or Edmonton in summer 2027, check schedules for the new non-stop options rather than defaulting to a connection through a hub — but confirm that the joint business agreement renewal has been approved before relying on coordinated connections and through-fares."
+    },
+    {
+      "storyId": "news_72dd6ac28ae58abde5694488",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 77,
+      "title": "United launches Starlink tracker so travelers can check their flight",
+      "summary": "United has introduced an online tracker that lets travelers look up whether a specific flight is equipped with Starlink Wi-Fi, according to AwardWallet. As of October 16, the airline had installed Starlink on 640 aircraft, or 43% of its fleet. The tool also breaks out availability by hub, with Chicago O'Hare leading at 54%, and by aircraft type, with CRJ and Embraer regional jets fully equipped.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-17T12:00:45.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "AwardWallet",
+          "url": "https://awardwallet.com/news/travel-news-roundup-october-17-2026/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-17T12:00:45.000Z",
+          "retrievedAt": "2026-10-17T14:01:45.398Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-17T14:04:10.241Z",
+      "changedAt": "2026-10-17T14:04:10.241Z",
+      "sourceRunId": "478fc27a-54e8-4fc1-93c1-7e07aa627bcc",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The tracker accepts a flight number and travel date, returning whether that flight is scheduled on a Starlink-equipped aircraft. It also displays rollout statistics across the fleet, so readers can see progress by hub and by aircraft type rather than checking individual flights one at a time.",
+        "AwardWallet reports that United's Starlink installation stood at 640 aircraft as of October 16, equal to 43% of the fleet. Chicago O'Hare showed the highest hub availability at 54%, while the CRJ and Embraer regional jet fleets were listed as fully equipped."
+      ],
+      "keyPoints": [
+        "United's tracker lets travelers enter a flight number and date to check for Starlink-equipped aircraft.",
+        "640 aircraft, or 43% of the fleet, had Starlink installed as of October 16, per AwardWallet.",
+        "Chicago O'Hare leads hub availability at 54%; CRJ and Embraer aircraft are fully equipped."
+      ],
+      "takeaway": "Before booking or choosing seats, look up your flight number and date in United's tracker to confirm the aircraft is listed as Starlink-equipped; check again closer to departure, since the rollout is still in progress."
+    }
+  ],
+  "contentDigest": "687f2589ab12bc10929191473a450d5f0d3345297e88409f7ba67782ed669b21"
+}
