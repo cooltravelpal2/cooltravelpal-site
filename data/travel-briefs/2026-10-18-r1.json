@@ -1,0 +1,531 @@
+{
+  "schemaVersion": 1,
+  "editionId": "2026-10-18",
+  "revision": 1,
+  "status": "ready_with_limited_coverage",
+  "policyVersion": "travel-impact-v1",
+  "sourceRunIds": [
+    "831a7cf3-36fe-4f14-8b7b-e869ffac1144",
+    "08863ee3-63eb-4903-bfee-bd77434a6afc"
+  ],
+  "cutoffAt": "2026-10-18T14:03:46.906Z",
+  "generatedAt": "2026-10-18T14:03:46.906Z",
+  "coverageStatus": "limited",
+  "coverage": [
+    {
+      "sourceId": "breville",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "apple",
+      "category": "deals",
+      "candidateCount": 72,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amazon-devices",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "disabled"
+    },
+    {
+      "sourceId": "fellow",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "moccamaster",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "delonghi",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "dell",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "marriott",
+      "category": "hotels",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hyatt",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "hilton",
+      "category": "hotels",
+      "candidateCount": 25,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "ihg",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "aman",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "wyndham",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-and-only",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amex",
+      "category": "cards",
+      "candidateCount": 2,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "chase",
+      "category": "cards",
+      "candidateCount": 12,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "citi",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "discover",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "capital-one",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "delta",
+      "category": "airlines",
+      "candidateCount": 13,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "united",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "american",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "alaska",
+      "category": "airlines",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "southwest",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "air-canada",
+      "category": "airlines",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "british-airways",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "hotels",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "airlines",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "cards",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "destinations",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "hotels",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "airlines",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "cards",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "destinations",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "hotels",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "airlines",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "cards",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "destinations",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "hotels",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "airlines",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "cards",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "destinations",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "cards",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "destinations",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "slickdeals",
+      "category": "deals",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "redflagdeals",
+      "category": "deals",
+      "candidateCount": 14,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "airbnb",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nps",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "attempted"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "offer_cea3c793e8306f3de0cd9585",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 100,
+      "title": "Chase Air Canada Aeroplan card offers up to 115,000 bonus points",
+      "summary": "Chase's Air Canada Aeroplan card advertises up to 115,000 bonus points for new cardmembers: 75,000 after $4,000 in purchases in the first three months and 40,000 more after $20,000 in the first 12 months. Current cardmembers and previous cardmembers who received a new-cardmember bonus in the past 24 months are ineligible.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-10-18T14:02:14.993Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Chase",
+          "url": "https://creditcards.chase.com/travel-credit-cards/aircanada/aeroplan",
+          "sourceType": "official",
+          "publishedAt": null,
+          "retrievedAt": "2026-10-18T14:01:42.448Z"
+        }
+      ],
+      "terms": {
+        "issuer": "Chase",
+        "program": "Air Canada Aeroplan",
+        "merchant": null,
+        "rewardType": "points",
+        "minSpend": 20000,
+        "creditAmount": null,
+        "rewardPoints": 115000,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-18T14:03:46.828Z",
+      "changedAt": "2026-10-18T14:03:46.828Z",
+      "sourceRunId": "831a7cf3-36fe-4f14-8b7b-e869ffac1144",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The card earns 3X points directly with Air Canada, up to 5X total for Aeroplan 25K members, 3X on travel, 2X at grocery stores and on dining, and 2X at gas stations, with 1X on other purchases. Grocery and dining purchases earn 3X through Dec. 31, 2026. Cardmembers also get automatic Aeroplan 25K status without a spend requirement and up to $100 in annual Air Canada statement credits.",
+        "Air Canada flights booked by the cardmember include free first checked bags for the cardmember and up to eight people on the same reservation. The card also offers 15% savings on eligible Air Canada flight redemptions via the FLY15OFF benefit."
+      ],
+      "keyPoints": [
+        "75,000 bonus points after $4,000 in purchases in the first three months; 40,000 more after $20,000 in the first 12 months.",
+        "Automatic Aeroplan 25K status without a spend requirement, plus up to $100 in annual Air Canada statement credits.",
+        "Free first checked bags for the cardmember and up to eight travelers on the same Air Canada reservation."
+      ],
+      "takeaway": "To pursue the full bonus, plan for $4,000 in purchases within three months and $20,000 within 12 months of account opening; the second tier is a much larger spend requirement."
+    },
+    {
+      "storyId": "offer_e30012661a62c7736d14b874",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 90,
+      "title": "Chase Sapphire Preferred: $95 fee, 5x Chase travel, 3x dining, $5,000 bonus spend",
+      "summary": "Chase lists the Sapphire Preferred with a $95 annual fee, 5x points on travel purchased through Chase, 3x points on dining and 2x points on travel. Its new cardmember bonus is tied to $5,000 in purchases in the first three months. Chase also lists a $100 Chase Travel hotel credit, a Global Entry, TSA PreCheck or NEXUS application fee credit, and a complimentary DashPass membership.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-10-18T14:02:18.959Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Chase",
+          "url": "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred",
+          "sourceType": "official",
+          "publishedAt": null,
+          "retrievedAt": "2026-10-18T14:01:42.448Z"
+        }
+      ],
+      "terms": {
+        "issuer": "Chase",
+        "program": null,
+        "merchant": null,
+        "rewardType": "points",
+        "minSpend": 5000,
+        "creditAmount": null,
+        "rewardPoints": null,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-18T14:03:46.883Z",
+      "changedAt": "2026-10-18T14:03:46.883Z",
+      "sourceRunId": "831a7cf3-36fe-4f14-8b7b-e869ffac1144",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The Sapphire Preferred carries a $95 annual fee, according to Chase's card page. It earns 5x points on travel purchased through Chase, 3x points on dining and 2x points on travel. Chase also lists 5x total points on Lyft rides through September 30, 2027, and 5x total points on eligible Peloton equipment and accessory purchases over $150 through December 31, 2027.",
+        "Chase also lists a $100 Chase Travel hotel credit, a Global Entry, TSA PreCheck or NEXUS application fee credit, and a complimentary DashPass membership described as a $120 value for 12 months. DashPass activation is required by December 31, 2029, and the $10 monthly promo runs through that date. The card is unavailable to applicants who already have it open, and the new cardmember bonus may not be available to those who previously held the card or received its bonus."
+      ],
+      "keyPoints": [
+        "$95 annual fee; 5x points on travel purchased through Chase, 3x on dining, 2x on travel",
+        "New cardmember bonus requires $5,000 in purchases in the first three months from account opening",
+        "5x total points on Lyft rides through Sept. 30, 2027; 5x on eligible Peloton equipment and accessories over $150 through Dec. 31, 2027"
+      ],
+      "takeaway": "Charge travel through Chase's travel service to earn 5x points, and activate DashPass by Dec. 31, 2029 to get $0 delivery fees and the $10 monthly promo."
+    },
+    {
+      "storyId": "offer_f56f34bf5ddb06f4d80580a9",
+      "storyRevision": 2,
+      "section": "cards",
+      "rank": 76,
+      "title": "Chase Sapphire Reserve: 100,000-point bonus after $6,000 spend, $795 annual fee",
+      "summary": "Chase lists a 100,000-point welcome bonus on the Sapphire Reserve after $6,000 in purchases in the first three months. The card carries a $795 annual fee ($195 per authorized user), a $300 annual travel credit, up to $500 a year in The Edit hotel credits ($250 per prepaid stay, two-night minimum), lounge access with up to two guests, and IHG One Rewards Platinum Elite status through Dec. 31, 2027.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-10-18T14:02:25.382Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Chase",
+          "url": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
+          "sourceType": "official",
+          "publishedAt": null,
+          "retrievedAt": "2026-10-18T14:01:42.448Z"
+        }
+      ],
+      "terms": {
+        "issuer": "Chase",
+        "program": null,
+        "merchant": null,
+        "rewardType": "points",
+        "minSpend": 6000,
+        "creditAmount": null,
+        "rewardPoints": 100000,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-17T20:43:04.852Z",
+      "changedAt": "2026-10-18T14:03:46.888Z",
+      "sourceRunId": "831a7cf3-36fe-4f14-8b7b-e869ffac1144",
+      "changeType": "updated",
+      "active": true,
+      "paragraphs": [
+        "The bonus may not be available to applicants who already hold the card, held it previously, or earned its new-cardmember bonus, and Chase says it may consider how many cards an applicant has opened and closed. The $300 travel credit and The Edit stay credits apply to purchases that do not earn points. Global Entry, TSA PreCheck or NEXUS applicants receive one statement credit of up to $120 every four years.",
+        "Lounge access covers Chase Sapphire Lounges by The Club and more than 1,300 Priority Pass locations, each admitting up to two guests, plus select Air Canada Maple Leaf Lounges and Cafés with an eligible boarding pass. Travel protections include primary rental car coverage up to $75,000, trip cancellation and interruption cover up to $10,000 per traveler and $20,000 per trip, and up to $500 per traveler for delays over six hours or overnight stays."
+      ],
+      "keyPoints": [
+        "100,000 points after $6,000 in purchases in the first three months; $795 annual fee and $195 for each authorized user.",
+        "$300 travel credit each account anniversary year; up to $500 a year in The Edit credits at $250 per prepaid booking with a two-night minimum.",
+        "IHG One Rewards Platinum Elite status through Dec. 31, 2027, and one Global Entry, TSA PreCheck or NEXUS credit of up to $120 every four years."
+      ],
+      "takeaway": "Before applying, confirm you have not held the Sapphire Reserve or earned its bonus, since Chase says the offer may not be available to you. To use the credits, charge travel to the card each anniversary year and book The Edit stays prepaid for at least two nights to collect the $250-per-stay credit."
+    },
+    {
+      "storyId": "offer_d38f309efda250c5ec7f2940",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 75,
+      "title": "Slickdeals: Icelandair Seattle–Frankfurt round trips from $525 for Nov 2026–May 2027",
+      "summary": "Slickdeals reports Icelandair round-trip flights from Seattle (SEA) to Frankfurt (FRA) starting at $525 when booked through Booking.com. The listed travel window is limited to November 2026 through May 2027. The deal post does not state a booking deadline.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-17T17:18:12.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Slickdeals",
+          "url": "https://slickdeals.net/f/20162832-round-trip-seattle-to-frankfurt-germany-525-540-airfares-on-icelandair-be-travel-november-may-2027",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-17T17:18:12.000Z",
+          "retrievedAt": "2026-10-17T20:41:50.012Z"
+        }
+      ],
+      "terms": {
+        "issuer": null,
+        "program": null,
+        "merchant": "Icelandair",
+        "rewardType": "discount",
+        "minSpend": null,
+        "creditAmount": null,
+        "rewardPoints": null,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-17T20:43:04.867Z",
+      "changedAt": "2026-10-17T20:43:04.867Z",
+      "sourceRunId": "08863ee3-63eb-4903-bfee-bd77434a6afc",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The fare is for round-trip travel between Seattle-Tacoma International Airport and Frankfurt Airport. Slickdeals lists the starting price at $525 and directs bookings through Booking.com.",
+        "The reported travel dates run from November 2026 to May 2027, with availability limited to eligible dates within that window."
+      ],
+      "keyPoints": [
+        "Round-trip route: Seattle (SEA) to Frankfurt (FRA)",
+        "Starting fare: $525 via Booking.com",
+        "Travel window: November 2026 through May 2027"
+      ],
+      "takeaway": "Compare eligible dates within the November 2026–May 2027 window before booking through Booking.com; the deal post does not list a booking deadline."
+    }
+  ],
+  "contentDigest": "cefd4203df39262ae2513600e706201740f8c42edf398d630104e9d9880f5f12"
+}
