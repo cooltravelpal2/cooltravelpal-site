@@ -17,3 +17,13 @@ Every new post should sound like the author's lived story, not an official touri
 ## Route block
 
 Every travel story opens with a compact route block before the narrative: the route taken, a short recommendation for time needed, and a 10-point rating labeled as the author's judgment. Include a simple map, trail line, or location marker whenever practical. Treat the block as a quick orientation, not a replacement for the story or for current official conditions.
+
+## Review structured data
+
+Google shows review stars only when `itemReviewed` is a type it supports; anything else is reported in Search Console as "Invalid object type for field itemReviewed."
+
+- Supported for our posts: `LocalBusiness` and its subtypes (`Hotel`, `Restaurant`, `LodgingBusiness`, …), `Organization` (including `Airline`), `Product`, `Book`, `Event`, `SoftwareApplication`.
+- Not supported on their own: `Museum`, `TouristAttraction`, `Place`, `NationalPark`, `Landmark` and other place types.
+- A ticketed attraction or museum that operates as a business may use a multi-type such as `["Museum","LocalBusiness"]` or `["TouristAttraction","LocalBusiness"]`.
+- Public land, parks, islands and monuments are not businesses. Use `Article` with the place in `about`, and keep the rating only in the visible route block, with no `Review` node.
+- Validate every new review page with Google's Rich Results Test before publishing.
