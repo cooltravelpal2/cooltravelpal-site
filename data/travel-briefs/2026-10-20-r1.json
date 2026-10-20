@@ -1,0 +1,677 @@
+{
+  "schemaVersion": 1,
+  "editionId": "2026-10-20",
+  "revision": 1,
+  "status": "ready_with_limited_coverage",
+  "policyVersion": "travel-impact-v1",
+  "sourceRunIds": [
+    "ce3f0952-0e6a-4baf-b2ad-7a1c05f8af63"
+  ],
+  "cutoffAt": "2026-10-20T14:05:05.085Z",
+  "generatedAt": "2026-10-20T14:05:05.085Z",
+  "coverageStatus": "limited",
+  "coverage": [
+    {
+      "sourceId": "breville",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "apple",
+      "category": "deals",
+      "candidateCount": 89,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amazon-devices",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "disabled"
+    },
+    {
+      "sourceId": "fellow",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "moccamaster",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "delonghi",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "dell",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "marriott",
+      "category": "hotels",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hyatt",
+      "category": "hotels",
+      "candidateCount": 1,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "hilton",
+      "category": "hotels",
+      "candidateCount": 24,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "ihg",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "aman",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "wyndham",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-and-only",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amex",
+      "category": "cards",
+      "candidateCount": 1,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "chase",
+      "category": "cards",
+      "candidateCount": 13,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "citi",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "discover",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "capital-one",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "delta",
+      "category": "airlines",
+      "candidateCount": 14,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "united",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "american",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "alaska",
+      "category": "airlines",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "southwest",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "air-canada",
+      "category": "airlines",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "british-airways",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "hotels",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "airlines",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "cards",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "destinations",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "hotels",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "airlines",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "cards",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "destinations",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "hotels",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "airlines",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "cards",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "destinations",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "hotels",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "airlines",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "cards",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "destinations",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "hotels",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "airlines",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "cards",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "destinations",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "slickdeals",
+      "category": "deals",
+      "candidateCount": 9,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "redflagdeals",
+      "category": "deals",
+      "candidateCount": 14,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "airbnb",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nps",
+      "category": "destinations",
+      "candidateCount": 1,
+      "status": "attempted"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "offer_c8e33d90ffc43aa68b94b7d4",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 100,
+      "title": "Alaska, Hawaiian add Seattle–Osaka and Seattle–Papeete nonstops with intro fares",
+      "summary": "Alaska Airlines and Hawaiian Airlines plan year-round nonstop service from Seattle to Osaka and Papeete, operated by Hawaiian on Airbus A330s. Seattle–Osaka starts May 14, 2027, four times weekly; Papeete is planned for next spring. Introductory round-trip Main Cabin fares from Seattle start at $999 to Papeete and $1,199 to Osaka, bookable through Oct. 26 at alaskaair.com or hawaiianairlines.com. Routes are subject to government approval.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-10-20T12:00:00.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Alaska Airlines",
+          "url": "https://news.alaskaair.com/destinations/alaska-hawaiian-airlines-expand-global-network-with-nonstop-service-connecting-seattle-with-osaka-papeete/",
+          "sourceType": "official",
+          "publishedAt": "2026-10-20T12:00:00.000Z",
+          "retrievedAt": "2026-10-20T14:01:44.387Z"
+        }
+      ],
+      "terms": {
+        "issuer": null,
+        "program": null,
+        "merchant": "Alaska Airlines and Hawaiian Airlines",
+        "rewardType": "discount",
+        "minSpend": null,
+        "creditAmount": null,
+        "rewardPoints": null,
+        "activationRequired": false,
+        "activateBy": null
+      },
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-20T14:05:05.004Z",
+      "changedAt": "2026-10-20T14:05:05.004Z",
+      "sourceRunId": "ce3f0952-0e6a-4baf-b2ad-7a1c05f8af63",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Hawaiian Airlines will fly the new Seattle–Osaka and Seattle–Papeete routes on Airbus A330 aircraft, adding two year-round international destinations to the combined Alaska–Hawaiian network from Seattle. The Osaka service is scheduled to begin May 14, 2027, with four weekly flights; Papeete is planned for next spring. Both routes remain subject to government approval.",
+        "The airline is selling introductory round-trip Main Cabin fares from Seattle: $999 to Papeete and $1,199 to Osaka, subject to availability. The fare sale runs through Oct. 26, with tickets available at alaskaair.com and hawaiianairlines.com. The A330 cabins include lie-flat business-class Suites, and Atmos Rewards members get free high-speed Starlink Wi-Fi."
+      ],
+      "keyPoints": [
+        "Seattle–Osaka starts May 14, 2027, four times weekly; Seattle–Papeete is planned for next spring.",
+        "Intro round-trip Main Cabin fares from Seattle: $999 to Papeete and $1,199 to Osaka, bookable through Oct. 26.",
+        "Hawaiian A330 service includes lie-flat Suites and free Starlink Wi-Fi for Atmos Rewards members."
+      ],
+      "takeaway": "Book the introductory fare by Oct. 26 at alaskaair.com or hawaiianairlines.com. Fares are subject to availability, and the routes need government approval."
+    },
+    {
+      "storyId": "news_077149f7129a2fd51152fde9",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 100,
+      "title": "Alaska Airlines adds seasonal Seattle–Osaka and Seattle–Papeete routes",
+      "summary": "AwardWallet reports Alaska Airlines will launch seasonal service from Seattle to Osaka on May 14, 2027, and to Papeete on June 11, 2027, using Hawaiian Airlines A330-200 aircraft. Both are bookable now with cash or Atmos Rewards points; business awards currently start at 150,000 points each way.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-20T11:00:45.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "AwardWallet",
+          "url": "https://awardwallet.com/news/alaska-atmos-rewards/alaska-new-routes-osaka-papeete/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-20T11:00:45.000Z",
+          "retrievedAt": "2026-10-20T14:01:44.395Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-20T14:05:05.083Z",
+      "changedAt": "2026-10-20T14:05:05.083Z",
+      "sourceRunId": "ce3f0952-0e6a-4baf-b2ad-7a1c05f8af63",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "AwardWallet reports the Osaka route will operate four times weekly—Sunday, Monday, Wednesday and Friday—from Seattle, with the first departure on May 14, 2027. The return from Osaka starts May 15, 2027, on Monday, Tuesday, Thursday and Saturday.",
+        "The Papeete route is reported as three times weekly—Wednesday, Friday and Saturday—from Seattle starting June 11, 2027, with returns from June 12, 2027, on Thursday, Saturday and Sunday. Alaska will use Hawaiian Airlines A330-200 aircraft, which do not have premium economy; Premium Class is an economy seat with extra legroom."
+      ],
+      "keyPoints": [
+        "Osaka service: Seattle departure 12:10 p.m., arrival 4:00 p.m. next day; Osaka return departs 6:00 p.m., arrives 12:20 p.m.",
+        "Papeete service: Seattle departure 11:55 p.m., arrival 7:20 a.m. next day; Papeete return departs 5:00 p.m., arrives 6:00 a.m. next day.",
+        "Bookable now with cash or Atmos Rewards points; business-class saver awards are not yet loaded, per AwardWallet."
+      ],
+      "takeaway": "If you want a lower-point award, set availability alerts for these routes and check economy awards while business saver space remains unavailable."
+    },
+    {
+      "storyId": "news_d0631303bbef162f011c359b",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 100,
+      "title": "Air Canada adds winter non-stop routes to Tenerife, Roatán, Santo Domingo, Mérida and Mazatlán",
+      "summary": "Air Canada has detailed its expanded seasonal winter schedule from Canadian hubs, adding non-stop service to new sun destinations including Tenerife, Roatán, Santo Domingo, Mérida and Mazatlán, alongside extra seasonal flights to familiar Caribbean, Mexican and Latin American points. The airline also released Ipsos survey findings on what Canadian fall and winter travellers say they want from a warm-weather trip.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-10-20T11:00:00.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Air Canada",
+          "url": "https://www.aircanada.com/media/more-sun-to-discover-new-research-reveals-canadians-winter-travel-priorities-as-air-canada-expands-routes/",
+          "sourceType": "official",
+          "publishedAt": "2026-10-20T11:00:00.000Z",
+          "retrievedAt": "2026-10-20T14:01:44.387Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-20T14:05:05.013Z",
+      "changedAt": "2026-10-20T14:05:05.013Z",
+      "sourceRunId": "ce3f0952-0e6a-4baf-b2ad-7a1c05f8af63",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The added seasonal flying is spread across eight Canadian cities. Montréal gains Tenerife, Roatán, Santo Domingo, Quito and Aruba; Toronto gains Tenerife, Roatán, Quito and Mérida; and Vancouver gains Mazatlán, Monterrey, Liberia and Puerto Escondido. Calgary picks up Cancún and Puerto Vallarta, Edmonton and Winnipeg both get Montego Bay (Winnipeg also adds Punta Cana), while Québec City adds Pointe-à-Pitre and Halifax adds Bridgetown. Air Canada describes the schedule as previously announced expansion.",
+        "Air Canada also cited Ipsos survey results on winter travel intent: 72% of those surveyed said relaxing and recharging matters when picking a destination, 55% said many winter destinations remain unexplored, and 37% named Central and South America as unfamiliar but appealing, versus 33% for long-haul Asia-Pacific. Hawaii (49%), Costa Rica (47%) and Australia (41%) led the list of destinations respondents said they were considering, and 36% said the draw of somewhere new is the chance of finding a new favourite."
+      ],
+      "keyPoints": [
+        "New winter non-stop points include Tenerife, Roatán, Santo Domingo, Mérida and Mazatlán, plus Quito, Monterrey, Liberia and Puerto Escondido.",
+        "Route additions are distributed across Montréal, Toronto, Vancouver, Calgary, Edmonton, Winnipeg, Québec City and Halifax.",
+        "Survey respondents ranked Hawaii, Costa Rica and Australia as their top future winter getaways."
+      ],
+      "takeaway": "If you are planning a winter trip, check the seasonal non-stop option from your nearest Canadian hub before connecting through a US or European gateway — the new points include Tenerife, Roatán, Santo Domingo, Mérida, Mazatlán, Monterrey, Liberia and Puerto Escondido."
+    },
+    {
+      "storyId": "news_b93b3c49470f1b5f54b49e50",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 100,
+      "title": "Delta adds free Wi-Fi on Asia-Pacific routes, closing gap in international coverage",
+      "summary": "Delta says free Wi-Fi, presented by T-Mobile, is now available on its Asia-Pacific routes, extending connectivity across its full international network. SkyMiles Members in all cabins can connect after boarding doors close to message, email, browse and stream on their own devices; membership is free. Nearly 1,300 aircraft — more than 95% of the fleet — are equipped, with full fleet coverage expected by early 2027 as remaining regional jets and Boeing 717s are fitted.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-10-19T20:53:33.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Delta",
+          "url": "https://news.delta.com/delta-expands-wi-fi-across-asia-pacific-routes-completing-global-connectivity-map",
+          "sourceType": "official",
+          "publishedAt": "2026-10-19T20:53:33.000Z",
+          "retrievedAt": "2026-10-20T14:01:44.386Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-20T14:05:05.052Z",
+      "changedAt": "2026-10-20T14:05:05.052Z",
+      "sourceRunId": "ce3f0952-0e6a-4baf-b2ad-7a1c05f8af63",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The Asia-Pacific rollout closes what Delta described as the last gap in its international Wi-Fi map, covering trans-Pacific flights to and from the region. SkyMiles Members in every cabin can log in once boarding doors close and use one or more devices for messaging, email, browsing and streaming video on their own devices. Delta also points to new satellite capacity entering service over the Americas as support for growing demand for connectivity.",
+        "Delta Sync, the airline's in-flight portal for SkyMiles Members, bundles entertainment and partner content with the connection, including journalism from The New York Times and The Wall Street Journal, streaming from Crunchyroll and Paramount+, and live sports through Sport 24. Paramount+ access is limited to U.S.-based SkyMiles Members on flights originating in the U.S. More than 195 million Delta Sync Wi-Fi sessions have been logged since the platform launched in 2023."
+      ],
+      "keyPoints": [
+        "Free onboard Wi-Fi is tied to free SkyMiles membership and is available in all cabins on equipped aircraft.",
+        "Nearly 1,300 aircraft are Wi-Fi equipped — more than 95% of Delta's fleet.",
+        "Full fleet connectivity is expected by early 2027, covering remaining Delta Connection regional jets and the Boeing 717."
+      ],
+      "takeaway": "Join SkyMiles (free) before your trip and keep your membership number handy — Wi-Fi access on equipped aircraft requires logging in as a Member, and some Delta Sync content such as Paramount+ is limited to U.S.-based members on U.S.-originating flights."
+    },
+    {
+      "storyId": "news_50ff9115cb8ad53cc27655dc",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 100,
+      "title": "Hyatt Centric Downtown St. Louis Opens as Brand's First Missouri Hotel",
+      "summary": "Hyatt announced on October 19, 2026 that Hyatt Centric Downtown St. Louis has opened, making it the first Hyatt Centric property in Missouri. The hotel gives travelers a new downtown St. Louis base under Hyatt's Centric brand. The announcement did not include room counts, opening rates or award pricing.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-10-19T14:30:00.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Hyatt",
+          "url": "https://newsroom.hyatt.com/HyattCentricDowntownStLouis",
+          "sourceType": "official",
+          "publishedAt": "2026-10-19T14:30:00.000Z",
+          "retrievedAt": "2026-10-20T14:01:44.381Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-20T14:05:05.073Z",
+      "changedAt": "2026-10-20T14:05:05.073Z",
+      "sourceRunId": "ce3f0952-0e6a-4baf-b2ad-7a1c05f8af63",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Hyatt Hotels Corporation announced the debut of Hyatt Centric Downtown St. Louis on October 19, 2026, describing it as the first Hyatt Centric hotel in Missouri and a new home base in the Gateway City. The property places the Centric brand — Hyatt's lifestyle-focused line aimed at travelers who want to be near a destination's core — in downtown St. Louis."
+      ],
+      "keyPoints": [
+        "First Hyatt Centric hotel in Missouri",
+        "Announced by Hyatt on October 19, 2026",
+        "Located in downtown St. Louis"
+      ],
+      "takeaway": "Travelers planning a St. Louis trip can now check the property's opening-date availability and rates directly with Hyatt and compare it against other downtown options before booking."
+    },
+    {
+      "storyId": "offer_629c2be11a15998417f89e48",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 77,
+      "title": "SAS EuroBonus paid status match includes Southwest Companion Pass to Diamond",
+      "summary": "Frequent Miler reports SAS EuroBonus is offering a paid status match through StatusMatch.com for elite members of many airlines. Silver costs €89, Gold €199 and Diamond €349, with no flight challenge. Southwest Companion Pass maps to Diamond, A-List to Silver and A-List Preferred to Gold. SkyTeam carriers, Singapore Airlines, TAP Air Portugal and Etihad are ineligible, as are residents of China, Brazil, Argentina, Hong Kong and Taiwan. Not officially confirmed.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-19T23:45:38.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Frequent Miler",
+          "url": "https://frequentmiler.com/sas-eurobonus-paid-status-match-from-many-programs-including-southwest-companion-pass/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-19T23:45:38.000Z",
+          "retrievedAt": "2026-10-20T14:01:44.395Z"
+        }
+      ],
+      "terms": {
+        "issuer": null,
+        "program": "SAS EuroBonus",
+        "merchant": "StatusMatch.com",
+        "rewardType": "other",
+        "minSpend": null,
+        "creditAmount": null,
+        "rewardPoints": null,
+        "activationRequired": true,
+        "activateBy": null
+      },
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-20T14:05:04.940Z",
+      "changedAt": "2026-10-20T14:05:04.940Z",
+      "sourceRunId": "ce3f0952-0e6a-4baf-b2ad-7a1c05f8af63",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "According to Frequent Miler, the match is open to elite members of most non-SkyTeam airlines and is handled by StatusMatch.com. Applicants can buy Silver for €89, Gold for €199 or Diamond for €349. Approved status runs for the remainder of the existing EuroBonus year plus 12 months, and no flight activity is required to keep it. Matching cannot extend a tier the member already holds.",
+        "The report says Gold and Diamond include SkyTeam Elite Plus benefits: an extra 20kg/44lb baggage allowance or one extra bag, SkyPriority check-in and boarding, and business-class lounge access on international SkyTeam-operated flights for the member plus one guest on the same flight. Diamond also offers a 30% discount on award flights. Domestic Delta SkyClub access is not included."
+      ],
+      "keyPoints": [
+        "Match fees: Silver €89, Gold €199, Diamond €349 via StatusMatch.com; no flight challenge is required.",
+        "Southwest Companion Pass holders can match to Diamond; A-List maps to Silver and A-List Preferred to Gold.",
+        "SkyTeam airlines, Singapore Airlines, TAP Air Portugal and Etihad are excluded; residents of China, Brazil, Argentina, Hong Kong and Taiwan are also ineligible."
+      ],
+      "takeaway": "Before paying, confirm your current airline status appears on the published match chart and that your residence is eligible. If you mainly want SkyTeam Elite Plus perks, Gold at €199 may be enough; Diamond at €349 adds a 30% award discount but cannot extend an existing EuroBonus tier."
+    },
+    {
+      "storyId": "offer_4d676ceedca4876597356db6",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 76,
+      "title": "Vrbo: up to 12x miles or 20% back via Capital One Offers/Shopping",
+      "summary": "Frequent Miler reports Vrbo is featured on Capital One Offers and Capital One Shopping with elevated rates: up to 12x miles for cardholders and up to 20% back through the public portal. Eligible purchases must be made at vrbo.com. Bookings under $20, listing renewals, and refer-a-friend codes beginning “RAF” are excluded, and outside promo codes may invalidate the offer. Payouts usually arrive within 45 days after a completed stay.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-19T19:45:40.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Frequent Miler",
+          "url": "https://frequentmiler.com/up-to-12x-miles-20-back-at-vrbo-via-capital-one-shopping-offers/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-19T19:45:40.000Z",
+          "retrievedAt": "2026-10-20T14:01:44.396Z"
+        }
+      ],
+      "terms": {
+        "issuer": "Capital One",
+        "program": "Capital One Offers / Capital One Shopping",
+        "merchant": "Vrbo",
+        "rewardType": "other",
+        "minSpend": 20,
+        "creditAmount": null,
+        "rewardPoints": null,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-20T14:05:05.024Z",
+      "changedAt": "2026-10-20T14:05:05.024Z",
+      "sourceRunId": "ce3f0952-0e6a-4baf-b2ad-7a1c05f8af63",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Frequent Miler says rates vary by account and portal. It currently sees 12x miles through Capital One Offers and 15% back in its Capital One Shopping account, after previously seeing 20% back there; targeted email offers can sometimes be higher. Travel purchases may initially track as ineligible before changing to pending or posted, the publisher notes.",
+        "The rebate is limited to eligible vrbo.com purchases. Vrbo bookings below $20, listing renewals, and refer-a-friend coupon codes starting with “RAF” do not qualify. Payouts are generally issued within 45 days after a completed stay, and reservations must be completed within one year of booking; the account used must remain open and in good standing."
+      ],
+      "keyPoints": [
+        "Up to 12x miles through Capital One Offers for cardholders; up to 20% back through the public Capital One Shopping portal, per Frequent Miler.",
+        "Excludes Vrbo bookings under $20, listing renewals, and refer-a-friend codes starting “RAF”; outside promotional codes may invalidate the offer.",
+        "Payouts typically within 45 days after a completed stay; the reservation must be completed within one year of booking."
+      ],
+      "takeaway": "Before booking, check both Capital One Offers and Capital One Shopping for your available rate, compare the total Vrbo price with other rental platforms, and monitor the purchase if it initially tracks as ineligible."
+    },
+    {
+      "storyId": "offer_3b9aac08a4bd31ec7c75b1a1",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 76,
+      "title": "JetBlue TrueBlue Buy-Points Promo Offers Up to a 120% Bonus Through Nov. 5",
+      "summary": "JetBlue's current TrueBlue buy-points promotion adds a tiered bonus of up to 120% on purchases made through Nov. 5, 2026, at 11:59 p.m. EST, according to AwardWallet. At the top tier, points work out to about 1.47¢ each. Purchases are non-refundable, capped at 200,000 base points per member and carry a 7.5% tax recovery fee; purchased points do not count toward Mosaic status.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-19T16:00:02.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "AwardWallet",
+          "url": "https://awardwallet.com/airlines/jetblue-trueblue/buy-jetblue-points/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-19T16:00:02.000Z",
+          "retrievedAt": "2026-10-20T14:01:44.395Z"
+        }
+      ],
+      "terms": {
+        "issuer": null,
+        "program": "JetBlue TrueBlue",
+        "merchant": "JetBlue",
+        "rewardType": "points",
+        "minSpend": null,
+        "creditAmount": null,
+        "rewardPoints": null,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": "2026-11-06T04:59:59.000Z",
+      "firstSeenAt": "2026-10-20T14:05:05.064Z",
+      "changedAt": "2026-10-20T14:05:05.064Z",
+      "sourceRunId": "ce3f0952-0e6a-4baf-b2ad-7a1c05f8af63",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The bonus scales with purchase size: 5,000–9,000 points earns a 100% bonus (about 1.61¢ per point), 10,000–19,000 points earns 110% (about 1.54¢), and 20,000–200,000 points earns 120% (about 1.47¢). Buying 1,000–4,000 points carries no bonus and costs roughly 3.23¢ each. Per AwardWallet, the largest single purchase — 200,000 base points plus 240,000 bonus — totals $6,450 including the 7.5% tax recovery fee, while as few as 44,000 points after the bonus costs $645 at the same rate.",
+        "TrueBlue is a revenue-based currency; AwardWallet puts the average redemption value near 1.24¢ per point, so buying at 1.47¢ mainly makes sense for topping off an existing balance or when a specific redemption prices well. AwardWallet's example: a Boston–San Francisco Mint itinerary at 49,100 points would cost about $720 in purchased points plus $5.60 in taxes, against a $649 cash fare. Purchased points are non-refundable and are slated to post within 72 hours."
+      ],
+      "keyPoints": [
+        "Promotion runs through Nov. 5, 2026, 11:59 p.m. EST, with a 200,000-point purchase cap per member.",
+        "Bonus tiers: 100% at 5,000–9,000 points, 110% at 10,000–19,000 points, 120% at 20,000–200,000 points.",
+        "Purchases are non-refundable, include a 7.5% tax recovery fee, and do not count toward Mosaic elite qualification."
+      ],
+      "takeaway": "Price the cash fare first: at 1.47¢ per point, an award only beats paying cash when the redemption prices well below the ticket. Use the promo to top off a balance you are ready to spend rather than to stockpile speculatively."
+    }
+  ],
+  "contentDigest": "e5a66bef0dcf5e5900e497ff26130bb0e28c1c99c3930dc559931e7d0ab2afda"
+}
