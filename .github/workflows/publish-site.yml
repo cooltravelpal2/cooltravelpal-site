@@ -74,13 +74,13 @@ jobs:
         run: python3 scripts/build_site.py
       - name: Compile seven-day newsletter draft without sending
         env:
-          FREEZE_WEEKLY_ISSUE: ${{ (github.event_name == 'schedule' && github.event.schedule == '0 9 * * 6') || (github.event_name == 'workflow_dispatch' && (inputs.newsletter_test || inputs.newsletter_preview)) }}
+          FREEZE_WEEKLY_ISSUE: ${{ (github.event_name == 'schedule' && github.event.schedule == '0 9 * * 6') || (github.event_name == 'workflow_dispatch' && inputs.newsletter_preview) }}
+          FREEZE_TEST_ISSUE: ${{ github.event_name == 'workflow_dispatch' && inputs.newsletter_test }}
         run: |
-          if [ "$FREEZE_WEEKLY_ISSUE" = "true" ]; then
-            python3 scripts/weekly_digest.py --web-output dist/weekly --freeze-issue
-          else
-            python3 scripts/weekly_digest.py --web-output dist/weekly
-          fi
+          args=(--web-output dist/weekly)
+          if [ "$FREEZE_WEEKLY_ISSUE" = "true" ]; then args+=(--freeze-issue); fi
+          if [ "$FREEZE_TEST_ISSUE" = "true" ]; then args+=(--freeze-test-issue "test-$GITHUB_RUN_ID"); fi
+          python3 scripts/weekly_digest.py "${args[@]}"
       - name: Persist stable newsletter article links before deployment
         if: github.event_name != 'workflow_dispatch' || inputs.dry_run == false
         env:
@@ -165,6 +165,7 @@ jobs:
         env:
           EMAILOCTOPUS_API_KEY: ${{ secrets.EMAILOCTOPUS_API_KEY }}
           EMAILOCTOPUS_TEST_CONTACT_IDS: ${{ secrets.EMAILOCTOPUS_TEST_CONTACT_IDS }}
+          WEEKLY_TEST_ISSUE: test-${{ github.run_id }}
         run: python3 scripts/weekly_sender.py --send --test
       - name: Prepare owner newsletter preview without sending
         if: >-
