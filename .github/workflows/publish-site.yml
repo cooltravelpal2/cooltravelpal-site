@@ -59,6 +59,10 @@ jobs:
         if: vars.TRAVEL_BRIEFS_ENABLED == 'true'
         continue-on-error: true
         run: python3 scripts/daily_travel_brief.py --sync
+      - name: Find openly licensed Wikimedia Commons story photos
+        if: vars.TRAVEL_BRIEFS_ENABLED == 'true' && steps.briefs.outcome == 'success'
+        continue-on-error: true
+        run: python3 scripts/story_photos.py
       - name: Persist edition archive before publication
         if: >-
           vars.TRAVEL_BRIEFS_ENABLED == 'true' && steps.briefs.outcome == 'success' &&

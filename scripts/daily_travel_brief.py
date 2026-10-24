@@ -115,10 +115,10 @@ class RestrictedRedirect(urllib.request.HTTPRedirectHandler):
         return super().redirect_request(req, fp, code, msg, headers, newurl)
 
 
-def read_url(url, max_bytes=2_000_000):
+def read_url(url, max_bytes=2_000_000, user_agent='TravelPal.nowBrief/1.0'):
     if not public_https(url):
         raise ValueError('Invalid public URL')
-    request = urllib.request.Request(url, headers={'User-Agent': 'TravelPal.nowBrief/1.0'})
+    request = urllib.request.Request(url, headers={'User-Agent': user_agent})
     with urllib.request.build_opener(RestrictedRedirect).open(request, timeout=15) as response:
         content = response.read(max_bytes + 1)
     if len(content) > max_bytes:
@@ -169,10 +169,23 @@ def sync(directory, base=FEED, reader=read_url):
     return len(created)
 
 
-def load_editions(directory):
+def load_photos(path):
+    """Story ID -> licensed photo (or None after an unsuccessful lookup); see story_photos.py."""
+    if not path.exists():
+        return {}
+    photos = json.loads(path.read_text())['photos']
+    for image in photos.values():
+        if image is not None:
+            validate_image(image)
+    return photos
+
+
+def load_editions(directory, photos=None):
     latest = {}
     if not directory.exists():
         return []
+    # Photos sit beside the signed editions rather than inside them, so digests stay intact.
+    photos = load_photos(directory.parent / 'story-photos.json') if photos is None else photos
     for path in sorted(directory.glob('*.json')):
         value = validate(json.loads(path.read_text()))
         expected = f'{value["editionId"]}-r{value["revision"]}.json'
@@ -181,6 +194,10 @@ def load_editions(directory):
         previous = latest.get(value['editionId'])
         if previous is None or previous['revision'] < value['revision']:
             latest[value['editionId']] = value
+    for edition in latest.values():
+        for story in edition['stories']:
+            if not story.get('image') and photos.get(story['storyId']):
+                story['image'] = photos[story['storyId']]
     return sorted(latest.values(), key=lambda e: e['editionId'], reverse=True)
 
 
