@@ -29,6 +29,10 @@ def payload(digest):
         copy = short_copy(story)
         title = story['title']
         text = (SECTIONS[story['section']] + ' · ' if n == 5 else '') + title.rstrip('.') + '. ' + copy
+        if story.get('emailPhoto'):
+            # Free-tier fields are plain text, so the credit travels with the article;
+            # the linked article carries the photo source and license links.
+            text += f" ({story['image']['credit'].rstrip('.')}, {story['image']['license']}, via Wikimedia Commons.)"
         if len(text) > FIELD_LIMIT:
             raise ValueError('Highlight exceeds free-tier field limit; editorial review required')
         fields[f'WeeklyHighlight{n}'] = text
