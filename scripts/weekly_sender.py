@@ -6,6 +6,7 @@ import json
 import os
 from datetime import date, datetime, timedelta
 from pathlib import Path
+from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 from urllib.parse import urlencode
 from zoneinfo import ZoneInfo
@@ -51,9 +52,18 @@ class Provider:
                       method=method, headers={'Authorization': 'Bearer ' + self.key,
                       'Content-Type': 'application/json', 'Accept': 'application/json',
                       'User-Agent': 'TravelPal-Newsletter/1.0'})
-        with urlopen(req, timeout=30) as response:
-            body = response.read()
-            return json.loads(body) if body else None
+        try:
+            with urlopen(req, timeout=30) as response:
+                body = response.read()
+                return json.loads(body) if body else None
+        except HTTPError as error:
+            # Surface the provider's explanation; its error bodies carry no addresses or keys.
+            try:
+                detail = json.loads(error.read() or b'{}')
+            except ValueError:
+                detail = {}
+            summary = ' · '.join(str(detail[k])[:300] for k in ('type', 'title', 'detail') if detail.get(k))
+            raise RuntimeError(f'EmailOctopus {method} {path.split("?")[0].split("/")[1]} returned HTTP {error.code}: {summary or error.reason}') from None
 
     def contacts(self):
         contacts, cursor, cursors = [], None, set()
