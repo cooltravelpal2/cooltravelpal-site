@@ -131,6 +131,22 @@ class WeeklyPhotoTest(unittest.TestCase):
             self.assertNotEqual((root / 'weekly/2026-10-24/story-1.jpg').read_bytes(), JPEG)
             self.assertNotIn('Photo:', payload({**issue, 'frozenIssue': True})['WeeklyHighlight1'])
 
+    def test_owner_test_issue_never_touches_the_sent_saturday_issue(self):
+        from weekly_digest import TEST_ISSUES
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            sent = freeze_issue(self.issue(False), root / 'issues', reader)
+            test = freeze_issue(self.issue(True), root / 'issues/test', reader, key='test-123')
+            self.assertEqual(load_issue(root / 'issues/2026-10-24.json'), sent)
+            self.assertNotIn('emailPhoto', sent['stories'][0])
+            self.assertTrue(test['stories'][0]['emailPhoto'])
+            publish_story_links(test, root / 'weekly', root / 'issues/test')
+            self.assertEqual((root / 'weekly/test-123/story-1.jpg').read_bytes(), JPEG)
+            self.assertTrue((root / 'weekly/test-123/story-1/index.html').exists())
+            self.assertFalse((root / 'weekly/2026-10-24').exists())
+            self.assertEqual(payload({**test, 'frozenIssue': True})['WeeklyPeriod'], 'test-123')
+            self.assertEqual(TEST_ISSUES.name, 'test')
+
 
 if __name__ == '__main__':
     unittest.main()

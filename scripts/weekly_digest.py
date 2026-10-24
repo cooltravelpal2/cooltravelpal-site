@@ -120,6 +120,8 @@ def render(digest, test=False):
 
 
 ISSUES = Path('data/weekly-newsletter-issues')
+# Owner tests get their own issues so a test never alters a Saturday issue already sent.
+TEST_ISSUES = ISSUES / 'test'
 
 
 def photo_path(issue_path, slot):
@@ -131,6 +133,8 @@ def photo_path(issue_path, slot):
 def load_issue(path):
     issue = json.loads(path.read_text())
     date.fromisoformat(issue['weekEnding'])
+    if path.stem != issue.get('issueKey', issue['weekEnding']) or not re.fullmatch(r'\d{4}-\d{2}-\d{2}|test-\d+', path.stem):
+        raise ValueError('Newsletter issue filename mismatch')
     if not 0 < len(issue['stories']) <= 5:
         raise ValueError('Invalid newsletter issue size')
     seen = set()
@@ -148,12 +152,14 @@ def load_issue(path):
     return issue
 
 
-def freeze_issue(digest, directory=ISSUES, reader=wikimedia_reader):
+def freeze_issue(digest, directory=ISSUES, reader=wikimedia_reader, key=None):
     directory.mkdir(parents=True, exist_ok=True)
-    path = directory / (digest['weekEnding'] + '.json')
+    path = directory / ((key or digest['weekEnding']) + '.json')
     if path.exists():
         return load_issue(path)
     issue = {**digest, 'stories': [dict(s) for s in select_highlights(digest)]}
+    if key:
+        issue['issueKey'] = key
     if not issue['stories']:
         return None
     for n, story in story_slots(issue['stories']).items():
@@ -199,8 +205,9 @@ def thin_issue_warning(stories):
 def publish_story_links(issue, output, directory=ISSUES):
     # Freeze each issue's numbered links so later revisions never repoint a sent
     # email to a different article. Blog pages themselves retain current corrections.
+    key = issue.get('issueKey', issue['weekEnding'])
     for n, story in story_slots(issue['stories']).items():
-        path = output / issue['weekEnding'] / ('story-' + str(n)) / 'index.html'
+        path = output / key / ('story-' + str(n)) / 'index.html'
         path.parent.mkdir(parents=True, exist_ok=True)
         target = html.escape(story['briefUrl'], quote=True)
         path.write_text('<!doctype html><html><head><meta charset="utf-8">'
@@ -209,12 +216,12 @@ def publish_story_links(issue, output, directory=ISSUES):
                         + '<meta name="robots" content="noindex"><title>' + html.escape(story['title'])
                         + '</title></head><body><a href="' + target + '">Read full article</a></body></html>')
         if story.get('emailPhoto'):
-            image = photo_path(directory / (issue['weekEnding'] + '.json'), n)
+            image = photo_path(directory / (key + '.json'), n)
         else:
             topic = PALETTES[story['section']][2]
             variant = 1 + (int(hashlib.sha256(issue['weekEnding'].encode()).hexdigest()[:8], 16) + n) % 3
             image = Path('images') / f'editorial-{topic}-v{variant}.jpg'
-        shutil.copy2(image, output / issue['weekEnding'] / f'story-{n}.jpg')
+        shutil.copy2(image, output / key / f'story-{n}.jpg')
 
 
 def main():
@@ -225,11 +232,16 @@ def main():
     parser.add_argument('--test', action='store_true')
     parser.add_argument('--web-output', type=Path)
     parser.add_argument('--freeze-issue', action='store_true')
+    parser.add_argument('--freeze-test-issue', metavar='KEY', help='freeze an owner-test issue such as test-<run id>')
     args = parser.parse_args()
+    if args.freeze_test_issue and not re.fullmatch(r'test-\d+', args.freeze_test_issue):
+        parser.error('test issue keys look like test-<run id>')
     digest = collect(load_editions(args.archive), date.fromisoformat(args.end))
     document = render(digest, args.test)
     if args.freeze_issue:
         freeze_issue(digest)
+    if args.freeze_test_issue:
+        freeze_issue(digest, TEST_ISSUES, key=args.freeze_test_issue)
     args.output.mkdir(parents=True, exist_ok=True)
     stem = f"travelpal-weekly-{digest['weekEnding']}" + ('-test' if args.test else '')
     (args.output / f'{stem}.html').write_text(document)
@@ -252,6 +264,9 @@ def main():
             page = args.web_output / day.isoformat() / 'index.html'
             page.parent.mkdir(parents=True, exist_ok=True)
             page.write_text(page_document)
+        # Owner-test links and photos stay published so test emails keep working.
+        for test_path in sorted(TEST_ISSUES.glob('*.json')):
+            publish_story_links(load_issue(test_path), args.web_output, TEST_ISSUES)
     warning = thin_issue_warning(select_highlights(digest))
     if warning:
         print('::warning title=Thin weekly issue::' + warning)

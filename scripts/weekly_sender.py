@@ -9,7 +9,7 @@ from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.parse import urlencode
 from zoneinfo import ZoneInfo
-from weekly_digest import collect, render, select_highlights, short_copy, load_issue, ISSUES, story_slots
+from weekly_digest import collect, render, select_highlights, short_copy, load_issue, ISSUES, TEST_ISSUES, story_slots
 from daily_travel_brief import load_editions, SECTIONS
 
 LIST_ID = 'de2bac34-80c4-11f1-ad85-1b83433e3fd4'
@@ -20,7 +20,8 @@ FIELD_LIMIT = 600
 def payload(digest):
     selected = digest['stories'] if digest.get('frozenIssue') else select_highlights(digest, limit=5)
     slots = story_slots(selected)
-    fields = {'WeeklyPeriod': digest['weekEnding']}
+    # The template builds image and link URLs from WeeklyPeriod, so test issues use their own key.
+    fields = {'WeeklyPeriod': digest.get('issueKey', digest['weekEnding'])}
     for n in range(1, 6):
         if n not in slots:
             fields[f'WeeklyHighlight{n}'] = ''
@@ -107,7 +108,7 @@ def deliver(provider, digest, send=False, test=False):
     # with a conservative 1,500-contact ceiling. No paid upgrade API is used.
     if len(contacts) > 1500:
         raise ValueError('Conservative free-tier headroom exceeded; manual quota review required')
-    issue = ('weekly-test:' if test else 'weekly:') + digest['weekEnding']
+    issue = ('weekly-test:' if test else 'weekly:') + digest.get('issueKey', digest['weekEnding'])
     result = {'queued': 0, 'skipped': 0, 'eligible': len(contacts)}
     quota = provider.quota()
     today = date.fromisoformat(digest['weekEnding'])
@@ -177,6 +178,9 @@ def main():
     digest = collect(load_editions(Path('data/travel-briefs')), now.date())
     render(digest)
     issue_path = ISSUES / (digest['weekEnding'] + '.json')
+    test_key = os.environ.get('WEEKLY_TEST_ISSUE')
+    if args.test and test_key:
+        issue_path = TEST_ISSUES / (test_key + '.json')
     if issue_path.exists():
         issue = load_issue(issue_path)
         current = {s['storyId']: s for s in digest['stories']}
