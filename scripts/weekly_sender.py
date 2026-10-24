@@ -18,6 +18,10 @@ AUTOMATION_ID = '69b368be-bf90-11f1-a32d-2fff2da0bbd9'
 FIELD_LIMIT = 600
 
 
+class ProviderRefused(RuntimeError):
+    """EmailOctopus answered with a 4xx error: the request definitely did not take effect."""
+
+
 def payload(digest):
     selected = digest['stories'] if digest.get('frozenIssue') else select_highlights(digest, limit=5)
     slots = story_slots(selected)
@@ -63,7 +67,8 @@ class Provider:
             except ValueError:
                 detail = {}
             summary = ' · '.join(str(detail[k])[:300] for k in ('type', 'title', 'detail') if detail.get(k))
-            raise RuntimeError(f'EmailOctopus {method} {path.split("?")[0].split("/")[1]} returned HTTP {error.code}: {summary or error.reason}') from None
+            kind = ProviderRefused if 400 <= error.code < 500 else RuntimeError
+            raise kind(f'EmailOctopus {method} {path.split("?")[0].split("/")[1]} returned HTTP {error.code}: {summary or error.reason}') from None
 
     def contacts(self):
         contacts, cursor, cursors = [], None, set()
@@ -165,7 +170,13 @@ def deliver(provider, digest, send=False, test=False):
             result['skipped'] += 1
             continue
         # Never retry queue on timeouts or uncertain responses. Pending remains durable.
-        provider.queue(contact['id'])
+        try:
+            provider.queue(contact['id'])
+        except ProviderRefused:
+            # An explicit refusal means nothing was queued, so the reservation is released
+            # rather than blocking later issues. The capacity reservation is kept.
+            provider.update(contact['id'], {'WeeklySendState': state})
+            raise
         provider.update(contact['id'], {'WeeklySendState': issue + ':queued'})
         result['queued'] += 1
     return result

@@ -82,6 +82,20 @@ class SenderTest(unittest.TestCase):
         self.assertIn('Another supported opening',fields['WeeklyHighlight5'])
         self.assertNotIn('Another supported opening',fields['WeeklyHighlight1'])
         self.assertNotIn('\\n',fields['WeeklyHighlight1'])
+    def test_explicit_refusal_releases_the_send_reservation(self):
+        from weekly_sender import ProviderRefused
+        p = FakeProvider()
+        p.contact['fields']['WeeklySendState'] = 'weekly:2026-10-03:queued'
+        def refuse(contact_id):
+            raise ProviderRefused('This contact cannot start this automation.')
+        p.queue = refuse
+        with self.assertRaises(ProviderRefused):
+            deliver(p, self.digest(), send=True)
+        self.assertEqual(p.contact['fields']['WeeklySendState'], 'weekly:2026-10-03:queued')
+        self.assertEqual(p.quota_state['reserved'], 3)
+        p.queue = FakeProvider.queue.__get__(p)
+        self.assertEqual(deliver(p, self.digest(), send=True)['queued'], 1)
+
     def test_provider_errors_explain_the_refusal_without_ids(self):
         import io
         from unittest.mock import patch
