@@ -1,0 +1,425 @@
+{
+  "schemaVersion": 1,
+  "editionId": "2026-10-26",
+  "revision": 1,
+  "status": "ready_with_limited_coverage",
+  "policyVersion": "travel-impact-v1",
+  "sourceRunIds": [
+    "b599ddd6-a1a6-4e59-aacd-6805f17dda6a"
+  ],
+  "cutoffAt": "2026-10-26T14:03:09.518Z",
+  "generatedAt": "2026-10-26T14:03:09.518Z",
+  "coverageStatus": "limited",
+  "coverage": [
+    {
+      "sourceId": "breville",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "apple",
+      "category": "deals",
+      "candidateCount": 93,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amazon-devices",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "disabled"
+    },
+    {
+      "sourceId": "fellow",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "moccamaster",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "delonghi",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "dell",
+      "category": "deals",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "marriott",
+      "category": "hotels",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hyatt",
+      "category": "hotels",
+      "candidateCount": 3,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "hilton",
+      "category": "hotels",
+      "candidateCount": 25,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "ihg",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "aman",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "wyndham",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-and-only",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amex",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "chase",
+      "category": "cards",
+      "candidateCount": 15,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "citi",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "discover",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "capital-one",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "delta",
+      "category": "airlines",
+      "candidateCount": 13,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "united",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "american",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "alaska",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "southwest",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "air-canada",
+      "category": "airlines",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "british-airways",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "cards",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "destinations",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "hotels",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "airlines",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "cards",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "destinations",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "cards",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "destinations",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "hotels",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "airlines",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "cards",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "destinations",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "hotels",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "airlines",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "cards",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "destinations",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "slickdeals",
+      "category": "deals",
+      "candidateCount": 8,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "redflagdeals",
+      "category": "deals",
+      "candidateCount": 14,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "airbnb",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nps",
+      "category": "destinations",
+      "candidateCount": 1,
+      "status": "attempted"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "news_22832b2e1ddacf431a01bd32",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 100,
+      "title": "Hyatt and Brigade Group plan two Hyatt Regency hotels in Bengaluru, 600 rooms total",
+      "summary": "Hyatt and Brigade Group have announced plans for two Hyatt Regency hotels in Bengaluru, together offering 600 rooms. Both properties are to be part of large-scale mixed-use developments in the city. The announcement sets out the brands and combined room count; no individual locations, opening dates or investment terms were included.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-10-26T07:22:00.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Hyatt",
+          "url": "https://newsroom.hyatt.com/Hyatt_and_Brigade_Group_Announce_Plans_for_Two_New_Hyatt_Regency_Hotels_in_Bengaluru",
+          "sourceType": "official",
+          "publishedAt": "2026-10-26T07:22:00.000Z",
+          "retrievedAt": "2026-10-26T14:01:55.674Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-26T14:03:09.458Z",
+      "changedAt": "2026-10-26T14:03:09.458Z",
+      "sourceRunId": "b599ddd6-a1a6-4e59-aacd-6805f17dda6a",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The two hotels will carry the Hyatt Regency brand and are planned within larger mixed-use projects rather than as standalone sites, according to the companies' announcement. Combined, the pair is expected to add 600 rooms to Hyatt's Bengaluru footprint.",
+        "Hyatt's development pipeline in India is being expanded through partnerships with local developers, and Brigade Group is the named partner for these two Bengaluru projects. Timing for construction or opening was not disclosed."
+      ],
+      "keyPoints": [
+        "Two Hyatt Regency hotels planned for Bengaluru under a Hyatt and Brigade Group agreement",
+        "600 rooms combined across the two properties",
+        "Both hotels are planned as part of large-scale mixed-use developments"
+      ]
+    },
+    {
+      "storyId": "offer_c74a33ff58643ae8ef467d22",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 72,
+      "title": "Amex 35% Membership Rewards transfer bonus to Marriott reported for targeted members",
+      "summary": "Doctor of Credit reports that some American Express members are being targeted for a 35% transfer bonus from Membership Rewards to Marriott. A transfer of 1,000 Membership Rewards points would yield 1,350 Marriott points instead of the usual 1,000. The promotion is reported to run through December 10, 2026, and is targeted rather than publicly available. The offer has not been officially confirmed.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-25T19:50:28.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Doctor of Credit",
+          "url": "https://www.doctorofcredit.com/american-express-transfer-bonus-35-to-marriott-11-35-2/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-25T19:50:28.000Z",
+          "retrievedAt": "2026-10-26T14:01:55.684Z"
+        }
+      ],
+      "terms": {
+        "issuer": "American Express",
+        "program": "Membership Rewards",
+        "merchant": "Marriott",
+        "rewardType": "points",
+        "minSpend": null,
+        "creditAmount": null,
+        "rewardPoints": 1350,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": "2026-12-10T23:59:59.000Z",
+      "firstSeenAt": "2026-10-26T14:03:09.508Z",
+      "changedAt": "2026-10-26T14:03:09.508Z",
+      "sourceRunId": "b599ddd6-a1a6-4e59-aacd-6805f17dda6a",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The bonus is account-specific, according to Doctor of Credit, so it may not appear for every American Express cardholder. The promotion changes the standard 1:1 transfer ratio to 1:1.35 for eligible members through December 10, 2026.",
+        "Doctor of Credit notes that Marriott transfer bonuses have varied in prior years, including a 35% bonus in late 2025 and a 20% bonus in 2023. The publisher cautions that the bonus may not be compelling relative to the value of Membership Rewards points."
+      ],
+      "keyPoints": [
+        "Targeted at some American Express members; not all accounts may see the offer.",
+        "1,000 Membership Rewards points converts to 1,350 Marriott points under the promotion.",
+        "Reported deadline is December 10, 2026."
+      ],
+      "takeaway": "Check your Amex Membership Rewards transfer page for Marriott before December 10, 2026. If the 35% bonus is not shown, your account likely is not targeted."
+    }
+  ],
+  "contentDigest": "dc0e6fc8b9f778d9067c867a42b745bc7207a92c0e9a737682572884bc4a35cf"
+}
