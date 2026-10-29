@@ -6,10 +6,10 @@ import html
 import json
 import re
 import shutil
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
-from daily_exercise import load_current
+from daily_exercise import NotPublishedYet, load_current
 from daily_travel_brief import load_editions, render as render_briefs
 from listing_thumbnails import add_thumbnails
 
@@ -78,7 +78,18 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--fixture', type=Path, help='Local preview/test only; never used by deployment workflow')
     parser.add_argument('--output', default='dist')
+    parser.add_argument('--allow-previous-day', action='store_true',
+                        help="Keep yesterday's lesson when today's isn't published yet (push builds after midnight)")
     args = parser.parse_args()
     day = datetime.now(ZoneInfo('America/Los_Angeles')).date()
-    data = json.loads(args.fixture.read_text()) if args.fixture else load_current(day)
+    if args.fixture:
+        data = json.loads(args.fixture.read_text())
+    else:
+        try:
+            data = load_current(day)
+        except NotPublishedYet:
+            if not args.allow_previous_day:
+                raise
+            print(f'DongDong has not published {day} yet; keeping {day - timedelta(days=1)}')
+            data = load_current(day - timedelta(days=1))
     build(ROOT / args.output, data)
