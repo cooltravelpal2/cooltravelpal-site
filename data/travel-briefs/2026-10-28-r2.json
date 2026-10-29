@@ -1,0 +1,472 @@
+{
+  "schemaVersion": 1,
+  "editionId": "2026-10-28",
+  "revision": 2,
+  "status": "ready_with_limited_coverage",
+  "policyVersion": "travel-impact-v1",
+  "sourceRunIds": [
+    "3437e5e3-1130-46e2-b2f6-e8cfb1a2daa8"
+  ],
+  "cutoffAt": "2026-10-28T14:05:12.161Z",
+  "generatedAt": "2026-10-28T14:05:12.161Z",
+  "coverageStatus": "limited",
+  "coverage": [
+    {
+      "sourceId": "breville",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "apple",
+      "category": "deals",
+      "candidateCount": 110,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amazon-devices",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "disabled"
+    },
+    {
+      "sourceId": "fellow",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "moccamaster",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "delonghi",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "dell",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "marriott",
+      "category": "hotels",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hyatt",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "hilton",
+      "category": "hotels",
+      "candidateCount": 26,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "ihg",
+      "category": "hotels",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "aman",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "wyndham",
+      "category": "hotels",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-and-only",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amex",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "chase",
+      "category": "cards",
+      "candidateCount": 12,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "citi",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "discover",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "capital-one",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "delta",
+      "category": "airlines",
+      "candidateCount": 12,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "united",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "american",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "alaska",
+      "category": "airlines",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "southwest",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "air-canada",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "british-airways",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "hotels",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "airlines",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "cards",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "destinations",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "cards",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "destinations",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "cards",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "destinations",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "hotels",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "airlines",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "cards",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "destinations",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "hotels",
+      "candidateCount": 8,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "airlines",
+      "candidateCount": 8,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "cards",
+      "candidateCount": 8,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "destinations",
+      "candidateCount": 8,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "slickdeals",
+      "category": "deals",
+      "candidateCount": 12,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "redflagdeals",
+      "category": "deals",
+      "candidateCount": 15,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "airbnb",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nps",
+      "category": "destinations",
+      "candidateCount": 1,
+      "status": "attempted"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "benefit_change_f8ef29c491cb8703425d6c4e",
+      "storyRevision": 2,
+      "section": "hotels",
+      "rank": 100,
+      "title": "Bilt legacy rewards close to new cardholders after 2026; hotel transfers worsen in 2027",
+      "summary": "Bilt is changing its rewards in 2027, The Points Guy reports. Applications approved and accepted by Dec. 31, 2026 can keep legacy benefits, including 4% Bilt Cash and hotel credits. Existing cardholders as of that date are grandfathered. Starting Jan. 1, 2027, transfer ratios to a major hotel loyalty program will worsen for all members, with no grandfathering.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-28T11:45:16.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "The Points Guy",
+          "url": "https://thepointsguy.com/credit-cards/get-bilt-card-2026",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-28T11:45:16.000Z",
+          "retrievedAt": "2026-10-29T14:02:09.708Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": "2027-01-01T00:00:00.000Z",
+      "firstSeenAt": "2026-10-28T14:05:12.147Z",
+      "changedAt": "2026-10-29T14:05:23.124Z",
+      "sourceRunId": "64366d51-33a6-40f4-9696-6eed8520f9ba",
+      "changeType": "updated",
+      "active": true,
+      "paragraphs": [
+        "The reported change splits Bilt members into two groups: those who are cardholders by the end of 2026 and those who are not. The former keep the current 4% Bilt Cash rate and hotel credits; the latter face the streamlined structure starting in 2027. A point accelerator can raise earning when cash rewards are redeemed, but maximizing it requires accumulating a set amount of Bilt Cash each year, which TPG says will be harder after the change.",
+        "Bilt points are valued at 2.2 cents each as of October 2026 under TPG's valuations. The separate hotel transfer change applies to all members from Jan. 1, 2027, so even grandfathered cardholders do not avoid that cut. To preserve the card's legacy benefits, the application must be approved and accepted before the new year."
+      ],
+      "keyPoints": [
+        "Apply and be approved by Dec. 31, 2026 to keep 4% Bilt Cash and hotel credits, per TPG.",
+        "Existing cardholders as of that date retain legacy benefits.",
+        "Hotel loyalty transfer ratios worsen for all members on Jan. 1, 2027."
+      ],
+      "takeaway": "If the legacy terms matter to you, submit a Bilt card application early enough for approval and acceptance by Dec. 31, 2026; the hotel transfer change still applies from Jan. 1, 2027."
+    },
+    {
+      "storyId": "offer_fa50c4b7b91b2a2404489ce3",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 80,
+      "title": "Targeted Amex Offer: $250 back on $2,000+ in direct Delta purchases",
+      "summary": "Frequent Miler reports a targeted Amex Offer that gives $250 back as a statement credit after $2,000 or more in cumulative purchases made directly with Delta Air Lines. Eligible bookings include Delta-marketed flights bought on delta.com, the Fly Delta US app or the US reservations line, and flights must originate in the US. The offer expires Nov. 30, 2026, and excludes many non-airfare or third-party purchases.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-27T21:45:35.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Frequent Miler",
+          "url": "https://frequentmiler.com/delta-amex-offer-get-250-back-when-spending-2k-directly-with-airline/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-27T21:45:35.000Z",
+          "retrievedAt": "2026-10-28T14:01:45.336Z"
+        }
+      ],
+      "terms": {
+        "issuer": "American Express",
+        "program": "Amex Offers",
+        "merchant": "Delta Air Lines",
+        "rewardType": "statement_credit",
+        "minSpend": 2000,
+        "creditAmount": 250,
+        "rewardPoints": null,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": "2026-11-30T23:59:59.000Z",
+      "firstSeenAt": "2026-10-28T14:05:11.998Z",
+      "changedAt": "2026-10-28T14:05:11.998Z",
+      "sourceRunId": "3437e5e3-1130-46e2-b2f6-e8cfb1a2daa8",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The credit applies only where Delta is the merchant of record. Qualifying charges include airfare, fare upgrades, seat selection, baggage and standby fees, and Delta Sky Club memberships. The $2,000 threshold is cumulative, so it can be met across multiple transactions, but payment must occur during the offer period.",
+        "Excluded purchases include airport transactions where Delta is not merchant of record, onboard food, drinks and Wi-Fi, standalone hotel and car-rental bookings through delta.com, bookings through affiliated agents, Delta Vacations, Delta Cargo and several other Delta services, travel insurance, gift cards and charitable donations. Unlike a prior version that required booking through Amex Travel, this offer requires booking direct with Delta."
+      ],
+      "keyPoints": [
+        "Targeted offer; it may not appear for every eligible Amex cardholder.",
+        "The $2,000 spend requirement can be met across multiple Delta purchases.",
+        "Flights must originate in the US, and booking must be direct with Delta."
+      ],
+      "takeaway": "If the offer is available on your Amex card, book directly with Delta on delta.com, the Fly Delta US app or the US reservation line. Keep total Delta spend at $2,000 or more during the offer period, and avoid Amex Travel or excluded third-party purchases."
+    },
+    {
+      "storyId": "offer_fcedaf4b1153e0ec05b54a35",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 75,
+      "title": "Slickdeals reports $134 roundtrip nonstop PHL–SJU fares for select Dec. 26–Feb. 27 travel",
+      "summary": "Slickdeals reports roundtrip nonstop flights between Philadelphia (PHL) and San Juan, Puerto Rico (SJU) for $134. The listing names Expedia or American Airlines and says travel is available on select dates from Dec. 26 to Feb. 27. Fare availability, operating carrier and booking terms were not independently confirmed.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-27T20:13:05.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Slickdeals",
+          "url": "https://slickdeals.net/f/20211783-round-trip-philadelphia-san-juan-puerto-rico-or-vice-versa-134-nonstop-airfares-on-frontier-airlines-be-travel-december-february-2027",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-27T20:13:05.000Z",
+          "retrievedAt": "2026-10-28T14:01:45.345Z"
+        }
+      ],
+      "terms": {
+        "issuer": null,
+        "program": null,
+        "merchant": "Expedia or American Airlines",
+        "rewardType": "discount",
+        "minSpend": null,
+        "creditAmount": null,
+        "rewardPoints": null,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-28T14:05:12.110Z",
+      "changedAt": "2026-10-28T14:05:12.110Z",
+      "sourceRunId": "3437e5e3-1130-46e2-b2f6-e8cfb1a2daa8",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [],
+      "keyPoints": [
+        "Reported fare: $134 roundtrip, nonstop PHL–SJU.",
+        "Travel window cited: select dates from Dec. 26 to Feb. 27.",
+        "Booking options named: Expedia or American Airlines."
+      ],
+      "takeaway": "Search both Expedia and American Airlines for the listed PHL–SJU dates, confirm the operating carrier, and compare the total price with bags and seat fees before booking."
+    }
+  ],
+  "updatedAt": "2026-10-29T14:05:23.124Z",
+  "correctionNotice": "This edition has been updated to reflect corrected or withdrawn information.",
+  "contentDigest": "fdef7eb62b0a0f52f93fa32e9c48c4e9ee6103da7b5c4035d5663e6bc92980b5"
+}
