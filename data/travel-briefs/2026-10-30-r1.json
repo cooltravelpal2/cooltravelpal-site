@@ -1,0 +1,445 @@
+{
+  "schemaVersion": 1,
+  "editionId": "2026-10-30",
+  "revision": 1,
+  "status": "ready_with_limited_coverage",
+  "policyVersion": "travel-impact-v1",
+  "sourceRunIds": [
+    "0ccfc840-2fe2-4c06-8424-fdbd54206c33"
+  ],
+  "cutoffAt": "2026-10-30T14:03:45.940Z",
+  "generatedAt": "2026-10-30T14:03:45.940Z",
+  "coverageStatus": "limited",
+  "coverage": [
+    {
+      "sourceId": "breville",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "apple",
+      "category": "deals",
+      "candidateCount": 105,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amazon-devices",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "disabled"
+    },
+    {
+      "sourceId": "fellow",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "moccamaster",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "delonghi",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "dell",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "marriott",
+      "category": "hotels",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hyatt",
+      "category": "hotels",
+      "candidateCount": 6,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "hilton",
+      "category": "hotels",
+      "candidateCount": 25,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "ihg",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "aman",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "wyndham",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-and-only",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amex",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "chase",
+      "category": "cards",
+      "candidateCount": 12,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "citi",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "discover",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "capital-one",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "delta",
+      "category": "airlines",
+      "candidateCount": 14,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "united",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "american",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "alaska",
+      "category": "airlines",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "southwest",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "air-canada",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "british-airways",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "hotels",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "airlines",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "cards",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "destinations",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "cards",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "destinations",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "hotels",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "airlines",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "cards",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "destinations",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "hotels",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "airlines",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "cards",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "destinations",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "hotels",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "airlines",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "cards",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "destinations",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "slickdeals",
+      "category": "deals",
+      "candidateCount": 14,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "redflagdeals",
+      "category": "deals",
+      "candidateCount": 14,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "airbnb",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nps",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "attempted"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "news_452a0b35857a266b4d86cf0d",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 100,
+      "title": "Hyatt signs agreements with Saraca Hotels & Resorts for four hotels across North India",
+      "summary": "Hyatt Hotels Corporation announced on October 30, 2026 that it has signed agreements with Saraca Hotels & Resorts, a hotel company founded by Mohammad Abdullah, to bring a portfolio of four hotels to North India. The signing adds planned Hyatt-affiliated properties in the region; the announcement covered the agreements rather than an offer for guests or loyalty members.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-10-30T07:13:00.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Hyatt",
+          "url": "https://newsroom.hyatt.com/Hyatt_and_Saraca_Hotels_-_Resorts_Announce_Plans_for_Four_Hotels_Across_North_India",
+          "sourceType": "official",
+          "publishedAt": "2026-10-30T07:13:00.000Z",
+          "retrievedAt": "2026-10-30T14:01:42.091Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-30T14:03:45.737Z",
+      "changedAt": "2026-10-30T14:03:45.737Z",
+      "sourceRunId": "0ccfc840-2fe2-4c06-8424-fdbd54206c33",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [],
+      "keyPoints": [],
+      "takeaway": "Nothing to book yet: these are signed plans, not open hotels. If you are planning North India travel on points, check Hyatt's booking channels closer to your dates to see whether any of the four properties have opened."
+    },
+    {
+      "storyId": "news_cce0acbf21478215ea8d7c78",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 100,
+      "title": "Waldorf Astoria Kuala Lumpur opens as an all-suite hotel in the Golden Triangle",
+      "summary": "Hilton has opened Waldorf Astoria Kuala Lumpur, the brand's first property in Malaysia. The all-suite hotel in the city's Golden Triangle has 268 suites from 80 to 745 square metres, dining by chefs Garima Arora and Jean-Georges Vongerichten, and an art collection curated with the Islamic Arts Museum Malaysia.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-10-30T02:00:37.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Hilton",
+          "url": "https://stories.hilton.com/releases/waldorf-astoria-kuala-lumpur-debuts-as-a-new-expression-of-timeless-luxury-in-malaysia",
+          "sourceType": "official",
+          "publishedAt": "2026-10-30T02:00:37.000Z",
+          "retrievedAt": "2026-10-30T14:01:42.091Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-30T14:03:45.818Z",
+      "changedAt": "2026-10-30T14:03:45.818Z",
+      "sourceRunId": "0ccfc840-2fe2-4c06-8424-fdbd54206c33",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Waldorf Astoria Kuala Lumpur has opened in the Golden Triangle district of Malaysia's capital, marking the brand's debut in the country. All 268 rooms are suites, starting at 80 square metres for a one-bedroom and reaching 745 square metres for the Waldorf Astoria Suite, with floor-to-ceiling views of the city skyline. Interiors by Deboss Collective use natural stone, timber and woven textiles, with joinery details drawn from traditional Malay marquetry.",
+        "The property's dining includes The Istana for breakfast, Yaari for Indian cooking shaped by chef Garima Arora, and a restaurant from Jean-Georges Vongerichten. The hotel's signature clock, a bronze and illuminated-glass piece inspired by Islamic astrolabes, sits at the entrance to Peacock Alley, the brand's lobby lounge. Artworks across the property were curated with the Islamic Arts Museum Malaysia, including a 19th-century Qajar painting in the Grand Lobby."
+      ],
+      "keyPoints": [
+        "268 all-suite rooms, ranging from 80-square-metre one-bedroom suites to the 745-square-metre Waldorf Astoria Suite",
+        "Dining led by chefs Garima Arora and Jean-Georges Vongerichten, plus breakfast at The Istana",
+        "Art collection curated with the Islamic Arts Museum Malaysia; clock and Peacock Alley lounge follow Waldorf Astoria traditions"
+      ],
+      "takeaway": "Travellers planning a Kuala Lumpur stay should note that the entry-level room here is a one-bedroom suite of roughly 80 square metres rather than a standard hotel room, which suits longer or multigenerational trips."
+    },
+    {
+      "storyId": "news_4f0470549af7c1ca785a8959",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 100,
+      "title": "Delta debuts Spanish-language travel series “48 Horas con Delta en…” with Iván de Pineda",
+      "summary": "Delta has released 48 Horas con Delta en…, a Spanish-language content series hosted by Argentine television presenter Iván de Pineda. Across eight U.S. cities — Atlanta, Boston, Miami, New York, San Francisco, Seattle, Dallas and Kansas City — episodes focus on what a traveler can see when a work trip leaves a free afternoon or an extra day. The series is travel programming, not a fare, loyalty benefit or booking offer.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-10-29T16:28:55.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Delta",
+          "url": "https://news.delta.com/new-way-experience-us-delta-presents-48-horas-con-delta-en-series-ivan-de-pineda",
+          "sourceType": "official",
+          "publishedAt": "2026-10-29T16:28:55.000Z",
+          "retrievedAt": "2026-10-30T14:01:42.092Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-30T14:03:45.850Z",
+      "changedAt": "2026-10-30T14:03:45.850Z",
+      "sourceRunId": "0ccfc840-2fe2-4c06-8424-fdbd54206c33",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Each of the eight episodes follows the same premise: a business trip that leaves room to explore, whether an extra day before flying home or a free afternoon between meetings. Rather than a standard list of attractions, the episodes are built around the neighborhoods, history and local culture that give each city its character.",
+        "City segments include Atlanta's civil rights legacy and local neighborhoods, Boston's public spaces and academic institutions, and Miami's communities and cultural influences. New York coverage highlights the West Village, the High Line and the Hudson waterfront; San Francisco covers cable car history, the waterfront and the hills; Seattle features Pike Place Market, Capitol Hill and maritime heritage. Dallas and Kansas City episodes center on local food and traditions."
+      ],
+      "keyPoints": [
+        "Eight-episode Spanish-language series hosted by Argentine TV presenter Iván de Pineda.",
+        "Destinations covered: Atlanta, Boston, Miami, New York, San Francisco, Seattle, Dallas and Kansas City.",
+        "Format targets short business-trip stays rather than a traditional sightseeing checklist."
+      ]
+    }
+  ],
+  "contentDigest": "6e14b0457df95b046916871847592a5b5b2def4047d0ac7241db616039f77b0a"
+}
