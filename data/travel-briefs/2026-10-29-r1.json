@@ -1,0 +1,575 @@
+{
+  "schemaVersion": 1,
+  "editionId": "2026-10-29",
+  "revision": 1,
+  "status": "ready_with_limited_coverage",
+  "policyVersion": "travel-impact-v1",
+  "sourceRunIds": [
+    "64366d51-33a6-40f4-9696-6eed8520f9ba"
+  ],
+  "cutoffAt": "2026-10-29T14:05:23.187Z",
+  "generatedAt": "2026-10-29T14:05:23.187Z",
+  "coverageStatus": "limited",
+  "coverage": [
+    {
+      "sourceId": "breville",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "apple",
+      "category": "deals",
+      "candidateCount": 100,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amazon-devices",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "disabled"
+    },
+    {
+      "sourceId": "fellow",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "moccamaster",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "delonghi",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "dell",
+      "category": "deals",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "marriott",
+      "category": "hotels",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hyatt",
+      "category": "hotels",
+      "candidateCount": 3,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "hilton",
+      "category": "hotels",
+      "candidateCount": 25,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "ihg",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "aman",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "wyndham",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-and-only",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amex",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "chase",
+      "category": "cards",
+      "candidateCount": 12,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "citi",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "discover",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "capital-one",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "delta",
+      "category": "airlines",
+      "candidateCount": 18,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "united",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "american",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "alaska",
+      "category": "airlines",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "southwest",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "air-canada",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "british-airways",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "hotels",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "airlines",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "cards",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "destinations",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "hotels",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "airlines",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "cards",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "destinations",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "cards",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "destinations",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "hotels",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "airlines",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "cards",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "destinations",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "hotels",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "airlines",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "cards",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "destinations",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "slickdeals",
+      "category": "deals",
+      "candidateCount": 9,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "redflagdeals",
+      "category": "deals",
+      "candidateCount": 15,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "airbnb",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nps",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "attempted"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "offer_48996d90143b95e548f3cf87",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 100,
+      "title": "Hilton and Amex launch Canada's first Hilton Honors card with complimentary Gold status",
+      "summary": "American Express Canada and Hilton have introduced the Hilton Honors American Express Card, the first Hilton co-branded credit card in Canada. It carries a $150 annual fee with no-cost supplementary cards, grants complimentary Hilton Honors Gold status, and earns up to 6X Hilton Honors Points on eligible Hilton purchases. Cardholders can also earn 50,000 bonus points for spending $12,000 in a calendar year and a Diamond status upgrade at $40,000 annual spend.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-10-29T13:22:06.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Hilton",
+          "url": "https://stories.hilton.com/releases/american-express-and-hilton-launch-canadas-first-hilton-honors-credit-card",
+          "sourceType": "official",
+          "publishedAt": "2026-10-29T13:22:06.000Z",
+          "retrievedAt": "2026-10-29T14:02:09.699Z"
+        }
+      ],
+      "terms": {
+        "issuer": "American Express Canada",
+        "program": "Hilton Honors",
+        "merchant": null,
+        "rewardType": "points",
+        "minSpend": 12000,
+        "creditAmount": null,
+        "rewardPoints": 50000,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-29T14:05:22.970Z",
+      "changedAt": "2026-10-29T14:05:22.970Z",
+      "sourceRunId": "64366d51-33a6-40f4-9696-6eed8520f9ba",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The card earns 6X Hilton Honors Points on eligible purchases at Hilton properties, 4X on eligible gas, grocery and dining purchases in Canada, and 2X on all other eligible purchases. Complimentary Hilton Honors Gold status brings benefits on eligible stays such as bonus points, a daily food and beverage credit or continental breakfast depending on brand and region, space-available room upgrades, digital check-in and Wi-Fi. Spending $12,000 in a calendar year adds 50,000 bonus Hilton Honors Points, and $40,000 in a calendar year triggers an upgrade to Diamond status with executive lounge access and a 48-hour room guarantee.",
+        "Points stays booked entirely with Hilton Honors Points carry no blackout dates and no resort fees, and the fifth night is free on eligible all-points reward stays. The card also includes American Express benefits such as Front Of The Line presale access, travel insurance coverage and 24/7 Global Assist. Applications are open through American Express Canada."
+      ],
+      "keyPoints": [
+        "$150 annual fee; supplementary cards at no additional cost",
+        "6X Hilton Honors Points at Hilton properties, 4X on eligible gas, grocery and dining in Canada, 2X on everything else",
+        "50,000 bonus points at $12,000 calendar-year spend; Diamond status upgrade at $40,000 calendar-year spend"
+      ],
+      "takeaway": "If you are considering applying, map the two spend thresholds to a calendar year rather than your card anniversary: $12,000 unlocks the 50,000 bonus points and $40,000 unlocks Diamond status. Weigh the $150 annual fee against how often you would use Gold status perks like breakfast or food and beverage credits."
+    },
+    {
+      "storyId": "benefit_change_0afccde15b961862467535ce",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 100,
+      "title": "Expedia Group adds AI tools and One Key lounge, price-drop benefits",
+      "summary": "The Points Guy reports Expedia Group announced 30 new or enhanced features across Expedia, Hotels.com and Vrbo, including AI-powered search and planning tools. One Key Gold and Platinum members can get LoungeKey access for themselves and up to nine travelers when an eligible Expedia-booked flight is delayed 90 minutes or more; qualifying bookings run through Dec. 31, 2027. Those tiers also get Price Drop Protection on eligible flights.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-28T21:15:09.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "The Points Guy",
+          "url": "https://thepointsguy.com/news/expedia-ai-tools-new-features",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-28T21:15:09.000Z",
+          "retrievedAt": "2026-10-29T14:02:09.708Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": "2027-12-31T23:59:59.000Z",
+      "firstSeenAt": "2026-10-29T14:05:23.106Z",
+      "changedAt": "2026-10-29T14:05:23.106Z",
+      "sourceRunId": "64366d51-33a6-40f4-9696-6eed8520f9ba",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The Points Guy reports the rollout spans several brands. Hotels.com has an AI comparison feature for plain-language hotel comparisons and follow-up questions, while Vrbo offers natural-language search. Vrbo is also preparing Reserve Now, Pay Later for eligible homes with no upfront cost, though a card must be on file. Expedia is adding flexible packages that let travelers fly into one city and stay in another, an Activity Planner, multiroom booking tools, family-friendly maps, an AI Property Expert and a refreshed homepage.",
+        "For One Key, The Points Guy reports Gold and Platinum members can use the LoungeKey Network when an eligible flight booked through Expedia is delayed at least 90 minutes, covering the member and up to nine travelers; the booking window runs through Dec. 31, 2027. Members may instead choose One Key Cash. Those tiers also receive free One Key Price Drop Protection: if the price falls before departure on a flight that showed Price Drop Protection at booking, Expedia automatically provides the difference in One KeyCash. All One Key members get a CLEAR+ discount that varies by status."
+      ],
+      "keyPoints": [
+        "Expedia Group announced 30 new or enhanced features across Expedia, Hotels.com and Vrbo, including AI search, itinerary planning and flexible booking tools.",
+        "One Key Gold and Platinum members can get LoungeKey access for eligible flights delayed 90+ minutes, for the member and up to nine travelers, on bookings made through Dec. 31, 2027.",
+        "Vrbo's planned Reserve Now, Pay Later will let guests book eligible homes with no upfront cost, but a card must be on file."
+      ],
+      "takeaway": "One Key Gold or Platinum travelers should book eligible flights directly through Expedia and check for the Price Drop Protection label before paying; lounge access applies only to qualifying flights delayed 90 minutes or more and booked by Dec. 31, 2027."
+    },
+    {
+      "storyId": "benefit_change_9909e3e296cd4745746a3383",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 100,
+      "title": "Frequent Miler: Citi AAdvantage Platinum Select and Business Mastercard fees rising to $150 with new benefits",
+      "summary": "Frequent Miler reports that the Citi AAdvantage Platinum Select and Citi AAdvantage Business Mastercard will raise annual fees from $99 to $150 on Jan. 24, 2027, while adding earning categories and benefits. The personal card adds 3x AAdvantage hotels and cars, 2x gas/EV charging, rides/rails and select streaming, plus up to $100 in yearly in-flight credits, a $150 flight discount after $20K spend, and new travel protections.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-28T19:45:03.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Frequent Miler",
+          "url": "https://frequentmiler.com/citi-american-airlines-platinum-select-business-changes-higher-fees-more-benefits/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-28T19:45:03.000Z",
+          "retrievedAt": "2026-10-29T14:02:09.709Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-29T14:05:23.122Z",
+      "changedAt": "2026-10-29T14:05:23.122Z",
+      "sourceRunId": "64366d51-33a6-40f4-9696-6eed8520f9ba",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "According to Frequent Miler, the personal Citi AAdvantage Platinum Select keeps 2x earning on American Airlines purchases and restaurants. From Jan. 24, 2027, it adds 3x on hotel stays and car rentals booked through aadvantagehotels.com and aadvantagecars.com, plus 2x on gas/EV charging, taxis, rideshares, public transport, and select streaming. The reported benefits include up to $120 for Global Entry or TSA PreCheck every four years, a Walmart+ annual plan, 50% off a FOX One annual subscription, and trip delay, cancellation/interruption, car rental and lost baggage protections.",
+        "The business card, reported as the Citi AAdvantage Business Mastercard, also moves from $99 to $150 on Jan. 24, 2027. Frequent Miler says it keeps 2x on American Airlines purchases, gas stations, car rentals and phone/cable/satellite providers, and adds a 2x self-select category for office supply stores, U.S. shipping providers or U.S. advertising services. New benefits include 25% off a Melio subscription and enhanced trip cancellation/interruption, lost or damaged luggage, car rental and trip delay coverage."
+      ],
+      "keyPoints": [
+        "Personal card: annual fee rises from $99 to $150 on Jan. 24, 2027; existing 2x American Airlines and restaurant earning remains.",
+        "Personal card adds $100 yearly in-flight credits, up to $120 Global Entry/TSA PreCheck every four years, and raises the $20K-spend flight discount to $150.",
+        "Business card: same $99 to $150 fee increase; adds a 2x self-select category and 25% Melio subscription discount, plus travel protections."
+      ],
+      "takeaway": "If you hold either card, compare the reported $51 annual-fee increase with the benefits you would actually use before the Jan. 24, 2027 effective date. Frequent Miler notes many cardholders may already have Global Entry/TSA credits and travel protections elsewhere."
+    },
+    {
+      "storyId": "news_f1239e840f9b61811576cc58",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 100,
+      "title": "Hyatt reports record Canada growth, says open-hotel portfolio quadrupled in under a decade",
+      "summary": "Hyatt announced on Oct. 28, 2026, that its open-hotel portfolio in Canada has quadrupled in under a decade, calling the market a source of record growth momentum. The company also announced new hotels across its brand portfolio in Canada.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-10-28T16:46:00.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Hyatt",
+          "url": "https://newsroom.hyatt.com/news-releases?item=124843",
+          "sourceType": "official",
+          "publishedAt": "2026-10-28T16:46:00.000Z",
+          "retrievedAt": "2026-10-29T14:02:09.699Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-29T14:05:23.045Z",
+      "changedAt": "2026-10-29T14:05:23.045Z",
+      "sourceRunId": "64366d51-33a6-40f4-9696-6eed8520f9ba",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [],
+      "keyPoints": [
+        "Hyatt says its Canadian open-hotel portfolio has quadrupled in less than a decade.",
+        "Hyatt announced new hotels across its brand portfolio in Canada."
+      ]
+    },
+    {
+      "storyId": "news_fc7ea0612306be33639a0bef",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 100,
+      "title": "Aeroitalia selects Delta TechOps for Boeing 737 component support",
+      "summary": "Delta TechOps will provide component support for Aeroitalia's Boeing 737 fleet under an agreement announced Oct. 28 at MRO Europe in Amsterdam. The Italian carrier gains access to Delta's component maintenance expertise and materials resources, including a component-sharing arrangement and a dedicated spare parts kit at its main base, aimed at shortening parts procurement and cutting aircraft downtime.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-10-28T13:51:49.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Delta",
+          "url": "https://news.delta.com/aeroitalia-selects-delta-techops-737-fleet-component-support-program",
+          "sourceType": "official",
+          "publishedAt": "2026-10-28T13:51:49.000Z",
+          "retrievedAt": "2026-10-29T14:02:09.707Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-29T14:05:23.047Z",
+      "changedAt": "2026-10-29T14:05:23.047Z",
+      "sourceRunId": "64366d51-33a6-40f4-9696-6eed8520f9ba",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The agreement extends a relationship that moved into connectivity in 2025, when Aeroitalia announced links between its Italian domestic network and Delta's global network; the new pact carries the partnership into maintenance and technical operations. Aeroitalia says combining the component-sharing system with an on-base spare parts kit should reduce procurement times for replacement parts, limit aircraft downtime and improve availability across its 737 NG fleet.",
+        "Delta TechOps, which Delta describes as North America's largest MRO provider, says it recently reported $1 billion in year-to-date MRO revenue and supports more than 150 customers across six continents, servicing over 100,000 aircraft components annually through 25 in-house component shops. Delta also says it is the only provider in the Americas certified to support the CFM LEAP, Pratt & Whitney GTF and Rolls-Royce Trent engine families."
+      ],
+      "keyPoints": [
+        "Announced Oct. 28 at MRO Europe in Amsterdam; scope covers component support for Aeroitalia's Boeing 737 fleet.",
+        "Arrangement pairs a component-sharing system with a dedicated spare parts kit at Aeroitalia's main base.",
+        "Delta TechOps says it serves more than 150 customers across six continents."
+      ]
+    },
+    {
+      "storyId": "offer_dc40673a63e0c760881bac75",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 75,
+      "title": "Slickdeals reports $613 round-trip SFO–Tahiti fares on Delta and Air France",
+      "summary": "Slickdeals reports round-trip fares from San Francisco (SFO) to Tahiti (PPT) at $613 on Delta Air Lines and Air France. The listed travel window is December 2026 through June 2027, and bookings are directed to Expedia. The fare is reported by the publisher and has not been officially confirmed.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-28T15:55:01.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Slickdeals",
+          "url": "https://slickdeals.net/f/20217774-round-trip-san-francisco-to-tahiti-613-airfares-on-delta-air-france-be-limited-travel-december-2026-june-2027",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-28T15:55:01.000Z",
+          "retrievedAt": "2026-10-29T14:02:09.728Z"
+        }
+      ],
+      "terms": {
+        "issuer": null,
+        "program": null,
+        "merchant": "Delta Air Lines / Air France",
+        "rewardType": "discount",
+        "minSpend": null,
+        "creditAmount": null,
+        "rewardPoints": null,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-29T14:05:23.105Z",
+      "changedAt": "2026-10-29T14:05:23.105Z",
+      "sourceRunId": "64366d51-33a6-40f4-9696-6eed8520f9ba",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [],
+      "keyPoints": [
+        "Reported fare: $613 round trip between SFO and PPT.",
+        "Airlines named: Delta Air Lines and Air France.",
+        "Travel window: December 2026 to June 2027; booking via Expedia."
+      ],
+      "takeaway": "Check the $613 itinerary on Expedia for your dates, then review the airline's baggage, change and cancellation rules before buying."
+    }
+  ],
+  "contentDigest": "92896ae5d8bd505b772ce290ada37c45a779d8afad7964d932328e4ce1c7bb1c"
+}

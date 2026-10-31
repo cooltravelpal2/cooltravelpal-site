@@ -26,7 +26,7 @@ class DailyExerciseTests(unittest.TestCase):
     def test_wrong_date_and_external_urls_are_rejected(self):
         data=fixture()
         daily.validate(data, date(2026,10,3))
-        with self.assertRaises(ValueError): daily.validate(data,date(2026,10,4))
+        with self.assertRaises(daily.NotPublishedYet): daily.validate(data,date(2026,10,4))
         for field in ['url','posterUrl','videoUrl']:
             with self.assertRaises(ValueError):
                 daily.validate({**data,field:'https://example.com/injected'},date(2026,10,3))

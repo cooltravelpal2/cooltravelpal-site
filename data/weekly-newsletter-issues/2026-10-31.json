@@ -1,0 +1,203 @@
+{
+  "weekEnding": "2026-10-31",
+  "windowStart": "2026-10-25",
+  "editions": [
+    {
+      "editionId": "2026-10-31",
+      "revision": 1,
+      "url": "https://travelpal.now/blog/travel-brief-2026-10-31/"
+    },
+    {
+      "editionId": "2026-10-30",
+      "revision": 1,
+      "url": "https://travelpal.now/blog/travel-brief-2026-10-30/"
+    },
+    {
+      "editionId": "2026-10-29",
+      "revision": 1,
+      "url": "https://travelpal.now/blog/travel-brief-2026-10-29/"
+    },
+    {
+      "editionId": "2026-10-28",
+      "revision": 2,
+      "url": "https://travelpal.now/blog/travel-brief-2026-10-28/"
+    },
+    {
+      "editionId": "2026-10-27",
+      "revision": 1,
+      "url": "https://travelpal.now/blog/travel-brief-2026-10-27/"
+    },
+    {
+      "editionId": "2026-10-26",
+      "revision": 1,
+      "url": "https://travelpal.now/blog/travel-brief-2026-10-26/"
+    },
+    {
+      "editionId": "2026-10-25",
+      "revision": 1,
+      "url": "https://travelpal.now/blog/travel-brief-2026-10-25/"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "benefit_change_f8ef29c491cb8703425d6c4e",
+      "storyRevision": 2,
+      "section": "hotels",
+      "rank": 100,
+      "title": "Bilt legacy rewards close to new cardholders after 2026; hotel transfers worsen in 2027",
+      "summary": "Bilt is changing its rewards in 2027, The Points Guy reports. Applications approved and accepted by Dec. 31, 2026 can keep legacy benefits, including 4% Bilt Cash and hotel credits. Existing cardholders as of that date are grandfathered. Starting Jan. 1, 2027, transfer ratios to a major hotel loyalty program will worsen for all members, with no grandfathering.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-28T11:45:16.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "The Points Guy",
+          "url": "https://thepointsguy.com/credit-cards/get-bilt-card-2026",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-28T11:45:16.000Z",
+          "retrievedAt": "2026-10-29T14:02:09.708Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": "2027-01-01T00:00:00.000Z",
+      "firstSeenAt": "2026-10-28T14:05:12.147Z",
+      "changedAt": "2026-10-29T14:05:23.124Z",
+      "sourceRunId": "64366d51-33a6-40f4-9696-6eed8520f9ba",
+      "changeType": "updated",
+      "active": true,
+      "paragraphs": [
+        "The reported change splits Bilt members into two groups: those who are cardholders by the end of 2026 and those who are not. The former keep the current 4% Bilt Cash rate and hotel credits; the latter face the streamlined structure starting in 2027. A point accelerator can raise earning when cash rewards are redeemed, but maximizing it requires accumulating a set amount of Bilt Cash each year, which TPG says will be harder after the change.",
+        "Bilt points are valued at 2.2 cents each as of October 2026 under TPG's valuations. The separate hotel transfer change applies to all members from Jan. 1, 2027, so even grandfathered cardholders do not avoid that cut. To preserve the card's legacy benefits, the application must be approved and accepted before the new year."
+      ],
+      "keyPoints": [
+        "Apply and be approved by Dec. 31, 2026 to keep 4% Bilt Cash and hotel credits, per TPG.",
+        "Existing cardholders as of that date retain legacy benefits.",
+        "Hotel loyalty transfer ratios worsen for all members on Jan. 1, 2027."
+      ],
+      "takeaway": "If the legacy terms matter to you, submit a Bilt card application early enough for approval and acceptance by Dec. 31, 2026; the hotel transfer change still applies from Jan. 1, 2027.",
+      "briefUrl": "https://travelpal.now/blog/travel-brief-2026-10-28/#story-134cd99e4aeddad9"
+    },
+    {
+      "storyId": "news_4f0470549af7c1ca785a8959",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 100,
+      "title": "Delta debuts Spanish-language travel series “48 Horas con Delta en…” with Iván de Pineda",
+      "summary": "Delta has released 48 Horas con Delta en…, a Spanish-language content series hosted by Argentine television presenter Iván de Pineda. Across eight U.S. cities — Atlanta, Boston, Miami, New York, San Francisco, Seattle, Dallas and Kansas City — episodes focus on what a traveler can see when a work trip leaves a free afternoon or an extra day. The series is travel programming, not a fare, loyalty benefit or booking offer.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-10-29T16:28:55.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Delta",
+          "url": "https://news.delta.com/new-way-experience-us-delta-presents-48-horas-con-delta-en-series-ivan-de-pineda",
+          "sourceType": "official",
+          "publishedAt": "2026-10-29T16:28:55.000Z",
+          "retrievedAt": "2026-10-30T14:01:42.092Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-30T14:03:45.850Z",
+      "changedAt": "2026-10-30T14:03:45.850Z",
+      "sourceRunId": "0ccfc840-2fe2-4c06-8424-fdbd54206c33",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Each of the eight episodes follows the same premise: a business trip that leaves room to explore, whether an extra day before flying home or a free afternoon between meetings. Rather than a standard list of attractions, the episodes are built around the neighborhoods, history and local culture that give each city its character.",
+        "City segments include Atlanta's civil rights legacy and local neighborhoods, Boston's public spaces and academic institutions, and Miami's communities and cultural influences. New York coverage highlights the West Village, the High Line and the Hudson waterfront; San Francisco covers cable car history, the waterfront and the hills; Seattle features Pike Place Market, Capitol Hill and maritime heritage. Dallas and Kansas City episodes center on local food and traditions."
+      ],
+      "keyPoints": [
+        "Eight-episode Spanish-language series hosted by Argentine TV presenter Iván de Pineda.",
+        "Destinations covered: Atlanta, Boston, Miami, New York, San Francisco, Seattle, Dallas and Kansas City.",
+        "Format targets short business-trip stays rather than a traditional sightseeing checklist."
+      ],
+      "briefUrl": "https://travelpal.now/blog/travel-brief-2026-10-30/#story-e836724a18e0e981"
+    },
+    {
+      "storyId": "benefit_change_0afccde15b961862467535ce",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 100,
+      "title": "Expedia Group adds AI tools and One Key lounge, price-drop benefits",
+      "summary": "The Points Guy reports Expedia Group announced 30 new or enhanced features across Expedia, Hotels.com and Vrbo, including AI-powered search and planning tools. One Key Gold and Platinum members can get LoungeKey access for themselves and up to nine travelers when an eligible Expedia-booked flight is delayed 90 minutes or more; qualifying bookings run through Dec. 31, 2027. Those tiers also get Price Drop Protection on eligible flights.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-28T21:15:09.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "The Points Guy",
+          "url": "https://thepointsguy.com/news/expedia-ai-tools-new-features",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-28T21:15:09.000Z",
+          "retrievedAt": "2026-10-29T14:02:09.708Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": "2027-12-31T23:59:59.000Z",
+      "firstSeenAt": "2026-10-29T14:05:23.106Z",
+      "changedAt": "2026-10-29T14:05:23.106Z",
+      "sourceRunId": "64366d51-33a6-40f4-9696-6eed8520f9ba",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The Points Guy reports the rollout spans several brands. Hotels.com has an AI comparison feature for plain-language hotel comparisons and follow-up questions, while Vrbo offers natural-language search. Vrbo is also preparing Reserve Now, Pay Later for eligible homes with no upfront cost, though a card must be on file. Expedia is adding flexible packages that let travelers fly into one city and stay in another, an Activity Planner, multiroom booking tools, family-friendly maps, an AI Property Expert and a refreshed homepage.",
+        "For One Key, The Points Guy reports Gold and Platinum members can use the LoungeKey Network when an eligible flight booked through Expedia is delayed at least 90 minutes, covering the member and up to nine travelers; the booking window runs through Dec. 31, 2027. Members may instead choose One Key Cash. Those tiers also receive free One Key Price Drop Protection: if the price falls before departure on a flight that showed Price Drop Protection at booking, Expedia automatically provides the difference in One KeyCash. All One Key members get a CLEAR+ discount that varies by status."
+      ],
+      "keyPoints": [
+        "Expedia Group announced 30 new or enhanced features across Expedia, Hotels.com and Vrbo, including AI search, itinerary planning and flexible booking tools.",
+        "One Key Gold and Platinum members can get LoungeKey access for eligible flights delayed 90+ minutes, for the member and up to nine travelers, on bookings made through Dec. 31, 2027.",
+        "Vrbo's planned Reserve Now, Pay Later will let guests book eligible homes with no upfront cost, but a card must be on file."
+      ],
+      "takeaway": "One Key Gold or Platinum travelers should book eligible flights directly through Expedia and check for the Price Drop Protection label before paying; lounge access applies only to qualifying flights delayed 90 minutes or more and booked by Dec. 31, 2027.",
+      "briefUrl": "https://travelpal.now/blog/travel-brief-2026-10-29/#story-856a1d2c73017732"
+    },
+    {
+      "storyId": "benefit_change_9909e3e296cd4745746a3383",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 100,
+      "title": "Frequent Miler: Citi AAdvantage Platinum Select and Business Mastercard fees rising to $150 with new benefits",
+      "summary": "Frequent Miler reports that the Citi AAdvantage Platinum Select and Citi AAdvantage Business Mastercard will raise annual fees from $99 to $150 on Jan. 24, 2027, while adding earning categories and benefits. The personal card adds 3x AAdvantage hotels and cars, 2x gas/EV charging, rides/rails and select streaming, plus up to $100 in yearly in-flight credits, a $150 flight discount after $20K spend, and new travel protections.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-28T19:45:03.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Frequent Miler",
+          "url": "https://frequentmiler.com/citi-american-airlines-platinum-select-business-changes-higher-fees-more-benefits/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-28T19:45:03.000Z",
+          "retrievedAt": "2026-10-29T14:02:09.709Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-29T14:05:23.122Z",
+      "changedAt": "2026-10-29T14:05:23.122Z",
+      "sourceRunId": "64366d51-33a6-40f4-9696-6eed8520f9ba",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "According to Frequent Miler, the personal Citi AAdvantage Platinum Select keeps 2x earning on American Airlines purchases and restaurants. From Jan. 24, 2027, it adds 3x on hotel stays and car rentals booked through aadvantagehotels.com and aadvantagecars.com, plus 2x on gas/EV charging, taxis, rideshares, public transport, and select streaming. The reported benefits include up to $120 for Global Entry or TSA PreCheck every four years, a Walmart+ annual plan, 50% off a FOX One annual subscription, and trip delay, cancellation/interruption, car rental and lost baggage protections.",
+        "The business card, reported as the Citi AAdvantage Business Mastercard, also moves from $99 to $150 on Jan. 24, 2027. Frequent Miler says it keeps 2x on American Airlines purchases, gas stations, car rentals and phone/cable/satellite providers, and adds a 2x self-select category for office supply stores, U.S. shipping providers or U.S. advertising services. New benefits include 25% off a Melio subscription and enhanced trip cancellation/interruption, lost or damaged luggage, car rental and trip delay coverage."
+      ],
+      "keyPoints": [
+        "Personal card: annual fee rises from $99 to $150 on Jan. 24, 2027; existing 2x American Airlines and restaurant earning remains.",
+        "Personal card adds $100 yearly in-flight credits, up to $120 Global Entry/TSA PreCheck every four years, and raises the $20K-spend flight discount to $150.",
+        "Business card: same $99 to $150 fee increase; adds a 2x self-select category and 25% Melio subscription discount, plus travel protections."
+      ],
+      "takeaway": "If you hold either card, compare the reported $51 annual-fee increase with the benefits you would actually use before the Jan. 24, 2027 effective date. Frequent Miler notes many cardholders may already have Global Entry/TSA credits and travel protections elsewhere.",
+      "briefUrl": "https://travelpal.now/blog/travel-brief-2026-10-29/#story-9675e0c86fbd2643"
+    }
+  ],
+  "highlightStoryIds": [
+    "benefit_change_f8ef29c491cb8703425d6c4e",
+    "news_4f0470549af7c1ca785a8959",
+    "benefit_change_0afccde15b961862467535ce",
+    "benefit_change_9909e3e296cd4745746a3383"
+  ],
+  "contentSha256": "caddd766d4c97c9f6a27b9c5f804d4d60f649432728b8b9d81eba06774421fa1",
+  "sendEligible": true,
+  "newsletterFormat": "illustrated-highlights-v1"
+}

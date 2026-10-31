@@ -12,6 +12,10 @@ LESSON_URL = DONGDONG + '/blog/todays-home-exercise/'
 TRAVELPAL = 'https://travelpal.now'
 
 
+class NotPublishedYet(ValueError):
+    """DongDong is still serving an earlier day's lesson."""
+
+
 def read_url(url):
     request = urllib.request.Request(url, headers={'User-Agent': 'TravelPal-Daily-Exercise/1.0', 'Cache-Control': 'no-cache'})
     with urllib.request.urlopen(request, timeout=30) as response:
@@ -23,8 +27,10 @@ def read_url(url):
 
 
 def validate(data, day):
-    if data.get('schemaVersion') not in {1, 2} or data.get('date') != day.isoformat():
-        raise ValueError('Daily exercise is not current for the requested Pacific date')
+    if data.get('schemaVersion') not in {1, 2}:
+        raise ValueError('Unsupported daily exercise schema')
+    if data.get('date') != day.isoformat():
+        raise NotPublishedYet('Daily exercise is not current for the requested Pacific date')
     if data.get('timezone') != 'America/Los_Angeles' or data.get('url') != LESSON_URL:
         raise ValueError('Unexpected daily lesson URL or timezone')
     if not re.fullmatch(r'[A-Za-z][A-Za-z0-9]{0,60}', data.get('exerciseId', '')):
