@@ -1,0 +1,524 @@
+{
+  "schemaVersion": 1,
+  "editionId": "2026-10-16",
+  "revision": 3,
+  "status": "ready_with_limited_coverage",
+  "policyVersion": "travel-impact-v1",
+  "sourceRunIds": [
+    "3e1df22b-1715-4d61-aed9-b6865fa92d22"
+  ],
+  "cutoffAt": "2026-10-16T14:04:19.458Z",
+  "generatedAt": "2026-10-16T14:04:19.458Z",
+  "coverageStatus": "limited",
+  "coverage": [
+    {
+      "sourceId": "breville",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "apple",
+      "category": "deals",
+      "candidateCount": 87,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amazon-devices",
+      "category": "deals",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "fellow",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "moccamaster",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "delonghi",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "dell",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "marriott",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hyatt",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hilton",
+      "category": "hotels",
+      "candidateCount": 27,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "ihg",
+      "category": "hotels",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "aman",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "wyndham",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-and-only",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amex",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "chase",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "citi",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "discover",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "capital-one",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "delta",
+      "category": "airlines",
+      "candidateCount": 14,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "united",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "american",
+      "category": "airlines",
+      "candidateCount": 1,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "alaska",
+      "category": "airlines",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "southwest",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "air-canada",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "british-airways",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "hotels",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "airlines",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "cards",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "destinations",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "hotels",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "airlines",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "cards",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "destinations",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "hotels",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "airlines",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "cards",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "destinations",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "hotels",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "airlines",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "cards",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "destinations",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "hotels",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "airlines",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "cards",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "destinations",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "slickdeals",
+      "category": "deals",
+      "candidateCount": 9,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "redflagdeals",
+      "category": "deals",
+      "candidateCount": 13,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "airbnb",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nps",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "attempted"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "offer_5f4a0c56272f041dc88d8b11",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 100,
+      "title": "Rove adds JetBlue TrueBlue as a transfer partner, with a 20% first-month transfer bonus (reported)",
+      "summary": "Frequent Miler reports that Rove has added JetBlue TrueBlue as a transfer partner. Transfers are ordinarily 1:1, but the program is offering a 20% bonus during the first month, through November 14, 2026, so 1,000 Rove miles converts to 1,200 TrueBlue points. Rove now lists 22 transfer partners, including a second US airline partner after Frontier. Details come from the publisher and are not officially confirmed.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-15T16:48:06.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Frequent Miler",
+          "url": "https://frequentmiler.com/rove-adds-jetblue-as-its-newest-transfer-partner/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-15T16:48:06.000Z",
+          "retrievedAt": "2026-10-16T14:01:42.324Z"
+        }
+      ],
+      "terms": {
+        "issuer": null,
+        "program": "Rove",
+        "merchant": null,
+        "rewardType": "points",
+        "minSpend": null,
+        "creditAmount": null,
+        "rewardPoints": null,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": "2026-11-14T23:59:59.000Z",
+      "firstSeenAt": "2026-10-16T14:04:19.445Z",
+      "changedAt": "2026-10-16T14:04:19.445Z",
+      "sourceRunId": "3e1df22b-1715-4d61-aed9-b6865fa92d22",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Frequent Miler reports that Rove has added JetBlue TrueBlue as a transfer partner. Transfers are normally 1:1, but the program is offering a 20% bonus in the first month, running through November 14, 2026, so 1,000 Rove miles becomes 1,200 TrueBlue points. The addition gives Rove a second US airline partner alongside Frontier and brings its published partner list to 22 programs. The terms come from the publisher's report and have not been independently confirmed.",
+        "According to Frequent Miler, TrueBlue points are redeemed toward JetBlue-operated airfare, and the publisher estimates they are worth around 1.3 cents each. JetBlue already partners with Amex, Capital One, Chase, Citi and Wells Fargo; the publisher notes Amex and Capital One transfer at less than 1:1, and Citi requires an annual-fee card for a 1:1 ratio, which the publisher calls the first better-than-1:1 path to TrueBlue since 2024."
+      ],
+      "keyPoints": [
+        "1,000 Rove miles transfers to 1,200 JetBlue TrueBlue points during the 20% first-month bonus, per Frequent Miler.",
+        "The bonus is reported to run through November 14, 2026; the standard transfer ratio is 1:1.",
+        "Rove's partner list is now reported at 22 programs, with JetBlue its second US airline partner after Frontier."
+      ],
+      "takeaway": "If you hold Rove miles and can use TrueBlue points, Frequent Miler reports the 20% bonus runs through November 14, 2026, after which transfers revert to 1:1. Check that the bonus shows in your Rove account before you transfer."
+    },
+    {
+      "storyId": "offer_bdaf747c50b39eeee905c065",
+      "storyRevision": 2,
+      "section": "hotels",
+      "rank": 100,
+      "title": "Aeroplan–Hyatt status match challenge launches with 90-day SQC targets",
+      "summary": "The previously announced Aeroplan and Hyatt status match challenge has launched, per Doctor of Credit. Hyatt members can enter once a year and get 90 days to hit Status Qualifying Credits targets: 8,000 SQC for Aeroplan 25K, 12,000 for 35K, 17,000 for 50K and 25,000 for up to 75K. SQC earns at 4 per $1 on Economy Flex or higher, 2 per $1 on Economy Standard and 1 per $1 on Air Canada Vacations packages. Reported, not officially confirmed.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-15T14:00:45.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Doctor of Credit",
+          "url": "https://www.doctorofcredit.com/aeroplan-status-match-for-hyatt-customers/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-15T14:00:45.000Z",
+          "retrievedAt": "2026-10-16T14:01:42.324Z"
+        }
+      ],
+      "terms": {
+        "issuer": null,
+        "program": "Aeroplan Elite Status Challenge",
+        "merchant": "Air Canada",
+        "rewardType": "other",
+        "minSpend": null,
+        "creditAmount": null,
+        "rewardPoints": 25000,
+        "activationRequired": true,
+        "activateBy": null
+      },
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-16T14:04:19.448Z",
+      "changedAt": "2026-10-17T19:42:45.755Z",
+      "sourceRunId": "3e1df22b-1715-4d61-aed9-b6865fa92d22",
+      "changeType": "withdrawn",
+      "active": false,
+      "paragraphs": [
+        "Doctor of Credit reports that the Aeroplan Elite Status Challenge for Hyatt members is now open after earlier being announced. Participation is limited to once per year per Hyatt member, and the earning window runs 90 days from enrollment.",
+        "The SQC thresholds are tiered: 8,000 SQC reaches Aeroplan 25K, 12,000 reaches 35K, 17,000 reaches 50K, and 25,000 SQC reaches up to 75K Status. How fast SQC accrues depends on fare type and spend, so eligible Air Canada flights and packages are the only way to close the gap within the window."
+      ],
+      "keyPoints": [
+        "Challenge window: 90 days, once per calendar-year cycle per Hyatt member.",
+        "Targets: 8,000 SQC (25K), 12,000 (35K), 17,000 (50K), 25,000 (up to 75K).",
+        "SQC earning: 4 per $1 on Economy Flex or higher, 2 per $1 on Economy Standard, 1 per $1 on Air Canada Vacations packages."
+      ],
+      "takeaway": "Enroll through the Aeroplan and Hyatt accounts before booking, then map the 90-day window against planned travel. Because Economy Flex or higher fares earn 4 SQC per $1 versus 2 on Economy Standard, the same spend goes twice as far toward the target if your itinerary allows a higher fare bucket.",
+      "correction": "This story no longer meets the shared publication policy."
+    },
+    {
+      "storyId": "offer_0b431ad4a13c76c6443a468b",
+      "storyRevision": 2,
+      "section": "airlines",
+      "rank": 75,
+      "title": "United extends 'Switch to Better Wi-Fi' status match for Delta and American elites to Oct. 22",
+      "summary": "United Airlines extended its 'Switch to Better Wi-Fi' status match through Oct. 22; it had been set to end Oct. 15. The match is open to U.S. residents holding elite status on Delta or American, grants the corresponding Premier tier for 90 days, and can be extended into January 2028 by hitting tier spending thresholds. Reported by The Points Guy; not officially confirmed.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-15T21:00:50.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "The Points Guy",
+          "url": "https://thepointsguy.com/news/united-airlines-better-wifi-match-promotion-delta-american/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-15T21:00:50.000Z",
+          "retrievedAt": "2026-10-16T14:01:42.323Z"
+        }
+      ],
+      "terms": {
+        "issuer": null,
+        "program": "MileagePlus",
+        "merchant": "United Airlines",
+        "rewardType": "other",
+        "minSpend": null,
+        "creditAmount": null,
+        "rewardPoints": null,
+        "activationRequired": true,
+        "activateBy": null
+      },
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-16T14:04:19.409Z",
+      "changedAt": "2026-10-17T19:42:45.744Z",
+      "sourceRunId": "3e1df22b-1715-4d61-aed9-b6865fa92d22",
+      "changeType": "withdrawn",
+      "active": false,
+      "paragraphs": [
+        "United's Wi-Fi-themed match maps rival elite tiers to United Premier status: Silver Medallion or AAdvantage Gold to Premier Silver, Gold Medallion or AAdvantage Platinum to Premier Gold, Platinum Medallion or AAdvantage Platinum Pro to Premier Platinum, and Diamond Medallion or AAdvantage Executive Platinum to Premier 1K. Initial status lasts 90 days. To keep it into January 2028, applicants must spend on qualifying United flight purchases: $1,500 for Premier Silver, $3,000 for Premier Gold, $4,500 for Premier Platinum and $7,000 for Premier 1K, according to The Points Guy.",
+        "The Wi-Fi match differs from United's standard status match in two ways the outlet highlights. It requires spending on qualifying flights only, rather than the combination of Premier Qualifying Flights and Premier Qualifying Dollars used by the standard challenge, which for example asks Premier Silver applicants for 5 PQFs plus 1,700 PQDs within roughly 120 days. United is also waiving its usual rule limiting customers to one status match every three years for the Wi-Fi offer, though the window to complete that challenge is shorter. Separate matches exist for the invitation-only Delta 360 and American Concierge Key levels."
+      ],
+      "keyPoints": [
+        "Offer window: extended to Oct. 22, from an original Oct. 15 end date.",
+        "Eligibility: U.S. residents with elite status on Delta or American; United's once-every-three-years match limit is waived.",
+        "Extension thresholds: $1,500 (Premier Silver), $3,000 (Gold), $4,500 (Platinum) and $7,000 (Premier 1K) in qualifying United flight spend."
+      ],
+      "takeaway": "If you hold Delta or American elite status and live in the U.S., request the match through United before Oct. 22 and check which Premier tier your current status maps to. Compare the spending-only extension thresholds against the standard match's PQD and PQF requirements before deciding which route to take.",
+      "correction": "This story no longer meets the shared publication policy."
+    },
+    {
+      "storyId": "news_0b89e9b616cbe0cf5137cf6d",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 75,
+      "title": "Breeze adds 4 cities and 16 routes, with introductory fares from $49 one-way",
+      "summary": "The Points Guy reports Breeze Airways is adding Boston, Buffalo, Latrobe, Pa., and Santo Domingo to its network along with 16 new nonstop routes, many based at Myrtle Beach. Flights begin between February and July. Introductory one-way fares range from $49 to $149 and apply only on select dates.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-14T20:00:20.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "The Points Guy",
+          "url": "https://thepointsguy.com/news/breeze-boston-buffalo-myrtle-beach-new-routes",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-14T20:00:20.000Z",
+          "retrievedAt": "2026-10-16T14:01:42.324Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-16T14:04:19.444Z",
+      "changedAt": "2026-10-16T14:04:19.444Z",
+      "sourceRunId": "3e1df22b-1715-4d61-aed9-b6865fa92d22",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The Points Guy reports Breeze Airways will add four cities: Boston Logan (BOS), Buffalo Niagara (BUF), Arnold Palmer Regional in Latrobe, Pa. (LBE) and Las Américas in Santo Domingo (SDQ). Boston flights start May 4, Buffalo service starts in late June, Latrobe begins in February and Santo Domingo starts in June. Breeze says the additions bring it to 95 cities, and it expects to be the largest carrier at Myrtle Beach International (MYR) by destinations and seats by the end of 2027.",
+        "Most of the 16 new nonstops connect MYR with Albany, Burlington, Columbus, New Haven, Portland (Maine), Portsmouth, Stewart and Syracuse, launching May 26–28. Other direct routes include daily BOS–MYR from May 4; Buffalo to Charleston, MYR and Raleigh–Durham between June 29 and July 2; Latrobe to MYR and Orlando; Santo Domingo to Tampa from June 18; and Raleigh–Durham to Nassau from June 30. Breeze also lists new BreezeThru routes that fly with one stop but no change of aircraft."
+      ],
+      "keyPoints": [
+        "New nonstops launch between Feb. 9 (LBE–MYR) and July 2 (BUF–CHS), with frequencies of one to four days a week or daily on BOS–MYR.",
+        "Introductory one-way fares range from $49 (BUF–RDU) to $149 (SDQ–TPA) and are available only on certain dates.",
+        "The new cities are Boston, Buffalo, Latrobe, Pa., and Santo Domingo; most other added routes are based at Myrtle Beach International."
+      ],
+      "takeaway": "Promotional fares are limited to select dates tied to each route's start, so check several travel dates before booking. The lowest advertised is $49 one-way Buffalo–Raleigh–Durham."
+    }
+  ],
+  "updatedAt": "2026-10-17T19:42:45.755Z",
+  "correctionNotice": "This edition has been updated to reflect corrected or withdrawn information.",
+  "contentDigest": "f64164371a6591252916b921f4580fc29a8dbbcb327aac7b839365583725c355"
+}

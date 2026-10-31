@@ -23,10 +23,9 @@
 /athena/privacy-policy/
 /athena/support/
 /athena/copyright/
-/athena/zh/terms/
-/athena/zh/privacy-policy/
-/athena/zh/support/
-/athena/zh/copyright/
+# CollegeDream: privacy-policy and support URLs in its App Store listing.
+/collegedream/privacy-policy/
+/collegedream/support/
 # Protected assets (referenced by the pages above)
 /css/style.css
 /css/travelorbit.css

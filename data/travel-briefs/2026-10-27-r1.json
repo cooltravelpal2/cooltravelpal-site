@@ -1,0 +1,424 @@
+{
+  "schemaVersion": 1,
+  "editionId": "2026-10-27",
+  "revision": 1,
+  "status": "ready_with_limited_coverage",
+  "policyVersion": "travel-impact-v1",
+  "sourceRunIds": [
+    "94c44013-04fc-456e-86f4-98b085710172"
+  ],
+  "cutoffAt": "2026-10-27T14:04:22.092Z",
+  "generatedAt": "2026-10-27T14:04:22.092Z",
+  "coverageStatus": "limited",
+  "coverage": [
+    {
+      "sourceId": "breville",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "apple",
+      "category": "deals",
+      "candidateCount": 116,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amazon-devices",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "disabled"
+    },
+    {
+      "sourceId": "fellow",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "moccamaster",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "delonghi",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "dell",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "marriott",
+      "category": "hotels",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hyatt",
+      "category": "hotels",
+      "candidateCount": 3,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "hilton",
+      "category": "hotels",
+      "candidateCount": 25,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "ihg",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "aman",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "wyndham",
+      "category": "hotels",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-and-only",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amex",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "chase",
+      "category": "cards",
+      "candidateCount": 12,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "citi",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "discover",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "capital-one",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "delta",
+      "category": "airlines",
+      "candidateCount": 12,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "united",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "american",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "alaska",
+      "category": "airlines",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "southwest",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "air-canada",
+      "category": "airlines",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "british-airways",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "hotels",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "airlines",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "cards",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "destinations",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "hotels",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "airlines",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "cards",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "destinations",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "hotels",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "airlines",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "cards",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "destinations",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "hotels",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "airlines",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "cards",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "destinations",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "hotels",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "airlines",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "cards",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "destinations",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "slickdeals",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "redflagdeals",
+      "category": "deals",
+      "candidateCount": 15,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "airbnb",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nps",
+      "category": "destinations",
+      "candidateCount": 12,
+      "status": "attempted"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "news_2cea74f22d03412c0fd538b3",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 100,
+      "title": "Thompson Rome opens as Thompson Hotels' first property in Italy",
+      "summary": "Hyatt announced the opening of Thompson Rome on October 27, 2026, marking the Thompson Hotels brand's debut in Italy. The 69-room hotel is owned and operated by AG Group s.r.l. and Rossifin Group.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-10-27T11:00:00.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Hyatt",
+          "url": "https://newsroom.hyatt.com/thompson-rome-oct-2026",
+          "sourceType": "official",
+          "publishedAt": "2026-10-27T11:00:00.000Z",
+          "retrievedAt": "2026-10-27T14:02:00.262Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-27T14:04:22.056Z",
+      "changedAt": "2026-10-27T14:04:22.056Z",
+      "sourceRunId": "94c44013-04fc-456e-86f4-98b085710172",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Thompson Rome has opened with 69 rooms, according to Hyatt, which billed the property as the Thompson Hotels brand's first in Italy. The hotel is owned and operated by AG Group s.r.l. and Rossifin Group."
+      ],
+      "keyPoints": [
+        "Thompson Rome is a 69-room property.",
+        "It is the Thompson Hotels brand's first hotel in Italy, per Hyatt.",
+        "Ownership and operations are held by AG Group s.r.l. and Rossifin Group."
+      ]
+    },
+    {
+      "storyId": "offer_fee3c448ebd21efcf5af710c",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 71,
+      "title": "Capital One 20% Transfer Bonus to British Airways Avios (1:1.2), Reported Through Oct. 31, 2026",
+      "summary": "Doctor of Credit reports that Capital One is offering a 20% transfer bonus to British Airways Avios through October 31, 2026. The standard 1,000:1,000 transfer ratio becomes 1,000:1,200, so 1,000 Capital One miles yields 1,200 Avios. The reported promotion window is October 1–31, 2026.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-27T02:29:11.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Doctor of Credit",
+          "url": "https://www.doctorofcredit.com/capital-one-transfer-bonus-20-to-british-airways-avios-11-2-3/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-27T02:29:11.000Z",
+          "retrievedAt": "2026-10-27T14:02:00.267Z"
+        }
+      ],
+      "terms": {
+        "issuer": "Capital One",
+        "program": "British Airways Avios",
+        "merchant": null,
+        "rewardType": "miles",
+        "minSpend": null,
+        "creditAmount": null,
+        "rewardPoints": null,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": "2026-10-31T23:59:59.000Z",
+      "firstSeenAt": "2026-10-27T14:04:22.091Z",
+      "changedAt": "2026-10-27T14:04:22.091Z",
+      "sourceRunId": "94c44013-04fc-456e-86f4-98b085710172",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Doctor of Credit reports that the bonus applies to Capital One miles transfers into British Airways Avios and changes the usual 1,000-to-1,000 ratio to 1,000-to-1,200. The publication lists the deal window as October 1 through October 31, 2026.",
+        "According to the same report, the offer is useful for readers who need Avios and typically appears about once a year around this time."
+      ],
+      "keyPoints": [
+        "Doctor of Credit reports a 20% bonus on Capital One miles transfers to British Airways Avios.",
+        "The standard 1,000:1,000 ratio becomes 1,000:1,200 during the promotion.",
+        "The reported offer runs from October 1 through October 31, 2026."
+      ],
+      "takeaway": "If you need British Airways Avios, transfer Capital One miles by October 31, 2026 to receive the reported 20% bonus, turning 1,000 miles into 1,200 Avios."
+    }
+  ],
+  "contentDigest": "703a5a33d820c408971652bbfe1bd412b6e641ad457cc03e84737ec379f47494"
+}

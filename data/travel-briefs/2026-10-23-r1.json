@@ -1,0 +1,421 @@
+{
+  "schemaVersion": 1,
+  "editionId": "2026-10-23",
+  "revision": 1,
+  "status": "ready_with_limited_coverage",
+  "policyVersion": "travel-impact-v1",
+  "sourceRunIds": [
+    "b3bb0397-7926-4ccf-be43-e364b9f78590"
+  ],
+  "cutoffAt": "2026-10-23T14:03:44.027Z",
+  "generatedAt": "2026-10-23T14:03:44.027Z",
+  "coverageStatus": "limited",
+  "coverage": [
+    {
+      "sourceId": "breville",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "apple",
+      "category": "deals",
+      "candidateCount": 89,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amazon-devices",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "disabled"
+    },
+    {
+      "sourceId": "fellow",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "moccamaster",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "delonghi",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "dell",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "marriott",
+      "category": "hotels",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hyatt",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "hilton",
+      "category": "hotels",
+      "candidateCount": 25,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "ihg",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "aman",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "wyndham",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-and-only",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amex",
+      "category": "cards",
+      "candidateCount": 1,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "chase",
+      "category": "cards",
+      "candidateCount": 13,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "citi",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "discover",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "capital-one",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "delta",
+      "category": "airlines",
+      "candidateCount": 15,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "united",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "american",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "alaska",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "southwest",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "air-canada",
+      "category": "airlines",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "british-airways",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "hotels",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "airlines",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "cards",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "destinations",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "hotels",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "airlines",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "cards",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "destinations",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "cards",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "destinations",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "hotels",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "airlines",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "cards",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "destinations",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "hotels",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "airlines",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "cards",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "destinations",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "slickdeals",
+      "category": "deals",
+      "candidateCount": 15,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "redflagdeals",
+      "category": "deals",
+      "candidateCount": 15,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "airbnb",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nps",
+      "category": "destinations",
+      "candidateCount": 2,
+      "status": "attempted"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "news_4de4f0b089ef2f7446fbed0b",
+      "storyRevision": 1,
+      "section": "destinations",
+      "rank": 100,
+      "title": "Yellowstone: most roads and entrances close Nov. 1, 2026, for winter season",
+      "summary": "Yellowstone National Park says most of its roads and entrances will close on Nov. 1, 2026, as the park shifts into its winter season. Travelers planning to drive into or through the park should plan to do so before that date, when most vehicle access to the park's road network ends for the season.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-10-21T15:00:00.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "National Park Service",
+          "url": "https://www.nps.gov/yell/learn/news/26026.htm",
+          "sourceType": "official",
+          "publishedAt": "2026-10-21T15:00:00.000Z",
+          "retrievedAt": "2026-10-23T14:01:45.054Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-23T14:03:43.881Z",
+      "changedAt": "2026-10-23T14:03:43.881Z",
+      "sourceRunId": "b3bb0397-7926-4ccf-be43-e364b9f78590",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [],
+      "keyPoints": [
+        "Most Yellowstone National Park roads and entrances close for the winter season on Nov. 1, 2026."
+      ],
+      "takeaway": "If you plan to drive into or through Yellowstone, schedule it before Nov. 1, 2026; after that date most roads and entrances are closed for the winter season."
+    },
+    {
+      "storyId": "offer_e31fb1db0cfc84e5dce92006",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 76,
+      "title": "Costco members can get $100 in Uber and Uber Eats gift cards for $80",
+      "summary": "Slickdeals reports that Costco Wholesale is offering a 2-pack of $50 Uber/Uber Eats eGift cards, delivered by email, for $80 — down from $100. The deal is limited to Costco members and saves $20, or 20% off the listed price.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-23T13:12:15.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Slickdeals",
+          "url": "https://slickdeals.net/f/20196528-costco-uber-cards-100-for-79-99-is-back",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-23T13:12:15.000Z",
+          "retrievedAt": "2026-10-23T14:01:45.044Z"
+        }
+      ],
+      "terms": {
+        "issuer": null,
+        "program": null,
+        "merchant": "Costco Wholesale",
+        "rewardType": "discount",
+        "minSpend": null,
+        "creditAmount": null,
+        "rewardPoints": null,
+        "activationRequired": false,
+        "activateBy": null
+      },
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-23T14:03:43.972Z",
+      "changedAt": "2026-10-23T14:03:43.972Z",
+      "sourceRunId": "b3bb0397-7926-4ccf-be43-e364b9f78590",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The offer bundles two $50 eGift cards usable with Uber and Uber Eats, sent by email after purchase. Costco membership is required to buy, per the listed deal terms.",
+        "At $80 for $100 in gift card value, the effective saving is $20, which the deal listing describes as 20% off. No expiration date or per-member purchase limit was stated in the listing."
+      ],
+      "keyPoints": [
+        "$80 for a 2-pack of $50 Uber/Uber Eats eGift cards, versus a $100 list price",
+        "Saving of $20 (20% off)",
+        "Costco membership required; delivery is by email"
+      ],
+      "takeaway": "If you already shop with Uber or order through Uber Eats, confirm the gift cards can be loaded to your account balance before buying, and check Costco's current listing for any per-member purchase limit."
+    }
+  ],
+  "contentDigest": "722adb70147e407f39182e678a48818560704295d9336b18d1b213590b39925a"
+}

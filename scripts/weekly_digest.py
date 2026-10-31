@@ -8,7 +8,8 @@ import re
 from datetime import date, datetime, timedelta
 from zoneinfo import ZoneInfo
 from pathlib import Path
-from daily_travel_brief import load_editions, article_url, SECTIONS
+from daily_travel_brief import load_editions, article_url, validate_image, SECTIONS
+from story_photos import wikimedia_reader
 
 
 def collect(editions, end):
@@ -97,10 +98,14 @@ def render(digest, test=False):
         if not stories:
             continue
         color, background, topic = PALETTES[section]
-        variant = 1 + int(hashlib.sha256((digest['weekEnding'] + section).encode()).hexdigest()[:8], 16) % 3
-        image = f'https://travelpal.now/images/editorial-{topic}-v{variant}.jpg'
         blocks.append(f'<tr><td style="padding:0 28px 12px"><h2 style="border-left:5px solid {color};padding:8px 14px;background:{background};color:{color};font-size:20px;margin:0">{esc(label)}</h2></td></tr>')
-        blocks.append(f'<tr><td style="padding:0 28px 18px"><img src="{image}" alt="Conceptual {esc(label.lower())} illustration" width="260" style="display:block;width:100%;max-width:260px;height:auto;border-radius:12px"><p style="font-size:11px;color:#69726e;margin:6px 0 0">AI-generated editorial illustration; not a photograph of the featured venue.</p></td></tr>')
+        photo = next((s['image'] for s in stories if s.get('image')), None)
+        if photo:
+            blocks.append(f'<tr><td style="padding:0 28px 18px"><img src="{esc(photo["url"], quote=True)}" alt="{esc(photo["alt"], quote=True)}" width="260" style="display:block;width:100%;max-width:260px;height:auto;border-radius:12px"><p style="font-size:11px;color:#69726e;margin:6px 0 0">{esc(photo["caption"])} {esc(photo["credit"])} <a href="{esc(photo["sourceUrl"], quote=True)}" style="color:#69726e">Photo source</a> · <a href="{esc(photo["licenseUrl"], quote=True)}" style="color:#69726e">{esc(photo["license"])}</a></p></td></tr>')
+        else:
+            variant = 1 + int(hashlib.sha256((digest['weekEnding'] + section).encode()).hexdigest()[:8], 16) % 3
+            image = f'https://travelpal.now/images/editorial-{topic}-v{variant}.jpg'
+            blocks.append(f'<tr><td style="padding:0 28px 18px"><img src="{image}" alt="Conceptual {esc(label.lower())} illustration" width="260" style="display:block;width:100%;max-width:260px;height:auto;border-radius:12px"><p style="font-size:11px;color:#69726e;margin:6px 0 0">AI-generated editorial illustration; not a photograph of the featured venue.</p></td></tr>')
         for story in stories:
             blocks.append(f'<tr><td style="padding:0 28px 22px"><h3 style="font-size:19px;line-height:1.35;margin:0 0 8px;color:#25312d">{esc(story["title"])}</h3><p style="margin:0 0 10px">{esc(short_copy(story))}</p><a href="{esc(story["briefUrl"], quote=True)}" style="color:{color};font-weight:bold">Read the brief →</a></td></tr>')
     if not selected:
@@ -115,11 +120,21 @@ def render(digest, test=False):
 
 
 ISSUES = Path('data/weekly-newsletter-issues')
+# Owner tests get their own issues so a test never alters a Saturday issue already sent.
+TEST_ISSUES = ISSUES / 'test'
+
+
+def photo_path(issue_path, slot):
+    # The email template loads story-N.jpg from travelpal.now, so a photo's bytes
+    # are frozen beside the issue rather than hotlinked from Wikimedia.
+    return issue_path.with_suffix('') / f'story-{slot}.jpg'
 
 
 def load_issue(path):
     issue = json.loads(path.read_text())
     date.fromisoformat(issue['weekEnding'])
+    if path.stem != issue.get('issueKey', issue['weekEnding']) or not re.fullmatch(r'\d{4}-\d{2}-\d{2}|test-\d+', path.stem):
+        raise ValueError('Newsletter issue filename mismatch')
     if not 0 < len(issue['stories']) <= 5:
         raise ValueError('Invalid newsletter issue size')
     seen = set()
@@ -129,17 +144,39 @@ def load_issue(path):
         seen.add(story['storyId'])
         if not re.fullmatch(r'https://travelpal\.now/blog/travel-brief-\d{4}-\d{2}-\d{2}/#story-[a-f0-9]{16}', story['briefUrl']):
             raise ValueError('Invalid newsletter blog link')
+    for n, story in story_slots(issue['stories']).items():
+        if story.get('emailPhoto'):
+            validate_image(story['image'])
+            if not photo_path(path, n).exists():
+                raise ValueError('Frozen newsletter photo is missing')
     return issue
 
 
-def freeze_issue(digest, directory=ISSUES):
+def freeze_issue(digest, directory=ISSUES, reader=wikimedia_reader, key=None):
     directory.mkdir(parents=True, exist_ok=True)
-    path = directory / (digest['weekEnding'] + '.json')
+    path = directory / ((key or digest['weekEnding']) + '.json')
     if path.exists():
         return load_issue(path)
-    issue = {**digest, 'stories': select_highlights(digest)}
+    issue = {**digest, 'stories': [dict(s) for s in select_highlights(digest)]}
+    if key:
+        issue['issueKey'] = key
     if not issue['stories']:
         return None
+    for n, story in story_slots(issue['stories']).items():
+        if not story.get('image'):
+            continue
+        try:
+            content = reader(story['image']['url'])
+            if not content.startswith(b'\xff\xd8\xff'):
+                raise ValueError('Photo is not a JPEG')
+        except (OSError, ValueError) as error:
+            # Fall back to the illustration rather than freeze a photo the email cannot show.
+            print(f'::warning title=Weekly photo unavailable::{story["storyId"]}: {error}')
+            del story['image']
+            continue
+        photo_path(path, n).parent.mkdir(parents=True, exist_ok=True)
+        photo_path(path, n).write_bytes(content)
+        story['emailPhoto'] = True
     path.write_text(json.dumps(issue, ensure_ascii=False, indent=2) + '\n')
     return load_issue(path)
 
@@ -165,11 +202,12 @@ def thin_issue_warning(stories):
     return f"Weekly issue has {len(stories)} of 5 highlights; no stories for: {', '.join(missing)}"
 
 
-def publish_story_links(issue, output):
+def publish_story_links(issue, output, directory=ISSUES):
     # Freeze each issue's numbered links so later revisions never repoint a sent
     # email to a different article. Blog pages themselves retain current corrections.
+    key = issue.get('issueKey', issue['weekEnding'])
     for n, story in story_slots(issue['stories']).items():
-        path = output / issue['weekEnding'] / ('story-' + str(n)) / 'index.html'
+        path = output / key / ('story-' + str(n)) / 'index.html'
         path.parent.mkdir(parents=True, exist_ok=True)
         target = html.escape(story['briefUrl'], quote=True)
         path.write_text('<!doctype html><html><head><meta charset="utf-8">'
@@ -177,10 +215,13 @@ def publish_story_links(issue, output):
                         + '<link rel="canonical" href="' + target + '">'
                         + '<meta name="robots" content="noindex"><title>' + html.escape(story['title'])
                         + '</title></head><body><a href="' + target + '">Read full article</a></body></html>')
-        topic = PALETTES[story['section']][2]
-        variant = 1 + (int(hashlib.sha256(issue['weekEnding'].encode()).hexdigest()[:8], 16) + n) % 3
-        image = Path('images') / f'editorial-{topic}-v{variant}.jpg'
-        shutil.copy2(image, output / issue['weekEnding'] / f'story-{n}.jpg')
+        if story.get('emailPhoto'):
+            image = photo_path(directory / (key + '.json'), n)
+        else:
+            topic = PALETTES[story['section']][2]
+            variant = 1 + (int(hashlib.sha256(issue['weekEnding'].encode()).hexdigest()[:8], 16) + n) % 3
+            image = Path('images') / f'editorial-{topic}-v{variant}.jpg'
+        shutil.copy2(image, output / key / f'story-{n}.jpg')
 
 
 def main():
@@ -191,11 +232,16 @@ def main():
     parser.add_argument('--test', action='store_true')
     parser.add_argument('--web-output', type=Path)
     parser.add_argument('--freeze-issue', action='store_true')
+    parser.add_argument('--freeze-test-issue', metavar='KEY', help='freeze an owner-test issue such as test-<run id>')
     args = parser.parse_args()
+    if args.freeze_test_issue and not re.fullmatch(r'test-\d+', args.freeze_test_issue):
+        parser.error('test issue keys look like test-<run id>')
     digest = collect(load_editions(args.archive), date.fromisoformat(args.end))
     document = render(digest, args.test)
     if args.freeze_issue:
         freeze_issue(digest)
+    if args.freeze_test_issue:
+        freeze_issue(digest, TEST_ISSUES, key=args.freeze_test_issue)
     args.output.mkdir(parents=True, exist_ok=True)
     stem = f"travelpal-weekly-{digest['weekEnding']}" + ('-test' if args.test else '')
     (args.output / f'{stem}.html').write_text(document)
@@ -218,6 +264,9 @@ def main():
             page = args.web_output / day.isoformat() / 'index.html'
             page.parent.mkdir(parents=True, exist_ok=True)
             page.write_text(page_document)
+        # Owner-test links and photos stay published so test emails keep working.
+        for test_path in sorted(TEST_ISSUES.glob('*.json')):
+            publish_story_links(load_issue(test_path), args.web_output, TEST_ISSUES)
     warning = thin_issue_warning(select_highlights(digest))
     if warning:
         print('::warning title=Thin weekly issue::' + warning)

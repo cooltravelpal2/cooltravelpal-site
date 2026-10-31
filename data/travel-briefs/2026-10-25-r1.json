@@ -1,0 +1,436 @@
+{
+  "schemaVersion": 1,
+  "editionId": "2026-10-25",
+  "revision": 1,
+  "status": "ready_with_limited_coverage",
+  "policyVersion": "travel-impact-v1",
+  "sourceRunIds": [
+    "f6d01cc2-6b9b-40cd-a832-2b591cf65ca9"
+  ],
+  "cutoffAt": "2026-10-25T14:03:51.901Z",
+  "generatedAt": "2026-10-25T14:03:51.901Z",
+  "coverageStatus": "limited",
+  "coverage": [
+    {
+      "sourceId": "breville",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "apple",
+      "category": "deals",
+      "candidateCount": 87,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amazon-devices",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "disabled"
+    },
+    {
+      "sourceId": "fellow",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "moccamaster",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "delonghi",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "dell",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "marriott",
+      "category": "hotels",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hyatt",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "hilton",
+      "category": "hotels",
+      "candidateCount": 25,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "ihg",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "aman",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "wyndham",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-and-only",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amex",
+      "category": "cards",
+      "candidateCount": 1,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "chase",
+      "category": "cards",
+      "candidateCount": 13,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "citi",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "discover",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "capital-one",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "delta",
+      "category": "airlines",
+      "candidateCount": 16,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "united",
+      "category": "airlines",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "american",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "alaska",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "southwest",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "air-canada",
+      "category": "airlines",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "british-airways",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "hotels",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "airlines",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "cards",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "destinations",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "hotels",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "airlines",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "cards",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "destinations",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "cards",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "destinations",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "hotels",
+      "candidateCount": 8,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "airlines",
+      "candidateCount": 8,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "cards",
+      "candidateCount": 8,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "destinations",
+      "candidateCount": 8,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "hotels",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "airlines",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "cards",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "destinations",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "slickdeals",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "redflagdeals",
+      "category": "deals",
+      "candidateCount": 12,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "airbnb",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nps",
+      "category": "destinations",
+      "candidateCount": 2,
+      "status": "attempted"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "offer_76330bf486faa0c21a248c91",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 100,
+      "title": "AwardWallet: Citi ThankYou 10% transfer bonus to Cathay Asia Miles ends Nov. 14",
+      "summary": "AwardWallet reports Citi ThankYou Points transfers to Cathay Asia Miles earn a 10% bonus through 11:59 p.m. ET on Nov. 14, 2026. Minimum transfer is 1,000 points in 1,000-point increments; eligible premium cards receive 1,100 Asia Miles per 1,000 points, while select no-annual-fee cards receive 770 per 1,000. The report cites awards such as 58,000 Citi points for British Airways business class from New York to London. Terms were not officially confirmed.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-25T11:00:09.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "AwardWallet",
+          "url": "https://awardwallet.com/news/citi-thankyou-rewards/cathay-pacific-transfer-bonus/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-25T11:00:09.000Z",
+          "retrievedAt": "2026-10-25T14:01:47.803Z"
+        }
+      ],
+      "terms": {
+        "issuer": "Citi",
+        "program": "Citi ThankYou to Cathay Asia Miles",
+        "merchant": null,
+        "rewardType": "miles",
+        "minSpend": null,
+        "creditAmount": null,
+        "rewardPoints": null,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": "2026-11-15T04:59:59.000Z",
+      "firstSeenAt": "2026-10-25T14:03:51.877Z",
+      "changedAt": "2026-10-25T14:03:51.877Z",
+      "sourceRunId": "f6d01cc2-6b9b-40cd-a832-2b591cf65ca9",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "AwardWallet reports that Citi ThankYou cardholders can receive 10% extra Cathay Asia Miles on point transfers through 11:59 p.m. Eastern on Nov. 14, 2026. The minimum transfer is 1,000 ThankYou Points, moved in 1,000-point increments, and transfers to Asia Miles normally post instantly. Cardholders with the Citi Strata Elite, Citi Strata Premier, Citi Prestige or AT&T Access More Card get 1,100 Asia Miles per 1,000 points; select no-annual-fee Citi cards get 770 per 1,000.",
+        "The report highlights several uses: 58,000 Citi points covers a 63,000-mile British Airways business-class award from New York JFK to London Heathrow with $235.51 in taxes and fees; 83,000 points covers a 91,000-mile Cathay Pacific business-class award from San Francisco to Hong Kong; and 109,000 points covers a 119,000-mile Los Angeles-to-Sydney business-class itinerary via Hong Kong. It also cites Royal Air Maroc New York-Casablanca awards at 25,000 Citi points in economy or 58,000 in business, and Hong Kong-Seoul Cathay business class at 25,000 Citi points."
+      ],
+      "keyPoints": [
+        "Promotion runs through 11:59 p.m. ET on Nov. 14, 2026; minimum transfer is 1,000 ThankYou Points in 1,000-point increments.",
+        "Eligible premium Citi cards receive 1,100 Asia Miles per 1,000 ThankYou Points; select no-annual-fee Citi cards receive 770 per 1,000, per AwardWallet.",
+        "AwardWallet examples include 58,000 Citi points for British Airways business class JFK-LHR at 63,000 Asia Miles plus $235.51 in taxes and fees, and 83,000 points for Cathay business class SFO-HKG at 91,000 miles."
+      ],
+      "takeaway": "Check award availability for the specific Cathay Pacific or partner flight first, then transfer only the ThankYou Points needed in 1,000-point increments before 11:59 p.m. ET on Nov. 14, 2026. Confirm the taxes and fees shown for that award before transferring."
+    },
+    {
+      "storyId": "offer_86ed06465103afe3b46e4789",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 76,
+      "title": "Costco again sells Uber and DoorDash eGift cards at 20% off",
+      "summary": "Doctor of Credit reports that Costco.com is again selling Uber and DoorDash eGift cards at a 20% discount. Online purchases are limited to $200 per brand every 14 days. An Oct. 25 update says most Costco warehouses appear to be stocking them again. The report cites an Uber Eats release describing the 20% gift card partnership as limited-time; no end date is stated.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-25T11:00:51.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Doctor of Credit",
+          "url": "https://www.doctorofcredit.com/costco-com-is-carrying-uber-doordash-egiftcards-again-with-20-discount/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-25T11:00:51.000Z",
+          "retrievedAt": "2026-10-25T14:01:47.815Z"
+        }
+      ],
+      "terms": {
+        "issuer": null,
+        "program": null,
+        "merchant": "Costco",
+        "rewardType": "discount",
+        "minSpend": null,
+        "creditAmount": null,
+        "rewardPoints": null,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-25T14:03:51.816Z",
+      "changedAt": "2026-10-25T14:03:51.816Z",
+      "sourceRunId": "f6d01cc2-6b9b-40cd-a832-2b591cf65ca9",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Doctor of Credit reports that Costco.com has resumed offering Uber and DoorDash eGift cards at a 20% discount. The reported online purchase cap is $200 per brand every 14 days, and an Oct. 25 update says most warehouse locations appear to have them in stock again.",
+        "The report says Costco had stopped carrying the cards for several months. It also points to an Uber Eats release that describes the 20% gift card partnership as limited-time, but the report does not provide an expiration date."
+      ],
+      "keyPoints": [
+        "20% discount on Uber and DoorDash eGift cards through Costco",
+        "Online limit reported at $200 per brand every 14 days",
+        "Uber Eats release cited by Doctor of Credit calls the partnership limited-time; no end date given"
+      ],
+      "takeaway": "If you use Uber or DoorDash, check Costco.com or a local Costco warehouse. Online purchases are capped at $200 per brand every 14 days."
+    }
+  ],
+  "contentDigest": "a80d0006ee14bda7d6fb2848c82dc8bc4d2d59e2401d88beb6e5ef6f671b78a6"
+}

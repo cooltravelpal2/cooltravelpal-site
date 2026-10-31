@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Persist validated archive snapshots in the existing CI checkout before deploy."""
 import os
+import re
 import subprocess
 from pathlib import Path
 
@@ -23,17 +24,23 @@ def persist():
     paths = ['data/travel-briefs']
     if (ROOT / 'data/weekly-newsletter-issues').exists():
         paths.append('data/weekly-newsletter-issues')
+    if (ROOT / 'data/story-photos.json').exists():
+        paths.append('data/story-photos.json')
     git('add', '--', *paths)
     changed = git('diff', '--cached', '--name-only').splitlines()
     if not changed:
         print('No archive changes')
         return
-    if any(not name.startswith(('data/travel-briefs/', 'data/weekly-newsletter-issues/')) or not name.endswith('.json') for name in changed):
+    def allowed(name):
+        return (name == 'data/story-photos.json'
+                or re.fullmatch(r'data/weekly-newsletter-issues/(?:\d{4}-\d{2}-\d{2}|test/test-\d+)/story-[1-5]\.jpg', name)
+                or name.startswith(('data/travel-briefs/', 'data/weekly-newsletter-issues/')) and name.endswith('.json'))
+    if not all(allowed(name) for name in changed):
         raise RuntimeError('Unrelated staged files; refusing snapshot commit')
     from daily_travel_brief import load_editions
     load_editions(ROOT / 'data/travel-briefs')
     from weekly_digest import load_issue
-    for path in (ROOT / 'data/weekly-newsletter-issues').glob('*.json'):
+    for path in [*(ROOT / 'data/weekly-newsletter-issues').glob('*.json'), *(ROOT / 'data/weekly-newsletter-issues/test').glob('*.json')]:
         load_issue(path)
     git('config', 'user.name', 'github-actions[bot]')
     git('config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com')

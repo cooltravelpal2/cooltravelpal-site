@@ -1,0 +1,426 @@
+{
+  "schemaVersion": 1,
+  "editionId": "2026-10-22",
+  "revision": 1,
+  "status": "ready_with_limited_coverage",
+  "policyVersion": "travel-impact-v1",
+  "sourceRunIds": [
+    "648ebf08-0957-45a9-a4dc-d1f98df167a9"
+  ],
+  "cutoffAt": "2026-10-22T14:03:58.374Z",
+  "generatedAt": "2026-10-22T14:03:58.374Z",
+  "coverageStatus": "limited",
+  "coverage": [
+    {
+      "sourceId": "breville",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "apple",
+      "category": "deals",
+      "candidateCount": 89,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amazon-devices",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "disabled"
+    },
+    {
+      "sourceId": "fellow",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "moccamaster",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "delonghi",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "dell",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "marriott",
+      "category": "hotels",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hyatt",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "hilton",
+      "category": "hotels",
+      "candidateCount": 25,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "ihg",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "aman",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "wyndham",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-and-only",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amex",
+      "category": "cards",
+      "candidateCount": 4,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "chase",
+      "category": "cards",
+      "candidateCount": 13,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "citi",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "discover",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "capital-one",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "delta",
+      "category": "airlines",
+      "candidateCount": 13,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "united",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "american",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "alaska",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "southwest",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "air-canada",
+      "category": "airlines",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "british-airways",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "hotels",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "airlines",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "cards",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "destinations",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "cards",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "destinations",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "hotels",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "airlines",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "cards",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "destinations",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "hotels",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "airlines",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "cards",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "destinations",
+      "candidateCount": 6,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "cards",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "destinations",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "slickdeals",
+      "category": "deals",
+      "candidateCount": 9,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "redflagdeals",
+      "category": "deals",
+      "candidateCount": 13,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "airbnb",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nps",
+      "category": "destinations",
+      "candidateCount": 2,
+      "status": "attempted"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "offer_7b0becdf9714b78730bc2b4c",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 100,
+      "title": "Chase Air Canada Aeroplan card: up to 115,000-point welcome offer",
+      "summary": "The Chase Air Canada Aeroplan card advertises up to 115,000 bonus points: 75,000 after $4,000 in purchases in the first three months, plus 40,000 after $20,000 in the first 12 months. It also includes automatic Aeroplan 25K status, up to $100 in annual Air Canada statement credits, free first checked bags, and temporary 3X grocery and dining earning through Dec. 31, 2026.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-10-22T14:02:46.816Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Chase",
+          "url": "https://creditcards.chase.com/travel-credit-cards/aircanada/aeroplan",
+          "sourceType": "official",
+          "publishedAt": null,
+          "retrievedAt": "2026-10-22T14:01:45.421Z"
+        }
+      ],
+      "terms": {
+        "issuer": "Chase",
+        "program": null,
+        "merchant": null,
+        "rewardType": "points",
+        "minSpend": 20000,
+        "creditAmount": null,
+        "rewardPoints": 115000,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-22T14:03:58.355Z",
+      "changedAt": "2026-10-22T14:03:58.355Z",
+      "sourceRunId": "648ebf08-0957-45a9-a4dc-d1f98df167a9",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The welcome offer is structured in two spending tiers. The first 75,000 points require $4,000 in purchases within three months of account opening; the remaining 40,000 points require $20,000 within 12 months. Chase says bonus points can take six to eight weeks to post. Current cardmembers and previous cardmembers who received a new-cardmember bonus in the past 24 months are not eligible.",
+        "Outside the bonus, the card earns 3X on Air Canada purchases and 3X on travel, with up to 5X total on Air Canada when the cardholder has Aeroplan 25K status and receives an extra 2X from Air Canada. Grocery and dining earn 2X, raised to 3X through Dec. 31, 2026; gas stations earn 2X and all other purchases 1X. Cardholders also get automatic Aeroplan 25K status without a spend requirement, 15% off eligible Air Canada award redemptions, and up to $100 in annual Air Canada statement credits."
+      ],
+      "keyPoints": [
+        "75,000 points after $4,000 in purchases in the first three months; 40,000 more after $20,000 in the first 12 months.",
+        "Not available to current cardmembers or previous cardmembers who received a new-cardmember bonus in the last 24 months.",
+        "Grocery and dining earn 3X through Dec. 31, 2026, then 2X; gas stations earn 2X."
+      ],
+      "takeaway": "If applying, map out the two spending tiers before opening the account: $4,000 must post within three months for the first bonus, and $20,000 within 12 months for the second. Confirm eligibility if you have held the card in the past 24 months."
+    },
+    {
+      "storyId": "news_ffff76066f5e7cd8db9afd73",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 100,
+      "title": "Hilton for Business adds booking-on-behalf and shared trip tools for SMBs",
+      "summary": "Hilton for Business now lets program owners and administrators book, change or cancel employee stays, view upcoming team reservations in one place, and see which employees are currently checked in. Planned later updates include booking for people outside a company’s account, dedicated coordinator and administrator roles, and a dashboard showing points, spend and booking activity. The SMB program is free and requires no minimum spend.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-10-22T12:01:05.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Hilton",
+          "url": "https://stories.hilton.com/releases/hilton-for-business-introduces-new-tools-and-program-enhancements",
+          "sourceType": "official",
+          "publishedAt": "2026-10-22T12:01:05.000Z",
+          "retrievedAt": "2026-10-22T14:01:45.421Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-22T14:03:58.364Z",
+      "changedAt": "2026-10-22T14:03:58.364Z",
+      "sourceRunId": "648ebf08-0957-45a9-a4dc-d1f98df167a9",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The new tools are aimed at staff who arrange travel for colleagues. Owners and administrators can reserve stays for employees without separate logins, see shared upcoming reservations, make changes or cancellations, and track current in-house stays for duty-of-care purposes. Hilton says the features came from member feedback and that booking on behalf of others was the most requested capability.",
+        "Hilton lists three future enhancements as planned rather than live: managing reservations for members and non-members outside an organization’s Hilton for Business account, new travel coordinator and administrator roles that do not require owner-level access, and a dashboard with more visibility into employee points, spend and booking activity. The program remains free for small and medium-sized companies with no minimum spend."
+      ],
+      "keyPoints": [
+        "Owners and administrators can book, modify and cancel employee reservations and view shared upcoming stays.",
+        "Current in-house visibility is included to support duty of care.",
+        "Planned updates include outside-program booking, non-owner coordinator roles and an expanded dashboard."
+      ],
+      "takeaway": "If your company uses Hilton for Business, check which staff have owner or administrator access before relying on the new booking-on-behalf, shared-reservation and in-house visibility features. The planned coordinator roles are not yet available, so current management depends on existing owner or administrator permissions."
+    }
+  ],
+  "contentDigest": "f2ab6733d61630c65263d4c1930e3e58f3a61772d62be5f2d1e7cebc3c263f24"
+}

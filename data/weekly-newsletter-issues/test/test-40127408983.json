@@ -1,0 +1,275 @@
+{
+  "weekEnding": "2026-10-24",
+  "windowStart": "2026-10-18",
+  "editions": [
+    {
+      "editionId": "2026-10-24",
+      "revision": 1,
+      "url": "https://travelpal.now/blog/travel-brief-2026-10-24/"
+    },
+    {
+      "editionId": "2026-10-23",
+      "revision": 1,
+      "url": "https://travelpal.now/blog/travel-brief-2026-10-23/"
+    },
+    {
+      "editionId": "2026-10-22",
+      "revision": 1,
+      "url": "https://travelpal.now/blog/travel-brief-2026-10-22/"
+    },
+    {
+      "editionId": "2026-10-21",
+      "revision": 1,
+      "url": "https://travelpal.now/blog/travel-brief-2026-10-21/"
+    },
+    {
+      "editionId": "2026-10-20",
+      "revision": 1,
+      "url": "https://travelpal.now/blog/travel-brief-2026-10-20/"
+    },
+    {
+      "editionId": "2026-10-18",
+      "revision": 1,
+      "url": "https://travelpal.now/blog/travel-brief-2026-10-18/"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "news_50ff9115cb8ad53cc27655dc",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 100,
+      "title": "Hyatt Centric Downtown St. Louis Opens as Brand's First Missouri Hotel",
+      "summary": "Hyatt announced on October 19, 2026 that Hyatt Centric Downtown St. Louis has opened, making it the first Hyatt Centric property in Missouri. The hotel gives travelers a new downtown St. Louis base under Hyatt's Centric brand. The announcement did not include room counts, opening rates or award pricing.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-10-19T14:30:00.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Hyatt",
+          "url": "https://newsroom.hyatt.com/HyattCentricDowntownStLouis",
+          "sourceType": "official",
+          "publishedAt": "2026-10-19T14:30:00.000Z",
+          "retrievedAt": "2026-10-20T14:01:44.381Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-20T14:05:05.073Z",
+      "changedAt": "2026-10-20T14:05:05.073Z",
+      "sourceRunId": "ce3f0952-0e6a-4baf-b2ad-7a1c05f8af63",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Hyatt Hotels Corporation announced the debut of Hyatt Centric Downtown St. Louis on October 19, 2026, describing it as the first Hyatt Centric hotel in Missouri and a new home base in the Gateway City. The property places the Centric brand — Hyatt's lifestyle-focused line aimed at travelers who want to be near a destination's core — in downtown St. Louis."
+      ],
+      "keyPoints": [
+        "First Hyatt Centric hotel in Missouri",
+        "Announced by Hyatt on October 19, 2026",
+        "Located in downtown St. Louis"
+      ],
+      "takeaway": "Travelers planning a St. Louis trip can now check the property's opening-date availability and rates directly with Hyatt and compare it against other downtown options before booking.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Gateway_Arch_-_St._Louis_-_Missouri_%2817275578342%29.jpg/960px-Gateway_Arch_-_St._Louis_-_Missouri_%2817275578342%29.jpg",
+        "alt": "St. Louis, photograph from Wikimedia Commons",
+        "caption": "St. Louis. Destination photograph, not the featured venue or company. Displayed without edits.",
+        "credit": "Photo: Sam valadi.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gateway_Arch_-_St._Louis_-_Missouri_(17275578342).jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "license": "CC BY 2.0",
+        "rightsReviewed": true,
+        "rightsReview": "automated Wikimedia Commons license check"
+      },
+      "briefUrl": "https://travelpal.now/blog/travel-brief-2026-10-20/#story-53f1e300ae769d25",
+      "emailPhoto": true
+    },
+    {
+      "storyId": "news_077149f7129a2fd51152fde9",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 100,
+      "title": "Alaska Airlines adds seasonal Seattle–Osaka and Seattle–Papeete routes",
+      "summary": "AwardWallet reports Alaska Airlines will launch seasonal service from Seattle to Osaka on May 14, 2027, and to Papeete on June 11, 2027, using Hawaiian Airlines A330-200 aircraft. Both are bookable now with cash or Atmos Rewards points; business awards currently start at 150,000 points each way.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-20T11:00:45.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "AwardWallet",
+          "url": "https://awardwallet.com/news/alaska-atmos-rewards/alaska-new-routes-osaka-papeete/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-20T11:00:45.000Z",
+          "retrievedAt": "2026-10-20T14:01:44.395Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-20T14:05:05.083Z",
+      "changedAt": "2026-10-20T14:05:05.083Z",
+      "sourceRunId": "ce3f0952-0e6a-4baf-b2ad-7a1c05f8af63",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "AwardWallet reports the Osaka route will operate four times weekly—Sunday, Monday, Wednesday and Friday—from Seattle, with the first departure on May 14, 2027. The return from Osaka starts May 15, 2027, on Monday, Tuesday, Thursday and Saturday.",
+        "The Papeete route is reported as three times weekly—Wednesday, Friday and Saturday—from Seattle starting June 11, 2027, with returns from June 12, 2027, on Thursday, Saturday and Sunday. Alaska will use Hawaiian Airlines A330-200 aircraft, which do not have premium economy; Premium Class is an economy seat with extra legroom."
+      ],
+      "keyPoints": [
+        "Osaka service: Seattle departure 12:10 p.m., arrival 4:00 p.m. next day; Osaka return departs 6:00 p.m., arrives 12:20 p.m.",
+        "Papeete service: Seattle departure 11:55 p.m., arrival 7:20 a.m. next day; Papeete return departs 5:00 p.m., arrives 6:00 a.m. next day.",
+        "Bookable now with cash or Atmos Rewards points; business-class saver awards are not yet loaded, per AwardWallet."
+      ],
+      "takeaway": "If you want a lower-point award, set availability alerts for these routes and check economy awards while business saver space remains unavailable.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Seattle_Center_as_night_falls.jpg/960px-Seattle_Center_as_night_falls.jpg",
+        "alt": "Seattle, photograph from Wikimedia Commons",
+        "caption": "Seattle. Destination photograph, not the featured venue or company. Displayed without edits.",
+        "credit": "Photo: Jeffery Hayes.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seattle_Center_as_night_falls.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "license": "CC BY-SA 3.0",
+        "rightsReviewed": true,
+        "rightsReview": "automated Wikimedia Commons license check"
+      },
+      "briefUrl": "https://travelpal.now/blog/travel-brief-2026-10-20/#story-46ce90e8c515b0c0",
+      "emailPhoto": true
+    },
+    {
+      "storyId": "offer_7b0becdf9714b78730bc2b4c",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 100,
+      "title": "Chase Air Canada Aeroplan card: up to 115,000-point welcome offer",
+      "summary": "The Chase Air Canada Aeroplan card advertises up to 115,000 bonus points: 75,000 after $4,000 in purchases in the first three months, plus 40,000 after $20,000 in the first 12 months. It also includes automatic Aeroplan 25K status, up to $100 in annual Air Canada statement credits, free first checked bags, and temporary 3X grocery and dining earning through Dec. 31, 2026.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-10-22T14:02:46.816Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Chase",
+          "url": "https://creditcards.chase.com/travel-credit-cards/aircanada/aeroplan",
+          "sourceType": "official",
+          "publishedAt": null,
+          "retrievedAt": "2026-10-22T14:01:45.421Z"
+        }
+      ],
+      "terms": {
+        "issuer": "Chase",
+        "program": null,
+        "merchant": null,
+        "rewardType": "points",
+        "minSpend": 20000,
+        "creditAmount": null,
+        "rewardPoints": 115000,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-22T14:03:58.355Z",
+      "changedAt": "2026-10-22T14:03:58.355Z",
+      "sourceRunId": "648ebf08-0957-45a9-a4dc-d1f98df167a9",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The welcome offer is structured in two spending tiers. The first 75,000 points require $4,000 in purchases within three months of account opening; the remaining 40,000 points require $20,000 within 12 months. Chase says bonus points can take six to eight weeks to post. Current cardmembers and previous cardmembers who received a new-cardmember bonus in the past 24 months are not eligible.",
+        "Outside the bonus, the card earns 3X on Air Canada purchases and 3X on travel, with up to 5X total on Air Canada when the cardholder has Aeroplan 25K status and receives an extra 2X from Air Canada. Grocery and dining earn 2X, raised to 3X through Dec. 31, 2026; gas stations earn 2X and all other purchases 1X. Cardholders also get automatic Aeroplan 25K status without a spend requirement, 15% off eligible Air Canada award redemptions, and up to $100 in annual Air Canada statement credits."
+      ],
+      "keyPoints": [
+        "75,000 points after $4,000 in purchases in the first three months; 40,000 more after $20,000 in the first 12 months.",
+        "Not available to current cardmembers or previous cardmembers who received a new-cardmember bonus in the last 24 months.",
+        "Grocery and dining earn 3X through Dec. 31, 2026, then 2X; gas stations earn 2X."
+      ],
+      "takeaway": "If applying, map out the two spending tiers before opening the account: $4,000 must post within three months for the first bonus, and $20,000 within 12 months for the second. Confirm eligibility if you have held the card in the past 24 months.",
+      "briefUrl": "https://travelpal.now/blog/travel-brief-2026-10-22/#story-63e8896a5a10dc9e"
+    },
+    {
+      "storyId": "news_4de4f0b089ef2f7446fbed0b",
+      "storyRevision": 1,
+      "section": "destinations",
+      "rank": 100,
+      "title": "Yellowstone: most roads and entrances close Nov. 1, 2026, for winter season",
+      "summary": "Yellowstone National Park says most of its roads and entrances will close on Nov. 1, 2026, as the park shifts into its winter season. Travelers planning to drive into or through the park should plan to do so before that date, when most vehicle access to the park's road network ends for the season.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-10-21T15:00:00.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "National Park Service",
+          "url": "https://www.nps.gov/yell/learn/news/26026.htm",
+          "sourceType": "official",
+          "publishedAt": "2026-10-21T15:00:00.000Z",
+          "retrievedAt": "2026-10-23T14:01:45.054Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-23T14:03:43.881Z",
+      "changedAt": "2026-10-23T14:03:43.881Z",
+      "sourceRunId": "b3bb0397-7926-4ccf-be43-e364b9f78590",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [],
+      "keyPoints": [
+        "Most Yellowstone National Park roads and entrances close for the winter season on Nov. 1, 2026."
+      ],
+      "takeaway": "If you plan to drive into or through Yellowstone, schedule it before Nov. 1, 2026; after that date most roads and entrances are closed for the winter season.",
+      "briefUrl": "https://travelpal.now/blog/travel-brief-2026-10-23/#story-05adfcffa93da18a"
+    },
+    {
+      "storyId": "news_8c81ed76bc3be3f7b8dbf777",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 100,
+      "title": "Hyatt opens QURO Bangkok Riverside under Unscripted by Hyatt",
+      "summary": "Hyatt announced the opening of QURO Bangkok Riverside, now part of the Unscripted by Hyatt brand portfolio. The property was formerly The StandardX, Bangkok. The announcement confirms the hotel’s opening and rebrand.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-10-20T14:33:00.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Hyatt",
+          "url": "https://newsroom.hyatt.com/Quro_Bangkok_Riverside_Celebrates_Grand_Opening",
+          "sourceType": "official",
+          "publishedAt": "2026-10-20T14:33:00.000Z",
+          "retrievedAt": "2026-10-21T14:00:26.375Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-21T14:02:11.868Z",
+      "changedAt": "2026-10-21T14:02:11.868Z",
+      "sourceRunId": "7099b900-775c-4243-986a-0b85964f8539",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [],
+      "keyPoints": [
+        "Formerly The StandardX, Bangkok",
+        "Now part of Unscripted by Hyatt",
+        "Bangkok Riverside hotel opening"
+      ],
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/4Y1A1159_Bangkok_%2833536795515%29.jpg/960px-4Y1A1159_Bangkok_%2833536795515%29.jpg",
+        "alt": "Bangkok, photograph from Wikimedia Commons",
+        "caption": "Bangkok. Destination photograph, not the featured venue or company. Displayed without edits.",
+        "credit": "Photo: Ninara from Helsinki, Finland.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:4Y1A1159_Bangkok_(33536795515).jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "license": "CC BY 2.0",
+        "rightsReviewed": true,
+        "rightsReview": "automated Wikimedia Commons license check"
+      },
+      "briefUrl": "https://travelpal.now/blog/travel-brief-2026-10-21/#story-788fdc4258b21513",
+      "emailPhoto": true
+    }
+  ],
+  "highlightStoryIds": [
+    "news_50ff9115cb8ad53cc27655dc",
+    "news_077149f7129a2fd51152fde9",
+    "offer_7b0becdf9714b78730bc2b4c",
+    "news_4de4f0b089ef2f7446fbed0b",
+    "news_8c81ed76bc3be3f7b8dbf777"
+  ],
+  "contentSha256": "5bb873c6f5c6fbe66bd772f44efdf8c51095976ba4c7592b784f919de00d1615",
+  "sendEligible": true,
+  "newsletterFormat": "illustrated-highlights-v1",
+  "issueKey": "test-40127408983"
+}

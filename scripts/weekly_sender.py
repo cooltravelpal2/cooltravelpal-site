@@ -6,10 +6,11 @@ import json
 import os
 from datetime import date, datetime, timedelta
 from pathlib import Path
+from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 from urllib.parse import urlencode
 from zoneinfo import ZoneInfo
-from weekly_digest import collect, render, select_highlights, short_copy, load_issue, ISSUES, story_slots
+from weekly_digest import collect, render, select_highlights, short_copy, load_issue, ISSUES, TEST_ISSUES, story_slots
 from daily_travel_brief import load_editions, SECTIONS
 
 LIST_ID = 'de2bac34-80c4-11f1-ad85-1b83433e3fd4'
@@ -17,10 +18,15 @@ AUTOMATION_ID = '69b368be-bf90-11f1-a32d-2fff2da0bbd9'
 FIELD_LIMIT = 600
 
 
+class ProviderRefused(RuntimeError):
+    """EmailOctopus answered with a 4xx error: the request definitely did not take effect."""
+
+
 def payload(digest):
     selected = digest['stories'] if digest.get('frozenIssue') else select_highlights(digest, limit=5)
     slots = story_slots(selected)
-    fields = {'WeeklyPeriod': digest['weekEnding']}
+    # The template builds image and link URLs from WeeklyPeriod, so test issues use their own key.
+    fields = {'WeeklyPeriod': digest.get('issueKey', digest['weekEnding'])}
     for n in range(1, 6):
         if n not in slots:
             fields[f'WeeklyHighlight{n}'] = ''
@@ -29,6 +35,10 @@ def payload(digest):
         copy = short_copy(story)
         title = story['title']
         text = (SECTIONS[story['section']] + ' · ' if n == 5 else '') + title.rstrip('.') + '. ' + copy
+        if story.get('emailPhoto'):
+            # Free-tier fields are plain text, so the credit travels with the article;
+            # the linked article carries the photo source and license links.
+            text += f" ({story['image']['credit'].rstrip('.')}, {story['image']['license']}, via Wikimedia Commons.)"
         if len(text) > FIELD_LIMIT:
             raise ValueError('Highlight exceeds free-tier field limit; editorial review required')
         fields[f'WeeklyHighlight{n}'] = text
@@ -46,9 +56,19 @@ class Provider:
                       method=method, headers={'Authorization': 'Bearer ' + self.key,
                       'Content-Type': 'application/json', 'Accept': 'application/json',
                       'User-Agent': 'TravelPal-Newsletter/1.0'})
-        with urlopen(req, timeout=30) as response:
-            body = response.read()
-            return json.loads(body) if body else None
+        try:
+            with urlopen(req, timeout=30) as response:
+                body = response.read()
+                return json.loads(body) if body else None
+        except HTTPError as error:
+            # Surface the provider's explanation; its error bodies carry no addresses or keys.
+            try:
+                detail = json.loads(error.read() or b'{}')
+            except ValueError:
+                detail = {}
+            summary = ' · '.join(str(detail[k])[:300] for k in ('type', 'title', 'detail') if detail.get(k))
+            kind = ProviderRefused if 400 <= error.code < 500 else RuntimeError
+            raise kind(f'EmailOctopus {method} {path.split("?")[0].split("/")[1]} returned HTTP {error.code}: {summary or error.reason}') from None
 
     def contacts(self):
         contacts, cursor, cursors = [], None, set()
@@ -103,7 +123,7 @@ def deliver(provider, digest, send=False, test=False):
     # with a conservative 1,500-contact ceiling. No paid upgrade API is used.
     if len(contacts) > 1500:
         raise ValueError('Conservative free-tier headroom exceeded; manual quota review required')
-    issue = ('weekly-test:' if test else 'weekly:') + digest['weekEnding']
+    issue = ('weekly-test:' if test else 'weekly:') + digest.get('issueKey', digest['weekEnding'])
     result = {'queued': 0, 'skipped': 0, 'eligible': len(contacts)}
     quota = provider.quota()
     today = date.fromisoformat(digest['weekEnding'])
@@ -150,7 +170,13 @@ def deliver(provider, digest, send=False, test=False):
             result['skipped'] += 1
             continue
         # Never retry queue on timeouts or uncertain responses. Pending remains durable.
-        provider.queue(contact['id'])
+        try:
+            provider.queue(contact['id'])
+        except ProviderRefused:
+            # An explicit refusal means nothing was queued, so the reservation is released
+            # rather than blocking later issues. The capacity reservation is kept.
+            provider.update(contact['id'], {'WeeklySendState': state})
+            raise
         provider.update(contact['id'], {'WeeklySendState': issue + ':queued'})
         result['queued'] += 1
     return result
@@ -173,6 +199,9 @@ def main():
     digest = collect(load_editions(Path('data/travel-briefs')), now.date())
     render(digest)
     issue_path = ISSUES / (digest['weekEnding'] + '.json')
+    test_key = os.environ.get('WEEKLY_TEST_ISSUE')
+    if args.test and test_key:
+        issue_path = TEST_ISSUES / (test_key + '.json')
     if issue_path.exists():
         issue = load_issue(issue_path)
         current = {s['storyId']: s for s in digest['stories']}

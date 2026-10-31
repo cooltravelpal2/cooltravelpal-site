@@ -39,7 +39,7 @@ jobs:
       pages: write
       id-token: write
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
@@ -59,6 +59,10 @@ jobs:
         if: vars.TRAVEL_BRIEFS_ENABLED == 'true'
         continue-on-error: true
         run: python3 scripts/daily_travel_brief.py --sync
+      - name: Find openly licensed Wikimedia Commons story photos
+        if: vars.TRAVEL_BRIEFS_ENABLED == 'true' && steps.briefs.outcome == 'success'
+        continue-on-error: true
+        run: python3 scripts/story_photos.py
       - name: Persist edition archive before publication
         if: >-
           vars.TRAVEL_BRIEFS_ENABLED == 'true' && steps.briefs.outcome == 'success' &&
@@ -70,13 +74,13 @@ jobs:
         run: python3 scripts/build_site.py
       - name: Compile seven-day newsletter draft without sending
         env:
-          FREEZE_WEEKLY_ISSUE: ${{ (github.event_name == 'schedule' && github.event.schedule == '0 9 * * 6') || (github.event_name == 'workflow_dispatch' && (inputs.newsletter_test || inputs.newsletter_preview)) }}
+          FREEZE_WEEKLY_ISSUE: ${{ (github.event_name == 'schedule' && github.event.schedule == '0 9 * * 6') || (github.event_name == 'workflow_dispatch' && inputs.newsletter_preview) }}
+          FREEZE_TEST_ISSUE: ${{ github.event_name == 'workflow_dispatch' && inputs.newsletter_test }}
         run: |
-          if [ "$FREEZE_WEEKLY_ISSUE" = "true" ]; then
-            python3 scripts/weekly_digest.py --web-output dist/weekly --freeze-issue
-          else
-            python3 scripts/weekly_digest.py --web-output dist/weekly
-          fi
+          args=(--web-output dist/weekly)
+          if [ "$FREEZE_WEEKLY_ISSUE" = "true" ]; then args+=(--freeze-issue); fi
+          if [ "$FREEZE_TEST_ISSUE" = "true" ]; then args+=(--freeze-test-issue "test-$GITHUB_RUN_ID"); fi
+          python3 scripts/weekly_digest.py "${args[@]}"
       - name: Persist stable newsletter article links before deployment
         if: github.event_name != 'workflow_dispatch' || inputs.dry_run == false
         env:
@@ -103,10 +107,20 @@ jobs:
           from datetime import datetime
           from zoneinfo import ZoneInfo
           import sys
+          import time
           sys.path.insert(0, 'scripts')
           from daily_exercise import load_current
-          data = load_current(datetime.now(ZoneInfo('America/Los_Angeles')).date(), verify_travelpal=True)
-          print('Verified live synchronization:', data['releaseId'])
+          # Pages can keep serving the previous deployment for a few minutes after deploy-pages reports success.
+          for attempt in range(1, 11):
+              try:
+                  data = load_current(datetime.now(ZoneInfo('America/Los_Angeles')).date(), verify_travelpal=True)
+                  print('Verified live synchronization:', data['releaseId'])
+                  break
+              except (OSError, ValueError) as error:
+                  if attempt == 10:
+                      raise
+                  print(f'Attempt {attempt}: {error}; retrying in 30s')
+                  time.sleep(30)
           PY
       - name: Verify newly deployed brief
         if: >-
@@ -115,6 +129,7 @@ jobs:
         run: |
           python3 - <<'PY'
           import sys
+          import time
           from datetime import datetime
           from zoneinfo import ZoneInfo
           sys.path.insert(0, 'scripts')
@@ -123,7 +138,16 @@ jobs:
           day = datetime.now(ZoneInfo('America/Los_Angeles')).date()
           editions = load_editions(Path('data/travel-briefs'))
           if any(e['editionId'] == day.isoformat() and e['status'].startswith('ready') and any(s.get('active', True) for s in e['stories']) for e in editions):
-              print('Verified live brief:', load_live(day)['editionId'])
+              # Pages can keep serving the previous deployment for a few minutes after deploy-pages reports success.
+              for attempt in range(1, 11):
+                  try:
+                      print('Verified live brief:', load_live(day)['editionId'])
+                      break
+                  except (OSError, ValueError) as error:
+                      if attempt == 10:
+                          raise
+                      print(f'Attempt {attempt}: {error}; retrying in 30s')
+                      time.sleep(30)
           else:
               print('No new article to verify; archived editions retained')
           PY
@@ -141,6 +165,7 @@ jobs:
         env:
           EMAILOCTOPUS_API_KEY: ${{ secrets.EMAILOCTOPUS_API_KEY }}
           EMAILOCTOPUS_TEST_CONTACT_IDS: ${{ secrets.EMAILOCTOPUS_TEST_CONTACT_IDS }}
+          WEEKLY_TEST_ISSUE: test-${{ github.run_id }}
         run: python3 scripts/weekly_sender.py --send --test
       - name: Prepare owner newsletter preview without sending
         if: >-
