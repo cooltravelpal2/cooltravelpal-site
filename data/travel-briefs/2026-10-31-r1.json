@@ -1,0 +1,421 @@
+{
+  "schemaVersion": 1,
+  "editionId": "2026-10-31",
+  "revision": 1,
+  "status": "ready_with_limited_coverage",
+  "policyVersion": "travel-impact-v1",
+  "sourceRunIds": [
+    "de4d4ea3-1873-440e-bf54-f82b9632659a"
+  ],
+  "cutoffAt": "2026-10-31T14:03:28.681Z",
+  "generatedAt": "2026-10-31T14:03:28.681Z",
+  "coverageStatus": "limited",
+  "coverage": [
+    {
+      "sourceId": "breville",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "apple",
+      "category": "deals",
+      "candidateCount": 95,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amazon-devices",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "disabled"
+    },
+    {
+      "sourceId": "fellow",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "moccamaster",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "delonghi",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "dell",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "marriott",
+      "category": "hotels",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hyatt",
+      "category": "hotels",
+      "candidateCount": 6,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "hilton",
+      "category": "hotels",
+      "candidateCount": 25,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "ihg",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "aman",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "wyndham",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-and-only",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amex",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "chase",
+      "category": "cards",
+      "candidateCount": 13,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "citi",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "discover",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "capital-one",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "delta",
+      "category": "airlines",
+      "candidateCount": 15,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "united",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "american",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "alaska",
+      "category": "airlines",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "southwest",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "air-canada",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "british-airways",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "hotels",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "airlines",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "cards",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "destinations",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "hotels",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "airlines",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "cards",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "destinations",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "hotels",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "airlines",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "cards",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "destinations",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "hotels",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "airlines",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "cards",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "destinations",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "slickdeals",
+      "category": "deals",
+      "candidateCount": 17,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "redflagdeals",
+      "category": "deals",
+      "candidateCount": 15,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "airbnb",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nps",
+      "category": "destinations",
+      "candidateCount": 5,
+      "status": "attempted"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "news_ac21d8a96d34e108dc17801a",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 100,
+      "title": "Hyatt announces enhanced Hyatt Leverage platform for small and midsize business travel",
+      "summary": "On October 30, 2026, Hyatt Hotels Corporation announced an evolution of Hyatt Leverage, its online business travel platform aimed at eligible small and midsize businesses. The announcement did not include specific program terms, eligibility criteria or pricing.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-10-30T12:30:00.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Hyatt",
+          "url": "https://newsroom.hyatt.com/Oct-30-2026-Hyatt-Leverage",
+          "sourceType": "official",
+          "publishedAt": "2026-10-30T12:30:00.000Z",
+          "retrievedAt": "2026-10-31T14:01:49.315Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-10-31T14:03:28.651Z",
+      "changedAt": "2026-10-31T14:03:28.651Z",
+      "sourceRunId": "de4d4ea3-1873-440e-bf54-f82b9632659a",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [],
+      "keyPoints": [
+        "Hyatt said the update applies to Hyatt Leverage, its all-in-one online business travel platform for eligible small and midsize businesses.",
+        "Specific benefits, eligibility thresholds and effective dates were not disclosed in the announcement."
+      ]
+    },
+    {
+      "storyId": "offer_706abe6808d5275a8d9c1f8b",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 76,
+      "title": "World of Hyatt Cyber Sale: up to 25% off paid stays, book by Dec. 8",
+      "summary": "Hyatt's Cyber Sale takes up to 25% off the standard room rate at roughly 2,500 participating hotels worldwide. World of Hyatt members can book Oct. 30–Dec. 8, 2026, for stays Oct. 31, 2026–Apr. 30, 2027. Sale rates require full prepayment and don't allow changes. Reported by Frequent Miler.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-10-30T18:05:13.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Frequent Miler",
+          "url": "https://frequentmiler.com/world-of-hyatt-promo-save-up-to-25-on-paid-stays-at-properties-worldwide/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-10-30T18:05:13.000Z",
+          "retrievedAt": "2026-10-31T14:01:49.322Z"
+        }
+      ],
+      "terms": {
+        "issuer": null,
+        "program": "World of Hyatt",
+        "merchant": "Hyatt",
+        "rewardType": "discount",
+        "minSpend": null,
+        "creditAmount": null,
+        "rewardPoints": null,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": "2026-12-08T23:59:59.000Z",
+      "firstSeenAt": "2026-10-31T14:03:28.663Z",
+      "changedAt": "2026-10-31T14:03:28.663Z",
+      "sourceRunId": "de4d4ea3-1873-440e-bf54-f82b9632659a",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Members in good standing get a discount off the Standard Rate at participating properties, with the percentage varying by hotel; the reduction applies to room rate only and excludes taxes, service charges, mandatory resort fees and incidentals. The offer can't be combined with groups, conventions, tour packages or other promotional rate programs. Non-members have a narrower window, booking Nov. 3–Dec. 8, 2026, for stays from Nov. 6, 2026 through Apr. 30, 2027. At participating hotels in Europe, Africa and the Middle East, booking the Members Save More Breakfast Rate adds complimentary daily breakfast.",
+        "Because the discount comes off the Standard Rate rather than the lower Member Rate, the real saving is often thinner than the headline. Frequent Miler's check of Hyatt Place Albuquerque Airport found a $144 standard rate cut by about $27 (roughly 20%), while the flexible member rate was $130 — putting the sale only about 10% below the member rate, and with full prepayment and no changes allowed in exchange."
+      ],
+      "keyPoints": [
+        "Member booking window: Oct. 30–Dec. 8, 2026, for stays Oct. 31, 2026–Apr. 30, 2027.",
+        "Non-members: book Nov. 3–Dec. 8, 2026, for stays Nov. 6, 2026–Apr. 30, 2027.",
+        "Discount applies to the Standard Rate at about 2,500 participating hotels, excluding taxes and fees."
+      ],
+      "takeaway": "Price the sale rate against the refundable Member Rate before booking. The discount comes off the Standard Rate and the reservation needs full prepayment with no changes, so it mainly suits travelers whose dates are fixed."
+    }
+  ],
+  "contentDigest": "a748321d544a2c7182f7e287de92933589b8173a512bc7c7bfea0a5809705bf6"
+}
