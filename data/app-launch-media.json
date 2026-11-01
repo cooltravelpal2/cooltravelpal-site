@@ -1,0 +1,23 @@
+{
+  "checked": "2026-10-31",
+  "athena": {
+    "source": "Existing official Athena website assets in images/athena",
+    "credits": "https://travelpal.now/athena/copyright/",
+    "movie_preview": {
+      "source": "Athena release assets: work/build/western-survey/release/first/openings/frame-mona-lisa.mp4",
+      "asset": "images/athena/mona-lisa-opening.mp4",
+      "description": "Unaltered silent story opening from release assets; AI-created gallery with original artwork"
+    }
+  },
+  "collegedream": {
+    "source": "https://collegedream.app/",
+    "assets": {
+      "hero-phones.jpg": "https://collegedream.app/media/hero-phones.jpg"
+    },
+    "note": "Official launch screenshots retained without alteration; campus image credit lines preserved."
+  },
+  "release_sources": [
+    "https://itunes.apple.com/lookup?id=6821244944&country=us",
+    "https://itunes.apple.com/lookup?id=6828295520&country=us"
+  ]
+}
