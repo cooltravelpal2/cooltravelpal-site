@@ -798,3 +798,5 @@ a.app-card:hover, .app-card:hover { transform: translateY(-3px); box-shadow: var
 @media(max-width:960px){.story-card.featured .listing-visual{width:100%;max-width:260px}.story-card.featured .listing-thumb{aspect-ratio:8/5}}
 
 .listing-credit[hidden]{display:none}
+.btn-college{background:#24584a;color:#fff}.btn-college:hover{background:#1b4438}.app-card.college .app-tag{color:#24584a}
+@media (min-width:961px){.app-grid-four{grid-template-columns:repeat(2,1fr)}}
