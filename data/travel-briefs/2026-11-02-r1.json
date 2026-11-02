@@ -1,0 +1,420 @@
+{
+  "schemaVersion": 1,
+  "editionId": "2026-11-02",
+  "revision": 1,
+  "status": "ready_with_limited_coverage",
+  "policyVersion": "travel-impact-v1",
+  "sourceRunIds": [
+    "e8886673-e205-41c5-a18c-dffd4b3685b6"
+  ],
+  "cutoffAt": "2026-11-02T15:03:46.121Z",
+  "generatedAt": "2026-11-02T15:03:46.121Z",
+  "coverageStatus": "limited",
+  "coverage": [
+    {
+      "sourceId": "breville",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "apple",
+      "category": "deals",
+      "candidateCount": 86,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amazon-devices",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "disabled"
+    },
+    {
+      "sourceId": "fellow",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "moccamaster",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "delonghi",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "dell",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "marriott",
+      "category": "hotels",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hyatt",
+      "category": "hotels",
+      "candidateCount": 6,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "hilton",
+      "category": "hotels",
+      "candidateCount": 25,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "ihg",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "aman",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "wyndham",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-and-only",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amex",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "chase",
+      "category": "cards",
+      "candidateCount": 12,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "citi",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "discover",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "capital-one",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "delta",
+      "category": "airlines",
+      "candidateCount": 16,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "united",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "american",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "alaska",
+      "category": "airlines",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "southwest",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "air-canada",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "british-airways",
+      "category": "airlines",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "hotels",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "airlines",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "cards",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "destinations",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "cards",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "destinations",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "cards",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "destinations",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "slickdeals",
+      "category": "deals",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "redflagdeals",
+      "category": "deals",
+      "candidateCount": 15,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "airbnb",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nps",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "attempted"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "news_1435e504033b02cf28f7a7cd",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 100,
+      "title": "Wyndham partners with HotelREZ to expand its global luxury portfolio",
+      "summary": "Wyndham Hotels & Resorts announced a strategic partnership with HotelREZ Hotels & Resorts, a move the company frames as an expansion of its global luxury portfolio. Announced Nov. 2, 2026, the release did not set out property counts, timing or loyalty-program terms.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-11-02T10:50:06.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Wyndham",
+          "url": "https://corporate.wyndhamhotels.com/news-releases/wyndham-expands-global-luxury-portfolio-through-strategic-partnership-with-hotelrez-hotels-resorts/",
+          "sourceType": "official",
+          "publishedAt": "2026-11-02T10:50:06.000Z",
+          "retrievedAt": "2026-11-02T15:01:45.114Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-11-02T15:03:45.582Z",
+      "changedAt": "2026-11-02T15:03:45.582Z",
+      "sourceRunId": "e8886673-e205-41c5-a18c-dffd4b3685b6",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [],
+      "keyPoints": [
+        "Partnership announced Nov. 2, 2026, by Wyndham Hotels & Resorts and HotelREZ Hotels & Resorts.",
+        "Wyndham describes the deal as expanding its global luxury portfolio."
+      ]
+    },
+    {
+      "storyId": "offer_976febae52c5b38d6aba5d35",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 77,
+      "title": "Slickdeals: ECOFLOW Delta 3 Classical 1024Wh/1800W LiFePO4 power station at $286 (was $499, 43% off)",
+      "summary": "Slickdeals reports the ECOFLOW Delta 3 Classical 1024Wh 1800W LiFePO4 power station at $286 on AliExpress, reduced from $499. The deal board lists the discount as 43% off, a $213 saving.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-11-01T23:59:26.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Slickdeals",
+          "url": "https://slickdeals.net/f/20238111-ecoflow-delta-3-classical-1024wh-1800w-lifepo4-power-station-286-free-s-h",
+          "sourceType": "editorial",
+          "publishedAt": "2026-11-01T23:59:26.000Z",
+          "retrievedAt": "2026-11-02T15:01:45.124Z"
+        }
+      ],
+      "terms": {
+        "issuer": null,
+        "program": null,
+        "merchant": "AliExpress",
+        "rewardType": "discount",
+        "minSpend": null,
+        "creditAmount": null,
+        "rewardPoints": null,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": null,
+      "firstSeenAt": "2026-11-02T15:03:46.080Z",
+      "changedAt": "2026-11-02T15:03:46.080Z",
+      "sourceRunId": "e8886673-e205-41c5-a18c-dffd4b3685b6",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The product is a 1024Wh, 1800W LiFePO4 power station. According to Slickdeals, the AliExpress price is $286 against a $499 list price."
+      ],
+      "keyPoints": [
+        "$286 at AliExpress, compared with a $499 list price",
+        "Listed as 43% off, for a $213 saving",
+        "1024Wh capacity and 1800W output, with LiFePO4 battery chemistry"
+      ],
+      "takeaway": "Before ordering, confirm the $286 price, seller, and shipping details on the AliExpress listing; the $499 list price and $213 saving are as reported by Slickdeals."
+    }
+  ],
+  "contentDigest": "b4aa234b77626d390be776cc70595b13d6eb45eb77f14938b0b11ea58b53ebf5"
+}
