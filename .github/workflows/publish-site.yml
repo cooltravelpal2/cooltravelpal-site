@@ -87,8 +87,6 @@ jobs:
           if [ "$FREEZE_WEEKLY_ISSUE" = "true" ]; then args+=(--freeze-issue); fi
           if [ "$FREEZE_TEST_ISSUE" = "true" ]; then args+=(--freeze-test-issue "test-$GITHUB_RUN_ID"); fi
           python3 scripts/weekly_digest.py "${args[@]}"
-      - name: Audit published files for personal, test and developer data
-        run: python3 scripts/audit_published.py dist
       - name: Persist stable newsletter article links before deployment
         if: github.event_name != 'workflow_dispatch' || inputs.dry_run == false
         env:
@@ -100,9 +98,12 @@ jobs:
           path: weekly-drafts/
           retention-days: 14
       - uses: actions/configure-pages@v5
+      # Only the audit creates _site, so a release can't go out without passing it.
+      - name: Audit published files for personal, test and developer data
+        run: python3 scripts/audit_published.py dist --release-to _site
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: _site
       - name: Deploy website
         id: deploy
         if: github.event_name != 'workflow_dispatch' || inputs.dry_run == false

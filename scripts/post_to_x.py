@@ -26,6 +26,7 @@ from zoneinfo import ZoneInfo
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from daily_exercise import load_current, compose_daily, recent_daily_dates
 from daily_travel_brief import load_live as load_live_brief
+from audit_published import audit_text
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -500,6 +501,10 @@ def main() -> int:
     print(f"Weighted length: {weighted_length(text)}/280")
     print("---")
     print(text)
+    # Same release audit as the site; the dry run that validates the post runs it too.
+    problems = audit_text("X post", text)
+    if problems:
+        raise ValueError("Post failed the release audit:\n" + "\n".join(problems))
 
     if args.dry_run:
         print("---\nDry run: nothing was published.")

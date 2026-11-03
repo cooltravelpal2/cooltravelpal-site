@@ -12,6 +12,7 @@ from urllib.parse import urlencode
 from zoneinfo import ZoneInfo
 from weekly_digest import collect, render, select_highlights, short_copy, load_issue, ISSUES, TEST_ISSUES, story_slots
 from daily_travel_brief import load_editions, SECTIONS
+from audit_published import audit_text
 
 LIST_ID = 'de2bac34-80c4-11f1-ad85-1b83433e3fd4'
 AUTOMATION_ID = '69b368be-bf90-11f1-a32d-2fff2da0bbd9'
@@ -43,6 +44,10 @@ def payload(digest):
             raise ValueError('Highlight exceeds free-tier field limit; editorial review required')
         fields[f'WeeklyHighlight{n}'] = text
 
+    # Every send and owner preview goes through here, so nothing reaches an inbox without the release audit.
+    problems = audit_text('newsletter', '\n'.join(fields.values()))
+    if problems:
+        raise ValueError('Newsletter failed the release audit:\n' + '\n'.join(problems))
     return fields
 
 
