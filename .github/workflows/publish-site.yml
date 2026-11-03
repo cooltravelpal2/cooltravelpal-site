@@ -87,6 +87,8 @@ jobs:
           if [ "$FREEZE_WEEKLY_ISSUE" = "true" ]; then args+=(--freeze-issue); fi
           if [ "$FREEZE_TEST_ISSUE" = "true" ]; then args+=(--freeze-test-issue "test-$GITHUB_RUN_ID"); fi
           python3 scripts/weekly_digest.py "${args[@]}"
+      - name: Audit published files for personal, test and developer data
+        run: python3 scripts/audit_published.py dist
       - name: Persist stable newsletter article links before deployment
         if: github.event_name != 'workflow_dispatch' || inputs.dry_run == false
         env:
