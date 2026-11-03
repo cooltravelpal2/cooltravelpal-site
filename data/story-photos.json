@@ -3,6 +3,17 @@
   "photos": {
     "benefit_change_a567ec8bb91ac1852e36d6bc": null,
     "benefit_change_f8ef29c491cb8703425d6c4e": null,
+    "news_04fe3890b08098af3e6caec9": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Birds_eye_view_of_Isla_Mujeres_%284257542920%29.jpg/960px-Birds_eye_view_of_Isla_Mujeres_%284257542920%29.jpg",
+      "alt": "Isla Mujeres, photograph from Wikimedia Commons",
+      "caption": "Isla Mujeres. Destination photograph, not the featured venue or company. Displayed without edits.",
+      "credit": "Photo: Šarūnas Burdulis from USA.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Birds_eye_view_of_Isla_Mujeres_(4257542920).jpg",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "license": "CC BY-SA 2.0",
+      "rightsReviewed": true,
+      "rightsReview": "automated Wikimedia Commons license check"
+    },
     "news_077149f7129a2fd51152fde9": {
       "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Seattle_Center_as_night_falls.jpg/960px-Seattle_Center_as_night_falls.jpg",
       "alt": "Seattle, photograph from Wikimedia Commons",
@@ -131,6 +142,17 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Montreal,_Quebec_skyline.jpg",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
       "license": "CC BY 4.0",
+      "rightsReviewed": true,
+      "rightsReview": "automated Wikimedia Commons license check"
+    },
+    "news_e9ad46a17916fe42aae9d421": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Cancun_Strand_Luftbild_%2822143397586%29.jpg/960px-Cancun_Strand_Luftbild_%2822143397586%29.jpg",
+      "alt": "Cancún, photograph from Wikimedia Commons",
+      "caption": "Cancún. Destination photograph, not the featured venue or company. Displayed without edits.",
+      "credit": "Photo: dronepicr.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cancun_Strand_Luftbild_(22143397586).jpg",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "license": "CC BY 2.0",
       "rightsReviewed": true,
       "rightsReview": "automated Wikimedia Commons license check"
     },

@@ -1,0 +1,416 @@
+{
+  "schemaVersion": 1,
+  "editionId": "2026-11-03",
+  "revision": 1,
+  "status": "ready_with_limited_coverage",
+  "policyVersion": "travel-impact-v1",
+  "sourceRunIds": [
+    "c8880f67-6735-48dd-a8cb-11eaf7c13aa0"
+  ],
+  "cutoffAt": "2026-11-03T15:03:40.781Z",
+  "generatedAt": "2026-11-03T15:03:40.781Z",
+  "coverageStatus": "limited",
+  "coverage": [
+    {
+      "sourceId": "breville",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "apple",
+      "category": "deals",
+      "candidateCount": 85,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amazon-devices",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "disabled"
+    },
+    {
+      "sourceId": "fellow",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "moccamaster",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "delonghi",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "dell",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "marriott",
+      "category": "hotels",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hyatt",
+      "category": "hotels",
+      "candidateCount": 7,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "hilton",
+      "category": "hotels",
+      "candidateCount": 28,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "ihg",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "aman",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "wyndham",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-and-only",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amex",
+      "category": "cards",
+      "candidateCount": 2,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "chase",
+      "category": "cards",
+      "candidateCount": 12,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "citi",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "discover",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "capital-one",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "delta",
+      "category": "airlines",
+      "candidateCount": 15,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "united",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "american",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "alaska",
+      "category": "airlines",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "southwest",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "air-canada",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "british-airways",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "hotels",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "airlines",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "cards",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "destinations",
+      "candidateCount": 4,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "hotels",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "airlines",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "cards",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "destinations",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "hotels",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "airlines",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "cards",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "destinations",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "hotels",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "airlines",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "cards",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "destinations",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "slickdeals",
+      "category": "deals",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "redflagdeals",
+      "category": "deals",
+      "candidateCount": 15,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "airbnb",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nps",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "attempted"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "news_e9ad46a17916fe42aae9d421",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 100,
+      "title": "Amàre Cancún, Curio by Hilton opens as brand's first Americas resort",
+      "summary": "Amàre Cancún Adults Only All-Inclusive Resort, Curio by Hilton opened October 31 in Cancún's Hotel Zone. The 429-suite beachfront property is adults-only and all-inclusive, with seven restaurants, two 360-degree rooftop infinity pools, a nine-treatment-room spa, The One premium experience and more than 10,000 square feet of indoor and outdoor event space. It is the first Amàre hotel in the Americas and the first Curio Collection by Hilton property in Cancún.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-11-02T17:17:14.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Hilton",
+          "url": "https://stories.hilton.com/releases/amare-cancun-curio-by-hilton-now-open",
+          "sourceType": "official",
+          "publishedAt": "2026-11-02T17:17:14.000Z",
+          "retrievedAt": "2026-11-03T15:01:52.148Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-11-03T15:03:40.643Z",
+      "changedAt": "2026-11-03T15:03:40.643Z",
+      "sourceRunId": "c8880f67-6735-48dd-a8cb-11eaf7c13aa0",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The resort sits at Km 4.5 on Boulevard Kukulcán at the northern entrance to the Hotel Zone, minutes from the Isla Mujeres ferries and about 30 minutes from Cancún International Airport, which has nonstop service from U.S. hubs including New York, Dallas and Miami. It is owned and operated by Spain's Fuerte Group — the family-owned company's first hotel outside Spain — and marks both the Amàre brand's first all-inclusive and the first Curio Collection by Hilton in Cancún.",
+        "Dining and drinks are led by named curators: Chef Mauricio Giovanini, Michelin-starred at Restaurante Messina in Marbella, brings the HAYACA Latin American and Mediterranean concept to Cancún as its first permanent home; Chef Jordi Cantó developed VITA and BLANC and the menu at LA CAVA. Salmon Guru co-founder Diego Cabrera sets the cocktail list, Elisa Villarreal runs the mezcal and tequila program, sommelier Meritxell Falgueras curates wine and tastings, Spanish Barista Champion Adrián Fernández designs the RITUAL lobby coffee menu, and Ibiza DJ Anna Tur oversees Amàre Music across the day."
+      ],
+      "keyPoints": [
+        "429 suites, adults-only, all-inclusive, beachfront in Cancún's Hotel Zone",
+        "Seven restaurants, two rooftop infinity pools, nine-treatment-room spa and The One premium experience",
+        "First Amàre property in the Americas and first Curio Collection by Hilton in Cancún"
+      ],
+      "takeaway": "Travelers can book the property through Hilton and earn or redeem Hilton Honors points on the stay. Because the resort is adults-only, families with children will need a different Cancún option; plan on roughly a 30-minute transfer from Cancún International Airport."
+    },
+    {
+      "storyId": "news_04fe3890b08098af3e6caec9",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 100,
+      "title": "Impression Isla Mujeres joins Hyatt's Unbound Collection",
+      "summary": "Hyatt announced on November 2, 2026 that Impression Isla Mujeres has joined The Unbound Collection by Hyatt. The property is a 123-suite, adults-only, all-inclusive resort at the southern tip of Isla Mujeres. The affiliation places the resort within Hyatt's curated collection of luxury hotels.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-11-02T15:00:00.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Hyatt",
+          "url": "https://newsroom.hyatt.com/2026-november-2-impressionislamujeres-theunboundcollectionbyhyatt",
+          "sourceType": "official",
+          "publishedAt": "2026-11-02T15:00:00.000Z",
+          "retrievedAt": "2026-11-03T15:01:52.148Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-11-03T15:03:40.733Z",
+      "changedAt": "2026-11-03T15:03:40.733Z",
+      "sourceRunId": "c8880f67-6735-48dd-a8cb-11eaf7c13aa0",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Hyatt said Impression Isla Mujeres is now part of The Unbound Collection by Hyatt, a group the company describes as a curated set of luxury hotels. The resort sits on the southern tip of Isla Mujeres and operates as an adults-only, all-inclusive property with 123 suites.",
+        "The announcement covers the brand affiliation only; no rates, opening timeline, or booking conditions were included in the published statement."
+      ],
+      "keyPoints": [
+        "Adults-only, all-inclusive resort with 123 suites",
+        "Located at the southern tip of Isla Mujeres",
+        "Now part of The Unbound Collection by Hyatt"
+      ],
+      "takeaway": "Travelers planning an Isla Mujeres stay can look for the resort under Hyatt's Unbound Collection branding when comparing options; confirm rates and inclusions directly before booking."
+    }
+  ],
+  "contentDigest": "b845b66c343af6a646fefc5f369f86ac6b44d6bfc6cd942c8e641d5f3fa5a144"
+}
