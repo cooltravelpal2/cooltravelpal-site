@@ -1,0 +1,495 @@
+{
+  "schemaVersion": 1,
+  "editionId": "2026-11-04",
+  "revision": 1,
+  "status": "ready_with_limited_coverage",
+  "policyVersion": "travel-impact-v1",
+  "sourceRunIds": [
+    "321d1d68-5408-4b4e-b3ce-08e5d95d8bdf"
+  ],
+  "cutoffAt": "2026-11-04T15:04:04.462Z",
+  "generatedAt": "2026-11-04T15:04:04.462Z",
+  "coverageStatus": "limited",
+  "coverage": [
+    {
+      "sourceId": "breville",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "apple",
+      "category": "deals",
+      "candidateCount": 84,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amazon-devices",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "disabled"
+    },
+    {
+      "sourceId": "fellow",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "moccamaster",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "delonghi",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "dell",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "marriott",
+      "category": "hotels",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hyatt",
+      "category": "hotels",
+      "candidateCount": 8,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "hilton",
+      "category": "hotels",
+      "candidateCount": 27,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "ihg",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "aman",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "wyndham",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-and-only",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amex",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "chase",
+      "category": "cards",
+      "candidateCount": 12,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "citi",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "discover",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "capital-one",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "delta",
+      "category": "airlines",
+      "candidateCount": 14,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "united",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "american",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "alaska",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "southwest",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "air-canada",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "british-airways",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "hotels",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "airlines",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "cards",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "destinations",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "hotels",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "airlines",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "cards",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "destinations",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "hotels",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "airlines",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "cards",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "destinations",
+      "candidateCount": 7,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "hotels",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "airlines",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "cards",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "destinations",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "slickdeals",
+      "category": "deals",
+      "candidateCount": 9,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "redflagdeals",
+      "category": "deals",
+      "candidateCount": 14,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "airbnb",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nps",
+      "category": "destinations",
+      "candidateCount": 1,
+      "status": "attempted"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "news_82fc748c08e125e8142f6a9d",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 100,
+      "title": "Hyatt signs management agreement for Hyatt Regency Kapal Besar Island Resort",
+      "summary": "Hyatt Hotels Corporation and PT Citra Buana Prakarsa announced on November 4, 2026 the signing of a management agreement for Hyatt Regency Kapal Besar Island Resort. The deal places the property under Hyatt's Regency brand and adds a managed island resort to the company's development pipeline.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-11-04T06:00:00.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Hyatt",
+          "url": "https://newsroom.hyatt.com/Hyatt_and_PT_Citra_Buana_Prakarsa_Sign_Agreement_for_Hyatt_Regency_Kapal_Besar_Island_Resort",
+          "sourceType": "official",
+          "publishedAt": "2026-11-04T06:00:00.000Z",
+          "retrievedAt": "2026-11-04T15:01:50.888Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-11-04T15:04:04.042Z",
+      "changedAt": "2026-11-04T15:04:04.042Z",
+      "sourceRunId": "321d1d68-5408-4b4e-b3ce-08e5d95d8bdf",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [],
+      "keyPoints": [
+        "Management agreement signed between Hyatt Hotels Corporation and PT Citra Buana Prakarsa for Hyatt Regency Kapal Besar Island Resort.",
+        "Announcement dated November 4, 2026 and issued from Chicago."
+      ]
+    },
+    {
+      "storyId": "news_a5e717fe1f717a59f8efbc23",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 100,
+      "title": "Signia Hilton Naples Grande Beach Resort to reopen in January 2027 with five new dining venues",
+      "summary": "The Naples, Florida resort says it will welcome guests again in January 2027 after a property-wide transformation, with five new food and beverage concepts ranging from a lobby café and Mediterranean bar to an Italian trattoria, a pool bar and a beachfront eatery. The renovation covers all 474 guest accommodations along with dining, wellness and gathering spaces.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-11-03T16:55:23.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Hilton",
+          "url": "https://stories.hilton.com/releases/signia-hilton-naples-grande-beach-resort-to-debut-five-new-culinary-concepts",
+          "sourceType": "official",
+          "publishedAt": "2026-11-03T16:55:23.000Z",
+          "retrievedAt": "2026-11-04T15:01:50.888Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-11-04T15:04:04.252Z",
+      "changedAt": "2026-11-04T15:04:04.252Z",
+      "sourceRunId": "321d1d68-5408-4b4e-b3ce-08e5d95d8bdf",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Signia Hilton Naples Grande Beach Resort in Naples, Florida, plans to reopen in January 2027 following a full property transformation that includes all 474 guest accommodations as well as dining, wellness and meeting space. Chef Asif Syed leads the reimagined food and beverage program as Director of Culinary. The resort says the five venues are designed to open along with the property.",
+        "The lineup: Spoonbill, a lobby-level café and marketplace with an in-house pastry program, sandwiches, salads, cold-pressed juices, and ice cream and affogatos in the evening; Solfina Bar and Terrace, an indoor-outdoor lobby bar with Neapolitan pizzas, crudo, shareable plates, Negronis and Spritzes; Vicolo Social Club and Trattoria, with house-made pastas, a steak program, tableside service and a martini bar; Cocoplum Pool Bar, serving burgers, salads, frozen cocktails, wine and champagne; and Flipside Beach Bar."
+      ],
+      "keyPoints": [
+        "Reopening is targeted for January 2027 after a renovation touching all 474 guest rooms and suites.",
+        "Five venues: Spoonbill, Solfina Bar and Terrace, Vicolo Social Club and Trattoria, Cocoplum Pool Bar and Flipside Beach Bar.",
+        "Chef Asif Syed is Director of Culinary for the new program."
+      ],
+      "takeaway": "If you're planning a Naples stay around the relaunch, the announced opening window is January 2027 — verify dates and rates directly with the resort before booking, since a single month window leaves little slack for construction delays."
+    },
+    {
+      "storyId": "news_c800e86f293929eaa0db2324",
+      "storyRevision": 1,
+      "section": "hotels",
+      "rank": 100,
+      "title": "Hilton launches High Performance Meetings, a wellness framework for group events",
+      "summary": "Hilton introduced High Performance Meetings, a wellness-focused framework for meetings and events developed with human performance consultancy TIGNUM. It organizes wellness around four areas — mindset, nutrition, movement and recovery — across three stages of the attendee journey: Arrive Ready, Stay Ready and Return Ready. Hilton says participating properties can apply it through existing amenities and tailored programming.",
+      "verification": "officially_confirmed",
+      "sourcePublishedAt": "2026-11-02T16:22:31.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Hilton",
+          "url": "https://stories.hilton.com/releases/hilton-introduces-high-performance-meetings",
+          "sourceType": "official",
+          "publishedAt": "2026-11-02T16:22:31.000Z",
+          "retrievedAt": "2026-11-04T15:01:50.888Z"
+        }
+      ],
+      "terms": null,
+      "expiresAt": null,
+      "firstSeenAt": "2026-11-04T15:04:04.431Z",
+      "changedAt": "2026-11-04T15:04:04.431Z",
+      "sourceRunId": "321d1d68-5408-4b4e-b3ce-08e5d95d8bdf",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "The framework extends Hilton's existing World's Most Welcoming Events initiative and draws on the company's Meetings Maximizer and Why We Gather research. Hilton cites its own finding that 67% of attendees feel less engaged when events lack meaningful downtime as part of the rationale for putting structured rest and recharge time into event agendas.",
+        "In practice the four pillars cover mindfulness and breathwork sessions, menus and snack timing built around sustained energy, movement breaks and fitness activities woven into the agenda, and dedicated recovery time including spa therapies and relaxation spaces. Hilton describes the approach as flexible, so individual properties and planners can adapt it to each event's goals rather than applying a fixed package."
+      ],
+      "keyPoints": [
+        "Four pillars: mindset, nutrition, movement and recovery, applied before, during and after an event",
+        "Three stages: Arrive Ready (pre-event guidance), Stay Ready (agenda and on-site wellness), Return Ready (post-event resources)",
+        "Hilton reports 67% of attendees feel less engaged when events lack meaningful downtime"
+      ],
+      "takeaway": "If you plan group business at a Hilton property, ask the hotel's events team which High Performance Meetings elements — movement breaks, scheduled downtime, hydration and meal timing — can be written into your agenda, and confirm what is included versus charged as an add-on before signing."
+    },
+    {
+      "storyId": "offer_c3ecfb06eeeadf544d475ea5",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 78,
+      "title": "Frequent Miler: Targeted Air France/KLM Amex Offer Gives $150 Back on $1,500 Spend",
+      "summary": "Frequent Miler reports a targeted Amex Offer for Air France/KLM: spend $1,500 or more and receive a $150 statement credit. The offer expires Dec. 15, 2026. Bookings must be made online through the US Air France or KLM sites or US mobile app, with flights originating in the US and charged in USD. The report says it may also cover award-flight taxes and fees. Not officially confirmed.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-11-03T20:45:13.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Frequent Miler",
+          "url": "https://frequentmiler.com/air-france-klm-amex-offer-spend-1500-get-150-back/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-11-03T20:45:13.000Z",
+          "retrievedAt": "2026-11-04T15:01:50.899Z"
+        }
+      ],
+      "terms": {
+        "issuer": "American Express",
+        "program": "Amex Offers",
+        "merchant": "Air France / KLM",
+        "rewardType": "statement_credit",
+        "minSpend": 1500,
+        "creditAmount": 150,
+        "rewardPoints": null,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": "2026-12-15T23:59:59.000Z",
+      "firstSeenAt": "2026-11-04T15:04:04.284Z",
+      "changedAt": "2026-11-04T15:04:04.284Z",
+      "sourceRunId": "321d1d68-5408-4b4e-b3ce-08e5d95d8bdf",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Frequent Miler reports the offer is valid on Air France-marketed and KLM-marketed flights booked directly through airfrance.us, KLM.com, or the US mobile app. The flight must originate in the US and be charged in USD, and payment must occur during the offer period. Bookings through partner sites, agents, or affiliates are excluded, according to the report.",
+        "The reported terms exclude KLM Package Deals, City Pass Amsterdam, hotel bookings, car rentals, ground transportation, tours, airport transfers, Shop@KLM, miles purchases, and lounge access fees, among other items. Frequent Miler notes that because the offer works on direct bookings, it should also apply to award-flight taxes and fees when the total reaches $1,500. Availability is targeted."
+      ],
+      "keyPoints": [
+        "Reported earn: $150 statement credit after $1,500 in eligible Air France/KLM purchases.",
+        "Book directly via US Air France/KLM websites or the US app; flights must start in the US and be charged in USD.",
+        "Expires Dec. 15, 2026; travel-agent, partner, and many non-airfare purchases are excluded."
+      ],
+      "takeaway": "Check your Amex Offers for the Air France/KLM deal before booking directly. Make sure the charge is in USD from a US-originating flight, and note that a $1,500 award-tax/fee total may qualify per the report."
+    }
+  ],
+  "contentDigest": "31173ef1fb1eb9818c3a740d6456d5a61705cffc4f95977ea1e8bf7779d08ebf"
+}

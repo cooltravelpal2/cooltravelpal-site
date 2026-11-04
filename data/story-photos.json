@@ -98,6 +98,7 @@
     },
     "news_72dd6ac28ae58abde5694488": null,
     "news_7e527e6b7f987cb7854a79af": null,
+    "news_82fc748c08e125e8142f6a9d": null,
     "news_8c81ed76bc3be3f7b8dbf777": {
       "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/4Y1A1159_Bangkok_%2833536795515%29.jpg/960px-4Y1A1159_Bangkok_%2833536795515%29.jpg",
       "alt": "Bangkok, photograph from Wikimedia Commons",
@@ -110,8 +111,20 @@
       "rightsReview": "automated Wikimedia Commons license check"
     },
     "news_8e74a8ee60e682d4ae000c89": null,
+    "news_a5e717fe1f717a59f8efbc23": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Napoli_-_Maschio_Angioino_-_202209302342_3.jpg/960px-Napoli_-_Maschio_Angioino_-_202209302342_3.jpg",
+      "alt": "Naples, photograph from Wikimedia Commons",
+      "caption": "Naples. Destination photograph, not the featured venue or company. Displayed without edits.",
+      "credit": "Photo: Richard Nevell.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Napoli_-_Maschio_Angioino_-_202209302342_3.jpg",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "license": "CC BY-SA 4.0",
+      "rightsReviewed": true,
+      "rightsReview": "automated Wikimedia Commons license check"
+    },
     "news_ac21d8a96d34e108dc17801a": null,
     "news_b93b3c49470f1b5f54b49e50": null,
+    "news_c800e86f293929eaa0db2324": null,
     "news_cce0acbf21478215ea8d7c78": {
       "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Waldorf_Astoria_New_York_%2855272623437%29.jpg/960px-Waldorf_Astoria_New_York_%2855272623437%29.jpg",
       "alt": "Waldorf Astoria New York, photograph from Wikimedia Commons",
@@ -170,6 +183,7 @@
     "offer_8fa732f2edb40b07b3360120": null,
     "offer_976febae52c5b38d6aba5d35": null,
     "offer_bdffa320812eb1abed10e548": null,
+    "offer_c3ecfb06eeeadf544d475ea5": null,
     "offer_c8e33d90ffc43aa68b94b7d4": {
       "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Seattle_Center_as_night_falls.jpg/960px-Seattle_Center_as_night_falls.jpg",
       "alt": "Seattle, photograph from Wikimedia Commons",
