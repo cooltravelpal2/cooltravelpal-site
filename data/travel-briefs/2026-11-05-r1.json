@@ -1,0 +1,436 @@
+{
+  "schemaVersion": 1,
+  "editionId": "2026-11-05",
+  "revision": 1,
+  "status": "ready_with_limited_coverage",
+  "policyVersion": "travel-impact-v1",
+  "sourceRunIds": [
+    "18853a5a-e6b6-4dfe-94f1-1944d31a1389"
+  ],
+  "cutoffAt": "2026-11-05T15:03:53.183Z",
+  "generatedAt": "2026-11-05T15:03:53.183Z",
+  "coverageStatus": "limited",
+  "coverage": [
+    {
+      "sourceId": "breville",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "apple",
+      "category": "deals",
+      "candidateCount": 92,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amazon-devices",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "disabled"
+    },
+    {
+      "sourceId": "fellow",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "moccamaster",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "delonghi",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "dell",
+      "category": "deals",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "marriott",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "hyatt",
+      "category": "hotels",
+      "candidateCount": 7,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "hilton",
+      "category": "hotels",
+      "candidateCount": 31,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "ihg",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "aman",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "wyndham",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-and-only",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "amex",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "chase",
+      "category": "cards",
+      "candidateCount": 12,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "citi",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "discover",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "capital-one",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "delta",
+      "category": "airlines",
+      "candidateCount": 14,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "united",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "american",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "alaska",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "southwest",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "air-canada",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "british-airways",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "hotels",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "airlines",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "cards",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "tpg",
+      "category": "destinations",
+      "candidateCount": 5,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "hotels",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "airlines",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "cards",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "awardwallet",
+      "category": "destinations",
+      "candidateCount": 3,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "hotels",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "airlines",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "cards",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nerdwallet",
+      "category": "destinations",
+      "candidateCount": 1,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "hotels",
+      "candidateCount": 9,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "airlines",
+      "candidateCount": 9,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "cards",
+      "candidateCount": 9,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "frequent-miler",
+      "category": "destinations",
+      "candidateCount": 9,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "hotels",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "airlines",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "cards",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "doctor-of-credit",
+      "category": "destinations",
+      "candidateCount": 2,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "slickdeals",
+      "category": "deals",
+      "candidateCount": 0,
+      "status": "unavailable"
+    },
+    {
+      "sourceId": "redflagdeals",
+      "category": "deals",
+      "candidateCount": 15,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "airlines",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "cards",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "one-mile-at-a-time",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "permission_pending"
+    },
+    {
+      "sourceId": "airbnb",
+      "category": "hotels",
+      "candidateCount": 0,
+      "status": "attempted"
+    },
+    {
+      "sourceId": "nps",
+      "category": "destinations",
+      "candidateCount": 0,
+      "status": "attempted"
+    }
+  ],
+  "stories": [
+    {
+      "storyId": "offer_f5b38390ad8f5497add58c48",
+      "storyRevision": 1,
+      "section": "airlines",
+      "rank": 79,
+      "title": "Frequent Miler: $200 Back on $900+ Airfare for Marriott Brilliant Cardholders",
+      "summary": "Frequent Miler reports that targeted Marriott Bonvoy Brilliant American Express cardholders are receiving an Amex Offer for a $200 statement credit after $900 or more in airfare purchases. Eligible flights must be booked directly with airlines, can be spread across multiple purchases, and the offer expires Feb. 28, 2027. Third-party bookings, packages, charter flights, inflight purchases and airport charges are excluded; purchases must be in USD.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-11-04T20:45:43.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Frequent Miler",
+          "url": "https://frequentmiler.com/airfare-amex-offer-on-marriott-brilliant-cards-get-200-back-when-spending-900/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-11-04T20:45:43.000Z",
+          "retrievedAt": "2026-11-05T15:01:46.684Z"
+        }
+      ],
+      "terms": {
+        "issuer": "American Express",
+        "program": "Amex Offers",
+        "merchant": "Airlines (direct bookings)",
+        "rewardType": "statement_credit",
+        "minSpend": 900,
+        "creditAmount": 200,
+        "rewardPoints": null,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": "2027-02-28T23:59:59.000Z",
+      "firstSeenAt": "2026-11-05T15:03:53.165Z",
+      "changedAt": "2026-11-05T15:03:53.165Z",
+      "sourceRunId": "18853a5a-e6b6-4dfe-94f1-1944d31a1389",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Frequent Miler reports the offer is limited to targeted Marriott Bonvoy Brilliant American Express cardholders. The $900 minimum can be met through one or more airfare purchases, and the $200 comes as a statement credit. Bookings must be made directly with scheduled passenger airlines—online, through the airline app, by phone or at a ticket counter—and the offer expires Feb. 28, 2027.",
+        "The reported exclusions cover third-party booking sites and travel agencies, charter or private jet flights, vacation or travel packages, inflight purchases, gift cards, buying miles or points, and airport retail, dining or lounge charges. Purchases must be made in US dollars, and any Membership Rewards points, credits or miles used to pay part of the fare will not count toward the $900 minimum."
+      ],
+      "keyPoints": [
+        "$200 statement credit after $900+ in eligible airfare, across one or more purchases.",
+        "Book directly with scheduled passenger airlines; third-party sites, packages, charter flights and airport charges are excluded.",
+        "Purchases must be in USD; points, credits or miles used toward the fare do not count toward the minimum."
+      ],
+      "takeaway": "Check whether the offer is on your Marriott Bonvoy Brilliant card, then book eligible flights directly with the airline in USD. Multiple bookings can count toward the $900 threshold through Feb. 28, 2027."
+    },
+    {
+      "storyId": "offer_207263e09d362d8c64911f3c",
+      "storyRevision": 1,
+      "section": "cards",
+      "rank": 72,
+      "title": "Citi ThankYou 40% Transfer Bonus to Turkish Airlines Miles & Smiles (1:1.4)",
+      "summary": "Doctor of Credit reports a 40% transfer bonus from Citi ThankYou points to Turkish Airlines Miles & Smiles. Normally 1,000 Citi ThankYou points transfer to 1,000 Miles & Smiles; with the bonus, that becomes 1,400. The promotion is listed for Nov. 1–30, 2026, Türkiye time (UTC+3), with a 50,000-bonus-mile cap. Not officially confirmed.",
+      "verification": "reported",
+      "sourcePublishedAt": "2026-11-04T19:28:44.000Z",
+      "effectiveAt": null,
+      "sources": [
+        {
+          "publisher": "Doctor of Credit",
+          "url": "https://www.doctorofcredit.com/citi-thankyou-points-40-transfer-bonus-to-turkish-airlines-miles-smiles-11-4-2/",
+          "sourceType": "editorial",
+          "publishedAt": "2026-11-04T19:28:44.000Z",
+          "retrievedAt": "2026-11-05T15:01:46.684Z"
+        }
+      ],
+      "terms": {
+        "issuer": "Citi",
+        "program": null,
+        "merchant": "Turkish Airlines",
+        "rewardType": "miles",
+        "minSpend": null,
+        "creditAmount": null,
+        "rewardPoints": null,
+        "activationRequired": null,
+        "activateBy": null
+      },
+      "expiresAt": "2026-11-30T20:59:59.000Z",
+      "firstSeenAt": "2026-11-05T15:03:53.178Z",
+      "changedAt": "2026-11-05T15:03:53.178Z",
+      "sourceRunId": "18853a5a-e6b6-4dfe-94f1-1944d31a1389",
+      "changeType": "new",
+      "active": true,
+      "paragraphs": [
+        "Doctor of Credit reports that Citi ThankYou points normally transfer to Turkish Airlines Miles & Smiles at 1:1, and the current bonus raises that to 1:1.4. That means 1,000 ThankYou points would produce 1,400 Miles & Smiles during the promotion. The report says the bonus is capped at 50,000 bonus miles.",
+        "The reported window is Nov. 1 through Nov. 30, 2026, using Türkiye time (UTC+3). Doctor of Credit also notes that 50% transfer bonuses were seen in the previous two years and earlier this year, while this offer is 40%. This has not been officially confirmed."
+      ],
+      "keyPoints": [
+        "40% bonus on Citi ThankYou transfers to Turkish Airlines Miles & Smiles",
+        "1,000 ThankYou points converts to 1,400 Miles & Smiles instead of 1,000",
+        "Runs Nov. 1–30, 2026 (Türkiye time, UTC+3), capped at 50,000 bonus miles"
+      ],
+      "takeaway": "If you plan a Turkish Airlines award, transfer during the bonus window and verify the 1:1.4 rate and remaining 50,000-bonus-mile cap in your Citi ThankYou account before moving points."
+    }
+  ],
+  "contentDigest": "2f2913f21deafc4d3f2cb641934ef14bcf1191ff12cbe3f66a6d74113d1a43f2"
+}
